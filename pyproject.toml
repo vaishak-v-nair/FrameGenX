@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "framegenx"
+version = "0.1.0"
+description = "Contract-driven visual generation and verification system"
+authors = [
+    { name = "FrameGenX Research" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+    "diffusers",
+    "transformers",
+    "Pillow",
+    "opencv-python",
+    "ultralytics",
+    "pydantic>=2.7.0",
+    "fastapi",
+    "uvicorn",
+    "spacy",
+    "sentence-transformers",
+    "pyyaml"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[project.scripts]
+framegenx = "src.cli:main"

@@ -1,0 +1,35 @@
+# FrameGenX Dependencies
+# Targeted for local execution on memory-constrained GPUs (e.g., RTX 3050 6GB)
+
+torch==2.1.2+cu118
+torchvision==0.16.2+cu118
+--extra-index-url https://download.pytorch.org/whl/cu118
+
+diffusers==0.27.2
+transformers==4.39.3
+accelerate==0.29.1
+safetensors==0.4.2
+xformers==0.0.23.post1
+
+# Intent Extraction
+spacy==3.7.4
+sentence-transformers==2.6.1
+
+# Verification & QA
+ultralytics==8.1.47
+pytesseract==0.3.10
+timm==0.9.16
+
+# Utilities
+opencv-python==4.9.0.80
+pillow==10.3.0
+matplotlib==3.8.4
+numpy<2.0.0
+
+# Optional but recommended for ControlNet fallback
+controlnet_aux==0.0.9
+
+# Testing & Config
+pytest==8.2.2
+PyYAML==6.0.1
+pydantic==2.7.0

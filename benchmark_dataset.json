@@ -1,0 +1,502 @@
+[
+  {
+    "id": "object_count_1",
+    "category": "object_count",
+    "prompt": "two cats sitting on a wall"
+  },
+  {
+    "id": "object_count_2",
+    "category": "object_count",
+    "prompt": "two cats sitting on a wall in the morning light"
+  },
+  {
+    "id": "object_count_3",
+    "category": "object_count",
+    "prompt": "two cats sitting on a wall with cinematic lighting"
+  },
+  {
+    "id": "object_count_4",
+    "category": "object_count",
+    "prompt": "two cats sitting on a wall, high quality, detailed"
+  },
+  {
+    "id": "object_count_5",
+    "category": "object_count",
+    "prompt": "three red apples on a table"
+  },
+  {
+    "id": "object_count_6",
+    "category": "object_count",
+    "prompt": "three red apples on a table in the morning light"
+  },
+  {
+    "id": "object_count_7",
+    "category": "object_count",
+    "prompt": "three red apples on a table with cinematic lighting"
+  },
+  {
+    "id": "object_count_8",
+    "category": "object_count",
+    "prompt": "three red apples on a table, high quality, detailed"
+  },
+  {
+    "id": "object_count_9",
+    "category": "object_count",
+    "prompt": "four birds flying in the sky"
+  },
+  {
+    "id": "object_count_10",
+    "category": "object_count",
+    "prompt": "four birds flying in the sky in the morning light"
+  },
+  {
+    "id": "object_count_11",
+    "category": "object_count",
+    "prompt": "four birds flying in the sky with cinematic lighting"
+  },
+  {
+    "id": "object_count_12",
+    "category": "object_count",
+    "prompt": "four birds flying in the sky, high quality, detailed"
+  },
+  {
+    "id": "object_count_13",
+    "category": "object_count",
+    "prompt": "five books stacked on a desk"
+  },
+  {
+    "id": "object_count_14",
+    "category": "object_count",
+    "prompt": "five books stacked on a desk in the morning light"
+  },
+  {
+    "id": "object_count_15",
+    "category": "object_count",
+    "prompt": "five books stacked on a desk with cinematic lighting"
+  },
+  {
+    "id": "object_count_16",
+    "category": "object_count",
+    "prompt": "five books stacked on a desk, high quality, detailed"
+  },
+  {
+    "id": "object_count_17",
+    "category": "object_count",
+    "prompt": "two cars parked in a driveway"
+  },
+  {
+    "id": "object_count_18",
+    "category": "object_count",
+    "prompt": "two cars parked in a driveway in the morning light"
+  },
+  {
+    "id": "object_count_19",
+    "category": "object_count",
+    "prompt": "two cars parked in a driveway with cinematic lighting"
+  },
+  {
+    "id": "object_count_20",
+    "category": "object_count",
+    "prompt": "two cars parked in a driveway, high quality, detailed"
+  },
+  {
+    "id": "spatial_relations_1",
+    "category": "spatial_relations",
+    "prompt": "a dog sitting under a table"
+  },
+  {
+    "id": "spatial_relations_2",
+    "category": "spatial_relations",
+    "prompt": "a dog sitting under a table in the morning light"
+  },
+  {
+    "id": "spatial_relations_3",
+    "category": "spatial_relations",
+    "prompt": "a dog sitting under a table with cinematic lighting"
+  },
+  {
+    "id": "spatial_relations_4",
+    "category": "spatial_relations",
+    "prompt": "a dog sitting under a table, high quality, detailed"
+  },
+  {
+    "id": "spatial_relations_5",
+    "category": "spatial_relations",
+    "prompt": "a cup placed next to a laptop"
+  },
+  {
+    "id": "spatial_relations_6",
+    "category": "spatial_relations",
+    "prompt": "a cup placed next to a laptop in the morning light"
+  },
+  {
+    "id": "spatial_relations_7",
+    "category": "spatial_relations",
+    "prompt": "a cup placed next to a laptop with cinematic lighting"
+  },
+  {
+    "id": "spatial_relations_8",
+    "category": "spatial_relations",
+    "prompt": "a cup placed next to a laptop, high quality, detailed"
+  },
+  {
+    "id": "spatial_relations_9",
+    "category": "spatial_relations",
+    "prompt": "a person standing behind a counter"
+  },
+  {
+    "id": "spatial_relations_10",
+    "category": "spatial_relations",
+    "prompt": "a person standing behind a counter in the morning light"
+  },
+  {
+    "id": "spatial_relations_11",
+    "category": "spatial_relations",
+    "prompt": "a person standing behind a counter with cinematic lighting"
+  },
+  {
+    "id": "spatial_relations_12",
+    "category": "spatial_relations",
+    "prompt": "a person standing behind a counter, high quality, detailed"
+  },
+  {
+    "id": "spatial_relations_13",
+    "category": "spatial_relations",
+    "prompt": "a bird perched on top of a streetlamp"
+  },
+  {
+    "id": "spatial_relations_14",
+    "category": "spatial_relations",
+    "prompt": "a bird perched on top of a streetlamp in the morning light"
+  },
+  {
+    "id": "spatial_relations_15",
+    "category": "spatial_relations",
+    "prompt": "a bird perched on top of a streetlamp with cinematic lighting"
+  },
+  {
+    "id": "spatial_relations_16",
+    "category": "spatial_relations",
+    "prompt": "a bird perched on top of a streetlamp, high quality, detailed"
+  },
+  {
+    "id": "spatial_relations_17",
+    "category": "spatial_relations",
+    "prompt": "a book inside a glass cabinet"
+  },
+  {
+    "id": "spatial_relations_18",
+    "category": "spatial_relations",
+    "prompt": "a book inside a glass cabinet in the morning light"
+  },
+  {
+    "id": "spatial_relations_19",
+    "category": "spatial_relations",
+    "prompt": "a book inside a glass cabinet with cinematic lighting"
+  },
+  {
+    "id": "spatial_relations_20",
+    "category": "spatial_relations",
+    "prompt": "a book inside a glass cabinet, high quality, detailed"
+  },
+  {
+    "id": "text_rendering_1",
+    "category": "text_rendering",
+    "prompt": "a neon sign that says CAFE"
+  },
+  {
+    "id": "text_rendering_2",
+    "category": "text_rendering",
+    "prompt": "a neon sign that says CAFE in the morning light"
+  },
+  {
+    "id": "text_rendering_3",
+    "category": "text_rendering",
+    "prompt": "a neon sign that says CAFE with cinematic lighting"
+  },
+  {
+    "id": "text_rendering_4",
+    "category": "text_rendering",
+    "prompt": "a neon sign that says CAFE, high quality, detailed"
+  },
+  {
+    "id": "text_rendering_5",
+    "category": "text_rendering",
+    "prompt": "a protest banner with the text FREEDOM"
+  },
+  {
+    "id": "text_rendering_6",
+    "category": "text_rendering",
+    "prompt": "a protest banner with the text FREEDOM in the morning light"
+  },
+  {
+    "id": "text_rendering_7",
+    "category": "text_rendering",
+    "prompt": "a protest banner with the text FREEDOM with cinematic lighting"
+  },
+  {
+    "id": "text_rendering_8",
+    "category": "text_rendering",
+    "prompt": "a protest banner with the text FREEDOM, high quality, detailed"
+  },
+  {
+    "id": "text_rendering_9",
+    "category": "text_rendering",
+    "prompt": "a t-shirt with the word HELLO printed on it"
+  },
+  {
+    "id": "text_rendering_10",
+    "category": "text_rendering",
+    "prompt": "a t-shirt with the word HELLO printed on it in the morning light"
+  },
+  {
+    "id": "text_rendering_11",
+    "category": "text_rendering",
+    "prompt": "a t-shirt with the word HELLO printed on it with cinematic lighting"
+  },
+  {
+    "id": "text_rendering_12",
+    "category": "text_rendering",
+    "prompt": "a t-shirt with the word HELLO printed on it, high quality, detailed"
+  },
+  {
+    "id": "text_rendering_13",
+    "category": "text_rendering",
+    "prompt": "a billboard advertising COLA"
+  },
+  {
+    "id": "text_rendering_14",
+    "category": "text_rendering",
+    "prompt": "a billboard advertising COLA in the morning light"
+  },
+  {
+    "id": "text_rendering_15",
+    "category": "text_rendering",
+    "prompt": "a billboard advertising COLA with cinematic lighting"
+  },
+  {
+    "id": "text_rendering_16",
+    "category": "text_rendering",
+    "prompt": "a billboard advertising COLA, high quality, detailed"
+  },
+  {
+    "id": "text_rendering_17",
+    "category": "text_rendering",
+    "prompt": "a chalkboard with WELCOME written on it"
+  },
+  {
+    "id": "text_rendering_18",
+    "category": "text_rendering",
+    "prompt": "a chalkboard with WELCOME written on it in the morning light"
+  },
+  {
+    "id": "text_rendering_19",
+    "category": "text_rendering",
+    "prompt": "a chalkboard with WELCOME written on it with cinematic lighting"
+  },
+  {
+    "id": "text_rendering_20",
+    "category": "text_rendering",
+    "prompt": "a chalkboard with WELCOME written on it, high quality, detailed"
+  },
+  {
+    "id": "multi_object_scenes_1",
+    "category": "multi_object_scenes",
+    "prompt": "a desk with a laptop, a coffee mug, and a plant"
+  },
+  {
+    "id": "multi_object_scenes_2",
+    "category": "multi_object_scenes",
+    "prompt": "a desk with a laptop, a coffee mug, and a plant in the morning light"
+  },
+  {
+    "id": "multi_object_scenes_3",
+    "category": "multi_object_scenes",
+    "prompt": "a desk with a laptop, a coffee mug, and a plant with cinematic lighting"
+  },
+  {
+    "id": "multi_object_scenes_4",
+    "category": "multi_object_scenes",
+    "prompt": "a desk with a laptop, a coffee mug, and a plant, high quality, detailed"
+  },
+  {
+    "id": "multi_object_scenes_5",
+    "category": "multi_object_scenes",
+    "prompt": "a kitchen counter with a blender, a knife, and a cutting board"
+  },
+  {
+    "id": "multi_object_scenes_6",
+    "category": "multi_object_scenes",
+    "prompt": "a kitchen counter with a blender, a knife, and a cutting board in the morning light"
+  },
+  {
+    "id": "multi_object_scenes_7",
+    "category": "multi_object_scenes",
+    "prompt": "a kitchen counter with a blender, a knife, and a cutting board with cinematic lighting"
+  },
+  {
+    "id": "multi_object_scenes_8",
+    "category": "multi_object_scenes",
+    "prompt": "a kitchen counter with a blender, a knife, and a cutting board, high quality, detailed"
+  },
+  {
+    "id": "multi_object_scenes_9",
+    "category": "multi_object_scenes",
+    "prompt": "a living room with a sofa, a television, and a rug"
+  },
+  {
+    "id": "multi_object_scenes_10",
+    "category": "multi_object_scenes",
+    "prompt": "a living room with a sofa, a television, and a rug in the morning light"
+  },
+  {
+    "id": "multi_object_scenes_11",
+    "category": "multi_object_scenes",
+    "prompt": "a living room with a sofa, a television, and a rug with cinematic lighting"
+  },
+  {
+    "id": "multi_object_scenes_12",
+    "category": "multi_object_scenes",
+    "prompt": "a living room with a sofa, a television, and a rug, high quality, detailed"
+  },
+  {
+    "id": "multi_object_scenes_13",
+    "category": "multi_object_scenes",
+    "prompt": "a park scene with a bench, a trash can, and a bicycle"
+  },
+  {
+    "id": "multi_object_scenes_14",
+    "category": "multi_object_scenes",
+    "prompt": "a park scene with a bench, a trash can, and a bicycle in the morning light"
+  },
+  {
+    "id": "multi_object_scenes_15",
+    "category": "multi_object_scenes",
+    "prompt": "a park scene with a bench, a trash can, and a bicycle with cinematic lighting"
+  },
+  {
+    "id": "multi_object_scenes_16",
+    "category": "multi_object_scenes",
+    "prompt": "a park scene with a bench, a trash can, and a bicycle, high quality, detailed"
+  },
+  {
+    "id": "multi_object_scenes_17",
+    "category": "multi_object_scenes",
+    "prompt": "a dining table with a plate, a fork, and a glass of water"
+  },
+  {
+    "id": "multi_object_scenes_18",
+    "category": "multi_object_scenes",
+    "prompt": "a dining table with a plate, a fork, and a glass of water in the morning light"
+  },
+  {
+    "id": "multi_object_scenes_19",
+    "category": "multi_object_scenes",
+    "prompt": "a dining table with a plate, a fork, and a glass of water with cinematic lighting"
+  },
+  {
+    "id": "multi_object_scenes_20",
+    "category": "multi_object_scenes",
+    "prompt": "a dining table with a plate, a fork, and a glass of water, high quality, detailed"
+  },
+  {
+    "id": "color_constraints_1",
+    "category": "color_constraints",
+    "prompt": "a red car parked next to a blue bicycle"
+  },
+  {
+    "id": "color_constraints_2",
+    "category": "color_constraints",
+    "prompt": "a red car parked next to a blue bicycle in the morning light"
+  },
+  {
+    "id": "color_constraints_3",
+    "category": "color_constraints",
+    "prompt": "a red car parked next to a blue bicycle with cinematic lighting"
+  },
+  {
+    "id": "color_constraints_4",
+    "category": "color_constraints",
+    "prompt": "a red car parked next to a blue bicycle, high quality, detailed"
+  },
+  {
+    "id": "color_constraints_5",
+    "category": "color_constraints",
+    "prompt": "a person wearing a yellow jacket and green pants"
+  },
+  {
+    "id": "color_constraints_6",
+    "category": "color_constraints",
+    "prompt": "a person wearing a yellow jacket and green pants in the morning light"
+  },
+  {
+    "id": "color_constraints_7",
+    "category": "color_constraints",
+    "prompt": "a person wearing a yellow jacket and green pants with cinematic lighting"
+  },
+  {
+    "id": "color_constraints_8",
+    "category": "color_constraints",
+    "prompt": "a person wearing a yellow jacket and green pants, high quality, detailed"
+  },
+  {
+    "id": "color_constraints_9",
+    "category": "color_constraints",
+    "prompt": "a white cat sitting on a black sofa"
+  },
+  {
+    "id": "color_constraints_10",
+    "category": "color_constraints",
+    "prompt": "a white cat sitting on a black sofa in the morning light"
+  },
+  {
+    "id": "color_constraints_11",
+    "category": "color_constraints",
+    "prompt": "a white cat sitting on a black sofa with cinematic lighting"
+  },
+  {
+    "id": "color_constraints_12",
+    "category": "color_constraints",
+    "prompt": "a white cat sitting on a black sofa, high quality, detailed"
+  },
+  {
+    "id": "color_constraints_13",
+    "category": "color_constraints",
+    "prompt": "a purple flower in a brown pot"
+  },
+  {
+    "id": "color_constraints_14",
+    "category": "color_constraints",
+    "prompt": "a purple flower in a brown pot in the morning light"
+  },
+  {
+    "id": "color_constraints_15",
+    "category": "color_constraints",
+    "prompt": "a purple flower in a brown pot with cinematic lighting"
+  },
+  {
+    "id": "color_constraints_16",
+    "category": "color_constraints",
+    "prompt": "a purple flower in a brown pot, high quality, detailed"
+  },
+  {
+    "id": "color_constraints_17",
+    "category": "color_constraints",
+    "prompt": "a silver laptop on a wooden desk"
+  },
+  {
+    "id": "color_constraints_18",
+    "category": "color_constraints",
+    "prompt": "a silver laptop on a wooden desk in the morning light"
+  },
+  {
+    "id": "color_constraints_19",
+    "category": "color_constraints",
+    "prompt": "a silver laptop on a wooden desk with cinematic lighting"
+  },
+  {
+    "id": "color_constraints_20",
+    "category": "color_constraints",
+    "prompt": "a silver laptop on a wooden desk, high quality, detailed"
+  }
+]

@@ -1,0 +1,100 @@
+{
+  "schema_version": "2.0",
+  "created_at": "2026-07-07T09:22:18.980717",
+  "prompt": "three red apples on a wooden table",
+  "parsed": {
+    "subject": "three red apples",
+    "objects": [
+      "apples",
+      "table"
+    ],
+    "colors": [
+      "red",
+      "wooden"
+    ],
+    "primary_subject": "three red apples",
+    "secondary_objects": [
+      "apples",
+      "table"
+    ]
+  },
+  "constraints": [
+    {
+      "type": "object_count",
+      "value": 3,
+      "target": "three red apples",
+      "priority": "critical"
+    }
+  ],
+  "rag_hits": [
+    "object counting accuracy",
+    "golden hour lighting",
+    "symmetry in art"
+  ],
+  "rag_influence": {
+    "depth_required": false,
+    "lighting_complex": true
+  },
+  "execution_plan": {
+    "has_human": false,
+    "has_depth": false,
+    "risk_level": "high"
+  },
+  "signal_map": {
+    "object_count": {
+      "threshold": 3
+    },
+    "class_uniqueness": {
+      "threshold": 2
+    },
+    "depth_layers": {
+      "threshold": 2
+    },
+    "spatial_ratio": {
+      "threshold": 0.2
+    },
+    "embedding": {
+      "threshold": 1.0
+    }
+  },
+  "entities": [
+    {
+      "id": "ebdf3ce4-6486-49a9-b93d-16cc2590ddc5",
+      "class_name": "apples",
+      "attributes": [
+        "red"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    },
+    {
+      "id": "36464939-366a-436d-8405-d9d4d0bf11b5",
+      "class_name": "apples",
+      "attributes": [
+        "red"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    },
+    {
+      "id": "c9a8cddb-ba4f-4348-aa75-353770d47efd",
+      "class_name": "apples",
+      "attributes": [
+        "red"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    },
+    {
+      "id": "b4688d85-ac25-4a94-8543-9714c4861eac",
+      "class_name": "table",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    }
+  ]
+}

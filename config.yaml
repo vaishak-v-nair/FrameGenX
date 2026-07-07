@@ -1,0 +1,19 @@
+# FrameGenX Configuration
+
+system:
+  max_vram_gb: 6
+  device: "cuda"
+  # Set to true to aggressively unload models after their step
+  aggressive_memory_management: true
+
+paths:
+  output_dir: "runs"
+  db_path: "runs/framegenx.db"
+
+models:
+  generator: "stabilityai/stable-diffusion-xl-base-1.0"
+  controlnet: "diffusers/controlnet-canny-sdxl-1.0"
+  qa_detector: "IDEA-Research/grounding-dino-tiny"
+
+pipeline:
+  max_repair_loops: 3

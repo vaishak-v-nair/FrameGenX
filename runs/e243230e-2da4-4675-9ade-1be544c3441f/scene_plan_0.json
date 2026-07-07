@@ -1,0 +1,130 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "d5e376ee-7e94-4d7a-8166-8a6a0a9d5d19",
+      "class_name": "landscape",
+      "attributes": [
+        "mythical"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 20,
+        "ymin": 20,
+        "xmax": 150,
+        "ymax": 150
+      },
+      "z_index": 1
+    },
+    {
+      "id": "c246a241-9378-44aa-8615-713069072ad6",
+      "class_name": "islands",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 190,
+        "ymin": 20,
+        "xmax": 320,
+        "ymax": 150
+      },
+      "z_index": 1
+    },
+    {
+      "id": "f2e17c59-ea56-4c67-b143-c3ef61573448",
+      "class_name": "waterfalls",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 360,
+        "ymin": 20,
+        "xmax": 490,
+        "ymax": 150
+      },
+      "z_index": 1
+    },
+    {
+      "id": "3b358959-81ce-4151-9b9c-c8cd8432a71c",
+      "class_name": "ruins",
+      "attributes": [
+        "ancient"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 20,
+        "ymin": 190,
+        "xmax": 150,
+        "ymax": 320
+      },
+      "z_index": 1
+    },
+    {
+      "id": "6d315a10-d473-405b-a57f-5acd7b3e7552",
+      "class_name": "vines",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 190,
+        "ymin": 190,
+        "xmax": 320,
+        "ymax": 320
+      },
+      "z_index": 1
+    },
+    {
+      "id": "c2b83789-1ed2-434e-a58e-cd73e181d4c5",
+      "class_name": "adventurer",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 360,
+        "ymin": 190,
+        "xmax": 490,
+        "ymax": 320
+      },
+      "z_index": 1
+    },
+    {
+      "id": "e4f310a6-5e25-4e82-8f9c-93986de57b0e",
+      "class_name": "sword",
+      "attributes": [
+        "ancient"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 20,
+        "ymin": 360,
+        "xmax": 150,
+        "ymax": 490
+      },
+      "z_index": 1
+    },
+    {
+      "id": "9603306a-b3c0-4fc8-80fd-fefef96ec559",
+      "class_name": "cliff",
+      "attributes": [
+        "jagged"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 190,
+        "ymin": 360,
+        "xmax": 320,
+        "ymax": 490
+      },
+      "z_index": 1
+    },
+    {
+      "id": "f46330ad-363f-40a4-94e1-6e69462cac10",
+      "class_name": "sets",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 360,
+        "ymin": 360,
+        "xmax": 490,
+        "ymax": 490
+      },
+      "z_index": 1
+    }
+  ]
+}

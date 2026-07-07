@@ -1,0 +1,2 @@
+[console_scripts]
+framegenx = src.cli:main

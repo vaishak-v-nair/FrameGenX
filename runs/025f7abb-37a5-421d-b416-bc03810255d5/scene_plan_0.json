@@ -1,0 +1,39 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "7ff4656d-f2bd-4a9c-bee7-6da6320f4d55",
+      "class_name": "flower",
+      "attributes": [
+        "purple"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 60,
+        "ymin": 122,
+        "xmax": 215,
+        "ymax": 389,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "66b77a20-3749-4569-91f2-3ab4afc4312e",
+      "class_name": "pot",
+      "attributes": [
+        "brown"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 296,
+        "ymin": 122,
+        "xmax": 451,
+        "ymax": 389,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    }
+  ]
+}

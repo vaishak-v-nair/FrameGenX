@@ -1,0 +1,14 @@
+{
+  "changed_adapter_tensors": 1120,
+  "dtype": "torch.bfloat16",
+  "elapsed_seconds": 38.284781000000294,
+  "loss": 1.0037306547164917,
+  "method": "qlora",
+  "model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "nf4_linear_modules": 743,
+  "peak_allocated_gb": 2.18578944,
+  "peak_reserved_gb": 2.311061504,
+  "resolution": 512,
+  "status": "passed",
+  "trainable_parameters": 5806080
+}

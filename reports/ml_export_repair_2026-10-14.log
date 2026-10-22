@@ -1,0 +1,3 @@
+{'checkpoint': 'runs\\training\\76fada99-67db-4fbe-a508-c0ef96e6042f\\checkpoint-000016', 'status': 'repaired', 'tensors_identical': True, 'tensor_count': 1120, 'adapter_sha256': '80c7617424a86d72a2ff1696d7238211d2506069a6ef0590e93e78fea4651b83'}
+{'checkpoint': 'runs\\training\\76fada99-67db-4fbe-a508-c0ef96e6042f\\checkpoint-000032', 'status': 'repaired', 'tensors_identical': True, 'tensor_count': 1120, 'adapter_sha256': 'ada24c8597631c81a19555d82061787b4c9de4d4109ee4986733411067375ac4'}
+{'checkpoint': 'runs\\training\\76fada99-67db-4fbe-a508-c0ef96e6042f\\checkpoint-000048', 'status': 'repaired', 'tensors_identical': True, 'tensor_count': 1120, 'adapter_sha256': 'aaaeb9b68609b11ffc032c1a57c765b983b339af22c7e396c24bfd72b289953b'}

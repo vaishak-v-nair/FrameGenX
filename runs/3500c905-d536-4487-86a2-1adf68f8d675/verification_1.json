@@ -1,0 +1,40 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "wildflower",
+      "expected": 1,
+      "detected": 10
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "wildflower": 10
+    },
+    "expected_counts": {
+      "wildflower": 1
+    }
+  },
+  "clip_cos": 0.2971,
+  "clip_norm": 0.5885,
+  "vqa_score": 1.0,
+  "vqa_vacuous": false,
+  "reward": 0.7943,
+  "spatial_result": {
+    "passed": true,
+    "total": 0,
+    "verified": 0,
+    "failures": []
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there a blooming wildflower in the image?",
+      "expected": "yes",
+      "class_name": "wildflower",
+      "answer": "yes",
+      "correct": true
+    }
+  ]
+}

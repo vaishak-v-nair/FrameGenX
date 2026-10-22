@@ -1,0 +1,17 @@
+{
+  "accept": false,
+  "reward": 0.2874,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": false,
+  "prompt_edits": [
+    "exactly 1 jagged alpine peaks, each clearly separated, distinct objects",
+    "exactly 1 mist, each clearly separated, distinct objects",
+    "exactly 1 summit, each clearly separated, distinct objects",
+    "jagged alpine peaks, prominent, clearly visible",
+    "wildflowers, prominent, clearly visible",
+    "mist, prominent, clearly visible",
+    "summit, prominent, clearly visible"
+  ]
+}

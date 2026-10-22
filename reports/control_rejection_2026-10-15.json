@@ -1,0 +1,28 @@
+{
+  "scope": "real local verifier and reflection replay on an existing failed image; generation not rerun",
+  "run_id": "83113d43-559a-4fd5-9dd1-bbe3b6e1cb83",
+  "source_image_sha256": "8008d6c63806b6aba000e7d0cabffafe307d8be7e4603ead5d797a464b48ead7",
+  "replayed_image_sha256": "8008d6c63806b6aba000e7d0cabffafe307d8be7e4603ead5d797a464b48ead7",
+  "accepted": false,
+  "detected_counts": {
+    "car": 5,
+    "bus": 1
+  },
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "car",
+      "expected": 1,
+      "detected": 5
+    },
+    {
+      "type": "attribute_unverified",
+      "class_name": "car",
+      "expected": [
+        "red"
+      ],
+      "detected": "instance count differs; color binding cannot establish the contract"
+    }
+  ],
+  "full_contract_CSR": null
+}

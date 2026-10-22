@@ -1,0 +1,15 @@
+{
+  "prompt": "A red cat sitting on a blue chair",
+  "width": 512,
+  "height": 512,
+  "steps": 4,
+  "cfg_scale": 0.0,
+  "seed": 42,
+  "preview_source": "final_pipeline_decode",
+  "base_model": "stabilityai/sdxl-turbo",
+  "resolved_base_model": "E:\\hf_cache\\hub\\models--stabilityai--sdxl-turbo\\snapshots\\71153311d3dbb46851df1931d3ca6e939de83304",
+  "controlnet": null,
+  "control_image_mode": "none",
+  "oom_fallback": null,
+  "created_at": "2026-10-14T14:23:03.513520+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "scope": "External process and system memory sample during generation; not a complete process trace",
+  "observed_at": "2026-10-15T11:06:38.1257631+05:30",
+  "processes": [
+    {
+      "Id": 22676,
+      "WorkingSet64": 3350528,
+      "PeakWorkingSet64": 4243456,
+      "CPU": 0.015625
+    },
+    {
+      "Id": 2388,
+      "WorkingSet64": 1441591296,
+      "PeakWorkingSet64": 5021462528,
+      "CPU": 296.046875
+    }
+  ],
+  "operating_system_memory_kib": {
+    "TotalVisibleMemorySize": 16473776,
+    "FreePhysicalMemory": 3670240
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "accept": false,
+  "reward": 0.3646,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": false,
+  "prompt_edits": [
+    "exactly 1 summit, each clearly separated, distinct objects",
+    "a view of mountains from the window of a jet airplane, View of a city skyline and train yard at dusk., jagged alpine peaks",
+    "jagged alpine peaks, prominent, clearly visible",
+    "wildflowers, prominent, clearly visible",
+    "summit, prominent, clearly visible"
+  ]
+}

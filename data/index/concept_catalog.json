@@ -1,0 +1,89 @@
+{
+  "furniture": {
+    "classes": [
+      "table",
+      "chair",
+      "sofa",
+      "desk",
+      "bed",
+      "bench"
+    ],
+    "is_supporting_surface": true,
+    "default_layer": "background_or_midground",
+    "typical_scale": "large"
+  },
+  "fruits_and_food": {
+    "classes": [
+      "apple",
+      "banana",
+      "orange",
+      "cake",
+      "sandwich",
+      "pizza",
+      "bread"
+    ],
+    "is_supporting_surface": false,
+    "typical_host": "table",
+    "typical_scale": "small",
+    "common_attributes": [
+      "fresh",
+      "glossy",
+      "ripe",
+      "colorful"
+    ]
+  },
+  "utensils_and_tableware": {
+    "classes": [
+      "fork",
+      "knife",
+      "spoon",
+      "cup",
+      "bottle",
+      "plate",
+      "glass",
+      "bowl"
+    ],
+    "is_supporting_surface": false,
+    "typical_host": "table",
+    "typical_scale": "small",
+    "common_attributes": [
+      "metallic",
+      "polished",
+      "ceramic",
+      "transparent"
+    ]
+  },
+  "vehicles": {
+    "classes": [
+      "car",
+      "bicycle",
+      "motorcycle",
+      "bus",
+      "truck",
+      "boat",
+      "airplane"
+    ],
+    "is_supporting_surface": false,
+    "typical_host": "street_or_water",
+    "typical_scale": "large"
+  },
+  "animals_and_pets": {
+    "classes": [
+      "dog",
+      "cat",
+      "bird",
+      "horse",
+      "sheep",
+      "cow",
+      "elephant"
+    ],
+    "is_supporting_surface": false,
+    "typical_scale": "medium",
+    "common_attributes": [
+      "furry",
+      "alert",
+      "sitting",
+      "standing"
+    ]
+  }
+}

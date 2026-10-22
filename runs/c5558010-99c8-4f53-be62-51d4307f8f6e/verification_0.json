@@ -1,0 +1,33 @@
+{
+  "accepted": false,
+  "hard_failures": [],
+  "signals": {
+    "detected_counts": {
+      "sign": 1
+    },
+    "expected_counts": {
+      "sign": 1
+    }
+  },
+  "clip_cos": 0.3464,
+  "clip_norm": 0.7857,
+  "vqa_score": 0.0,
+  "vqa_vacuous": false,
+  "reward": 0.3928,
+  "spatial_result": {
+    "passed": true,
+    "total": 0,
+    "verified": 0,
+    "failures": []
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there a rustic wooden sign in the image?",
+      "expected": "yes",
+      "class_name": "sign",
+      "answer": "error",
+      "correct": false
+    }
+  ]
+}

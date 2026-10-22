@@ -1,0 +1,20 @@
+{
+  "accepted": true,
+  "failures": [],
+  "signals": {
+    "detected_counts": {
+      "cat": 1,
+      "chair": 1
+    },
+    "raw_detected_counts": {
+      "cat": 1,
+      "chair": 1
+    },
+    "expected_counts": {
+      "cat": 1,
+      "chair": 1
+    }
+  },
+  "root_causes": [],
+  "actions": []
+}

@@ -1,0 +1,105 @@
+{
+  "schema_version": "2.0",
+  "created_at": "2026-08-16T11:42:55.587142+00:00",
+  "prompt": "A futuristic cyberpunk city skyline at night with neon lights reflecting in a river, highly detailed, photorealistic.",
+  "parsed": {
+    "subject": "city skyline",
+    "objects": [
+      "river",
+      "neon lights"
+    ],
+    "colors": [
+      "neon"
+    ],
+    "primary_subject": "city skyline",
+    "secondary_objects": [
+      "river"
+    ]
+  },
+  "constraints": [
+    {
+      "type": "object_count",
+      "value": 1,
+      "target": "city skyline",
+      "priority": "critical"
+    },
+    {
+      "type": "spatial_relation",
+      "value": {
+        "subject": "neon lights",
+        "predicate": "reflecting_in",
+        "object": "river"
+      },
+      "target": "neon lights->river",
+      "priority": "high"
+    }
+  ],
+  "rag_hits": [],
+  "rag_influence": {
+    "depth_required": false,
+    "lighting_complex": false
+  },
+  "execution_plan": {
+    "has_human": false,
+    "has_depth": true,
+    "risk_level": "high"
+  },
+  "signal_map": {
+    "object_count": {
+      "threshold": 1
+    },
+    "class_uniqueness": {
+      "threshold": 1
+    },
+    "depth_layers": {
+      "threshold": 3
+    },
+    "spatial_ratio": {
+      "threshold": 0.3
+    },
+    "embedding": {
+      "threshold": 1.2
+    }
+  },
+  "entities": [
+    {
+      "id": "1d23b058-5327-405d-8c96-b6a1f7d73273",
+      "class_name": "city",
+      "attributes": [
+        "futuristic",
+        "cyberpunk",
+        "detailed",
+        "photorealistic"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    },
+    {
+      "id": "c512df37-b4c0-4a61-9528-0b2858c44a3d",
+      "class_name": "river",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    },
+    {
+      "id": "beecb8b6-5c27-4ea7-88a2-d4da1a89cc90",
+      "class_name": "neon lights",
+      "attributes": [
+        "neon"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    }
+  ],
+  "spatial_relationships": [
+    {
+      "subject": "neon lights",
+      "predicate": "reflecting_in",
+      "object": "river"
+    }
+  ],
+  "negations": []
+}

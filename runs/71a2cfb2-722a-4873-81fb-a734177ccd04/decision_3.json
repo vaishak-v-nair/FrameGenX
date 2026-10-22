@@ -1,0 +1,13 @@
+{
+  "accept": false,
+  "reward": 0.7474,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": false,
+  "prompt_edits": [
+    "cat above wall",
+    "sharp focus, highly detailed",
+    "cats, prominent, clearly visible"
+  ]
+}

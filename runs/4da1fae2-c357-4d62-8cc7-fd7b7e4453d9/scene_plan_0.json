@@ -1,0 +1,37 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "e2742a51-77b5-42ed-9979-2ad924104cdb",
+      "class_name": "apple",
+      "attributes": [
+        "green"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 60,
+        "ymin": 122,
+        "xmax": 215,
+        "ymax": 389,
+        "z_index": 1
+      },
+      "z_index": 1
+    },
+    {
+      "id": "1c11c16f-024d-4d65-b722-bd7a44a765cc",
+      "class_name": "table",
+      "attributes": [
+        "red"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 296,
+        "ymin": 122,
+        "xmax": 451,
+        "ymax": 389,
+        "z_index": 1
+      },
+      "z_index": 1
+    }
+  ]
+}

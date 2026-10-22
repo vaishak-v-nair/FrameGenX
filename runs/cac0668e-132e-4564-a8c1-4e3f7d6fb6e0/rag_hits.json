@@ -1,0 +1,23 @@
+[
+  {
+    "id": "coco_348708",
+    "caption": "The banana is laying next to an almost empty bowl.",
+    "image": "http://images.cocodataset.org/val2017/000000348708.jpg",
+    "score": 0.016234796404019036,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_480122",
+    "caption": "A bowl of bananas sitting on the kitchen table.",
+    "image": "http://images.cocodataset.org/val2017/000000480122.jpg",
+    "score": 0.01571841851494696,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_352618",
+    "caption": "Raw mango and orange and ripe bananas in a bowl",
+    "image": "http://images.cocodataset.org/val2017/000000352618.jpg",
+    "score": 0.015345149253731344,
+    "retrieval_mode": "hybrid_rrf"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "attempt": 0,
+    "clip_cos": 0.321,
+    "clip_norm": 0.6838,
+    "vqa_score": 1.0,
+    "reward": 0.8419
+  },
+  {
+    "attempt": 1,
+    "clip_cos": 0.2996,
+    "clip_norm": 0.5983,
+    "vqa_score": 0.5,
+    "reward": 0.5492
+  }
+]

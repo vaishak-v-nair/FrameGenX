@@ -1,0 +1,33 @@
+.env
+.env.*
+!.env.example
+
+# Local datasets, MLflow stores and trained adapter weights.
+data/training/
+data/evaluation/
+runs/training/
+runs/training_studies/
+runs/constraint_control/
+runs/mlflow_artifacts/
+runs/mlflow.db*
+models/trained/
+
+# Generated local research assets and experiment stores. Share compact reports
+# from reports/ instead of raw data, checkpoints or machine-specific kernels.
+runs/research_data/
+runs/research_cards/
+runs/research_jupyter/
+runs/mlflow_research.db*
+
+# Local environments, build products and Python/test caches.
+venv/
+.venv/
+node_modules/
+frontend/dist/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.pytest_tmp*/
+.ruff_cache/
+.ipynb_checkpoints/
+

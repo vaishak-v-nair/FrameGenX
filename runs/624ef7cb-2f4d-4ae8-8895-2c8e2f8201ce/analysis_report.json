@@ -1,0 +1,29 @@
+{
+  "accepted": false,
+  "failures": [
+    {
+      "type": "spatial_violation",
+      "class_name": "cat->chair",
+      "expected": "on",
+      "detected": "support_contact=fail (gap=0.51, max=0.15), x_overlap=1.00 (threshold=0.3)"
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "cat": 1,
+      "chair": 1
+    },
+    "raw_detected_counts": {
+      "cat": 1,
+      "chair": 1
+    },
+    "expected_counts": {
+      "cat": 1,
+      "chair": 1
+    }
+  },
+  "root_causes": [],
+  "actions": [
+    "Review cat->chair: expected on; support_contact=fail (gap=0.51, max=0.15), x_overlap=1.00 (threshold=0.3)."
+  ]
+}

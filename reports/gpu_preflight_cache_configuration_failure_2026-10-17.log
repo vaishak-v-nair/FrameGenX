@@ -1,0 +1,27 @@
+W1017 12:47:14.034000 2760 venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Traceback (most recent call last):
+  File "E:\BrosKi\framegenx\src\training\preflight.py", line 26, in main
+    unet, dtype = load_trainable_unet(config)
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "E:\BrosKi\framegenx\src\training\model.py", line 49, in load_trainable_unet
+    training_model_source(config.model), subfolder="unet", local_files_only=True, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "E:\BrosKi\framegenx\src\training\model.py", line 15, in training_model_source
+    marker = hf_hub_download(model, "model_index.json", local_files_only=True)
+  File "E:\BrosKi\framegenx\venv\Lib\site-packages\huggingface_hub\utils\_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+  File "E:\BrosKi\framegenx\venv\Lib\site-packages\huggingface_hub\file_download.py", line 1018, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<15 lines>...
+        dry_run=dry_run,
+    )
+  File "E:\BrosKi\framegenx\venv\Lib\site-packages\huggingface_hub\file_download.py", line 1170, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BrosKi\framegenx\venv\Lib\site-packages\huggingface_hub\file_download.py", line 1860, in _raise_on_head_call_error
+    raise LocalEntryNotFoundError(
+    ...<2 lines>...
+    )
+huggingface_hub.errors.LocalEntryNotFoundError: Cannot find the requested files in the disk cache and outgoing traffic has been disabled. To enable hf.co look-ups and downloads online, set 'local_files_only' to False.
+{'status': 'failed', 'method': 'qlora', 'model': 'stabilityai/stable-diffusion-xl-base-1.0', 'resolution': 512, 'deterministic': True, 'error': "LocalEntryNotFoundError: Cannot find the requested files in the disk cache and outgoing traffic has been disabled. To enable hf.co look-ups and downloads online, set 'local_files_only' to False.", 'elapsed_seconds': 10.669682099998681}

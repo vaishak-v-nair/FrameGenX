@@ -1,0 +1,49 @@
+{
+  "caption_hits": [
+    {
+      "id": "web_search",
+      "caption": "Web Context: Two is a noun when it refers to the number two as in two plus two is four. The word two is derived from the Old English words tw\u0101 \u2026 Oct 8, 2019 \u00b7 Educational video for children to learn number 2. The little ones will learn how to trace number 2, how to pronounce it and \u2026 Daily updated best two player games in different categories are published for you.",
+      "image": "",
+      "score": 1.0,
+      "retrieval_mode": "web_search"
+    }
+  ],
+  "layout_blueprint": {
+    "entity_count": 3,
+    "name": "Horizontal Trio",
+    "description": "Three subjects aligned horizontally with even spacing",
+    "boxes": [
+      {
+        "anchor": "left",
+        "ymin": 0.25,
+        "xmin": 0.05,
+        "ymax": 0.75,
+        "xmax": 0.32,
+        "z_index": 1
+      },
+      {
+        "anchor": "center",
+        "ymin": 0.2,
+        "xmin": 0.36,
+        "ymax": 0.8,
+        "xmax": 0.64,
+        "z_index": 1
+      },
+      {
+        "anchor": "right",
+        "ymin": 0.25,
+        "xmin": 0.68,
+        "ymax": 0.75,
+        "xmax": 0.95,
+        "z_index": 1
+      }
+    ]
+  },
+  "style_preset": {
+    "preset_name": "photorealistic",
+    "descriptors": "photograph, 35mm lens, sharp focus, natural lighting, subsurface scattering, authentic textures",
+    "lighting": "soft directional daylight with realistic ambient bounce",
+    "camera": "eye-level 50mm f/2.8 lens, shallow depth of field",
+    "negative": "cartoon, illustration, 3d render, distorted, oversaturated, plastic"
+  }
+}

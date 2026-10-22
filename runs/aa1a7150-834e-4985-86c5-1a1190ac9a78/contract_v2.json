@@ -1,0 +1,97 @@
+{
+  "schema_version": "2.0",
+  "created_at": "2026-08-16T10:08:18.903308+00:00",
+  "prompt": "A sleek red sports car parked in front of a futuristic neon city.",
+  "parsed": {
+    "subject": "sports car",
+    "objects": [
+      "sports car",
+      "city"
+    ],
+    "colors": [
+      "red",
+      "neon"
+    ],
+    "primary_subject": "sports car",
+    "secondary_objects": [
+      "city"
+    ]
+  },
+  "constraints": [
+    {
+      "type": "object_count",
+      "value": 1,
+      "target": "sports car",
+      "priority": "critical"
+    },
+    {
+      "type": "spatial_relation",
+      "value": {
+        "subject": "sports car",
+        "predicate": "in front of",
+        "object": "city"
+      },
+      "target": "sports car->city",
+      "priority": "high"
+    }
+  ],
+  "rag_hits": [],
+  "rag_influence": {
+    "depth_required": false,
+    "lighting_complex": false
+  },
+  "execution_plan": {
+    "has_human": false,
+    "has_depth": true,
+    "risk_level": "medium"
+  },
+  "signal_map": {
+    "object_count": {
+      "threshold": 1
+    },
+    "class_uniqueness": {
+      "threshold": 1
+    },
+    "depth_layers": {
+      "threshold": 2
+    },
+    "spatial_ratio": {
+      "threshold": 0.2
+    },
+    "embedding": {
+      "threshold": 1.0
+    }
+  },
+  "entities": [
+    {
+      "id": "7138d840-525d-486a-a0e2-2e881e14335e",
+      "class_name": "sports car",
+      "attributes": [
+        "sleek",
+        "red"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    },
+    {
+      "id": "9b5fe20a-95e2-4f41-a209-65e1789f5737",
+      "class_name": "city",
+      "attributes": [
+        "futuristic",
+        "neon"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    }
+  ],
+  "spatial_relationships": [
+    {
+      "subject": "sports car",
+      "predicate": "in front of",
+      "object": "city"
+    }
+  ],
+  "negations": []
+}

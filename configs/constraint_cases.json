@@ -1,0 +1,36 @@
+{
+  "schema": "framegenx-constraint-control-cases-v1",
+  "cases": {
+    "apple_count_color": {
+      "entities": [
+        {"id": "apple1", "class_name": "apple", "attributes": ["red"]},
+        {"id": "apple2", "class_name": "apple", "attributes": ["red"]},
+        {"id": "apple3", "class_name": "apple", "attributes": ["red"]},
+        {"id": "table", "class_name": "table", "attributes": ["white"], "uncounted": true}
+      ]
+    },
+    "vehicle_binding": {
+      "entities": [
+        {"id": "car", "class_name": "car", "attributes": ["red"]},
+        {"id": "bus", "class_name": "bus", "attributes": ["blue"]},
+        {"id": "road", "class_name": "road", "attributes": ["gray"], "uncounted": true}
+      ],
+      "spatial_relationships": [{"subject": "car", "object": "bus", "predicate": "left_of"}]
+    },
+    "animal_relation": {
+      "entities": [
+        {"id": "cat", "class_name": "cat", "attributes": []},
+        {"id": "dog", "class_name": "dog", "attributes": []}
+      ],
+      "spatial_relationships": [{"subject": "cat", "object": "dog", "predicate": "left_of"}]
+    },
+    "bottle_negation": {
+      "entities": [
+        {"id": "bottle1", "class_name": "bottle", "attributes": ["green"]},
+        {"id": "bottle2", "class_name": "bottle", "attributes": ["green"]},
+        {"id": "table", "class_name": "table", "attributes": ["white"], "uncounted": true}
+      ],
+      "negations": [{"class_name": "bottle", "attribute": "red"}]
+    }
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "schema_version": "2.0",
+  "created_at": "2026-08-26T19:07:14.796111+00:00",
+  "prompt": "Imagine a fantasy video game scene in a mythical landscape with floating islands, cascading waterfalls, and ancient ruins covered in vines. Add an adventurer holding an ancient sword, standing on a jagged cliff as the sun sets.",
+  "parsed": {
+    "subject": "adventurer",
+    "objects": [
+      "fantasy video game scene",
+      "mythical landscape",
+      "floating island",
+      "waterfall",
+      "ancient ruin",
+      "vine",
+      "adventurer",
+      "ancient sword",
+      "jagged cliff",
+      "sun"
+    ],
+    "colors": [],
+    "primary_subject": "adventurer",
+    "secondary_objects": [
+      "ancient sword",
+      "jagged cliff",
+      "floating island",
+      "waterfall",
+      "ancient ruin",
+      "vine"
+    ]
+  },
+  "constraints": [
+    {
+      "type": "object_count",
+      "value": 1,
+      "target": "adventurer",
+      "priority": "critical"
+    },
+    {
+      "type": "spatial_relation",
+      "value": {
+        "subject": "adventurer",
+        "predicate": "holding",
+        "object": "sword"
+      },
+      "target": "adventurer->sword",
+      "priority": "high"
+    },
+    {
+      "type": "spatial_relation",
+      "value": {
+        "subject": "adventurer",
+        "predicate": "on",
+        "object": "cliff"
+      },
+      "target": "adventurer->cliff",
+      "priority": "high"
+    }
+  ],
+  "rag_hits": [],
+  "rag_influence": {
+    "depth_required": false,
+    "lighting_complex": false
+  },
+  "execution_plan": {
+    "has_human": true,
+    "has_depth": true,
+    "risk_level": "medium"
+  },
+  "signal_map": {
+    "object_count": {
+      "threshold": 1
+    },
+    "class_uniqueness": {
+      "threshold": 1
+    },
+    "depth_layers": {
+      "threshold": 2
+    },
+    "spatial_ratio": {
+      "threshold": 0.2
+    },
+    "embedding": {
+      "threshold": 1.0
+    }
+  },
+  "entities": [
+    {
+      "id": "af7f6a1f-7c39-4e7c-9313-5fdeedb9e873",
+      "class_name": "floating island",
+      "attributes": [
+        "floating"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": true
+    },
+    {
+      "id": "1bc78780-f4a6-4595-8687-711c188dc409",
+      "class_name": "waterfall",
+      "attributes": [
+        "cascading"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": true
+    },
+    {
+      "id": "ae166207-271b-42ab-bc3a-5cdab5370f2a",
+      "class_name": "ruin",
+      "attributes": [
+        "ancient"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": true
+    },
+    {
+      "id": "a8957881-194b-4691-b7a1-85832cbde167",
+      "class_name": "vine",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": true
+    },
+    {
+      "id": "016c28f1-8655-4135-8c6b-f143a30623cc",
+      "class_name": "adventurer",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "5261a2d9-471e-4d00-8b20-75ae62948a6e",
+      "class_name": "sword",
+      "attributes": [
+        "ancient"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "c6d96b05-b874-4e21-ae18-a229f340f85d",
+      "class_name": "cliff",
+      "attributes": [
+        "jagged"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": false
+    }
+  ],
+  "spatial_relationships": [
+    {
+      "subject": "adventurer",
+      "predicate": "holding",
+      "object": "sword"
+    },
+    {
+      "subject": "adventurer",
+      "predicate": "on",
+      "object": "cliff"
+    }
+  ],
+  "negations": [],
+  "repair_policy": {
+    "mappings": [
+      {
+        "failure": "object_missing",
+        "action": "prominently featured"
+      },
+      {
+        "failure": "duplicate_object",
+        "action": ""
+      },
+      {
+        "failure": "text_missing",
+        "action": "with clearly legible text"
+      },
+      {
+        "failure": "low_alignment",
+        "action": "sharp focus, highly detailed"
+      }
+    ]
+  }
+}

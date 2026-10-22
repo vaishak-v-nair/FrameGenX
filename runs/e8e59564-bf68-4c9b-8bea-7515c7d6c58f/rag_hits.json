@@ -1,0 +1,23 @@
+[
+  {
+    "id": "coco_297396",
+    "caption": "Small pieces of cake have been arranged on a plate",
+    "image": "http://images.cocodataset.org/val2017/000000297396.jpg",
+    "score": 0.016129032258064516,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_211825",
+    "caption": "A man blowing out candles on a cake.",
+    "image": "http://images.cocodataset.org/val2017/000000211825.jpg",
+    "score": 0.01608118657298985,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_504711",
+    "caption": "A fork rests on a plate next to a piece of cake.",
+    "image": "http://images.cocodataset.org/val2017/000000504711.jpg",
+    "score": 0.01544011544011544,
+    "retrieval_mode": "hybrid_rrf"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "accept": false,
+  "reward": 0.5605,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": false,
+  "prompt_edits": [
+    "only 1 flower, nothing else similar",
+    "exactly 1 pot, each clearly separated, distinct objects, prominently featured",
+    "flower inside pot",
+    "pot, prominent, clearly visible",
+    "(brown colored pot)"
+  ]
+}

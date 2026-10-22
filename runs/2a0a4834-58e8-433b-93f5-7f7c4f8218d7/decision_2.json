@@ -1,0 +1,16 @@
+{
+  "accept": false,
+  "reward": 0.1182,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": false,
+  "prompt_edits": [
+    "exactly 4 candle, each clearly separated, distinct objects, prominently featured",
+    "candle on cake",
+    "sharp focus, highly detailed",
+    "birthday cake, prominent, clearly visible",
+    "candle, prominent, clearly visible",
+    "cake, prominent, clearly visible"
+  ]
+}

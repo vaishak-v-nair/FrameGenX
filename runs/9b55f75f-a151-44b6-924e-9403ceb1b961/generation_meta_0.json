@@ -1,0 +1,22 @@
+{
+  "prompt": "Distant city skyline, futuristic alien metropolis in the background, far-off megacity under a violet sky, expansive alien landscape, luminous glowing alien flora, smooth crystalline ground, reflective crystal surface, astronaut in a sleek spacesuit walking, lone figure striding toward the city",
+  "width": 512,
+  "height": 512,
+  "steps": 4,
+  "cfg_scale": 0.0,
+  "seed": null,
+  "base_model": "stabilityai/sdxl-turbo",
+  "controlnet": null,
+  "control_image_mode": "none",
+  "oom_fallback": null,
+  "created_at": "2026-08-26T18:28:14.612300+00:00",
+  "lora_adapters": [
+    {
+      "name": "pixel-art",
+      "source": "nerijs/pixel-art-xl",
+      "weight": 1.0,
+      "enabled": false
+    }
+  ],
+  "lora_load_report": []
+}

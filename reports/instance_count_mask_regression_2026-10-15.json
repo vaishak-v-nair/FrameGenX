@@ -1,0 +1,29 @@
+{
+  "ambiguous": [],
+  "box_count_before": 7,
+  "duplicates": [
+    {
+      "duplicate_of": 3,
+      "index": 4
+    },
+    {
+      "duplicate_of": 2,
+      "index": 5
+    },
+    {
+      "duplicate_of": 1,
+      "index": 6
+    }
+  ],
+  "kept_indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "scope": "saved_real_segmentation_regression_reference_is_assistant_inspection_not_independent_calibration",
+  "source_image_sha256": "3391927c690a96df381543ef8d351eb361cd2b6d813c85e3bffe38b2cadac4ec",
+  "source_report_sha256": "3af9196eef19995d1f463bca1b103d5ba6da89100d603926a402ad8f86c8d706",
+  "unique_mask_count_after": 4,
+  "visible_reference_count": 4
+}

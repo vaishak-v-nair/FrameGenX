@@ -1,0 +1,22 @@
+{
+  "prompt": "(floating islands:1.5), (cascading waterfalls:1.5), (ancient ruins:1.5), (sunset:1.5), single adventurer, Adventurer on cliff, Adventurer holding sword, adventurer, prominent, clearly visible, sword, prominent, clearly visible, cliff, prominent, clearly visible",
+  "width": 512,
+  "height": 512,
+  "steps": 4,
+  "cfg_scale": 0.0,
+  "seed": null,
+  "base_model": "stabilityai/sdxl-turbo",
+  "controlnet": null,
+  "control_image_mode": "none",
+  "oom_fallback": null,
+  "created_at": "2026-08-26T20:10:26.639005+00:00",
+  "lora_adapters": [
+    {
+      "name": "pixel-art",
+      "source": "nerijs/pixel-art-xl",
+      "weight": 1.0,
+      "enabled": false
+    }
+  ],
+  "lora_load_report": []
+}

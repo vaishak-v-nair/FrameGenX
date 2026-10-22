@@ -1,0 +1,9 @@
+{
+  "run_id": "7ce64b6419cd4836be5e2094a1706464",
+  "status": "FINISHED",
+  "quality_status": "unverified",
+  "metric_scope": "uncalibrated_local_operational_diagnostics",
+  "all_summary_metrics_match": true,
+  "full_contract_CSR": "unmeasured",
+  "promotion_status": "unqualified"
+}

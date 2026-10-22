@@ -1,0 +1,139 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "adventurer",
+      "expected": 1,
+      "detected": 0
+    },
+    {
+      "type": "spatial_violation",
+      "class_name": "adventurer->sword",
+      "expected": "holding",
+      "detected": "subject 'adventurer' not detected"
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "adventurer": 0,
+      "sword": 1
+    },
+    "raw_detected_counts": {
+      "adventurer": 0,
+      "sword": 1
+    },
+    "expected_counts": {
+      "adventurer": 1,
+      "sword": 1
+    }
+  },
+  "clip_cos": 0.3383,
+  "clip_norm": 0.7533,
+  "vqa_score": 0.0,
+  "vqa_vacuous": false,
+  "vqa_status": "observed",
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there an adventurer in the image?",
+      "expected": "yes",
+      "class_name": "adventurer",
+      "answer": "no",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there an ancient sword in the image?",
+      "expected": "yes",
+      "class_name": "sword",
+      "answer": "no",
+      "correct": false
+    }
+  ],
+  "reward": 0.3766,
+  "spatial_result": {
+    "passed": false,
+    "total": 1,
+    "verified": 0,
+    "failures": [
+      {
+        "subject": "adventurer",
+        "predicate": "holding",
+        "object": "sword",
+        "reason": "subject 'adventurer' not detected"
+      }
+    ],
+    "results": [
+      {
+        "relationship": {
+          "subject": "adventurer",
+          "predicate": "holding",
+          "object": "sword"
+        },
+        "passed": false,
+        "reason": "subject 'adventurer' not detected"
+      }
+    ]
+  },
+  "contract_evidence": {
+    "status": "failed",
+    "scope": "extracted_contract_only",
+    "counts": {
+      "total": 4,
+      "passed": 1,
+      "failed": 2,
+      "unverified": 1
+    },
+    "requirements": [
+      {
+        "kind": "object_count",
+        "target": "adventurer",
+        "expected": 1,
+        "status": "failed",
+        "method": "grounding_dino",
+        "observation": {
+          "detected": 0
+        }
+      },
+      {
+        "kind": "object_count",
+        "target": "sword",
+        "expected": 1,
+        "status": "passed",
+        "method": "grounding_dino",
+        "observation": {
+          "detected": 1
+        }
+      },
+      {
+        "kind": "attribute",
+        "target": "sword",
+        "expected": "ancient",
+        "status": "unverified",
+        "reason": "attribute binding has no calibrated hard verifier"
+      },
+      {
+        "kind": "spatial_relation",
+        "target": "adventurer->sword",
+        "expected": "holding",
+        "status": "failed",
+        "method": "box_geometry",
+        "reason": "subject 'adventurer' not detected"
+      }
+    ]
+  },
+  "detected_boxes": {
+    "adventurer": [],
+    "sword": [
+      {
+        "xmin": 362.01397705078125,
+        "ymin": 64.16065216064453,
+        "xmax": 418.39202880859375,
+        "ymax": 293.73773193359375,
+        "score": 0.5123701095581055
+      }
+    ]
+  },
+  "count_method": "grounding_dino"
+}

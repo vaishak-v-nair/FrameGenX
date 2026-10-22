@@ -1,0 +1,54 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "7894fc6f-ad56-47e1-8ee0-8f9cd3e5ef49",
+      "class_name": "person",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 45,
+        "ymin": 148,
+        "xmax": 143,
+        "ymax": 364,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "fa041a5f-71c4-4d62-8311-dbeb15dfc899",
+      "class_name": "jacket",
+      "attributes": [
+        "yellow"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 204,
+        "ymin": 122,
+        "xmax": 307,
+        "ymax": 389,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "54607979-b5f3-4b83-8503-72a385ca9f93",
+      "class_name": "pants",
+      "attributes": [
+        "green"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 368,
+        "ymin": 148,
+        "xmax": 466,
+        "ymax": 364,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    }
+  ]
+}

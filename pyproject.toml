@@ -10,19 +10,62 @@ authors = [
     { name = "FrameGenX Research" }
 ]
 requires-python = ">=3.10"
+# Loose deps for `pip install -e .`. The tested, pinned environment
+# (including the CUDA torch index) is requirements.txt — that file is
+# canonical; install from it first.
 dependencies = [
     "torch",
+    "torchvision",
     "diffusers",
     "transformers",
+    "accelerate",
+    "peft",
+    "safetensors",
     "Pillow",
     "opencv-python",
-    "ultralytics",
+    "numpy",
     "pydantic>=2.7.0",
     "fastapi",
     "uvicorn",
+    "python-dotenv",
     "spacy",
+    "pyyaml",
+    "openai",
+    "pymilvus",
+    "fastembed",
     "sentence-transformers",
-    "pyyaml"
+    "langgraph",
+    "duckduckgo_search",
+    "easyocr",
+    "einops",
+    "timm",
+]
+
+[project.optional-dependencies]
+training = [
+    "bitsandbytes==0.50.2",
+    "mlflow-skinny==3.17.1",
+    "SQLAlchemy==2.1.4",
+    "alembic==1.20.0",
+    "ijson==3.6.0",
+    "psutil==7.2.2",
+]
+research = [
+    "scikit-learn==1.9.0",
+    "scipy==1.18.0",
+    "psutil==7.2.2",
+    "threadpoolctl==3.6.0",
+    "nbformat==5.11.1",
+    "nbclient==0.11.0",
+    "ipykernel==7.3.0",
+    "mlflow-skinny==3.17.1",
+    "SQLAlchemy==2.1.4",
+    "alembic==1.20.0",
+]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio",
+    "ruff",
 ]
 
 [tool.setuptools.packages.find]
@@ -31,3 +74,4 @@ include = ["src*"]
 
 [project.scripts]
 framegenx = "src.cli:main"
+

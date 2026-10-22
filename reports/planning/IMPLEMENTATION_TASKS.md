@@ -1,0 +1,104 @@
+# Implementation Tasks — unapproved planning backlog
+
+Run: 20261015-framegenx-stack; branch main; review continued 2026-10-16. Thirty tasks from four phases, scoped to the current run and recent commit window; exact duplicates only are removed. Non-identical overlaps remain for scope reconciliation. Estimates exclude empirical GPU/annotation time and owner decisions. File lists identify intended change surfaces; paths not yet present are proposed. C7 is required only for hosting, E5 only for qualification, and conditional integrations do not block a local experimental release.
+
+- [ ] **C6 (P1, human: 2-4d / CC: 1-2d) — artifacts** — Finalize and reconcile checksummed bundles; distinguish pending/missing/corrupt
+  - Surfaced by: ceo-review — 4.2: JSON corruption becomes absence
+  - Files: src/api.py, src/core/artifacts.py
+- [ ] **C3 (P1, human: 2-3d / CC: 1-2d) — delivery** — Define tested dependency profiles, CPU CI, explicit GPU gates and artifact policy
+  - Surfaced by: ceo-review — 4.5/4.9: broad Python declaration and no current remote checks
+  - Files: pyproject.toml, requirements.txt, frontend/package.json, Dockerfile, docker-compose.yml, .github/workflows/ci.yml
+- [ ] **C1 (P1, human: 3-5d / CC: 1-3d) — evaluation** — Freeze requirement coverage, human labeling rubric and disjoint calibration/benchmark manifests
+  - Surfaced by: ceo-review — 1.1 and P0: current proxy results cannot qualify reduction
+  - Files: src/verification/contract_evidence.py, src/training/evaluation.py, configs/evaluation_pilot.json
+- [ ] **C7 (P1, human: 5-8d / CC: 2-4d) — hosting** — Add optional PostgreSQL/Redis profile with owner scopes, quotas, migrations and backup restoration
+  - Surfaced by: ceo-review — 4.3/4.9: local trust assumptions do not support public exposure
+  - Files: src/core/db.py, src/api.py, docker-compose.yml
+- [ ] **C4 (P1, human: 4-6d / CC: 2-3d) — interface** — Add typed contract review, allowlisted profiles and identical CLI/API/UI identity
+  - Surfaced by: ceo-review — P1/4.11: web cannot submit supplied contracts or choose tested controller
+  - Files: src/intent/models.py, src/api.py, src/cli.py, frontend/src/App.jsx
+- [ ] **C5 (P1, human: 5-8d / CC: 2-4d) — jobs** — Add durable submission, worker supervision, cancellation and recovery
+  - Surfaced by: ceo-review — 4.1/4.4: memory jobs and process-local GPU lock
+  - Files: src/api.py, src/core/db.py, src/core/jobs.py, src/core/worker.py
+- [ ] **C13 (P1, human: 1-2d / CC: 0.5-1d) — product evidence** — Correct unsupported competitor/quality claims and validate the next integration with task-based user sessions
+  - Surfaced by: ceo-review — Competitive/audience check: old comparison claims lack current evidence
+  - Files: docs/10_COMPETITOR_ANALYSIS.md, docs/WHY_NOT_COMFYUI.md
+- [ ] **C2 (P1, human: 2-4d / CC: 1-2d) — qualification** — Separate operational outcome, evidence coverage and strict qualification in schemas, storage and reporting
+  - Surfaced by: ceo-review — 4.4: missing evidence can be confused with acceptance
+  - Files: src/core/context.py, src/verification/verify_stage.py, src/reflection/reflector.py, src/api.py, frontend/src/runState.js
+- [ ] **D4 (P1, human: 2-3d / CC: 1-2d) — accessibility** — Implement labeled responsive evidence, focus management and meaningful status announcements
+  - Surfaced by: design-review — Pass 6 and both voices: mobile context and modal/validation behavior were unspecified
+  - Files: frontend/src/index.css, frontend/src/App.jsx, frontend/src/components/RunHistory.jsx
+- [ ] **D2 (P1, human: 2-3d / CC: 1-2d) — evidence UI** — Implement shared execution/qualification/evidence states and correct diagnostic labels
+  - Surfaced by: design-review — Passes 2/4/5: binary accepted badges and “VQA Precision” mislead
+  - Files: frontend/src/runState.js, frontend/src/components/RunHistory.jsx, frontend/src/components/AblationDashboard.jsx
+- [ ] **D1 (P1, human: 2-3d / CC: 1-2d) — interface** — Specify and implement contract/profile capability review without dropping requirements
+  - Surfaced by: design-review — Design Passes 1-3: eligibility and verification coverage conflicted; editing interactions were absent
+  - Files: frontend/src/App.jsx, src/api.py
+- [ ] **D3 (P1, human: 2-3d / CC: 1-2d) — recovery UI** — Add authoritative job action map, URL restoration and separate editable drafts
+  - Surfaced by: design-review — Passes 1-3: reconnect and historical run selection lacked ownership rules
+  - Files: frontend/src/App.jsx, frontend/src/runState.js
+- [ ] **E4 (P1, human: 3-5d / CC: 1-3d) — contract evidence** — Implement canonical stable instance/predicate identities and final-pixel/attempt-bound exact coverage
+  - Surfaced by: eng-review — source review and CLI/G04-G06/G15-G16: class-level deduplication and schema-only confirmation lose meaning
+  - Files: src/intent/models.py, src/verification/contract_evidence.py, src/core/stage.py, frontend/src, tests/test_contract_revision.py (proposed)
+- [ ] **E1 (P1, human: 3-5d / CC: 1-3d) — device ownership** — Enforce the common physical-device gate before CUDA across all entrypoints and contain supervised children
+  - Surfaced by: eng-review — both voices/G10: API-only locking cannot enforce the hardware contract
+  - Files: src/core/device_owner.py (proposed), src/cli.py, benchmark.py, src/training, src/verification, src/retrieval, tests/test_device_ownership.py (proposed)
+- [ ] **E6 (P1, human: 3-5d / CC: 1-3d) — local and export security** — Add local session/capability, Host/Origin and legacy-route protection plus allowlisted private/derivative exports
+  - Surfaced by: eng-review — CLI/G22-G23: loopback/CORS and raw bundle promises leave browser/export gaps
+  - Files: src/api.py, src/core/access.py (proposed), src/core/evidence_export.py (proposed), frontend/src, tests/test_local_access.py (proposed)
+- [ ] **E5 (P1, human: 3-4d / CC: 1-2d) — promotion policy** — Replace the old partial registry gate with one versioned typed all-gates evaluator
+  - Surfaced by: eng-review — source review/G26: positive overall interval does not enforce precision/calibration/category/usefulness gates
+  - Files: src/training/registry.py, src/training/evaluation.py, src/verification/qualification.py (proposed), tests/test_training.py
+- [ ] **E3 (P1, human: 4-6d / CC: 2-3d) — recovery** — Implement the complete cancel/finalizer/reconciler transition table and guarded durability helpers
+  - Surfaced by: eng-review — both voices/G17-G19: leased/finalizing recovery and cancel cutoff were incomplete
+  - Files: src/jobs (proposed), src/core/context.py, src/core/artifacts.py (proposed), tests/test_job_recovery.py (proposed), tests/test_artifact_commit.py (proposed)
+- [ ] **E7 (P1, human: 3-5d / CC: 1-3d) — reproducible delivery** — Freeze full source/build identities and restore database plus referenced payloads in clean isolated package/container profiles
+  - Surfaced by: eng-review — both voices/G27: manifests alone cannot restore pixels, and HEAD omits working-tree source
+  - Files: pyproject.toml, Dockerfile, docker-compose.yml, .github/workflows (proposed), scripts, examples/evidence (proposed)
+- [ ] **E2 (P1, human: 3-4d / CC: 1-2d) — submission identity** — Implement the P0 durable submission/key/digest/seed foundation and rejection-aware lookup before v1 clients
+  - Surfaced by: eng-review — both voices/G07-G09: a rejected submission may have no job
+  - Files: src/core/db.py, src/jobs/admission.py (proposed), src/api.py, src/cli.py, tests/test_submissions.py (proposed)
+- [ ] **E8 (P1, human: 3-5d / CC: 1-3d) — test and resource gates** — Make CPU tests hermetic and enforce bounded deadline/queue/index/cache policies with recorded peak resource evidence
+  - Surfaced by: eng-review — G02/G12/G24/G31 and Pass 4: .env coupling and p95-only/uncapped retries cannot support the proposed guarantees
+  - Files: tests/conftest.py, src/core/db.py, src/jobs (proposed), scripts, requirements.txt, .github/workflows (proposed)
+- [ ] **X3 (P1, human: 2-3d / CC: 1-2d) — developer docs** — Consolidate compatibility/setup/error/upgrade guides and executable examples
+  - Surfaced by: devex-review — Passes 4-6: conflicting prerequisites and duplicated instructions
+  - Files: README.md, TESTING.md, CONTRIBUTING.md, pyproject.toml, requirements.txt, docs/COMPATIBILITY.md, docs/ERRORS.md, docs/UPGRADING.md
+- [ ] **X2 (P1, human: 3-4d / CC: 1-2d) — interface contract** — Implement shared v1 operations, result/error schemas and explicit automation exit/reconcile behavior
+  - Surfaced by: devex-review — Passes 2/3: execution success can be mistaken for qualification and uncertain POST can duplicate work
+  - Files: src/api.py, src/cli.py, src/core/jobs.py
+- [ ] **X1 (P1, human: 1-2d / CC: 0.5-1d) — onboarding** — Add the dependency-free evidence inspector and compact real example with integrity/error handling
+  - Surfaced by: devex-review — DX Pass 1 and both voices: first-use deliverable was unspecified
+  - Files: scripts/inspect_example.py, examples/evidence/green-bottles, README.md
+- [ ] **C11 (P2, human: 4-8d / CC: 2-4d) — ML** — Curate failure-focused datasets and run compute-bounded LoRA/QLoRA promotion experiments
+  - Surfaced by: ceo-review — P4: 90-image loss-only pilot remains experimental
+  - Files: src/training/data.py, src/training/evaluation.py, src/training/registry.py
+- [ ] **C9 (P2, human: 2-3d / CC: 1-2d) — observability** — Compare existing MLflow and one tracing candidate; instrument redacted stage/job metrics
+  - Surfaced by: ceo-review — 4.8: fragmented incident reconstruction
+  - Files: src/training/tracking.py, src/core/stage.py, src/api.py
+- [ ] **C8 (P2, human: 3-5d / CC: 1-3d) — providers** — Extend the existing router with capability and permission policies, structured output and bounded rescue
+  - Surfaced by: ceo-review — 4.2/P3: provider fallback can change capability and privacy context
+  - Files: src/core/llm_router.py, src/intent/extractor.py, src/verification/qa.py
+- [ ] **C10 (P2, human: 2-4d / CC: 1-2d) — tools** — Expose read-only MCP schema/status/evidence tools through the same access policy
+  - Surfaced by: ceo-review — P3: external tools need scope and stable IDs
+  - Files: src/integrations/mcp.py, src/api.py
+- [ ] **X5 (P2, human: 1-2d / CC: 0.5-1d) — DX measurement** — Run prerequisite-aware contributor task observations and retain local redacted friction reports
+  - Surfaced by: devex-review — Pass 8: roleplay and targets are not measured onboarding
+  - Files: docs/COMPATIBILITY.md, reports/dx_tasks
+- [ ] **X4 (P2, human: 1-2d / CC: 0.5-1d) — contribution** — Add owner-approved licensing/notices, changelog and safe issue/extension guidance
+  - Surfaced by: devex-review — Passes 5/7: distribution/support assumptions are unestablished
+  - Files: LICENSE, NOTICE, CHANGELOG.md, CONTRIBUTING.md
+- [ ] **C12 (P3, human: 1-3d per experiment / CC: 0.5-2d) — optional integrations** — Evaluate Streamlit, CrewAI/ADK, LlamaIndex/Chroma/RAGAS/GraphRAG, speech, n8n and A2A only against named entry gates
+  - Surfaced by: ceo-review — matrix/F1-F3: overlapping frameworks need evidence of value
+  - Files: scripts/experiments, docs/research.md
+
+## Possible overlaps — reconcile before implementation
+
+- C1/C2/C11, E4/E5 and X2 share contract, evaluation and promotion policy work; their behavioral obligations remain distinct.
+- C5/C6, E1/E2/E3 and X2 cover submission, device, job and artifact boundaries; build one service chain, not duplicate schedulers.
+- C4, D1-D4 and X2 share typed workspace/schema behavior; one generated authority serves all interfaces.
+- C7/C3, E7 and X3/X4 overlap delivery/docs/restore; hosting, local compatibility and owner licensing remain separate gates.
+- C8/C9/C10/C12 and F1-F6 contain conditional experiments; new dependencies require their named task/resource/privacy gate.
+- E8 spans hermetic CPU, query/deadline and resource gates; it does not replace the empirical quality study or each feature regression test.
+

@@ -1,0 +1,32 @@
+CLEVR: 36 complete annotated scenes
+COCO annotations downloaded; streaming selected metadata
+VSR: 36 licensed consensus positives; 13 evaluation-only negatives
+COCO: 36 count examples with visible noncrowd instances
+{
+  "records": 121,
+  "positive_by_source_and_split": {
+    "clevr": {
+      "train": 30,
+      "validation": 3,
+      "test": 3
+    },
+    "vsr": {
+      "train": 30,
+      "validation": 3,
+      "test": 3
+    },
+    "coco": {
+      "train": 30,
+      "test": 3,
+      "validation": 3
+    }
+  },
+  "negative_examples": 13,
+  "dataset_sha256": "5377fd0a2c0856160a00d51f46d1345ea54d0c5101e8289b5136a5a4bd5d1619",
+  "image_groups": 108,
+  "seed": 42,
+  "requested_positive_per_source": 36,
+  "split_method": "seeded_sha256_image_groups_80_10_10_per_source",
+  "preprocessing": "full_image_letterbox_no_crop_no_flip",
+  "training_truth_limit": "COCO annotation exhaustiveness and VSR validator errors remain possible"
+}

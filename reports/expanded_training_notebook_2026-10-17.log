@@ -1,0 +1,565 @@
+E:\BrosKi\framegenx\venv\Lib\site-packages\zmq\_future.py:718: RuntimeWarning: Proactor event loop does not implement add_reader family of methods required for zmq. Registering an additional selector thread for add_reader support via tornado. Use `asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())` to avoid this warning.
+  self._get_loop()
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+Notebook cell 2/12 running
+Notebook cell 2/12: ok
+Notebook cell 4/12 running
+Notebook cell 4/12: ok
+Notebook cell 6/12 running
+Notebook cell 6/12: ok
+Notebook cell 8/12 running
+Notebook cell 8/12: ok
+Notebook cell 10/12 running
+Notebook cell 10/12: error
+Traceback (most recent call last):
+  File "E:\BrosKi\framegenx\scripts\run_research_notebook.py", line 75, in <module>
+    execute_notebook(args.notebook)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "E:\BrosKi\framegenx\scripts\run_research_notebook.py", line 57, in execute_notebook
+    on_cell_execute=started, on_cell_executed=executed).execute()
+                                                        ~~~~~~~^^
+  File "E:\BrosKi\framegenx\venv\Lib\site-packages\jupyter_core\utils\__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "E:\contents\miniconda3\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "E:\BrosKi\framegenx\venv\Lib\site-packages\nbclient\client.py", line 709, in async_execute
+    await self.async_execute_cell(
+        cell, index, execution_count=self.code_cells_executed + 1
+    )
+  File "E:\BrosKi\framegenx\venv\Lib\site-packages\nbclient\client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "E:\BrosKi\framegenx\venv\Lib\site-packages\nbclient\client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+from src.training.study import run_study
+result, reused = run_study(config, protocol_document, root / 'runs/training_studies/expanded_2026-10-17')
+print({'run_id': result['run_id'], 'status': result['status'], 'reused': reused,
+       'steps': result['steps_completed'], 'train_images': result['train_images'],
+       'distinct_train_images_seen': result['distinct_train_images_seen'],
+       'validation_diagnostic': result['validation_comparison'],
+       'host_resource_samples': result['host_resource_samples'],
+       'peak_reserved_gb': result['peak_reserved_gb'], 'quality_status': result['quality_status']})
+------------------
+
+----- stderr -----
+2026/10/17 12:59:10 INFO mlflow.agent.hint: Load the `instrumenting-with-mlflow-tracing` skill at E:\BrosKi\framegenx\venv\Lib\site-packages\mlflow\assistant\skills\instrumenting-with-mlflow-tracing\SKILL.md before writing any tracing code; it ships with this MLflow install. Set MLFLOW_DISABLE_AGENT_HINT=1 to silence this.
+----- stderr -----
+W1017 12:59:14.468000 22644 venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+----- stderr -----
+
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s]
+----- stderr -----
+
+Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 196/196 [00:00<00:00, 2941.75it/s]
+----- stderr -----
+
+----- stdout -----
+Cached text_encoder for 630 positive captions
+----- stderr -----
+
+Loading weights:   0%|          | 0/517 [00:00<?, ?it/s]
+----- stderr -----
+
+Loading weights:  56%|\u2588\u2588\u2588\u2588\u2588\u258b    | 291/517 [00:00<00:00, 2895.61it/s]
+----- stderr -----
+
+Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 517/517 [00:00<00:00, 3490.86it/s]
+----- stderr -----
+
+----- stdout -----
+Cached text_encoder_2 for 630 positive captions
+----- stdout -----
+Cached full-image latents: 12/630
+----- stdout -----
+Cached full-image latents: 24/630
+----- stdout -----
+Cached full-image latents: 36/630
+----- stdout -----
+Cached full-image latents: 48/630
+----- stdout -----
+Cached full-image latents: 60/630
+----- stdout -----
+Cached full-image latents: 72/630
+----- stdout -----
+Cached full-image latents: 84/630
+----- stdout -----
+Cached full-image latents: 96/630
+----- stdout -----
+Cached full-image latents: 108/630
+----- stdout -----
+Cached full-image latents: 120/630
+----- stdout -----
+Cached full-image latents: 132/630
+----- stdout -----
+Cached full-image latents: 144/630
+----- stdout -----
+Cached full-image latents: 156/630
+----- stdout -----
+Cached full-image latents: 168/630
+----- stdout -----
+Cached full-image latents: 180/630
+----- stdout -----
+Cached full-image latents: 192/630
+----- stdout -----
+Cached full-image latents: 204/630
+----- stdout -----
+Cached full-image latents: 216/630
+----- stdout -----
+Cached full-image latents: 228/630
+----- stdout -----
+Cached full-image latents: 240/630
+----- stdout -----
+Cached full-image latents: 252/630
+----- stdout -----
+Cached full-image latents: 264/630
+----- stdout -----
+Cached full-image latents: 276/630
+----- stdout -----
+Cached full-image latents: 288/630
+----- stdout -----
+Cached full-image latents: 300/630
+----- stdout -----
+Cached full-image latents: 312/630
+----- stdout -----
+Cached full-image latents: 324/630
+----- stdout -----
+Cached full-image latents: 336/630
+----- stdout -----
+Cached full-image latents: 348/630
+----- stdout -----
+Cached full-image latents: 360/630
+----- stdout -----
+Cached full-image latents: 372/630
+----- stdout -----
+Cached full-image latents: 384/630
+----- stdout -----
+Cached full-image latents: 396/630
+----- stdout -----
+Cached full-image latents: 408/630
+----- stdout -----
+Cached full-image latents: 420/630
+----- stdout -----
+Cached full-image latents: 432/630
+----- stdout -----
+Cached full-image latents: 444/630
+----- stdout -----
+Cached full-image latents: 456/630
+----- stdout -----
+Cached full-image latents: 468/630
+----- stdout -----
+Cached full-image latents: 480/630
+----- stdout -----
+Cached full-image latents: 492/630
+----- stdout -----
+Cached full-image latents: 504/630
+----- stdout -----
+Cached full-image latents: 516/630
+----- stdout -----
+Cached full-image latents: 528/630
+----- stdout -----
+Cached full-image latents: 540/630
+----- stdout -----
+Cached full-image latents: 552/630
+----- stdout -----
+Cached full-image latents: 564/630
+----- stdout -----
+Cached full-image latents: 576/630
+----- stdout -----
+Cached full-image latents: 588/630
+----- stdout -----
+Cached full-image latents: 600/630
+----- stdout -----
+Cached full-image latents: 612/630
+----- stdout -----
+Cached full-image latents: 624/630
+----- stdout -----
+step 1/320 mse=0.108708 vram=2.267GB elapsed=4.5s
+----- stdout -----
+step 2/320 mse=0.079494 vram=2.305GB elapsed=9.4s
+----- stdout -----
+step 3/320 mse=0.225722 vram=2.305GB elapsed=13.6s
+----- stdout -----
+step 4/320 mse=0.213308 vram=2.305GB elapsed=17.4s
+----- stdout -----
+step 5/320 mse=0.072556 vram=2.305GB elapsed=21.7s
+----- stdout -----
+step 6/320 mse=0.161138 vram=2.305GB elapsed=25.4s
+----- stdout -----
+step 7/320 mse=0.136538 vram=2.305GB elapsed=29.2s
+----- stdout -----
+step 8/320 mse=0.069818 vram=2.305GB elapsed=32.9s
+----- stdout -----
+step 9/320 mse=0.131417 vram=2.305GB elapsed=36.5s
+----- stdout -----
+step 10/320 mse=0.491197 vram=2.305GB elapsed=40.5s
+----- stdout -----
+step 11/320 mse=0.027937 vram=2.307GB elapsed=60.7s
+----- stdout -----
+step 12/320 mse=0.112187 vram=2.307GB elapsed=88.5s
+----- stdout -----
+step 13/320 mse=0.248199 vram=2.307GB elapsed=114.4s
+----- stdout -----
+step 14/320 mse=0.188984 vram=2.307GB elapsed=136.7s
+----- stdout -----
+step 15/320 mse=0.396350 vram=2.307GB elapsed=160.6s
+----- stdout -----
+step 16/320 mse=0.174641 vram=2.307GB elapsed=183.4s
+----- stdout -----
+step 17/320 mse=0.027252 vram=2.307GB elapsed=210.0s
+----- stdout -----
+step 18/320 mse=0.170499 vram=2.307GB elapsed=234.3s
+----- stdout -----
+step 19/320 mse=0.281516 vram=2.307GB elapsed=256.6s
+----- stdout -----
+step 20/320 mse=0.077178 vram=2.307GB elapsed=276.0s
+----- stdout -----
+step 21/320 mse=0.183047 vram=2.307GB elapsed=292.9s
+----- stdout -----
+step 22/320 mse=0.014110 vram=2.307GB elapsed=315.4s
+----- stdout -----
+step 23/320 mse=0.123385 vram=2.307GB elapsed=328.5s
+----- stdout -----
+step 24/320 mse=0.103979 vram=2.307GB elapsed=332.3s
+----- stdout -----
+step 25/320 mse=0.041222 vram=2.307GB elapsed=336.1s
+----- stdout -----
+step 26/320 mse=0.264497 vram=2.307GB elapsed=339.8s
+----- stdout -----
+step 27/320 mse=0.122968 vram=2.307GB elapsed=343.6s
+----- stdout -----
+step 28/320 mse=0.019251 vram=2.307GB elapsed=347.3s
+----- stdout -----
+step 29/320 mse=0.222937 vram=2.307GB elapsed=351.4s
+----- stdout -----
+step 30/320 mse=0.296835 vram=2.307GB elapsed=355.0s
+----- stdout -----
+step 31/320 mse=0.372519 vram=2.307GB elapsed=358.7s
+----- stdout -----
+step 32/320 mse=0.384091 vram=2.307GB elapsed=362.1s
+----- stdout -----
+step 33/320 mse=0.633318 vram=2.307GB elapsed=365.6s
+----- stdout -----
+step 34/320 mse=0.198507 vram=2.307GB elapsed=369.1s
+----- stdout -----
+step 35/320 mse=0.416443 vram=2.307GB elapsed=372.7s
+----- stdout -----
+step 36/320 mse=0.030306 vram=2.307GB elapsed=376.2s
+----- stdout -----
+step 37/320 mse=0.268249 vram=2.307GB elapsed=379.8s
+----- stdout -----
+step 38/320 mse=0.436470 vram=2.307GB elapsed=383.4s
+----- stdout -----
+step 39/320 mse=0.179114 vram=2.307GB elapsed=387.3s
+----- stdout -----
+step 40/320 mse=0.164413 vram=2.307GB elapsed=391.1s
+----- stdout -----
+step 41/320 mse=0.207527 vram=2.307GB elapsed=394.9s
+----- stdout -----
+step 42/320 mse=0.042668 vram=2.307GB elapsed=398.7s
+----- stdout -----
+step 43/320 mse=0.213395 vram=2.307GB elapsed=402.4s
+----- stdout -----
+step 44/320 mse=0.126612 vram=2.307GB elapsed=405.9s
+----- stdout -----
+step 45/320 mse=0.241884 vram=2.307GB elapsed=409.6s
+----- stdout -----
+step 46/320 mse=0.086822 vram=2.307GB elapsed=414.9s
+----- stdout -----
+step 47/320 mse=0.327493 vram=2.307GB elapsed=435.1s
+----- stdout -----
+step 48/320 mse=0.162812 vram=2.307GB elapsed=461.0s
+----- stdout -----
+step 49/320 mse=0.279967 vram=2.307GB elapsed=485.7s
+----- stdout -----
+step 50/320 mse=0.009495 vram=2.307GB elapsed=502.0s
+----- stdout -----
+step 51/320 mse=0.154602 vram=2.307GB elapsed=523.4s
+----- stdout -----
+step 52/320 mse=0.063959 vram=2.307GB elapsed=543.6s
+----- stdout -----
+step 53/320 mse=0.036876 vram=2.307GB elapsed=563.4s
+----- stdout -----
+step 54/320 mse=0.102169 vram=2.307GB elapsed=582.2s
+----- stdout -----
+step 55/320 mse=0.338843 vram=2.307GB elapsed=599.4s
+----- stdout -----
+step 56/320 mse=0.064468 vram=2.307GB elapsed=621.6s
+----- stdout -----
+step 57/320 mse=0.075097 vram=2.307GB elapsed=646.4s
+----- stdout -----
+step 58/320 mse=0.067441 vram=2.307GB elapsed=663.4s
+----- stdout -----
+step 59/320 mse=0.320865 vram=2.307GB elapsed=683.0s
+----- stdout -----
+step 60/320 mse=0.237174 vram=2.307GB elapsed=707.7s
+----- stdout -----
+step 61/320 mse=0.313575 vram=2.307GB elapsed=728.7s
+----- stdout -----
+step 62/320 mse=0.051081 vram=2.307GB elapsed=750.5s
+----- stdout -----
+step 63/320 mse=0.161477 vram=2.307GB elapsed=768.5s
+----- stdout -----
+step 64/320 mse=0.153268 vram=2.307GB elapsed=787.3s
+----- stdout -----
+step 65/320 mse=0.107819 vram=2.307GB elapsed=807.8s
+----- stdout -----
+step 66/320 mse=0.025913 vram=2.307GB elapsed=829.9s
+----- stdout -----
+step 67/320 mse=0.494445 vram=2.307GB elapsed=850.1s
+----- stdout -----
+step 68/320 mse=0.400688 vram=2.307GB elapsed=867.0s
+----- stdout -----
+step 69/320 mse=0.111947 vram=2.307GB elapsed=885.7s
+----- stdout -----
+step 70/320 mse=0.240852 vram=2.307GB elapsed=906.1s
+----- stdout -----
+step 71/320 mse=0.167434 vram=2.307GB elapsed=923.4s
+----- stdout -----
+step 72/320 mse=0.125783 vram=2.307GB elapsed=945.4s
+----- stdout -----
+step 73/320 mse=0.187421 vram=2.307GB elapsed=957.0s
+----- stdout -----
+step 74/320 mse=0.146771 vram=2.307GB elapsed=974.2s
+----- stdout -----
+step 75/320 mse=0.115539 vram=2.307GB elapsed=985.8s
+----- stdout -----
+step 76/320 mse=0.023200 vram=2.307GB elapsed=995.1s
+----- stdout -----
+step 77/320 mse=0.150877 vram=2.307GB elapsed=1012.6s
+----- stdout -----
+step 78/320 mse=0.019439 vram=2.307GB elapsed=1031.5s
+----- stdout -----
+step 79/320 mse=0.069011 vram=2.307GB elapsed=1057.8s
+----- stdout -----
+step 80/320 mse=0.146231 vram=2.307GB elapsed=1087.6s
+----- stdout -----
+step 81/320 mse=0.021538 vram=2.307GB elapsed=1147.8s
+----- stdout -----
+step 82/320 mse=0.751978 vram=2.307GB elapsed=1173.6s
+----- stdout -----
+step 83/320 mse=0.012825 vram=2.307GB elapsed=1201.0s
+----- stdout -----
+step 84/320 mse=0.140103 vram=2.307GB elapsed=1232.3s
+----- stdout -----
+step 85/320 mse=0.116770 vram=2.307GB elapsed=1259.2s
+----- stdout -----
+step 86/320 mse=0.201245 vram=2.307GB elapsed=1287.5s
+----- stdout -----
+step 87/320 mse=0.020681 vram=2.307GB elapsed=1309.3s
+----- stdout -----
+step 88/320 mse=0.017915 vram=2.307GB elapsed=1329.4s
+----- stdout -----
+step 89/320 mse=0.319328 vram=2.307GB elapsed=1349.9s
+----- stdout -----
+step 90/320 mse=0.043694 vram=2.307GB elapsed=1369.0s
+----- stdout -----
+step 91/320 mse=0.062513 vram=2.307GB elapsed=1396.1s
+----- stdout -----
+step 92/320 mse=0.237569 vram=2.307GB elapsed=1429.1s
+----- stdout -----
+step 93/320 mse=0.344303 vram=2.307GB elapsed=1460.3s
+----- stdout -----
+step 94/320 mse=0.214469 vram=2.307GB elapsed=1481.8s
+----- stdout -----
+step 95/320 mse=0.196732 vram=2.307GB elapsed=1506.3s
+----- stdout -----
+step 96/320 mse=0.411247 vram=2.307GB elapsed=1536.4s
+----- stdout -----
+step 97/320 mse=0.037842 vram=2.307GB elapsed=1559.4s
+----- stdout -----
+step 98/320 mse=0.071815 vram=2.307GB elapsed=1583.9s
+----- stdout -----
+step 99/320 mse=0.023187 vram=2.307GB elapsed=1609.8s
+----- stdout -----
+step 100/320 mse=0.051274 vram=2.307GB elapsed=1645.6s
+----- stdout -----
+step 101/320 mse=0.264161 vram=2.307GB elapsed=1679.3s
+----- stdout -----
+step 102/320 mse=0.240214 vram=2.307GB elapsed=1702.8s
+----- stdout -----
+step 103/320 mse=0.036614 vram=2.307GB elapsed=1723.1s
+----- stdout -----
+step 104/320 mse=0.061850 vram=2.307GB elapsed=1751.7s
+----- stdout -----
+step 105/320 mse=0.141127 vram=2.307GB elapsed=1783.5s
+----- stdout -----
+step 106/320 mse=0.331597 vram=2.307GB elapsed=1811.5s
+----- stderr -----
+Traceback (most recent call last):
+  File "E:\BrosKi\framegenx\src\training\train.py", line 280, in run_training
+    raise TimeoutError("Training exceeded its configured wall-clock budget")
+TimeoutError: Training exceeded its configured wall-clock budget
+----- stdout -----
+{
+  "run_id": "77361340-f9b7-4319-8392-f2d6fefe8842",
+  "status": "failed",
+  "quality_status": "unverified",
+  "promotion_status": "unqualified",
+  "metric_scope": "training_objective_only",
+  "steps_completed": 106,
+  "started_at": "2026-10-17T07:29:02.049332+00:00",
+  "config": {
+    "model": "stabilityai/stable-diffusion-xl-base-1.0",
+    "method": "qlora",
+    "dataset": "data/training/constraint_expanded_v1/records.jsonl",
+    "output_root": "runs/training",
+    "tracking_db": "runs/mlflow.db",
+    "experiment": "framegenx-expanded-constraint-feasibility",
+    "resolution": 256,
+    "rank": 4,
+    "lora_alpha": 4,
+    "learning_rate": 1e-05,
+    "max_steps": 320,
+    "gradient_accumulation": 2,
+    "seed": 1729,
+    "deterministic": true,
+    "cpu_threads": 4,
+    "checkpoint_every": 80,
+    "validation_every": 80,
+    "validation_limit": 12,
+    "max_vram_gb": 5.5,
+    "min_free_vram_gb": 3.0,
+    "max_runtime_seconds": 1800,
+    "max_total_runtime_seconds": 2700,
+    "max_process_rss_gb": 7.0,
+    "min_available_ram_gb": 1.0,
+    "snr_gamma": 5.0,
+    "target_modules": [
+      "to_q",
+      "to_k",
+      "to_v",
+      "to_out.0"
+    ]
+  },
+  "mlflow_run_id": "85acdefcf34c4f98a483a5aa817f3dcd",
+  "dataset_audit": {
+    "records": 791,
+    "positive_by_source_and_split": {
+      "clevr": {
+        "train": 80,
+        "validation": 10,
+        "test": 10
+      },
+      "vsr": {
+        "validation": 30,
+        "train": 240,
+        "test": 30
+      },
+      "coco": {
+        "train": 240,
+        "test": 30,
+        "validation": 30
+      }
+    },
+    "negative_examples": 91,
+    "dataset_sha256": "6ad7ac828aa6e7554f4c16a32e202c4011cecdd4ff11f4d3b857f022a2ffd8e9",
+    "image_groups": 700,
+    "decoded_pixel_groups": 700,
+    "image_verification_performed": true
+  },
+  "packages": {
+    "torch": "2.13.0+cu130",
+    "numpy": "2.5.1",
+    "Pillow": "12.3.0",
+    "diffusers": "0.39.0",
+    "peft": "0.19.1",
+    "transformers": "5.13.0",
+    "bitsandbytes": "0.50.2",
+    "safetensors": "0.8.0",
+    "psutil": "7.2.2",
+    "mlflow-skinny": "3.17.1"
+  },
+  "signature": {
+    "profile": {
+      "model": "stabilityai/stable-diffusion-xl-base-1.0",
+      "method": "qlora",
+      "dataset": "data/training/constraint_expanded_v1/records.jsonl",
+      "resolution": 256,
+      "rank": 4,
+      "lora_alpha": 4,
+      "learning_rate": 1e-05,
+      "gradient_accumulation": 2,
+      "seed": 1729,
+      "deterministic": true,
+      "cpu_threads": 4,
+      "validation_limit": 12,
+      "max_vram_gb": 5.5,
+      "min_free_vram_gb": 3.0,
+      "max_total_runtime_seconds": 2700,
+      "max_process_rss_gb": 7.0,
+      "min_available_ram_gb": 1.0,
+      "snr_gamma": 5.0,
+      "target_modules": [
+        "to_q",
+        "to_k",
+        "to_v",
+        "to_out.0"
+      ]
+    },
+    "dataset_sha256": "6ad7ac828aa6e7554f4c16a32e202c4011cecdd4ff11f4d3b857f022a2ffd8e9",
+    "model_sha256": "83e012a805b84c7ca28e5646747c90a243c65c8ba4f070e2d7ddc9d74661e139",
+    "training_code_sha256": "43ef8a099c4b96c64d9a6bd853bf040a1a9666cfe0c373dcb19fb6d875b5724a"
+  },
+  "model_snapshot": "462165984030d82259a11f4367a4eed129e94a7b",
+  "cache_signature": {
+    "dataset_sha256": "6ad7ac828aa6e7554f4c16a32e202c4011cecdd4ff11f4d3b857f022a2ffd8e9",
+    "model": "stabilityai/stable-diffusion-xl-base-1.0",
+    "model_snapshot": "462165984030d82259a11f4367a4eed129e94a7b",
+    "resolution": 256,
+    "preprocessing": "rgb_full_image_letterbox_gray_no_crop_no_flip_latent_mode_v1",
+    "cache_code_sha256": "427a2967dcdc0010768d1d61febf7b69612298c9c9975519a84bf6feca515330",
+    "scope": "positive_train_and_validation_only_no_test_images"
+  },
+  "train_images": 560,
+  "validation_images_used": 12,
+  "test_images_used_for_training_or_selection": 0,
+  "trainable_parameters": 5806080,
+  "nf4_linear_modules": 743,
+  "dtype": "torch.bfloat16",
+  "peak_allocated_gb": 2.122131456,
+  "peak_reserved_gb": 2.3068672,
+  "training_seconds": 1811.3874175,
+  "latest_checkpoint": "runs\\training\\77361340-f9b7-4319-8392-f2d6fefe8842\\checkpoint-000080",
+  "error": "TimeoutError: Training exceeded its configured wall-clock budget",
+  "elapsed_seconds": 1945.2227368999993,
+  "host_resource_samples": {
+    "sampled_peak_process_rss_bytes": 2563010560,
+    "sampled_minimum_host_available_bytes": 1364566016,
+    "sampling_scope": "explicit preparation and optimization checkpoints; not an OS hard limit"
+  }
+}
+------------------
+
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+Cell In[5], line 2
+      1 from src.training.study import run_study
+----> 2 result, reused = run_study(config, protocol_document, root / 'runs/training_studies/expanded_2026-10-17')
+      3 print({'run_id': result['run_id'], 'status': result['status'], 'reused': reused,
+      4        'steps': result['steps_completed'], 'train_images': result['train_images'],
+      5        'distinct_train_images_seen': result['distinct_train_images_seen'],
+
+File E:\BrosKi\framegenx\src\training\study.py:88, in run_study(config, protocol_document, output)
+     86 result_file = project_path(config.output_root) / result["run_id"] / "result.json"
+     87 pointer = {"result_file": str(result_file), "result_sha256": file_sha256(result_file)}
+---> 88 checked_result(config, output, pointer)
+     89 atomic_json(pointer_file, pointer)
+     90 atomic_json(journal, {"status": "completed", "run_id": result["run_id"], "quality_status": "unverified"})
+
+File E:\BrosKi\framegenx\src\training\study.py:42, in checked_result(config, root, pointer)
+     38 result = json.loads(path.read_text(encoding="utf-8"))
+     39 if (result.get("status") != "trained_pending_evaluation" or result.get("quality_status") != "unverified" or
+     40         result.get("promotion_status") != "unqualified" or result["steps_completed"] != config.max_steps or
+     41         result["distinct_train_images_seen"] != result["train_images"]):
+---> 42     raise ValueError("Study did not complete its planned fitting and image coverage")
+     43 if (result.get("config") != config.model_dump() or result.get("packages") != frozen["packages"] or
+     44         result.get("model_snapshot") != frozen["model_snapshot"] or
+     45         any(result.get("signature", {}).get(key) != frozen[key] for key in
+     46             ("training_code_sha256", "dataset_sha256", "model_sha256"))):
+     47     raise ValueError("Study result belongs to different frozen inputs")
+
+ValueError: Study did not complete its planned fitting and image coverage
+

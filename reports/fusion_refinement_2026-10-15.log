@@ -1,0 +1,15 @@
+Regional evaluation directory: E:\BrosKi\framegenx\runs\constraint_control\d71bb1cfb189b353
+
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s]
+Loading weights: 100%|##########| 196/196 [00:00<00:00, 2345.40it/s]
+
+Loading weights:   0%|          | 0/517 [00:00<?, ?it/s]
+Loading weights:  61%|######    | 313/517 [00:00<00:00, 3127.64it/s]
+Loading weights: 100%|##########| 517/517 [00:00<00:00, 2253.91it/s]
+W1015 12:48:35.078000 4956 venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Uncontrolled Euler sampler exactly matches native Diffusers baseline
+Saved apple_count_color_43_baseline.png; 149.6s
+Saved apple_count_color_43_candidate.png; 214.2s
+Saved bottle_negation_43_baseline.png; 214.2s
+Saved bottle_negation_43_candidate.png; 274.8s
+{"status": "generated_pending_independent_review", "generation_fingerprint": "d71bb1cfb189b353756ca711ccd0a3d424dd711a7c22812a83355b278c7bb871", "peak_reserved_gb": 2.581594112, "elapsed_seconds": 279.14262189999954}

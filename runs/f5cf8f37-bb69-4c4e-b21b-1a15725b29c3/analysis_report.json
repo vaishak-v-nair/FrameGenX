@@ -1,0 +1,22 @@
+{
+  "accepted": true,
+  "failures": [],
+  "signals": {
+    "detected_counts": {
+      "person": 1,
+      "jacket": 1,
+      "pants": 1
+    },
+    "expected_counts": {
+      "person": 1,
+      "jacket": 1,
+      "pants": 1
+    }
+  },
+  "root_causes": [
+    "Scene under-populated -> weak object planning",
+    "Prompt misalignment -> RAG or prompt issue",
+    "Objects clustered -> bad composition"
+  ],
+  "actions": []
+}

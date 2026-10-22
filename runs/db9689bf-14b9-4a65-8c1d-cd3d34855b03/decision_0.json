@@ -1,0 +1,12 @@
+{
+  "accept": false,
+  "reward": 0.7406,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": false,
+  "prompt_edits": [
+    "exactly 3 apple, each clearly separated, distinct objects",
+    "Your guess is as good as mine as to what these objects are., Cars, truck and carriages are traveling on the road, apples"
+  ]
+}

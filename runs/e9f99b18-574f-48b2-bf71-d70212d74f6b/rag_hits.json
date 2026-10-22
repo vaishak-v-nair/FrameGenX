@@ -1,0 +1,23 @@
+[
+  {
+    "id": "coco_106881",
+    "caption": "A bird sitting perched on a tree branch.",
+    "image": "http://images.cocodataset.org/val2017/000000106881.jpg",
+    "score": 0.016234796404019036,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_479099",
+    "caption": "A tree standing in the middle of a grass circle.",
+    "image": "http://images.cocodataset.org/val2017/000000479099.jpg",
+    "score": 0.016086065573770493,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_485895",
+    "caption": "The giraffe is standing in the shade of the tree.",
+    "image": "http://images.cocodataset.org/val2017/000000485895.jpg",
+    "score": 0.015677655677655677,
+    "retrieval_mode": "hybrid_rrf"
+  }
+]

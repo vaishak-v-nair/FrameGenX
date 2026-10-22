@@ -1,0 +1,33 @@
+{
+  "accepted": false,
+  "failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "flower",
+      "expected": 1,
+      "detected": 2
+    },
+    {
+      "type": "spatial_violation",
+      "class_name": "flower->pot",
+      "expected": "inside",
+      "detected": "containment=0.00 (min=0.70), size_ok=False"
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "flower": 2,
+      "pot": 1
+    },
+    "expected_counts": {
+      "flower": 1,
+      "pot": 1
+    }
+  },
+  "root_causes": [
+    "Scene under-populated -> weak object planning",
+    "Prompt misalignment -> RAG or prompt issue",
+    "Objects clustered -> bad composition"
+  ],
+  "actions": []
+}

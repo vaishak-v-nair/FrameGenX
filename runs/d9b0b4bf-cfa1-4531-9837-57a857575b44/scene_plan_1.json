@@ -1,0 +1,66 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "06a985b9-50ce-4f6a-8370-5025e630befb",
+      "class_name": "alpine peaks",
+      "attributes": [
+        "jagged",
+        "warm golden"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 40,
+        "ymin": 55,
+        "xmax": 205,
+        "ymax": 220,
+        "z_index": 1
+      },
+      "z_index": 1
+    },
+    {
+      "id": "5f4a89d7-8a58-4815-bba1-457d5e99d4b0",
+      "class_name": "wildflowers",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 306,
+        "ymin": 55,
+        "xmax": 471,
+        "ymax": 220,
+        "z_index": 1
+      },
+      "z_index": 1
+    },
+    {
+      "id": "69f47186-62d4-4a07-8b07-344c0b308b16",
+      "class_name": "mist",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 40,
+        "ymin": 291,
+        "xmax": 205,
+        "ymax": 456,
+        "z_index": 1
+      },
+      "z_index": 1
+    },
+    {
+      "id": "6c8738bd-d330-47f2-92d6-3385ff9bfb6b",
+      "class_name": "summit",
+      "attributes": [
+        "warm golden"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 306,
+        "ymin": 291,
+        "xmax": 471,
+        "ymax": 456,
+        "z_index": 1
+      },
+      "z_index": 1
+    }
+  ]
+}

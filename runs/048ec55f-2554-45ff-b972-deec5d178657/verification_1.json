@@ -1,0 +1,104 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "flower",
+      "expected": 1,
+      "detected": 3
+    },
+    {
+      "type": "spatial_violation",
+      "class_name": "flower->pot",
+      "expected": "inside",
+      "detected": "containment=0.00 (min=0.70), size_ok=False"
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "flower": 3,
+      "pot": 1
+    },
+    "expected_counts": {
+      "flower": 1,
+      "pot": 1
+    }
+  },
+  "clip_cos": 0.3149,
+  "clip_norm": 0.6594,
+  "vqa_score": 1.0,
+  "vqa_vacuous": false,
+  "reward": 0.8297,
+  "spatial_result": {
+    "passed": false,
+    "total": 1,
+    "verified": 0,
+    "failures": [
+      {
+        "subject": "flower",
+        "predicate": "inside",
+        "object": "pot",
+        "reason": "containment=0.00 (min=0.70), size_ok=False"
+      }
+    ],
+    "results": [
+      {
+        "relationship": {
+          "subject": "flower",
+          "predicate": "inside",
+          "object": "pot"
+        },
+        "passed": false,
+        "reason": "containment=0.00 (min=0.70), size_ok=False",
+        "subject_box": {
+          "xmin": 304.2327575683594,
+          "ymin": 27.086708068847656,
+          "xmax": 477.0258483886719,
+          "ymax": 276.5517578125,
+          "score": 0.5488244891166687
+        },
+        "object_box": {
+          "xmin": 69.3329086303711,
+          "ymin": 376.97283935546875,
+          "xmax": 199.49261474609375,
+          "ymax": 487.189697265625,
+          "score": 0.3333064615726471
+        }
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there a purple flower in the image?",
+      "expected": "yes",
+      "class_name": "flower",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "color",
+      "question": "What color is the flower?",
+      "expected": "purple",
+      "class_name": "flower",
+      "answer": "purple",
+      "correct": true
+    },
+    {
+      "type": "existence",
+      "question": "Is there a brown pot in the image?",
+      "expected": "yes",
+      "class_name": "pot",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "color",
+      "question": "What color is the pot?",
+      "expected": "brown",
+      "class_name": "pot",
+      "answer": "brown",
+      "correct": true
+    }
+  ]
+}

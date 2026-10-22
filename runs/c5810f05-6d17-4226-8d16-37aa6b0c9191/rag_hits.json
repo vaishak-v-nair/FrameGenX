@@ -1,0 +1,23 @@
+[
+  {
+    "id": "coco_234807",
+    "caption": "a number of horses in a field near a building",
+    "image": "http://images.cocodataset.org/val2017/000000234807.jpg",
+    "score": 0.016086065573770493,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_368335",
+    "caption": "a brown horse is walking in between two cars",
+    "image": "http://images.cocodataset.org/val2017/000000368335.jpg",
+    "score": 0.015932377049180328,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_349302",
+    "caption": "The two giraffes are standing in the dirt.",
+    "image": "http://images.cocodataset.org/val2017/000000349302.jpg",
+    "score": 0.014492753623188406,
+    "retrieval_mode": "hybrid_rrf"
+  }
+]

@@ -1,0 +1,568 @@
+[
+  {
+    "phase": "ceo-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "C6",
+    "priority": "P1",
+    "component": "artifacts",
+    "effort_human": "2-4d",
+    "effort_cc": "1-2d",
+    "title": "Finalize and reconcile checksummed bundles; distinguish pending/missing/corrupt",
+    "source_finding": "4.2: JSON corruption becomes absence",
+    "files": [
+      "src/api.py",
+      "src/core/artifacts.py"
+    ]
+  },
+  {
+    "phase": "ceo-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "C3",
+    "priority": "P1",
+    "component": "delivery",
+    "effort_human": "2-3d",
+    "effort_cc": "1-2d",
+    "title": "Define tested dependency profiles, CPU CI, explicit GPU gates and artifact policy",
+    "source_finding": "4.5/4.9: broad Python declaration and no current remote checks",
+    "files": [
+      "pyproject.toml",
+      "requirements.txt",
+      "frontend/package.json",
+      "Dockerfile",
+      "docker-compose.yml",
+      ".github/workflows/ci.yml"
+    ]
+  },
+  {
+    "phase": "ceo-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "C1",
+    "priority": "P1",
+    "component": "evaluation",
+    "effort_human": "3-5d",
+    "effort_cc": "1-3d",
+    "title": "Freeze requirement coverage, human labeling rubric and disjoint calibration/benchmark manifests",
+    "source_finding": "1.1 and P0: current proxy results cannot qualify reduction",
+    "files": [
+      "src/verification/contract_evidence.py",
+      "src/training/evaluation.py",
+      "configs/evaluation_pilot.json"
+    ]
+  },
+  {
+    "phase": "ceo-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "C7",
+    "priority": "P1",
+    "component": "hosting",
+    "effort_human": "5-8d",
+    "effort_cc": "2-4d",
+    "title": "Add optional PostgreSQL/Redis profile with owner scopes, quotas, migrations and backup restoration",
+    "source_finding": "4.3/4.9: local trust assumptions do not support public exposure",
+    "files": [
+      "src/core/db.py",
+      "src/api.py",
+      "docker-compose.yml"
+    ]
+  },
+  {
+    "phase": "ceo-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "C4",
+    "priority": "P1",
+    "component": "interface",
+    "effort_human": "4-6d",
+    "effort_cc": "2-3d",
+    "title": "Add typed contract review, allowlisted profiles and identical CLI/API/UI identity",
+    "source_finding": "P1/4.11: web cannot submit supplied contracts or choose tested controller",
+    "files": [
+      "src/intent/models.py",
+      "src/api.py",
+      "src/cli.py",
+      "frontend/src/App.jsx"
+    ]
+  },
+  {
+    "phase": "ceo-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "C5",
+    "priority": "P1",
+    "component": "jobs",
+    "effort_human": "5-8d",
+    "effort_cc": "2-4d",
+    "title": "Add durable submission, worker supervision, cancellation and recovery",
+    "source_finding": "4.1/4.4: memory jobs and process-local GPU lock",
+    "files": [
+      "src/api.py",
+      "src/core/db.py",
+      "src/core/jobs.py",
+      "src/core/worker.py"
+    ]
+  },
+  {
+    "phase": "ceo-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "C13",
+    "priority": "P1",
+    "component": "product evidence",
+    "effort_human": "1-2d",
+    "effort_cc": "0.5-1d",
+    "title": "Correct unsupported competitor/quality claims and validate the next integration with task-based user sessions",
+    "source_finding": "Competitive/audience check: old comparison claims lack current evidence",
+    "files": [
+      "docs/10_COMPETITOR_ANALYSIS.md",
+      "docs/WHY_NOT_COMFYUI.md"
+    ]
+  },
+  {
+    "phase": "ceo-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "C2",
+    "priority": "P1",
+    "component": "qualification",
+    "effort_human": "2-4d",
+    "effort_cc": "1-2d",
+    "title": "Separate operational outcome, evidence coverage and strict qualification in schemas, storage and reporting",
+    "source_finding": "4.4: missing evidence can be confused with acceptance",
+    "files": [
+      "src/core/context.py",
+      "src/verification/verify_stage.py",
+      "src/reflection/reflector.py",
+      "src/api.py",
+      "frontend/src/runState.js"
+    ]
+  },
+  {
+    "phase": "design-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "D4",
+    "priority": "P1",
+    "component": "accessibility",
+    "effort_human": "2-3d",
+    "effort_cc": "1-2d",
+    "title": "Implement labeled responsive evidence, focus management and meaningful status announcements",
+    "source_finding": "Pass 6 and both voices: mobile context and modal/validation behavior were unspecified",
+    "files": [
+      "frontend/src/index.css",
+      "frontend/src/App.jsx",
+      "frontend/src/components/RunHistory.jsx"
+    ]
+  },
+  {
+    "phase": "design-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "D2",
+    "priority": "P1",
+    "component": "evidence UI",
+    "effort_human": "2-3d",
+    "effort_cc": "1-2d",
+    "title": "Implement shared execution/qualification/evidence states and correct diagnostic labels",
+    "source_finding": "Passes 2/4/5: binary accepted badges and “VQA Precision” mislead",
+    "files": [
+      "frontend/src/runState.js",
+      "frontend/src/components/RunHistory.jsx",
+      "frontend/src/components/AblationDashboard.jsx"
+    ]
+  },
+  {
+    "phase": "design-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "D1",
+    "priority": "P1",
+    "component": "interface",
+    "effort_human": "2-3d",
+    "effort_cc": "1-2d",
+    "title": "Specify and implement contract/profile capability review without dropping requirements",
+    "source_finding": "Design Passes 1-3: eligibility and verification coverage conflicted; editing interactions were absent",
+    "files": [
+      "frontend/src/App.jsx",
+      "src/api.py"
+    ]
+  },
+  {
+    "phase": "design-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "D3",
+    "priority": "P1",
+    "component": "recovery UI",
+    "effort_human": "2-3d",
+    "effort_cc": "1-2d",
+    "title": "Add authoritative job action map, URL restoration and separate editable drafts",
+    "source_finding": "Passes 1-3: reconnect and historical run selection lacked ownership rules",
+    "files": [
+      "frontend/src/App.jsx",
+      "frontend/src/runState.js"
+    ]
+  },
+  {
+    "phase": "eng-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "E4",
+    "priority": "P1",
+    "component": "contract evidence",
+    "files": [
+      "src/intent/models.py",
+      "src/verification/contract_evidence.py",
+      "src/core/stage.py",
+      "frontend/src",
+      "tests/test_contract_revision.py (proposed)"
+    ],
+    "effort_human": "3-5d",
+    "effort_cc": "1-3d",
+    "title": "Implement canonical stable instance/predicate identities and final-pixel/attempt-bound exact coverage",
+    "source_finding": "source review and CLI/G04-G06/G15-G16: class-level deduplication and schema-only confirmation lose meaning"
+  },
+  {
+    "phase": "eng-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "E1",
+    "priority": "P1",
+    "component": "device ownership",
+    "files": [
+      "src/core/device_owner.py (proposed)",
+      "src/cli.py",
+      "benchmark.py",
+      "src/training",
+      "src/verification",
+      "src/retrieval",
+      "tests/test_device_ownership.py (proposed)"
+    ],
+    "effort_human": "3-5d",
+    "effort_cc": "1-3d",
+    "title": "Enforce the common physical-device gate before CUDA across all entrypoints and contain supervised children",
+    "source_finding": "both voices/G10: API-only locking cannot enforce the hardware contract"
+  },
+  {
+    "phase": "eng-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "E6",
+    "priority": "P1",
+    "component": "local and export security",
+    "files": [
+      "src/api.py",
+      "src/core/access.py (proposed)",
+      "src/core/evidence_export.py (proposed)",
+      "frontend/src",
+      "tests/test_local_access.py (proposed)"
+    ],
+    "effort_human": "3-5d",
+    "effort_cc": "1-3d",
+    "title": "Add local session/capability, Host/Origin and legacy-route protection plus allowlisted private/derivative exports",
+    "source_finding": "CLI/G22-G23: loopback/CORS and raw bundle promises leave browser/export gaps"
+  },
+  {
+    "phase": "eng-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "E5",
+    "priority": "P1",
+    "component": "promotion policy",
+    "files": [
+      "src/training/registry.py",
+      "src/training/evaluation.py",
+      "src/verification/qualification.py (proposed)",
+      "tests/test_training.py"
+    ],
+    "effort_human": "3-4d",
+    "effort_cc": "1-2d",
+    "title": "Replace the old partial registry gate with one versioned typed all-gates evaluator",
+    "source_finding": "source review/G26: positive overall interval does not enforce precision/calibration/category/usefulness gates"
+  },
+  {
+    "phase": "eng-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "E3",
+    "priority": "P1",
+    "component": "recovery",
+    "files": [
+      "src/jobs (proposed)",
+      "src/core/context.py",
+      "src/core/artifacts.py (proposed)",
+      "tests/test_job_recovery.py (proposed)",
+      "tests/test_artifact_commit.py (proposed)"
+    ],
+    "effort_human": "4-6d",
+    "effort_cc": "2-3d",
+    "title": "Implement the complete cancel/finalizer/reconciler transition table and guarded durability helpers",
+    "source_finding": "both voices/G17-G19: leased/finalizing recovery and cancel cutoff were incomplete"
+  },
+  {
+    "phase": "eng-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "E7",
+    "priority": "P1",
+    "component": "reproducible delivery",
+    "files": [
+      "pyproject.toml",
+      "Dockerfile",
+      "docker-compose.yml",
+      ".github/workflows (proposed)",
+      "scripts",
+      "examples/evidence (proposed)"
+    ],
+    "effort_human": "3-5d",
+    "effort_cc": "1-3d",
+    "title": "Freeze full source/build identities and restore database plus referenced payloads in clean isolated package/container profiles",
+    "source_finding": "both voices/G27: manifests alone cannot restore pixels, and HEAD omits working-tree source"
+  },
+  {
+    "phase": "eng-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "E2",
+    "priority": "P1",
+    "component": "submission identity",
+    "files": [
+      "src/core/db.py",
+      "src/jobs/admission.py (proposed)",
+      "src/api.py",
+      "src/cli.py",
+      "tests/test_submissions.py (proposed)"
+    ],
+    "effort_human": "3-4d",
+    "effort_cc": "1-2d",
+    "title": "Implement the P0 durable submission/key/digest/seed foundation and rejection-aware lookup before v1 clients",
+    "source_finding": "both voices/G07-G09: a rejected submission may have no job"
+  },
+  {
+    "phase": "eng-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "E8",
+    "priority": "P1",
+    "component": "test and resource gates",
+    "files": [
+      "tests/conftest.py",
+      "src/core/db.py",
+      "src/jobs (proposed)",
+      "scripts",
+      "requirements.txt",
+      ".github/workflows (proposed)"
+    ],
+    "effort_human": "3-5d",
+    "effort_cc": "1-3d",
+    "title": "Make CPU tests hermetic and enforce bounded deadline/queue/index/cache policies with recorded peak resource evidence",
+    "source_finding": "G02/G12/G24/G31 and Pass 4: .env coupling and p95-only/uncapped retries cannot support the proposed guarantees"
+  },
+  {
+    "phase": "devex-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "X3",
+    "priority": "P1",
+    "component": "developer docs",
+    "effort_human": "2-3d",
+    "effort_cc": "1-2d",
+    "title": "Consolidate compatibility/setup/error/upgrade guides and executable examples",
+    "source_finding": "Passes 4-6: conflicting prerequisites and duplicated instructions",
+    "files": [
+      "README.md",
+      "TESTING.md",
+      "CONTRIBUTING.md",
+      "pyproject.toml",
+      "requirements.txt",
+      "docs/COMPATIBILITY.md",
+      "docs/ERRORS.md",
+      "docs/UPGRADING.md"
+    ]
+  },
+  {
+    "phase": "devex-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "X2",
+    "priority": "P1",
+    "component": "interface contract",
+    "effort_human": "3-4d",
+    "effort_cc": "1-2d",
+    "title": "Implement shared v1 operations, result/error schemas and explicit automation exit/reconcile behavior",
+    "source_finding": "Passes 2/3: execution success can be mistaken for qualification and uncertain POST can duplicate work",
+    "files": [
+      "src/api.py",
+      "src/cli.py",
+      "src/core/jobs.py"
+    ]
+  },
+  {
+    "phase": "devex-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "X1",
+    "priority": "P1",
+    "component": "onboarding",
+    "effort_human": "1-2d",
+    "effort_cc": "0.5-1d",
+    "title": "Add the dependency-free evidence inspector and compact real example with integrity/error handling",
+    "source_finding": "DX Pass 1 and both voices: first-use deliverable was unspecified",
+    "files": [
+      "scripts/inspect_example.py",
+      "examples/evidence/green-bottles",
+      "README.md"
+    ]
+  },
+  {
+    "phase": "ceo-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "C11",
+    "priority": "P2",
+    "component": "ML",
+    "effort_human": "4-8d",
+    "effort_cc": "2-4d",
+    "title": "Curate failure-focused datasets and run compute-bounded LoRA/QLoRA promotion experiments",
+    "source_finding": "P4: 90-image loss-only pilot remains experimental",
+    "files": [
+      "src/training/data.py",
+      "src/training/evaluation.py",
+      "src/training/registry.py"
+    ]
+  },
+  {
+    "phase": "ceo-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "C9",
+    "priority": "P2",
+    "component": "observability",
+    "effort_human": "2-3d",
+    "effort_cc": "1-2d",
+    "title": "Compare existing MLflow and one tracing candidate; instrument redacted stage/job metrics",
+    "source_finding": "4.8: fragmented incident reconstruction",
+    "files": [
+      "src/training/tracking.py",
+      "src/core/stage.py",
+      "src/api.py"
+    ]
+  },
+  {
+    "phase": "ceo-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "C8",
+    "priority": "P2",
+    "component": "providers",
+    "effort_human": "3-5d",
+    "effort_cc": "1-3d",
+    "title": "Extend the existing router with capability and permission policies, structured output and bounded rescue",
+    "source_finding": "4.2/P3: provider fallback can change capability and privacy context",
+    "files": [
+      "src/core/llm_router.py",
+      "src/intent/extractor.py",
+      "src/verification/qa.py"
+    ]
+  },
+  {
+    "phase": "ceo-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "C10",
+    "priority": "P2",
+    "component": "tools",
+    "effort_human": "2-4d",
+    "effort_cc": "1-2d",
+    "title": "Expose read-only MCP schema/status/evidence tools through the same access policy",
+    "source_finding": "P3: external tools need scope and stable IDs",
+    "files": [
+      "src/integrations/mcp.py",
+      "src/api.py"
+    ]
+  },
+  {
+    "phase": "devex-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "X5",
+    "priority": "P2",
+    "component": "DX measurement",
+    "effort_human": "1-2d",
+    "effort_cc": "0.5-1d",
+    "title": "Run prerequisite-aware contributor task observations and retain local redacted friction reports",
+    "source_finding": "Pass 8: roleplay and targets are not measured onboarding",
+    "files": [
+      "docs/COMPATIBILITY.md",
+      "reports/dx_tasks"
+    ]
+  },
+  {
+    "phase": "devex-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "X4",
+    "priority": "P2",
+    "component": "contribution",
+    "effort_human": "1-2d",
+    "effort_cc": "0.5-1d",
+    "title": "Add owner-approved licensing/notices, changelog and safe issue/extension guidance",
+    "source_finding": "Passes 5/7: distribution/support assumptions are unestablished",
+    "files": [
+      "LICENSE",
+      "NOTICE",
+      "CHANGELOG.md",
+      "CONTRIBUTING.md"
+    ]
+  },
+  {
+    "phase": "ceo-review",
+    "run_id": "20261015-framegenx-stack",
+    "branch": "main",
+    "commit": "38eb0f05dd3c6ebe303bfd80e54a52d614895cfd",
+    "id": "C12",
+    "priority": "P3",
+    "component": "optional integrations",
+    "effort_human": "1-3d per experiment",
+    "effort_cc": "0.5-2d",
+    "title": "Evaluate Streamlit, CrewAI/ADK, LlamaIndex/Chroma/RAGAS/GraphRAG, speech, n8n and A2A only against named entry gates",
+    "source_finding": "matrix/F1-F3: overlapping frameworks need evidence of value",
+    "files": [
+      "scripts/experiments",
+      "docs/research.md"
+    ]
+  }
+]
+

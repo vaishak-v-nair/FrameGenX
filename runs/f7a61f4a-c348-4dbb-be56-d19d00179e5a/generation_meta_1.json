@@ -1,0 +1,22 @@
+{
+  "prompt": "(wall:1.5), Add a wall, cat, prominent, clearly visible, wall, prominent, clearly visible",
+  "width": 512,
+  "height": 512,
+  "steps": 4,
+  "cfg_scale": 0.0,
+  "seed": null,
+  "base_model": "stabilityai/sdxl-turbo",
+  "controlnet": "diffusers/controlnet-canny-sdxl-1.0",
+  "control_image_mode": "canny",
+  "oom_fallback": null,
+  "created_at": "2026-08-27T16:37:39.658769+00:00",
+  "lora_adapters": [
+    {
+      "name": "pixel-art",
+      "source": "nerijs/pixel-art-xl",
+      "weight": 1.0,
+      "enabled": false
+    }
+  ],
+  "lora_load_report": []
+}

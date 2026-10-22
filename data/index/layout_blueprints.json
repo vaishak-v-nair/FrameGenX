@@ -1,0 +1,211 @@
+{
+  "1_entity_centered": {
+    "entity_count": 1,
+    "name": "Single Subject Centered",
+    "description": "Dominant single foreground subject centered in frame",
+    "boxes": [
+      {
+        "anchor": "center",
+        "ymin": 0.15,
+        "xmin": 0.15,
+        "ymax": 0.85,
+        "xmax": 0.85,
+        "z_index": 1
+      }
+    ]
+  },
+  "2_entities_side_by_side": {
+    "entity_count": 2,
+    "name": "Dual Horizontal Split",
+    "description": "Two distinct entities placed side-by-side with clear separation",
+    "boxes": [
+      {
+        "anchor": "center_left",
+        "ymin": 0.2,
+        "xmin": 0.08,
+        "ymax": 0.8,
+        "xmax": 0.46,
+        "z_index": 1
+      },
+      {
+        "anchor": "center_right",
+        "ymin": 0.2,
+        "xmin": 0.54,
+        "ymax": 0.8,
+        "xmax": 0.92,
+        "z_index": 1
+      }
+    ]
+  },
+  "2_entities_subject_table": {
+    "entity_count": 2,
+    "name": "Subject on Supporting Surface",
+    "description": "Primary subject resting on a supporting table/ground surface",
+    "boxes": [
+      {
+        "anchor": "bottom_center",
+        "ymin": 0.45,
+        "xmin": 0.0,
+        "ymax": 1.0,
+        "xmax": 1.0,
+        "z_index": 0
+      },
+      {
+        "anchor": "center",
+        "ymin": 0.25,
+        "xmin": 0.25,
+        "ymax": 0.65,
+        "xmax": 0.75,
+        "z_index": 1
+      }
+    ]
+  },
+  "3_entities_horizontal_trio": {
+    "entity_count": 3,
+    "name": "Horizontal Trio",
+    "description": "Three subjects aligned horizontally with even spacing",
+    "boxes": [
+      {
+        "anchor": "left",
+        "ymin": 0.25,
+        "xmin": 0.05,
+        "ymax": 0.75,
+        "xmax": 0.32,
+        "z_index": 1
+      },
+      {
+        "anchor": "center",
+        "ymin": 0.2,
+        "xmin": 0.36,
+        "ymax": 0.8,
+        "xmax": 0.64,
+        "z_index": 1
+      },
+      {
+        "anchor": "right",
+        "ymin": 0.25,
+        "xmin": 0.68,
+        "ymax": 0.75,
+        "xmax": 0.95,
+        "z_index": 1
+      }
+    ]
+  },
+  "3_entities_triangular_cluster": {
+    "entity_count": 3,
+    "name": "Triangular Composition",
+    "description": "One dominant top/center subject flanked by two lower supporting subjects",
+    "boxes": [
+      {
+        "anchor": "top_center",
+        "ymin": 0.12,
+        "xmin": 0.3,
+        "ymax": 0.52,
+        "xmax": 0.7,
+        "z_index": 1
+      },
+      {
+        "anchor": "bottom_left",
+        "ymin": 0.5,
+        "xmin": 0.08,
+        "ymax": 0.88,
+        "xmax": 0.46,
+        "z_index": 1
+      },
+      {
+        "anchor": "bottom_right",
+        "ymin": 0.5,
+        "xmin": 0.54,
+        "ymax": 0.88,
+        "xmax": 0.92,
+        "z_index": 1
+      }
+    ]
+  },
+  "4_entities_quad_grid": {
+    "entity_count": 4,
+    "name": "2x2 Quad Grid",
+    "description": "Four balanced quadrants for high-density multi-object scenes",
+    "boxes": [
+      {
+        "anchor": "top_left",
+        "ymin": 0.08,
+        "xmin": 0.08,
+        "ymax": 0.46,
+        "xmax": 0.46,
+        "z_index": 1
+      },
+      {
+        "anchor": "top_right",
+        "ymin": 0.08,
+        "xmin": 0.54,
+        "ymax": 0.46,
+        "xmax": 0.92,
+        "z_index": 1
+      },
+      {
+        "anchor": "bottom_left",
+        "ymin": 0.54,
+        "xmin": 0.08,
+        "ymax": 0.92,
+        "xmax": 0.46,
+        "z_index": 1
+      },
+      {
+        "anchor": "bottom_right",
+        "ymin": 0.54,
+        "xmin": 0.54,
+        "ymax": 0.92,
+        "xmax": 0.92,
+        "z_index": 1
+      }
+    ]
+  },
+  "5_entities_crowded_cluster": {
+    "entity_count": 5,
+    "name": "Five Object Dynamic Array",
+    "description": "Center focal entity surrounded by 4 satellite objects",
+    "boxes": [
+      {
+        "anchor": "center",
+        "ymin": 0.3,
+        "xmin": 0.3,
+        "ymax": 0.7,
+        "xmax": 0.7,
+        "z_index": 2
+      },
+      {
+        "anchor": "top_left",
+        "ymin": 0.06,
+        "xmin": 0.06,
+        "ymax": 0.38,
+        "xmax": 0.38,
+        "z_index": 1
+      },
+      {
+        "anchor": "top_right",
+        "ymin": 0.06,
+        "xmin": 0.62,
+        "ymax": 0.38,
+        "xmax": 0.94,
+        "z_index": 1
+      },
+      {
+        "anchor": "bottom_left",
+        "ymin": 0.62,
+        "xmin": 0.06,
+        "ymax": 0.94,
+        "xmax": 0.38,
+        "z_index": 1
+      },
+      {
+        "anchor": "bottom_right",
+        "ymin": 0.62,
+        "xmin": 0.62,
+        "ymax": 0.94,
+        "xmax": 0.94,
+        "z_index": 1
+      }
+    ]
+  }
+}

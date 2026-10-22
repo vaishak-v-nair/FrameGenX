@@ -1,0 +1,23 @@
+[
+  {
+    "id": "coco_37777",
+    "caption": "The dining table near the kitchen has a bowl of fruit on it.",
+    "image": "http://images.cocodataset.org/val2017/000000037777.jpg",
+    "score": 0.015253029223093371,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_348216",
+    "caption": "Your guess is as good as mine as to what these objects are.",
+    "image": "http://images.cocodataset.org/val2017/000000348216.jpg",
+    "score": 0.009836065573770491,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_136772",
+    "caption": "a small bowl of fruit on a table",
+    "image": "http://images.cocodataset.org/val2017/000000136772.jpg",
+    "score": 0.00967741935483871,
+    "retrieval_mode": "hybrid_rrf"
+  }
+]

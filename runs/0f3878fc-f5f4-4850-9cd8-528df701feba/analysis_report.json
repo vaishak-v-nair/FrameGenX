@@ -1,0 +1,35 @@
+{
+  "accepted": false,
+  "failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "neon lights",
+      "expected": 1,
+      "detected": 0
+    },
+    {
+      "type": "count_mismatch",
+      "class_name": "river",
+      "expected": 1,
+      "detected": 0
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "city skyline": 1,
+      "neon lights": 0,
+      "river": 0
+    },
+    "expected_counts": {
+      "city skyline": 1,
+      "neon lights": 1,
+      "river": 1
+    }
+  },
+  "root_causes": [
+    "Scene under-populated -> weak object planning",
+    "Prompt misalignment -> RAG or prompt issue",
+    "Objects clustered -> bad composition"
+  ],
+  "actions": []
+}

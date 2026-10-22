@@ -1,0 +1,118 @@
+{
+  "schema_version": "2.0",
+  "created_at": "2026-10-13T15:01:57.654004+00:00",
+  "prompt": "A red cat sitting on a blue chair",
+  "parsed": {
+    "subject": "cat",
+    "objects": [
+      "cat",
+      "chair"
+    ],
+    "colors": [
+      "red",
+      "blue"
+    ],
+    "primary_subject": "cat",
+    "secondary_objects": [
+      "chair"
+    ],
+    "weighted_elements": []
+  },
+  "constraints": [
+    {
+      "type": "object_count",
+      "value": 1,
+      "target": "cat",
+      "priority": "critical"
+    },
+    {
+      "type": "spatial_relation",
+      "value": {
+        "subject": "cat",
+        "predicate": "above",
+        "object": "chair"
+      },
+      "target": "cat->chair",
+      "priority": "high"
+    }
+  ],
+  "rag_hits": [],
+  "rag_influence": {
+    "depth_required": false,
+    "lighting_complex": false
+  },
+  "execution_plan": {
+    "has_human": false,
+    "has_depth": false,
+    "risk_level": "medium"
+  },
+  "signal_map": {
+    "object_count": {
+      "threshold": 1
+    },
+    "class_uniqueness": {
+      "threshold": 1
+    },
+    "depth_layers": {
+      "threshold": 2
+    },
+    "spatial_ratio": {
+      "threshold": 0.2
+    },
+    "embedding": {
+      "threshold": 1.0
+    }
+  },
+  "entities": [
+    {
+      "id": "afccf43c-dcc4-4ccb-ad26-2ecbe331b210",
+      "class_name": "cat",
+      "attributes": [
+        "red"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "2f277178-40ee-4d24-a572-5af72fb36b5a",
+      "class_name": "chair",
+      "attributes": [
+        "blue"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": false
+    }
+  ],
+  "spatial_relationships": [
+    {
+      "subject": "cat",
+      "predicate": "above",
+      "object": "chair"
+    }
+  ],
+  "negations": [],
+  "repair_policy": {
+    "mappings": [
+      {
+        "failure": "object_missing",
+        "action": "prominently featured"
+      },
+      {
+        "failure": "duplicate_object",
+        "action": ""
+      },
+      {
+        "failure": "text_missing",
+        "action": "with clearly legible text"
+      },
+      {
+        "failure": "low_alignment",
+        "action": "sharp focus, highly detailed"
+      }
+    ]
+  }
+}

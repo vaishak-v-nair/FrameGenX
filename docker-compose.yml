@@ -1,13 +1,43 @@
-version: '3.8'
+# FrameGenX — API + UI + GPU.
+#
+#   docker compose up --build
+#   UI:    http://localhost:8000/app
+#   Docs:  http://localhost:8000/docs
+#
+# Secrets come from .env at RUNTIME (env_file) and are never baked into the
+# image (.dockerignore excludes it).
 
 services:
   framegenx-api:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: framegenx-api:latest
+    container_name: framegenx-api
     ports:
-      - "8000:8000"
+      - "127.0.0.1:8000:8000"
     volumes:
+      # Run artifacts (contract, masks, attempts, decisions, sqlite DB)
       - ./runs:/app/runs
-      - ~/.cache/huggingface:/root/.cache/huggingface
+      # Warm model cache on the big drive (HF_HOME=E:\hf_cache on the host).
+      # Warm cache for SDXL-Turbo, GroundingDINO, CLIP and optional adapters.
+      - E:/hf_cache:/root/.cache/huggingface
+    env_file:
+      - .env
+    environment:
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: compute,utility
+      # Container-side HF cache root; the bind mount above puts it on E:.
+      HF_HOME: /root/.cache/huggingface
+      PYTHONUNBUFFERED: "1"
+      # Override .env's expandable_segments:True INSIDE the container only.
+      # Expandable segments use CUDA VMM (cuMemMap) APIs, which are unstable
+      # through WSL2 GPU paravirtualization (dxgkrnl): verified 2026-08-23
+      # with "CUDA driver error: device not ready" + CUDACachingAllocator
+      # internal asserts during free_memory()'s empty_cache(). The classic
+      # caching allocator is stable there; max_split_size_mb curbs fragmentation.
+      # Native (non-Docker) runs keep .env as-is.
+      PYTORCH_CUDA_ALLOC_CONF: max_split_size_mb:512
     deploy:
       resources:
         reservations:
@@ -15,6 +45,10 @@ services:
             - driver: nvidia
               count: 1
               capabilities: [gpu]
-    environment:
-      - NVIDIA_VISIBLE_DEVICES=all
-      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/', timeout=3)"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 30s

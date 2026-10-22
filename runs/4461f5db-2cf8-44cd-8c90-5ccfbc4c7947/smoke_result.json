@@ -1,0 +1,17 @@
+{
+  "run_id": "4461f5db-2cf8-44cd-8c90-5ccfbc4c7947",
+  "source_run": "624ef7cb-2f4d-4ae8-8895-2c8e2f8201ce",
+  "scope": "offline_generation_preview_and_synthetic_memory_only",
+  "status": "passed",
+  "checks": {
+    "memory_write": true,
+    "contract_preserved": true,
+    "preview_matches_draft": true,
+    "preview_nonblank": true,
+    "memory_reopen_roundtrip": true
+  },
+  "generation_seconds": 32.19,
+  "process_peak_allocated_vram_gb": 2.777,
+  "process_peak_reserved_vram_gb": 2.915,
+  "total_seconds": 41.05
+}

@@ -1,0 +1,18 @@
+E:\BrosKi\framegenx\venv\Lib\site-packages\zmq\_future.py:718: RuntimeWarning: Proactor event loop does not implement add_reader family of methods required for zmq. Registering an additional selector thread for add_reader support via tornado. Use `asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())` to avoid this warning.
+  self._get_loop()
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+Notebook cell 3/16 running
+Notebook cell 3/16: ok
+Notebook cell 5/16 running
+Notebook cell 5/16: ok
+Notebook cell 7/16 running
+Notebook cell 7/16: ok
+Notebook cell 9/16 running
+Notebook cell 9/16: ok
+Notebook cell 11/16 running
+Notebook cell 11/16: ok
+Notebook cell 13/16 running
+Notebook cell 13/16: ok
+Notebook cell 15/16 running
+Notebook cell 15/16: ok
+Executed notebook: ihalla_vsm_training.ipynb

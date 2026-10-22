@@ -1,0 +1,10 @@
+[
+  {
+    "id": "1",
+    "caption": "Imagine a fantasy video game scene in a mythical landscape with floating islands, cascading waterfalls, and ancient ruins covered in vines. Add an adventurer holding an ancient sword, standing on a jagged cliff as the sun sets.",
+    "image": "real_data",
+    "score": 0.032786883413791656,
+    "retrieval_mode": "hybrid_milvus_rrf",
+    "rerank_score": 9.178417205810547
+  }
+]

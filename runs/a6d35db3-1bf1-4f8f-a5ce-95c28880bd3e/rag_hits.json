@@ -1,0 +1,23 @@
+[
+  {
+    "id": "coco_208208",
+    "caption": "a view of mountains from the window of a jet airplane",
+    "image": "http://images.cocodataset.org/val2017/000000208208.jpg",
+    "score": 0.015244755244755244,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_502229",
+    "caption": "View of a city skyline and train yard at dusk.",
+    "image": "http://images.cocodataset.org/val2017/000000502229.jpg",
+    "score": 0.009836065573770491,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_424776",
+    "caption": "a grey colored jet plane flying over a snowy mountain range.",
+    "image": "http://images.cocodataset.org/val2017/000000424776.jpg",
+    "score": 0.00967741935483871,
+    "retrieval_mode": "hybrid_rrf"
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "accepted": false,
+  "failures": [
+    {
+      "type": "spatial_violation",
+      "class_name": "apple->table",
+      "expected": "above",
+      "detected": "subject center_y=273 >= object center_y=256"
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "apple": 1,
+      "table": 1,
+      "bottle": 1
+    },
+    "expected_counts": {
+      "apple": 1,
+      "table": 1,
+      "bottle": 1
+    }
+  },
+  "root_causes": [
+    "Scene under-populated -> weak object planning",
+    "Prompt misalignment -> RAG or prompt issue",
+    "Objects clustered -> bad composition"
+  ],
+  "actions": []
+}

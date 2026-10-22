@@ -1,0 +1,84 @@
+{
+  "accepted": false,
+  "hard_failures": [],
+  "signals": {
+    "detected_counts": {
+      "cat": 1,
+      "chair": 1
+    },
+    "expected_counts": {
+      "cat": 1,
+      "chair": 1
+    }
+  },
+  "clip_cos": 0.3242,
+  "clip_norm": 0.6968,
+  "vqa_score": 0.0,
+  "vqa_vacuous": false,
+  "reward": 0.3484,
+  "spatial_result": {
+    "passed": true,
+    "total": 1,
+    "verified": 1,
+    "failures": [],
+    "results": [
+      {
+        "relationship": {
+          "subject": "cat",
+          "predicate": "on",
+          "object": "chair"
+        },
+        "passed": true,
+        "reason": "unknown predicate 'on': skipped",
+        "subject_box": {
+          "xmin": 72.93373107910156,
+          "ymin": 42.35346984863281,
+          "xmax": 387.74224853515625,
+          "ymax": 511.7181396484375,
+          "score": 0.8866890072822571
+        },
+        "object_box": {
+          "xmin": 10.244155883789062,
+          "ymin": 6.485260009765625,
+          "xmax": 507.557373046875,
+          "ymax": 512.0506591796875,
+          "score": 0.8017498850822449
+        }
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there a red cat in the image?",
+      "expected": "yes",
+      "class_name": "cat",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "color",
+      "question": "What color is the cat?",
+      "expected": "red",
+      "class_name": "cat",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there a blue chair in the image?",
+      "expected": "yes",
+      "class_name": "chair",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "color",
+      "question": "What color is the chair?",
+      "expected": "blue",
+      "class_name": "chair",
+      "answer": "error",
+      "correct": false
+    }
+  ]
+}

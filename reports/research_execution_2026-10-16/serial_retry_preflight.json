@@ -1,0 +1,39 @@
+{
+  "created_at": "2026-10-17T04:52:25.073501+00:00",
+  "execution_policy": "Same frozen paired protocol; CPU only; no tests/builds run concurrently with training; previous failed attempt retained.",
+  "packages": {
+    "Pillow": "12.3.0",
+    "SQLAlchemy": "2.1.4",
+    "alembic": "1.20.0",
+    "ipykernel": "7.3.0",
+    "mlflow-skinny": "3.17.1",
+    "nbclient": "0.11.0",
+    "nbformat": "5.11.1",
+    "numpy": "2.5.1",
+    "psutil": "7.2.2",
+    "safetensors": "0.8.0",
+    "scikit-learn": "1.9.0",
+    "threadpoolctl": "3.6.0",
+    "torch": "2.13.0+cu130"
+  },
+  "physical_memory": {
+    "available": 3442106368,
+    "free": 3442106368,
+    "percent": 79.6,
+    "total": 16869146624,
+    "used": 13427040256
+  },
+  "protocol_sha256": "480f1cf5c723a94f31662650f21cbdd868fd2905caf4b1ae51973269e8ede133",
+  "python": "3.14.6",
+  "source": {
+    "src\\research\\__init__.py": "b63066f757a6638cac9b16c4394fc3fd3972a7cb89e41b9b8380fae7995aa72e",
+    "src\\research\\api.py": "1a28983670bb1e8d92db9b7247a8b1b3adba14e7af3dfc9891106e056f45890a",
+    "src\\research\\artifacts.py": "12e1e86ca9f3a234dcfd9129a0cded3aae04da1509197968b9a8991157df57c2",
+    "src\\research\\cards.py": "b204997c5c17986e4e319ad1e54f4233249b08ba213d9828d781f1213662a1a3",
+    "src\\research\\config.py": "15fe23c1fd8a971f8816d8ed2a0bacf611961c87ac3bff750d6cab7e63d96364",
+    "src\\research\\diffusion.py": "2e29a37167c0c609a936a2150f96f1c013a9b52a8c7b25884661227156318adf",
+    "src\\research\\experiment.py": "2cfea0147b4c4949011fb1aa9a4ab30f8b34bd25c18edc68da32ad265e404dd8",
+    "src\\research\\ihalla.py": "0e1ec57c700f3b4d9703208774fe5bd76fc2ed421cb8700c83b116003640af5b",
+    "src\\research\\reports.py": "1cfe73dfb0aecd5a5bb2310aee4419e6446de58d7d66310ab27cb229f64b12e5"
+  }
+}

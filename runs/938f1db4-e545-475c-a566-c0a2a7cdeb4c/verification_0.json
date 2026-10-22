@@ -1,0 +1,142 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "jagged alpine peaks",
+      "expected": 1,
+      "detected": 0
+    },
+    {
+      "type": "count_mismatch",
+      "class_name": "summit",
+      "expected": 1,
+      "detected": 0
+    },
+    {
+      "type": "spatial_violation",
+      "class_name": "wildflowers->foreground",
+      "expected": "in",
+      "detected": "object 'foreground' not detected"
+    },
+    {
+      "type": "spatial_violation",
+      "class_name": "mist->jagged alpine peaks",
+      "expected": "below",
+      "detected": "object 'jagged alpine peaks' not detected"
+    },
+    {
+      "type": "spatial_violation",
+      "class_name": "summit->jagged alpine peaks",
+      "expected": "above",
+      "detected": "subject 'summit' not detected"
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "jagged alpine peaks": 0,
+      "wildflowers": 1,
+      "mist": 1,
+      "summit": 0
+    },
+    "expected_counts": {
+      "jagged alpine peaks": 1,
+      "wildflowers": 1,
+      "mist": 1,
+      "summit": 1
+    }
+  },
+  "clip_cos": 0.2815,
+  "clip_norm": 0.526,
+  "vqa_score": 0.75,
+  "vqa_vacuous": false,
+  "reward": 0.638,
+  "spatial_result": {
+    "passed": false,
+    "total": 3,
+    "verified": 0,
+    "failures": [
+      {
+        "subject": "wildflowers",
+        "predicate": "in",
+        "object": "foreground",
+        "reason": "object 'foreground' not detected"
+      },
+      {
+        "subject": "mist",
+        "predicate": "below",
+        "object": "jagged alpine peaks",
+        "reason": "object 'jagged alpine peaks' not detected"
+      },
+      {
+        "subject": "summit",
+        "predicate": "above",
+        "object": "jagged alpine peaks",
+        "reason": "subject 'summit' not detected"
+      }
+    ],
+    "results": [
+      {
+        "relationship": {
+          "subject": "wildflowers",
+          "predicate": "in",
+          "object": "foreground"
+        },
+        "passed": false,
+        "reason": "object 'foreground' not detected"
+      },
+      {
+        "relationship": {
+          "subject": "mist",
+          "predicate": "below",
+          "object": "jagged alpine peaks"
+        },
+        "passed": false,
+        "reason": "object 'jagged alpine peaks' not detected"
+      },
+      {
+        "relationship": {
+          "subject": "summit",
+          "predicate": "above",
+          "object": "jagged alpine peaks"
+        },
+        "passed": false,
+        "reason": "subject 'summit' not detected"
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there an alpine jagged jagged alpine peaks in the image?",
+      "expected": "yes",
+      "class_name": "jagged alpine peaks",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "existence",
+      "question": "Is there a wildflowers wildflowers in the image?",
+      "expected": "yes",
+      "class_name": "wildflowers",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "existence",
+      "question": "Is there a mist mist in the image?",
+      "expected": "yes",
+      "class_name": "mist",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "existence",
+      "question": "Is there a warm golden summit in the image?",
+      "expected": "yes",
+      "class_name": "summit",
+      "answer": "no",
+      "correct": false
+    }
+  ]
+}

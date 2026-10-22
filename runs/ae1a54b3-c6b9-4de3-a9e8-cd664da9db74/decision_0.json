@@ -1,0 +1,13 @@
+{
+  "accept": false,
+  "reward": 0.8206,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": false,
+  "prompt_edits": [
+    "only 2 cat, nothing else similar",
+    "only 1 wall, nothing else similar",
+    "cat above wall"
+  ]
+}

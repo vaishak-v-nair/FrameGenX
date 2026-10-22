@@ -1,0 +1,23 @@
+[
+  {
+    "id": "coco_452122",
+    "caption": "An airplane flying in the air during the day.",
+    "image": "http://images.cocodataset.org/val2017/000000452122.jpg",
+    "score": 0.009836065573770491,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_504074",
+    "caption": "Women that are sitting outside on a patio area and smoking cigarettes.",
+    "image": "http://images.cocodataset.org/val2017/000000504074.jpg",
+    "score": 0.00967741935483871,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_520009",
+    "caption": "There is traffic passing by a large building",
+    "image": "http://images.cocodataset.org/val2017/000000520009.jpg",
+    "score": 0.009523809523809523,
+    "retrieval_mode": "hybrid_rrf"
+  }
+]

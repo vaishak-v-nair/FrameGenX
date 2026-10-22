@@ -1,0 +1,22 @@
+model: stabilityai/stable-diffusion-xl-base-1.0
+method: qlora
+dataset: data/training/constraint_pilot/records.jsonl
+output_root: runs/training
+tracking_db: runs/mlflow.db
+experiment: framegenx-constraint-adapters
+resolution: 512
+rank: 4
+lora_alpha: 4
+learning_rate: 0.00001
+max_steps: 48
+gradient_accumulation: 2
+seed: 42
+deterministic: true
+checkpoint_every: 16
+validation_every: 16
+validation_limit: 8
+max_vram_gb: 5.5
+min_free_vram_gb: 3.0
+max_runtime_seconds: 3600
+snr_gamma: 5.0
+target_modules: [to_q, to_k, to_v, to_out.0]

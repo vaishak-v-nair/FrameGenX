@@ -1,0 +1,25 @@
+{
+  "accepted": false,
+  "failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "wildflower",
+      "expected": 1,
+      "detected": 12
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "wildflower": 12
+    },
+    "expected_counts": {
+      "wildflower": 1
+    }
+  },
+  "root_causes": [
+    "Scene under-populated -> weak object planning",
+    "Prompt misalignment -> RAG or prompt issue",
+    "Objects clustered -> bad composition"
+  ],
+  "actions": []
+}

@@ -1,0 +1,39 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "294ff77d-02d2-442e-9609-bf9d41059db6",
+      "class_name": "cat",
+      "attributes": [
+        "red"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 60,
+        "ymin": 122,
+        "xmax": 215,
+        "ymax": 389,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "f1010343-41a6-4d43-99e9-053357fe4e31",
+      "class_name": "chair",
+      "attributes": [
+        "blue"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 296,
+        "ymin": 122,
+        "xmax": 451,
+        "ymax": 389,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    }
+  ]
+}

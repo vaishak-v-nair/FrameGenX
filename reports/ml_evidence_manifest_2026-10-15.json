@@ -1,0 +1,34 @@
+{
+  "adapter_sha256": "aaaeb9b68609b11ffc032c1a57c765b983b339af22c7e396c24bfd72b289953b",
+  "dataset_audit": {
+    "dataset_sha256": "5377fd0a2c0856160a00d51f46d1345ea54d0c5101e8289b5136a5a4bd5d1619",
+    "image_groups": 108,
+    "negative_examples": 13,
+    "positive_by_source_and_split": {
+      "clevr": {
+        "test": 3,
+        "train": 30,
+        "validation": 3
+      },
+      "coco": {
+        "test": 3,
+        "train": 30,
+        "validation": 3
+      },
+      "vsr": {
+        "test": 3,
+        "train": 30,
+        "validation": 3
+      }
+    },
+    "records": 121
+  },
+  "mlflow_lifecycle_status": "FINISHED",
+  "mlflow_run_id": "4a7a11a333f04d868d153e28b5673b02",
+  "promotion_status": "unqualified",
+  "quality_status": "unverified",
+  "scope": "local_training_artifact_and_tracking_consistency_not_quality_validation",
+  "steps_completed": 48,
+  "training_run_id": "76fada99-67db-4fbe-a508-c0ef96e6042f",
+  "validation_metric": 0.0739780303556472
+}

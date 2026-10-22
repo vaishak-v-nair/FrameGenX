@@ -1,0 +1,15 @@
+{
+  "accept": false,
+  "reward": 0.268,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": false,
+  "prompt_edits": [
+    "one adventurer featured",
+    "Add a sword",
+    "Adventurer holding sword",
+    "adventurer, prominent, clearly visible",
+    "sword, prominent, clearly visible"
+  ]
+}

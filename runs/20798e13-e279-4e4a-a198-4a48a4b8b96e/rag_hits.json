@@ -1,0 +1,9 @@
+[
+  {
+    "id": "web_search",
+    "caption": "Web Context: Oct 16, 2008 \u00b7 Please don't reply I should use ddd, nemiver, emacs, vim, or any other front-end, I just prefer gdb as it is, but would \u2026 Oct 11, 2010 \u00b7 Check out the GDB Internals Manual, which covers some of the important aspects. There's also an older PDF version \u2026 Sep 26, 2008 \u00b7 For useful compiler options to use in that case, see How to remove \"noise\" from GCC/clang assembly output? (or just \u2026",
+    "image": "",
+    "score": 1.0,
+    "retrieval_mode": "web_search"
+  }
+]

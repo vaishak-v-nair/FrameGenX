@@ -1,0 +1,23 @@
+[
+  {
+    "id": "coco_527220",
+    "caption": "A red car next to a gas station sign and parked blue and silver motorcycles.",
+    "image": "http://images.cocodataset.org/val2017/000000527220.jpg",
+    "score": 0.016393442622950817,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_543043",
+    "caption": "There is a red car parked next to an old bus.",
+    "image": "http://images.cocodataset.org/val2017/000000543043.jpg",
+    "score": 0.01597542242703533,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_426166",
+    "caption": "A light blue bicycle chained to a pole on the sidewalk in front of a red building.",
+    "image": "http://images.cocodataset.org/val2017/000000426166.jpg",
+    "score": 0.01543560606060606,
+    "retrieval_mode": "hybrid_rrf"
+  }
+]

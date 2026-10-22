@@ -1,0 +1,749 @@
+IMPORTANT: Do NOT read or execute any SKILL.md files or files in skill definition directories (paths containing skills/gstack). These are AI assistant skill definitions meant for a different system. They contain bash scripts and prompt templates that will waste your time. Ignore them completely. Stay focused on the repository code only.
+
+Act as an independent senior product designer. Review the complete frozen plan and static HTML source embedded below. This is DOCUMENT-ONLY: do not call tools, read files, execute commands, open browsers or delegate. No implementation, no claims of rendered visual inspection. Source-code descriptions in the plan are supplied evidence, not independently checked by you.
+
+CEO context: current full CSR is unverified; task usefulness, original intent preservation, paired study budgets and independent judging are separate gates. The plan preserves the original technology list and proposes staged adoption. The strategic voices disagreed about how early demand should gate work and about a verifier-only product boundary; those are pending owner choices.
+
+Evaluate 7 dimensions with planning-completeness scores: information architecture, interaction state coverage, user journey, specificity/generic-design risk, design-system alignment, responsive/accessibility, unresolved decisions. Also give YES/NO/NOT SPEC'D for the 7 litmus checks: brand unmistakable; one visual anchor; headings scannable; one job per section; cards justified; motion improves hierarchy; usable without decorative shadows. These are specification judgments, not visual passes. Return at most six concrete high/medium gaps with corrections, no compliments. Do not demand a redesign, invent a customer or treat missing browser proof as a completed check. Keep output under 1,200 words.
+
+BEGIN FROZEN PLAN
+<!-- /autoplan restore point: C:/Users/vaish/.gstack/projects/vaishak-v-nair-FrameGenX/main-autoplan-restore-20261015-195627.md -->
+# FrameGenX Stack Evolution Plan
+
+Status: DRAFT UNDER REVIEW, not approved for implementation.
+Branch/base: main/main. Snapshot: 38eb0f0 plus existing working-tree changes.
+Mode: SELECTIVE EXPANSION. Scope: planning artifacts only.
+
+## Original proposal
+
+$autoplan Everything is working perfectly. I was thinking, what if we bring these things?:
+Frontend: React, TypeScript, Streamlit for rapid prototyping
+Backend: Python, FastAPI, PostgreSQL, Redis
+LLM integration: LangChain, OpenAI, Gemini, Claude
+Multi-agent: LangGraph, CrewAI, Google ADK, A2A
+Knowledge: LlamaIndex, ChromaDB, RAGAS, Graph RAG
+Tool integration: MCP servers, n8n
+Voice and multimodal: ElevenLabs, multimodal LLMs
+Evaluation: LangSmith, Phoenix or Opik
+ML and fine-tuning: PyTorch, Hugging Face PEFT, LoRA/QLoRA, MLflow
+Deployment: Docker, CI/CD, hosted backend and frontend.
+
+
+## Product objective
+
+Increase measurable visual constraint satisfaction and make runs understandable, reproducible and recoverable within the RTX 3050 Laptop 6GB VRAM / 16GB RAM constraint. Evaluate every named technology without treating overlapping frameworks as cumulative requirements. Owner preferences and objections remain pending the final gate.
+
+## Evidence baseline
+
+- React/JSX + Vite frontend, FastAPI backend and custom stage executor already exist.
+- SQLite tracks runs; job state and GPU lock currently live in one API process.
+- Retrieval already uses LangGraph, MiniLM, BM25 and PyMilvus, with cloud and web-search fallback paths.
+- PyTorch, PEFT, QLoRA and MLflow are implemented. The 90-image, 48-step trained adapter remains experimental and disabled by default.
+- The controller comparison reported 4/8 local count/position passes and 3/6 chromatic-binding passes, with uncalibrated verifiers and full CSR unmeasured.
+- The saved bottle CLI run found two green bottles but retained background artifacts and unverified requirements.
+- Default web generation uses SDXL-Turbo; the tested NF4 SDXL regional controller is a separate explicit CLI profile.
+- No tracked GitHub workflow directory was found at intake; Docker files exist, with a host-specific model-cache mount.
+- The working tree contains extensive pre-existing source, data, run and generated-file changes. This review preserves those changes.
+
+## Assumptions requiring owner validation
+
+1. Image-contract accuracy remains the primary product outcome.
+2. The laptop/local workflow remains supported when hosted services are introduced.
+3. Hosted multi-user use, budget, data residency and voice are proposed capabilities, not yet settled requirements.
+4. Everything working perfectly is a premise to check against saved evidence, not a quality qualification.
+
+## Proposed roadmap skeleton
+
+- P0: Calibrated evaluation and truthful requirement coverage; establish clean delivery evidence.
+- P1: TypeScript, shared API contracts and a user-editable contract workflow exposing explicit supported profiles.
+- P2: Durable jobs and worker recovery with local SQLite support; PostgreSQL and Redis as a hosted deployment profile.
+- P3: Provider adapters, local-first tracing and read-first MCP integration.
+- P4: Bounded comparative experiments for retrieval, agents and fine-tuning.
+- P5: Hosted rollout and optional workflow/voice integrations after product and cost gates.
+
+## Decision Audit Trail
+
+| ID | Phase | Decision | Classification | Principle | Rationale | Rejected / pending |
+|---|---|---|---|---|---|---|
+| A01 | Intake | Review before implementation | Mechanical | Explicit | User invoked autoplan; changes remain planning artifacts | Application implementation pending approval |
+| A02 | Intake | Base branch main | Mechanical | Reproducibility | GitHub default branch and local branch both main | None |
+| A03 | Intake | Review UI and developer experience | Mechanical | Completeness | Proposed frontend, API, MCP and deployment changes affect both | None |
+| A04 | Intake | Preserve every proposed technology in a decision matrix | Mechanical | Completeness | Avoid silently dropping any original option | Adoption and deferral need final review |
+| A05 | CEO 0A | Replace the perfect-quality premise with an experimental baseline | User Challenge UC1, pending | Explicit | Saved images and diagnostics retain reproducible failures | Owner's premise stands until final response |
+| A06 | CEO 0C-bis | Recommend staged adoption, with alternative frameworks kept in experiments | User Challenge UC2, pending | DRY / Completeness | Addresses all proposed capabilities while avoiding duplicate runtime owners | Installing the complete stack remains an original option |
+| A07 | CEO 0D | Include reproducibility command and manifest in the run view | Mechanical | Boil lakes | Direct component scope, small change, no new infrastructure | None |
+| A08 | CEO 0D | Check profile eligibility before GPU submission | Mechanical | Completeness | Reuses controller validation and preserves unsupported requirements | None |
+| A09 | CEO 0D | Include durable refresh recovery in P2 | Taste T1 | Completeness | One process restart currently loses job handles | Minimal local-only patch remains viable |
+| A10 | CEO 0D | Show immutable contract beside repair changes | Mechanical | Explicit | A repair must not weaken the user's requirements | None |
+| A11 | CEO 0D | Include redacted evidence bundle after schema versioning | Taste T2 | Completeness | Makes run evidence portable; expands several files | Defer export until real collaboration demand |
+| A12 | CEO 0D | Propose voice and remote workflow follow-ups with entry gates | Taste T3, subject to UC2 | Pragmatic | New privacy and operational scope requires a named journey | Owner may prioritize accessibility or integration research |
+| A13 | CEO 1 | Keep deterministic stages and one supervisor per physical GPU | Mechanical | Explicit | Process-local API locks cannot enforce device ownership | Framework-wide rewrite rejected |
+| A14 | CEO 2 | Distinguish missing, pending and corrupt artifacts | Mechanical | Completeness | Broad JSON exception handling currently hides integrity failures | Silent absence rejected |
+| A15 | CEO 3 | Gate hosted exposure on identity, ownership, quotas and restore | Mechanical | Completeness | Current loopback API has no hosted tenant security boundary | Direct public exposure rejected |
+| A16 | CEO 4 | Separate execution completion from qualification and unknown evidence | Mechanical | Explicit | Full-contract claims exceed current diagnostics | Boolean-only verdict rejected |
+| A17 | CEO 4 | Persist idempotency and lease ownership; quarantine a still-live stale GPU worker | Mechanical | Completeness | Database fencing cannot stop old CUDA work | Exactly-once execution claim rejected |
+| A18 | CEO 5 | Generate types from the authoritative schema; validate at runtime | Mechanical | DRY | Avoid hand-maintained Python/TypeScript contract drift | Parallel schema definitions rejected |
+| A19 | CEO 6 | Use held-out human labels and equal-budget paired comparisons | Mechanical | Completeness | Loss and proxy scores cannot qualify exact-count reduction | Uncalibrated promotion rejected |
+| A20 | CEO 7 | Measure total GPU/system memory with optional services included | Mechanical | Explicit | Torch allocation is a narrower measurement | Tool-only VRAM claim rejected |
+| A21 | CEO 8 | Compare MLflow tracing before adding one dedicated trace server | Taste T4 | Pragmatic / DRY | Existing tracking may cover needs; local Phoenix is a candidate | LangSmith and Opik remain viable |
+| A22 | CEO 9 | Use additive migrations and preserve historical result semantics | Mechanical | Completeness | Rollback must not rewrite old evidence or accepted identities | Destructive data rollback rejected |
+| A23 | CEO 10 | Keep adapters reversible and review unused experiments | Mechanical | Explicit | Prevent research frameworks becoming hidden runtime obligations | None |
+| A24 | CEO 11 | Preserve current React visual language and expose contract/evidence states | Mechanical | Explicit | Main user decision is requirement satisfaction | Aesthetic redesign deferred |
+| A25 | CEO required outputs | Keep deferred TODO proposals in this plan until approval | Mechanical | Explicit | Prevent a review from rewriting unrelated historical TODOs | Application implementation remains pending |
+| A26 | CEO spec review | Record valid capability rejections before execution eligibility | Mechanical | Completeness | Preserve the unconditional denominator | Malformed requests reported separately |
+| A27 | CEO spec review | Audit prompt-to-contract preservation separately from image CSR | Mechanical | Explicit | Extracted-contract quality cannot establish original intent retention | None |
+| A28 | CEO spec review | Separate terminal cancellation, recovery and new retry identity | Mechanical | Explicit | The initial diagram was ambiguous | Cancelled-to-queued transition rejected |
+| A29 | CEO spec review | Split local, hosted and optional module exit gates | Mechanical | Pragmatic | Optional Postgres/Redis/tenant dependencies must not block SQLite releases | None |
+| A30 | CEO spec review | Budget GPU/annotation time and protect a bounded six-month sequence | Mechanical | Explicit | Coding estimates exclude measured experiment costs | None |
+| A31 | CEO CLI voice | Add verifier-over-existing-generators as a fourth alternative | Taste T5 | Completeness | Independent CLI reviewer identified a smaller product boundary | Integrated local generation remains the draft recommendation |
+| A32 | CEO CLI voice | Validate usefulness thresholds against an observed owner/user task | Taste T6 | Explicit | Provisional yield/time defaults lack demand evidence | Do not invent a target customer or commercial requirement |
+| A33 | CEO CLI voice | Require power/inference preflight before a qualification study | Mechanical | Completeness | A fixed small cohort may only establish feasibility | Insufficient power stays inconclusive |
+| A34 | CEO CLI voice | Add incremental-value ablations and a two-study review point | Mechanical | Completeness | Test the value added by verification/controller/repair | A forced product pivot is not auto-approved |
+
+## 1. CEO review: strategy and scope
+
+### 1.1 Named premises and product outcome
+
+| Premise | Assessment | Decision |
+|---|---|---|
+| Everything works perfectly | Contradicted by the saved four-case controller cohort: count, binding, shape and verifier errors persist. A successful execution is a narrower result. | UC1: ask the owner at the final gate to replace this premise with an explicitly experimental quality baseline. |
+| More AI frameworks will reduce visual hallucination | Unproven. Agent coordination, retrieval, tracing and speech have different jobs from spatial generation and independent visual measurement. | Measure the effect of each addition separately; preserve all proposed options for review. |
+| The proposed technologies are all absent | False for React, Python, FastAPI, LangGraph, PyTorch, PEFT, QLoRA, MLflow and Docker. Gemini also has an existing provider path. | Extend the existing seams before adding a parallel implementation. |
+| A hosted product is the next business goal | Not established. The proposal includes hosting, but does not specify audience, usage, budget or data residency. | Plan the complete hosted prerequisite chain; make activation an owner decision. |
+| Multiple agents should own acceptance | Inconsistent with contracts as source of truth. An agent can propose a repair; it must not change the contract or mark its own work qualified. | Keep a deterministic acceptance policy over recorded evidence and explicit unknown states. |
+| Local development must work on the stated laptop | Explicit project authority. Extra containers and CPU models also consume the 16 GB system memory budget. | One physical GPU worker, sequential model residency, optional services stopped by default. |
+| More training examples guarantee improvement | Unsupported by the 90-image pilot. Denoising loss is not an exact-count or binding metric. | Curate disjoint, reviewed data and promote weights only after a held-out paired evaluation. |
+
+The main user journey is: express intent, inspect and approve an editable contract, choose a supported generation profile, see progress, inspect the generated image and requirement evidence, then accept a qualified result or understand why the system rejected or could not verify it. Developers need the same journey through CLI, API and later MCP. Adding more frameworks without preserving this journey increases setup burden without demonstrating improvement.
+
+Doing nothing preserves a useful local research tool, its known quality limits, and transient job state. The most direct improvement is a trustworthy acceptance boundary and a recoverable contract workflow. A hosted multi-user platform is a valuable possible destination, with a larger operational and security scope than the current local application.
+
+### 1.2 What already exists: reuse map
+
+| Sub-problem | Existing implementation | Plan treatment |
+|---|---|---|
+| Browser interface | `frontend/src/App.jsx`, `runState.js`, history and ablation components | Keep React and design language; split by responsibility while adding types and contract review. |
+| Typed contract | `src/intent/models.py`, relationship validation, `src/core/context.py` | Version and export the authoritative schema; generated frontend types are consumers. |
+| API and polling | `src/api.py`: `/jobs`, job artifacts, run history, ablation; legacy `/generate` | Evolve the asynchronous API; retain documented compatibility until a deprecation window is approved. |
+| Pipeline orchestration | `src/core/stage.py`, `src/pipeline.py` | Reuse deterministic stages. Introduce durable scheduling around the pipeline rather than replace every stage with an agent. |
+| Local run storage | `src/core/db.py`, per-run artifact directories | Add explicit migrations and job records; preserve existing run IDs and archived evidence. |
+| Controlled generation | `src/generation/{controlled,regions,conditioning,fusion}.py`, `configs/constraint_control.yaml` | Expose only allowlisted profile IDs; retain eligibility checks and exact sampler parity tests. |
+| Requirement evidence | `src/verification/contract_evidence.py`, local count/color/spatial checks | Separate operational verdict, verified requirement coverage and full-contract qualification. |
+| Repair | `src/reflection/reflector.py`, bounded stage loop | Keep bounded attempts and recorded seeds; prohibit contract weakening during repair. |
+| Provider fallback | `src/core/llm_router.py` | Add capability-aware OpenAI/Claude adapters and improve existing Gemini path behind the same interface. |
+| Retrieval / agents | `src/retrieval/{agent,retriever,memory}.py`, LangGraph, PyMilvus, MiniLM, BM25 | Benchmark existing retrieval before replacing it or adding another store. |
+| Training | `src/training/*`, `configs/training_pilot.yaml`, `requirements-ml.txt` | Reuse preflight, prepared data, checkpointing, evaluation and registry; keep adapter disabled until promoted. |
+| Experiment records | MLflow tracking and hash manifests in `reports/` | Join model/dataset/quality records with run IDs, not a second competing truth store. |
+| Packaging | `pyproject.toml`, pinned requirements, Dockerfile, Compose, Windows launcher | Define tested compatibility profiles and CI from the existing packaging. |
+
+### 1.3 Dream state and alternatives
+
+```text
+CURRENT                         THIS PLAN                         12-MONTH IDEAL
+Local research pipeline  --->    Measured contract workflow --->   Supported local product
+Uncalibrated diagnostics         Calibrated, bounded claims         + optional hosted service
+Experimental controller          Durable jobs and typed API        Reproducible qualification
+In-memory job handles            Capability-aware integrations     Clear coverage and recovery
+Small adapter pilot              Evidence-driven experiment gates  Qualified model catalog
+```
+
+| Approach | Coverage / effort estimate | Reuse and benefits | Costs / risks |
+|---|---|---|---|
+| A. Qualify the local core only | 7/10 for the whole proposal; human 2-3 engineer-weeks / CC-assisted 5-8 active days plus measured GPU and labeling time | Fastest route to credible accuracy; existing UI, DB and stages remain familiar. | Does not deliver hosting, remote tools or speech. Still needs later durable service work. |
+| B. Staged local core plus optional hosted profile (recommended) | 10/10 coverage of evaluation and adoption decisions, not mandatory installation of every alternative; human 8-12 engineer-weeks / CC-assisted 3-5 weeks plus owner and hardware gates | Complete end-to-end architecture, incremental releases, shared contracts, one runtime per concern. Local release remains usable. | More migrations, API compatibility and operations work. Optional modules require explicit entry criteria. |
+| C. Install the full proposed stack at once | 10/10 tool inclusion; human 4-6 engineer-months / CC-assisted 6-10 weeks plus provider/infrastructure setup | Broad interoperability laboratory; useful if the owner's main objective is framework research. | Several overlapping orchestrators, databases and trace stores; larger test matrix and 16 GB RAM pressure; visual accuracy still unproven. |
+| D. Contract verifier and evidence tools over existing generators | 8/10 of the original platform proposal; human 3-5 engineer-weeks / CC-assisted 1-2 weeks plus calibration | Accept externally generated images through a bounded local import and return requirement evidence; smaller generation/hosting ownership. | Import validation and model-independent calibration still needed; does not deliver the integrated repair experience or every proposed integration. |
+
+Estimates are planning ranges, not delivery promises. CC-assisted means implementation with coding agents and human review. Dataset annotation, GPU throughput, third-party access and product decisions do not become faster merely because code is generated. Approach B is the draft recommendation because it addresses every proposed capability without requiring all alternative implementations to run together. UC2 at the final gate asks whether this staged interpretation matches the owner's intent; the original list remains intact until then.
+
+### 1.4 Scope expansion scan and time interrogation
+
+The full proposal touches well over eight files and introduces more than two services if adopted wholesale. Split the work into independently releasable vertical slices with one acceptance gate each. The smallest complete first slice is a calibrated evaluation release plus an honest contract/evidence view; it does not depend on Postgres, Redis or a new agent framework.
+
+The larger product opportunity is a portable evidence bundle: a user or tool can inspect the exact contract, model revision, seed, attempts, verifier versions and qualification status without trusting the live service. That bundle supports CLI, browser, MCP, evaluation and incident recovery. It gives future integrations a shared foundation and makes a failed run useful evidence.
+
+| Expansion / moment for the user | Human / CC-assisted estimate | Draft resolution | Why |
+|---|---|---|---|
+| Copy a run's reproducibility command and manifest | 2-4h / 1-2h, S | Include in P1 | Direct run-view scope, no new infrastructure; user can reproduce the result. |
+| See an unsupported requirement before spending GPU time | 4-8h / 2-4h, S | Include in P1 | Reuses controller eligibility; prevents a misleading submission. |
+| Return to a saved job after refreshing | 2-3d / 1-2d, M | Include in P2; taste choice | Several files and persistent state; completeness requires recovery. |
+| Read the exact changed requirement between attempts | 3-5h / 1-3h, S | Include in P1 | Show immutable contract and separate repair changes, not an unexplained score. |
+| Download a bundle with redacted metadata and checksums | 1-2d / 0.5-1d, M | Include after P1 schema; taste choice | Valuable evidence portability; paths and secret scrubbing need tests. |
+| Hear results spoken aloud and submit a voice prompt | 3-5d / 1-3d, M | Defer to conditional P5 | Requires consent, privacy and transcription confirmation; does not establish visual accuracy. |
+
+Other considered opportunities are retrieval ingestion, cross-agent delegation and n8n callbacks; their explicit follow-up gates appear in the technology matrix and backlog. No item above is represented as implemented.
+
+| Review / implementation checkpoint | Decision to settle then | Expected output |
+|---|---|---|
+| Hour 1 | Preserve evidence and enumerate supported requirements | Baseline manifest, claim vocabulary, contract coverage map. |
+| Hours 2-3 | Define calibration labels and release gates | Frozen splits, rubric, failure examples and human review protocol. |
+| Hours 4-5 | Design typed contract/job API and recovery semantics | Schema, state transitions and compatibility fixtures. |
+| Hour 6+ | Prove the first slice, then choose hosted/provider experiments | Bounded pilot report before broad installation. These checkpoints are ordering aids, not a promise of six-hour delivery. |
+
+Mode is **SELECTIVE EXPANSION**. Small direct-scope improvements are included. Overlapping runtime additions and changes to the user's stated direction remain recommendations for the final gate.
+
+## 2. Technology decision matrix
+
+Every technology from the original proposal has an explicit disposition. “Proposed” means pending approval and capability validation. Existing does not imply production qualification. Documentation links establish capabilities; the adoption decisions are this review's inferences.
+
+| Technology | Current project state | Proposed role and phase | Gate / reason |
+|---|---|---|---|
+| React | Existing production UI code | Keep, P1 | Preserve navigation, history and artifact views. |
+| TypeScript | JSX today; React types installed | Add incrementally, P1 | Shared API schema; strict checking for converted code; remove unchecked API boundary values. [React guide](https://react.dev/learn/typescript). |
+| Streamlit | No application path found | Optional experiment UI, P4 | Only for a concrete researcher prototype; import the same service/contract library and never run a competing GPU worker. [Docs](https://docs.streamlit.io/). |
+| Python | Existing pipeline and CLI | Keep | Resolve the declared >=3.10 range against the actual pinned 3.14 environment in CI. |
+| FastAPI | Existing API | Keep and split lifecycle/worker responsibilities, P2 | API worker replication must not replicate GPU model residency. [Worker docs](https://fastapi.tiangolo.com/deployment/server-workers/). |
+| PostgreSQL | Not current run database | Hosted persistence profile, P2 | Only activate with hosted/concurrent-user requirement; migrations, ownership, backups and restoration tests required. [Locking](https://www.postgresql.org/docs/current/explicit-locking.html). |
+| Redis | Not current scheduler | Optional hosted notification/queue transport, P2 | DB is job truth; lost wakeups are recoverable by DB scan. Redis delivery does not guarantee one execution. [Streams](https://redis.io/docs/latest/develop/data-types/streams/). |
+| LangChain | Not the primary orchestration layer | Optional provider/tool adapter helper, P3 | Adopt a small integration only if it removes code; do not rewrite deterministic stages into an agent loop. [Stack roles](https://www.langchain.com/oss-overview). |
+| OpenAI | OpenAI-compatible SDK used for other providers | Optional named provider, P3 | Distinguish SDK compatibility from an actual OpenAI account/model. Select pinned supported models after capability and cost probes. |
+| Gemini | Existing router path | Harden existing adapter, P3 | Validate structured responses, refusals, missing content, timeouts and privacy settings. [Structured output](https://ai.google.dev/gemini-api/docs/structured-output). |
+| Claude | No current router provider found | Optional named provider, P3 | Use Anthropic's actual API adapter; do not assume OpenAI request compatibility. [Structured output](https://platform.claude.com/docs/en/build-with-claude/structured-outputs). |
+| LangGraph | Existing retrieval agent | Keep the current bounded graph; optional checkpoint experiment, P4 | Checkpointed execution can replay nodes: external side effects still require deduplication. [Persistence](https://docs.langchain.com/oss/python/langgraph/persistence). |
+| CrewAI | Not wired | Isolated comparison, P4 | Compare the same task set and budgets with LangGraph; ship only a demonstrated capability gap. [Introduction](https://docs.crewai.com/en/introduction). |
+| Google ADK | Not wired | Isolated comparison, P4 | Consider if Google ecosystem integration is a real requirement. Keep one graph owner per workflow. [ADK](https://google.github.io/adk-docs/). |
+| A2A | No remote-agent protocol | Conditional interoperability experiment, P5 | Agent-to-agent delegation only for a named remote collaborator; contracts, auth, task identity and cancellation required. [Protocol](https://a2a-protocol.org/latest/). |
+| LlamaIndex | Existing custom retrieval code instead | Conditional ingestion experiment, P4 | Need a document ingestion use case and benchmark before adding a second agent/retrieval framework. [Framework](https://developers.llamaindex.ai/python/framework/). |
+| ChromaDB | Existing PyMilvus store | Alternative-store benchmark, P4 | Choose one store per deployment. Compare Windows portability, restart behavior, licensing and retrieval quality; no silent corpus migration. [Chroma](https://docs.trychroma.com/docs/overview/introduction). |
+| RAGAS | No current evaluation path | Optional retrieval/LLM metrics, P4 | Calibrate custom metrics. RAG answer faithfulness does not measure pixels; visual CSR stays separate. [Ragas](https://docs.ragas.io/en/stable/). |
+| Graph RAG | No current knowledge-graph retrieval | Conditional research, P4 | A text knowledge graph is different from the image's scene graph. Need cross-document reasoning demand and measurable retrieval gain. [Microsoft GraphRAG](https://microsoft.github.io/graphrag/). |
+| MCP servers | No current public tool server | Read-only local evidence tools first, P3 | MCP connects clients to tools/resources; it does not supply visual correctness. Generation tools later share API authorization and job budgets. [MCP](https://modelcontextprotocol.io/docs/getting-started/intro). |
+| n8n | No current automation | Conditional completion workflow, P5 | Signed callbacks, replay-safe delivery and secrets outside workflow exports; no auto-publishing. [Queue mode](https://docs.n8n.io/hosting/scaling/queue-mode/). |
+| ElevenLabs | No current voice workflow | Optional speech interface, P5 | Explicit recording consent, deletion rules, visible transcript and contract confirmation. [Transcription](https://elevenlabs.io/docs/overview/capabilities/speech-to-text). |
+| Multimodal LLMs | Optional external vision QA exists | Diagnostic judge and contract assistance, P3/P4 | Compare to human labels, permit abstention; never sole acceptance authority. |
+| LangSmith | Not current trace backend | Candidate in one tracing spike, P3 | Framework integrations and managed operations may suit a team; evaluate retention/cost/permissions. [Observability](https://docs.langchain.com/langsmith/observability). |
+| Phoenix | Not current trace backend | Preferred local tracing candidate, P3; taste choice | OpenTelemetry/OpenInference and local hosting fit the draft local-first direction. Measure RAM and verify full redaction first. [Phoenix](https://arize.com/docs/phoenix/). |
+| Opik | Not current trace backend | Alternative in the same spike, P3 | Compare against Phoenix and LangSmith. Current self-host docs distinguish local and production deployment and note user-management limits. [Self-host](https://www.comet.com/docs/opik/self-host/overview). |
+| PyTorch | Existing inference and training | Keep | Sequential model residency; whole-process and system memory gates. |
+| Hugging Face PEFT | Existing | Keep, P4 training | Reuse adapter validation/registry; do not combine unqualified adapters. |
+| LoRA/QLoRA | NF4/rank-4 pilot exists | Curated, held-out training experiments, P4 | Quantized adapter training reduces trainable memory; it does not establish correctness. [PEFT quantization](https://huggingface.co/docs/peft/developer_guides/quantization). |
+| MLflow | Existing local experiment tracking | Keep for dataset/weights/quality lineage | Evaluate existing tracing before adding a dedicated server; link trace IDs and run IDs. [Tracing](https://mlflow.org/docs/latest/genai/tracing/). |
+| Docker | Dockerfile and Compose exist | Portable optional profile, P0/P2 | Remove hardcoded host cache assumption through configuration; validate Windows/WSL2 GPU behavior separately. [GPU support](https://docs.docker.com/compose/how-tos/gpu-support/). |
+| CI/CD | No GitHub workflow found at intake | Add verified checks and gated delivery, P0/P5 | CPU CI on every change; separate GPU qualification runner, release provenance, deployment rollback. |
+| Hosted backend / frontend | Local loopback API and static UI today | Conditional private hosted pilot, P5 | Auth, tenant isolation, quotas, durable artifacts, TLS, backups, budget and residency decision before exposure. |
+
+### Research implications for image accuracy
+
+[GenEval](https://github.com/djghosh13/geneval) and [T2I-CompBench](https://arxiv.org/abs/2307.06350) motivate separate evaluation of counts, positions and attribute binding rather than a single aesthetic score. Use pinned benchmark versions and category subsets plus independent human labels; do not compare a custom subset with a published leaderboard total. Their published results do not qualify this application's current controller.
+
+The controller already adapts spatial diffusion ideas documented in `reports/constraint_reduction_2026-10-15.md`. The next experiments should isolate region geometry/background artifacts, detector reflection errors, binding and repair behavior before attempting a bigger agent architecture. Compare at equal inference budgets as well as equal seeds; a 25-step controlled sampler versus a four-step Turbo default is a product profile comparison, not an isolated causal test of the controller.
+
+### Competitive and audience check
+
+The repository's `docs/10_COMPETITOR_ANALYSIS.md` and `docs/WHY_NOT_COMFYUI.md` contain historical assertions about sole-platform uniqueness, high verified numeracy and competitors lacking automated integration. Current [ComfyUI documentation](https://docs.comfy.org/) includes API workflow execution, agent tools, MCP and cloud options. The first release must replace unsupported exclusivity and quality assertions with dated, bounded comparisons; the existing prose is not evidence of a market advantage.
+
+The defensible product hypothesis is portable contracts and calibrated evidence on constrained hardware. The audience is not validated by this repository: a local researcher, an automation developer and a hosted creative team may need different products. Before expanding P3-P5, run three to five task-based sessions with intended users: can they create a contract, interpret unknowns, recover a run and use the evidence bundle? Record task completion, confusion, time and whether an integration solves a task they actually have. This is a demand gate, not a claim that users have already been interviewed.
+
+The six-month regret scenario is maintaining four agent frameworks and three data stores while the verifier still counts reflections as objects. Another is treating a prettier or more capable foundation model as proof that FrameGenX adds value. Compare both the existing local baseline and a permitted stronger generator under the same contract, budget and independent judging protocol; cost and privacy differences stay visible.
+
+Before committing interface expansion or external integrations, observe an intended user or the owner completing one recurring task using the current CLI/UI and their current substitute. Record failure cost, acceptable inspection time, acceptable wait and whether the contract evidence changes the decision. The three to five sessions are a proposed validation study; a private research tool can use an owner-defined research task instead of inventing commercial customers. Demonstrated local reliability and integrity fixes remain justified by reproducible failures and do not wait for customer discovery.
+
+A bounded incremental-value study compares current generation plus manual review, the same generator plus independent FrameGenX verification, then controller and bounded repair additions. Fix the task distribution and total generation budget, and report time/cost per qualified output including unsuccessful submissions, human inspection and GPU occupancy. A stronger generator comparison is separate from this causal ablation. An external-image verifier is an alternative worth testing, not an approved pivot or a demand claim.
+
+## 3. Releases and measurable exit criteria
+
+All numeric thresholds below are **proposed release criteria**, not measured achievements. Freeze them before the evaluation, and revise them only with an audit note and a new evaluation version. No supported-domain claim extends to arbitrary scenes.
+
+### P0: Establish a qualification boundary and reproducible delivery
+
+1. Freeze contract/evidence schema versions and enumerate supported predicates per profile: count, named color, supported spatial relations, negation, style, background, text and other attributes. Mark unsupported or unmeasured requirements explicitly. Preserve every user requirement, including requirements the model cannot satisfy or the verifier cannot assess.
+2. Build a licensed annotation manifest with image/contract IDs, source lineage, disjoint scene/prompt/seed families, split hashes and reviewer rubric. Start with 120 calibration images spanning normal cases, reflections, occlusion, cropped objects and color ambiguity; a different locked 120-contract evaluation cohort uses four preregistered seeds per profile. This is a bounded starting study; report uncertainty rather than claim universal performance.
+3. Label every required predicate on the calibration set using two blinded human reviewers, adjudicate disagreement and record agreement by category. Fit thresholds using calibration only. Add a separate background/shape artifact rubric and false-rejection review. Benchmark final labels may be collected later by reviewers blinded to profile identity; never use them for tuning the same release.
+4. Report strict full-contract CSR (all requirements human-confirmed), per-predicate satisfaction, acceptance precision, false acceptance, false rejection, abstention, requirement coverage, first-attempt quality, quality after bounded repair, latency and memory. Unknowns never become successes; unresolved human labels keep CSR an interval or unavailable with denominators. Publish both unconditional satisfaction over all submitted contracts and the narrower supported-domain figure to prevent cherry-picking by rejection.
+5. Proposed promotion gate: no confirmed false accept in a minimum 100 independently labeled accepted cases, with the confidence bound and sample count displayed; this does not establish a zero error rate. For a reduction claim, the preregistered paired 95% confidence interval for full-contract CSR difference must exceed zero, with no >5 percentage-point category degradation and no unsupported-category omission. Cluster resampling by contract family, not correlated seeds. If power is inadequate, label inconclusive and enlarge the next frozen cohort.
+6. Preserve pinned versions, model hashes, source snapshot, seed streams, raw detector outputs, masks and final pixels. Separate quality failure from infrastructure error. Never silently remove failed runs from denominators.
+7. Establish CPU CI with typed schemas, unit/integration tests, frontend checks, dependency/security checks and an offline test boundary. A GPU qualification lane is explicit and opt-in; its actual status must be recorded before a release. Review source/artifact ignore rules without deleting or staging the current working tree.
+
+For the prompt route, score intent preservation separately from image-to-contract satisfaction. Human reviewers enumerate original prompt requirements before seeing the extracted contract; report retained, omitted, invented and changed requirements, by predicate. A confirmed/supplied-contract CSR claim is explicitly scoped to that contract and cannot establish preservation of the original prompt. The first frozen study includes 120 independently reviewed prompt-to-contract pairs from disjoint evaluation families; calibration/tuning never uses their labels.
+
+Prevent a high-precision system from becoming useless through abstention. Proposed usefulness gates, to freeze with the owner before evaluation, are >=30% qualified yield over the preregistered supported task distribution, <=50% unverified/abstained results, and a 600-second total job deadline with at most two repairs. Latency quantiles and achieved yield remain measured outputs; these targets do not imply feasibility or current attainment. If either qualification integrity or usefulness misses its target, retain experimental status and investigate rather than narrow the task distribution after seeing results.
+
+Record every schema-valid unique submission before capability eligibility, including unsupported valid contracts, into a durable submission/evaluation ledger. It contains owner/singleton identity, contract and request hashes, evaluation version, eligibility result/reason and optional linked job ID. Repeated requests with the same key/digest count once; valid capability rejections count as non-satisfied in the unconditional operational denominator without spending GPU time. Malformed/schema-invalid requests are excluded from the image-quality denominator and reported separately. The ledger preserves submitted intent under the configured retention policy; the execution job is created only for an eligible confirmed revision.
+
+| Study workload | Frozen starting size | Compute / labeling budget |
+|---|---|---|
+| Verifier calibration | 120 reviewed images, two reviewers | Prefer existing licensed images plus <=120 synthetic outputs; threshold tuning only here. |
+| Prompt extraction audit | 120 prompt/contract pairs, two reviewers | CPU/provider experiment within a permitted call budget; no image-quality shortcut. |
+| Locked image comparison | 120 contracts x 4 seeds x 2 profiles = 960 first outputs | Rough estimate 32.7 GPU hours at 122.5s/output, not a throughput forecast. Bounded repair can increase this substantially. |
+| Labeling | 960 outputs x 2 reviewers, plus adjudication | Plan 32-64 person-hours at 1-2 minutes per image per reviewer, with a pilot to measure actual time; complex predicate sets may take longer. |
+| Initial execution cap | 48 GPU hours and the stated annotation allocation | Stop at the cap, preserve incomplete cells and report inconclusive. Do not silently shrink the frozen study or claim reduction from a partial convenience sample. A separately versioned larger study needs a new budget. |
+
+The 100-accepted-case precision gate may need more outputs than the initial cohort produces. If that threshold is not reached, report the actual count/bound and keep the profile experimental. Schedule evaluation runs across laptop availability; no concurrency assumption or coding-time estimate absorbs annotation and GPU work.
+
+Statistical preflight comes before the locked study: define a minimum worthwhile improvement (proposed +10 percentage points), estimate paired discordance using a separate small calibration pilot, and compute required independent contract-family count for 80% power at the preregistered error level. Define category comparisons before seeing results: promotion requires point improvement >=the chosen minimum and a positive overall paired 95% interval; each claimed category must also meet a preregistered non-inferiority test with a five-point margin and multiplicity control. If the allocated 120 families/category counts cannot resolve those decisions, label the initial cohort a feasibility/estimation study and plan a separately budgeted qualification study. Never reinterpret a point estimate as statistical evidence of no regression.
+
+The provisional >=30% yield, <=50% abstention and 600-second defaults are guardrails to discuss, not user-derived usefulness evidence. Freeze final values from the observed task and owner priorities before the relevant evaluation. No promotion or hosting decision may treat those proposed defaults as an approved service promise.
+
+P0 exits when calibration and benchmark artifacts exist, coverage is honest, operational verdicts cannot masquerade as full qualification, CPU CI succeeds remotely for a reviewable change and the intended GPU profile has recorded evidence. An inconclusive accuracy result can still ship as experimental; it cannot be promoted as a reduction.
+
+### P1: One contract workflow in React and CLI/API
+
+Add TypeScript incrementally around API responses and run state, then convert components as they are changed. Generate the TypeScript contract from versioned Pydantic/OpenAPI output. Make the contract editor an inspect/validate/confirm step before generation; support a pasted validated contract so the local path does not require a cloud intent service. Profile choices come from server capabilities, not arbitrary YAML paths.
+
+Show operational status and requirement evidence separately in studio, history, demo replay and downloads. Required counts/colors/relations cannot be silently discarded to gain acceptance. Save contract revisions immutably and use their hashes in cache and run identities; edited contracts create new submissions. Preserve keyboard behavior, responsive evidence views and existing navigation.
+
+Exit: the same frozen contract/profile/seed identity appears in CLI, API and UI artifacts; a supported offline example works without provider credentials; unknown requirements are visible on every verdict surface. CPU tests cover schema compatibility and UI state; browser journeys and accessibility checks are required during implementation, subject to the available approved browser environment.
+
+### P2: Durable jobs and optional hosted persistence
+
+Move execution out of the FastAPI request process. In local mode, use SQLite plus a single worker and durable job table. In hosted mode, use PostgreSQL for job/run ownership and transactions; Redis is optional transport, never the sole record of accepted work. Keep payloads small and store image artifacts by reference.
+
+Use a database uniqueness constraint over `(owner_id, idempotency_key)` so retrying the same submission returns the same job. This is idempotency: a repeated request has the same intended effect. Return 409 on the same key with a different payload hash. Store the immutable contract hash, profile digest, provider/model revisions, request digest, attempt number, worker lease, monotonically increasing generation token, timestamps, status and artifact manifest digest.
+
+A lease authorizes a live worker for a bounded time; a generation token prevents a worker with an expired lease from committing late results. It does **not** stop a stale process from occupying VRAM. Assign exactly one supervisor/worker to each physical GPU. Before reassigning that device after missed heartbeats, terminate and confirm the old process has exited; if that cannot be proved, quarantine the device and show recovery required. Do not advertise automatic concurrent replay safety from database locking alone.
+
+Write artifacts to a temporary attempt directory, hash them, atomically rename within the same filesystem, then transactionally commit the manifest. A reconciler detects a renamed directory with no DB commit and repairs the reference or quarantines it; a DB reference to missing/corrupt artifacts becomes an infrastructure failure, never an accepted cache hit. Use content hashes and a uniqueness constraint to make repeated commits harmless.
+
+Local exit: forced API restart, worker kill, duplicate submission, stale lease, cancellation and disk-full tests preserve one authoritative outcome and no concurrent GPU residency using SQLite and one supervised worker. Local mode has an explicit singleton owner and does not claim multi-user access control. Existing archived runs stay readable. Conditional hosted exit: PostgreSQL parity/migration, tenant isolation, backup/restore and, only when Redis is selected, lost/duplicate transport message tests. Neither profile requires copying production data into tests.
+
+### P3: Controlled providers, evidence tools and tracing
+
+Keep `LLMRouter` as the integration seam. Declare capabilities per provider/model: text contract extraction, schema support, vision, context limits, request IDs, timeout, cost budget and credential source. Do not send private data to a fallback provider without the user's permitted provider set. Record the actual provider/model used; reject semantic contract drift even when JSON is syntactically valid. Refusal, malformed JSON, empty response and exhausted budget have separate statuses.
+
+Prototype read-only MCP tools for schema/capabilities, run status and authorized evidence listing. Do not allow arbitrary shell commands, arbitrary filesystem paths or unbounded model downloads. Later generation tools call the same job service with scopes, confirmation policy and duplicate protection. Treat tool descriptions, retrieved documents and agent messages as untrusted data rather than instructions that can redefine acceptance.
+
+Before introducing another evaluation server, compare existing MLflow tracing with Phoenix, LangSmith and Opik on the same representative failed run. Choose at most one dedicated trace backend. Default to structured local logs plus redacted IDs; enabling exported prompts, images or transcripts is a deliberate configuration change. A trace collector outage must not block generation or corrupt qualification.
+
+Local exit: offline supplied-contract flow still works; selected provider fixtures cover the fault matrix; local logs link request/job/run/attempt/MLflow IDs without secrets. A named developer must demonstrate a read-only MCP task improves on the existing CLI/API before that optional adapter is built. If chosen, its local tools enforce the singleton owner; hosted cross-user denial tests activate only with the hosted identity profile. The tracing spike records actual RAM, setup burden and data exported; no dedicated collector is required if MLflow/local logs suffice. No paid provider calls are necessary for normal CPU CI.
+
+### P4: Bounded accuracy, retrieval and framework experiments
+
+Use existing PyTorch/PEFT/MLflow modules. Expand licensed and reviewed datasets by observed failure category, with synthetic counts and per-object color swaps plus natural-image contrast cases. Reject mislabeled, duplicate, ambiguous, corrupted and evaluation-overlapping samples. Keep ground-truth masks/boxes and source licenses; model-generated labels do not qualify themselves. Start with small balanced subsets and increase only after the held-out signal justifies it.
+
+Train rank/learning-rate/conditioning experiments with one GPU job, fixed compute budgets, checkpoint recovery and dataset hashes. Keep the unqualified adapter off by default. Compare denoising loss as a training diagnostic and CSR as the promotion outcome; artifact and category regressions block promotion. A run can finish successfully while its model remains rejected or experimental.
+
+Compare retrieval on/off, current Milvus versus a Chroma alternative, and current bounded LangGraph against CrewAI/ADK only for a named task gap. Use the same contract tasks, time/call budgets and frozen labels. RAGAS evaluates relevant retrieval/text behavior; independent image evaluation determines whether that behavior changes pixels correctly. Graph RAG is admitted only after a real cross-document reasoning task exists.
+
+Exit for any addition: a reproduced improvement in its declared metric, no reduction in acceptance integrity, acceptable laptop memory and latency, documented failure behavior and a rollback switch. A framework experiment can be rejected without invalidating the core product.
+
+### P5: Hosted and optional multimodal workflows
+
+Before hosting: settle intended users, provider spending limits, artifact retention/deletion, model and dataset licenses, data residency and whether users supply their own provider keys. Implement authentication, per-owner access checks, quotas, request budgets, TLS, secrets rotation, recoverable artifact storage and tested backups. Public URLs cannot expose the current local API directly.
+
+Choose one hosting target through a cost and GPU-availability spike; no cloud vendor is selected by this draft. A hosted browser can use a separately deployed frontend and GPU worker service. A browser hosted remotely cannot silently access a user's loopback laptop server; any laptop companion connection needs a separate threat model and owner approval.
+
+Voice, n8n and A2A are conditional vertical slices. Voice shows transcript and extracted contract for confirmation, provides a text equivalent and explicit microphone state, and never fabricates a voice clone consent. Workflows receive scoped signed completion events with retry limits; they never publish images or send notifications without authorization. Remote agents receive least-privilege tasks and cannot override the contract policy.
+
+Exit: synthetic two-user isolation, quota, restore, deletion, provider-outage and cancel/retry journeys pass in staging; actual hosting cost is bounded and approved; rollback is rehearsed. Voice and inter-agent features require their own usefulness and privacy evidence before activation.
+
+## 4. Architecture and deep CEO review
+
+### 4.1 Architecture: boundaries, scaling and coupling
+
+The current API constructs a pipeline at import, stores `JOBS` in memory and uses a `threading.Lock` for GPU exclusion. Replicating that process multiplies job maps and locks, so FastAPI worker count cannot be used as GPU capacity. The proposed boundary keeps API processes lightweight and delegates all GPU ownership to one supervisor per physical device.
+
+Before, the browser is coupled to a default prompt-only pipeline and transient job ID. After, the immutable contract, public profile ID and durable job identity join every interface to one service layer. Provider adapters, retrieval experiments, trace exporters and speech remain optional consumers; none can redefine the acceptance policy or require simultaneous GPU model residency.
+
+```text
+BEFORE
+React UI -> FastAPI [JOBS + GPU_BUSY + Pipeline] -> SQLite / runs/
+                                      |-> providers / retrieval
+
+PROPOSED
+React TS / CLI / MCP(read-first)
+            |
+            v
+FastAPI: validation + identity + capability policy
+            |                 |-> allowed provider adapters (optional)
+            v
+Job service -> SQLite(local) OR PostgreSQL(hosted)
+            |                       ^
+            |-> Redis wakeup? -------|  DB scan repairs missed wakeups
+            v
+GPU supervisor (one process owner per physical device)
+            |
+Existing deterministic stages -> generate -> verify -> repair policy
+            |                                  |
+            v                                  v
+Atomic artifact bundle                  Requirement evidence
+            |                                  |
+            +---------> qualification policy <--+
+                             |
+                        run/job records
+                             |
+                    UI / export / metrics
+
+All stages -> redacted logs -> optional ONE trace backend
+Training/eval -> MLflow + dataset/model manifests -> promotion gate
+```
+
+At 10x load, the GPU queue grows first, not throughput; at 100x, queue admission and per-user budgets reject excess work. Adding Redis cannot make the laptop generate 100 images concurrently. Single points of failure are the GPU worker, local disk and database; local mode reports outages and recoverable jobs, while hosted mode needs backups and durable artifact storage before service promises.
+
+### 4.2 Error and rescue map
+
+Current `_read_json` returns `None` on every exception, making absent and corrupt artifacts indistinguishable. `_run_job` converts any exception to an error string but has no persistent recovery record. Retain a final process-boundary catch for sanitization, while typed failure categories guide retries, abstention and recovery; log contextual IDs and sanitized diagnostics rather than raw arguments or credentials.
+
+The following registry covers the planned critical service boundaries. Classes marked “proposed” are small domain exceptions to define during implementation; library exception families must be confirmed against the pinned dependency versions. “Planned” is not a claim that current code rescues the condition.
+
+| Method / codepath | Failure / exception class | Current treatment | Planned rescue and user outcome |
+|---|---|---|---|
+| Contract validate / compile | `pydantic.ValidationError`, `ValueError` | Validation exists; web contract submission absent | No retry; field/predicate errors and unsupported profile explanation; no GPU charge. |
+| Provider request | `TimeoutError`, `httpx.TimeoutException`, SDK timeout | Fallback exists | Deadline and at most two transient retries inside one total budget; permitted fallback only; visible provider unavailable. |
+| Provider quota/auth | SDK `RateLimitError`, `AuthenticationError`, `PermissionDeniedError` | Provider-dependent fallback | Respect retry delay only within budget; never retry bad auth; redact key; actionable server config status. |
+| Provider body | `json.JSONDecodeError`, `ValidationError`, proposed `ProviderRefusal` / `EmptyResponse` | Parsing/fallback paths vary | At most one constrained re-request; then explicit intent unavailable/refused; editable supplied contract path. |
+| Job submit | Proposed `IdempotencyConflict`, `QueueFull`, DB integrity error | Memory handle, 409 if GPU busy | Same request returns same job; changed payload 409; full queue 429 with retry hint. |
+| DB transaction | `sqlite3.OperationalError`, SQLAlchemy `OperationalError` / `IntegrityError` | Shared SQLite connection | Bounded retry only for recognized lock/transient conflicts; rollback; no phantom successful job response. |
+| Lease / final commit | Proposed `StaleLeaseError` | No durable lease | Reject stale commit; quarantine GPU if old process persists; recovery status rather than double execution. |
+| Redis wakeup | Redis `ConnectionError`, `TimeoutError` | Not present | DB remains queued; scanner recovers; warn operator; user keeps stable job ID. |
+| GPU generation | `torch.cuda.OutOfMemoryError`, `RuntimeError` | Terminal thread error | Release process/model resources; no automatic resolution downgrade; record attempt and configured retry budget. |
+| Verifier | Model load / corrupt checkpoint / unavailable evidence | Some diagnostic unknown states | Preserve unavailable/unknown; strict gate abstains; never infer pass from missing verification. |
+| Artifact read/write | `FileNotFoundError`, `PermissionError`, `OSError`, `JSONDecodeError` | Missing/corrupt may both be `None` | Distinguish pending, missing, corrupt and disk-full; atomic finalization; quarantine incomplete output. |
+| MCP tool | Protocol validation / scope / timeout errors | Not present | Structured tool error with stable code; no arbitrary path or shell fallback. |
+| Trace export | Export timeout / connection error | No dedicated trace backend | Bounded non-blocking buffer; count dropped spans; generation continues with local provenance. |
+| Speech / callback / A2A | Auth, malformed task, duplicate event, timeout | Not present | Conditional modules off; typed failure, bounded retry and visible alternative; no duplicate side effect. |
+
+```text
+error -> classify -> validation/auth/refusal? -> stop with useful code
+               |-> transient dependency? -> retry within deadline -> allowed fallback?
+               |-> missing evidence? -> unverified / abstain
+               |-> stale worker / corrupt artifact? -> quarantine + reconcile
+               `-> unexpected? -> failed job + sanitized incident ID
+```
+
+### 4.3 Security and threat model
+
+Local loopback access is the current deployment assumption, not user authentication. Hosting adds untrusted callers, cross-user artifact access and expensive GPU work, so public exposure is blocked until identity, ownership and quotas exist. Parameterized history queries and UUID path checks are useful existing controls; they do not supply tenant isolation.
+
+Prompt injection means instructions hidden in untrusted retrieved text or tool content. Keep that content outside privileged system policy, use allowlisted tools and validate structured results against the original contract. Secrets, prompts, images, voice and dataset licenses have separate handling requirements; telemetry or a hosted trace product must not silently export them.
+
+| Threat | Likelihood / impact if exposed | Planned mitigation / gate |
+|---|---|---|
+| Another user reads run/artifact IDs | High / High in naive hosting | Owner scope on every query, signed short-lived artifact access and synthetic two-user negative tests. |
+| Anonymous compute exhaustion | High / High | Auth, per-user queue/rate/compute budgets, payload limits and one supervised GPU worker. A rate limit bounds requests per time window. |
+| Secret / private prompt leakage in traces | Medium / High | Redaction before instrumentation/export, default payload omission, retention/deletion controls and fixture secret tests. |
+| Retrieved instructions call tools or weaken contract | Medium / High | Untrusted-data boundary, tool allowlist, immutable contract, deterministic policy. |
+| Remote URL tools reach internal services | Medium / High | No arbitrary fetch tool; explicit host allowlist, address validation and redirect limits for any later downloader. |
+| Artifact path traversal / malformed archive | Medium / High | Server-resolved IDs, path containment, bounded archive extraction and checksums; never trust client filenames. |
+| Browser session abuse | Medium / High | Choose bearer or secure-cookie auth explicitly. Cookie mode requires CSRF protection (cross-site requests must prove origin) and strict same-site settings. CORS (allowed browser origins) is narrow and does not replace auth. |
+| Unsafe model / dependency artifacts | Medium / High | Pinned revisions, safetensors, hash verification, no unreviewed remote code, dependency scan and license manifest. |
+| Forged / repeated completion event | Medium / Medium | Signature, timestamp tolerance, event ID deduplication, retry cap and no unapproved outbound actions. |
+
+### 4.4 Data and interaction edge cases
+
+Separate an omitted optional field from an empty user requirement and an unavailable dependency. An omitted contract may invoke permitted intent parsing; an empty supplied contract must be rejected rather than interpreted as unconstrained success. Persist the submission ledger after schema validation and before capability eligibility; persist an execution job only after capability validation and confirmation. A UI reconnect reads authoritative state rather than resubmitting.
+
+The same rules apply to the proposed text, speech, agent and tool inputs. Speech cannot skip contract confirmation; a remote agent cannot submit an arbitrary profile file. A transient network error after submission is an uncertain response and must be reconciled through the request key, not translated into a new GPU job.
+
+```text
+HAPPY: intent/contract -> validate+confirm -> immutable revision -> job -> evidence -> qualified/failed/unverified
+NIL:   no text + no contract -------------------------------> 422 field error
+       no optional retrieval/provider ---------------------> eligible local path or explicit unavailable
+EMPTY: whitespace / zero requirements / empty transcript ----> field error, no submission
+ERROR: provider/DB/GPU/disk/transport ------------------------> typed error -> bounded rescue -> stable status
+
+Voice -> transcript -> user edits -> SAME contract confirmation -> SAME job service
+Tool/agent -> scoped structured request -> SAME validation -----> SAME job service
+Retrieval -> provenance+data-only context -> validated proposal -> contract never mutated
+Telemetry -> redaction -> bounded buffer -> optional collector; outage does not gate result
+```
+
+| Interaction | Current gap / planned behavior | Required verification |
+|---|---|---|
+| Rapid double-click / repeated HTTP request | UI disabling is insufficient; stable request key plus unique DB constraint | Concurrent duplicate submit returns one job; changed payload conflicts. |
+| Refresh / new tab / server restart | Current in-memory job may disappear; persist job and reconnect by authorized ID | Kill API after commit, reconnect and observe same outcome. |
+| Back navigation / closing contract dialog | Keep editable draft locally; no execution until explicit confirm | No unexpected request or lost confirmed revision. |
+| Edit while a job runs | New immutable revision; running job keeps old contract | Correct hashes in history, cache and evidence. |
+| Cancel near completion | DB transition decides winner; cancelled attempt never becomes qualified | Both commit-before-cancel and cancel-before-commit schedules. |
+| Worker heartbeat expires | Confirm process exit or quarantine physical GPU | No concurrent VRAM ownership under injected delay. |
+| Empty history / 10,000 runs | Helpful first run; stable bounded pagination | Deterministic ordering with equal timestamps and concurrent inserts. |
+| Missing / partial / corrupt artifacts | Distinct pending versus broken states | Corrupt JSON/PNG cannot produce success or unsafe cache reuse. |
+| Slow provider / offline browser | Deadline, explicit reconnect state and saved job link | Reconnect without duplicate call or indefinite spinner. |
+| Expired hosted session | Reauthenticate, then regain authorized job | No other user's metadata visible; preserved draft and no resubmit. |
+| Unsupported colors / relations / extremes | Reject unsupported profile before model load | 0/negative/huge counts, Unicode, long input and unknown attributes. |
+| Imported old run | Archived schema version and explicit narrower evidence | No retroactive full-contract qualification from old boolean. |
+
+```text
+SUBMISSION: schema-valid -> recorded -> eligible -> confirmed -> job queued
+                                  `-> capability rejected (ledger only)
+
+JOB STATE MACHINE (proposed)
+queued -> leased -> running -> finalizing -> completed
+   |         |         |           `-> reconciliation_required
+   |         |         `-> cancel_requested -> cancelled (terminal)
+   |         `-> recovery_pending -> queued (old process confirmed stopped)
+   `-> cancelled (terminal)
+running / finalizing -> failed (terminal execution failure)
+
+completed contains result_status = qualified | constraints_failed | unverified
+failed means infrastructure/execution failure, not a bad image
+terminal states do not return to running; retry creates a linked job/attempt
+transition update compares expected state + lease token; stale updates are rejected
+```
+
+| From | Event / precondition | To | Invalid transition prevention |
+|---|---|---|---|
+| queued | live supervisor atomically claims eligible device | leased | Compare expected state and increment lease token. |
+| leased | process started and device owner confirmed | running | Owner/token check; no parallel launch. |
+| leased/running | worker lost | recovery_pending | Confirm old process exit before requeue; otherwise quarantine. |
+| running | user cancel won the transition | cancel_requested | Final commit cannot race past a persisted cancel. |
+| cancel_requested | process acknowledged stopped | cancelled | Terminal; no recovery edge back to queued. |
+| running | complete intact attempt, valid lease, no cancel | finalizing | Compare-and-update; rejected stale worker cannot commit. |
+| finalizing | manifest and DB transaction succeed | completed | Qualification is a separate result field. |
+| nonterminal | unrecoverable execution/storage failure | failed | Durable error code and retained evidence. |
+| terminal | user explicitly retries | new linked job | Original terminal record is immutable. |
+
+### 4.5 Code quality and compatibility
+
+Reuse the existing stage protocol and service functions; a new universal agent layer would duplicate control flow and error policy. Split `src/api.py` by service responsibility when moving job execution, and split `App.jsx` when adding contract/profile/evidence controls. Generated types need runtime response validation at trust boundaries; TypeScript alone cannot validate server data.
+
+The packaging currently declares a broad Python range while its verified local environment is specific. Introduce compatibility profiles and lock/constraint files based on real clean installs rather than promise all >=3.10 environments. Keep public schema adapters and legacy read paths explicit; avoid requiring a simultaneous React rewrite, database migration and provider replacement in one change.
+
+### 4.6 Test review and evidence map
+
+The saved suite pass is bounded evidence for deterministic behavior, not current visual accuracy or a newly executed suite in this planning session. New schema, state and policy behavior should have many fast unit tests, fewer repository/provider integration tests and a small set of complete user journeys. GPU and human-labeled evaluation remain separate required evidence for model promotion.
+
+For the 2am release check, submit a supplied contract, kill the API mid-job, reconnect, finish verification and prove the final displayed image, contract hash, decision and manifest agree. A hostile test submits the same request concurrently, delays the worker beyond its lease, fills the artifact volume and attempts another user's evidence URL. Chaos testing is deliberate interruption of dependencies to verify recovery; it should use synthetic jobs and test directories.
+
+```text
+NEW UX: contract edit/profile/evidence/reconnect -> unit state + API integration + browser E2E/a11y
+NEW DATA: revision/job/lease/manifest ------------> schema + DB transaction/migration tests
+NEW CODE: capability/refusal/unknown policy ------> fixtures + property/boundary tests
+ASYNC: cancel/retry/reconcile/queue --------------> fake-clock schedules + real two-process worker tests
+EXTERNAL: providers/MCP/traces -------------------> protocol fixtures + opt-in bounded sandbox probes
+ML: dataset/train/promote -----------------------> split/hash/resume tests + paired frozen GPU/human study
+ERRORS: registry rows ---------------------------> named injected fault + exact user/status expectation
+DEPLOY: clean install/backup/restore ------------> isolated CI matrix + staging rehearsal
+```
+
+Avoid flaky wall-clock sleeps and live paid-provider tests in normal CI. Pin seeds and package/model versions, but record that cross-device floating-point behavior may differ. Browser and accessibility execution is required during implementation; earlier browser automation approval was rejected, so this planning review does not claim new browser observations or bypass that restriction.
+
+### 4.7 Performance and resource review
+
+The latest saved supplied-contract run took about 122.5 seconds overall and reserved about 2.563 GB in PyTorch; these are a single profile/run measurement, not a p99 service guarantee or total GPU usage. Training, generation and verification must not share the physical GPU concurrently. The biggest new slow paths are generation plus bounded repair, provider fallback and large retrieval/trace startup.
+
+Proposed budgets are process-level p95 memory <=5.0 GB GPU with at least 1.0 GB physical headroom, FrameGenX tree private working set <=10 GB and system committed memory <=14 GB on the laptop during a recorded representative run. Measure with browser and any optional services included, not torch counters alone. Trace collectors, vector stores and local LLMs are off unless their combined footprint passes the budget; use remote optional providers without silently changing privacy permissions.
+
+For local mode, admit one active and at most two waiting jobs initially; hosted pilot limits are per approved capacity. Backpressure means refusing or delaying new work when capacity is full. Use bounded event lists, paginated history, small job records, artifact retention quotas and indexed queries over owner/status/time; avoid loading base64 images into queue messages. Benchmark 20 representative end-to-end runs before setting p95/p99 latency promises; the plan makes no measured percentile claim today.
+
+### 4.8 Observability and debugging
+
+Every request carries request, job, run, attempt and trace IDs, along with contract/profile/model/verifier/dataset versions. Log queue wait, stage durations, allowed fallback, retry reason, evidence coverage, final policy result, stale-lease rejection and reconciliation events. Do not put raw provider errors, keys or unrestricted prompt/image payloads in user-visible messages or exported spans.
+
+Dashboard panels separate execution completion, strict qualification, predicate quality, abstention, false acceptance, queue age, GPU memory and provider cost. Alert on orphaned jobs, lease loss, artifact integrity failures, repeated verifier unavailability, queue age beyond budget and unexpected export volume. Runbooks must reconstruct a run from the manifest and show how to recover a worker without scheduling a second process onto the same GPU.
+
+### 4.9 Deployment, migration and rollback
+
+Local installs continue without Postgres, Redis, speech or a tracing server. Hosted rollout is a separate profile and does not inherit local trust assumptions. Use additive schema migration first, deploy readers that accept old and new records, then switch new writes; compare migrated row counts and hashes, preserve old evidence and test backup restoration before switching traffic.
+
+A feature flag is a configuration switch for enabling a new path. Separate flags control strict qualification, durable jobs, controller profile exposure, new provider adapters, trace payload export and remote tools. Rolling back a model/profile must preserve the historical identities and result semantics; do not relabel prior unverified runs as qualified or return an old cache result under a new digest.
+
+```text
+DEPLOY
+backup+restore test -> additive migration -> compatible API -> worker canary
+  -> synthetic contract smoke -> limited UI profile -> observe -> expand
+
+ROLLBACK
+new error/quality budget breached?
+  yes -> stop admission -> drain or quarantine worker -> disable new profile/integration
+      -> prior compatible API/worker -> reconcile artifacts/jobs -> verify old read paths
+      -> keep additive DB columns; restore backup only in a rehearsed maintenance window
+  no  -> retain evidence -> widen only within capacity
+```
+
+The first five minutes after deployment check health/readiness, schema version, queue ownership, one synthetic job and access denial. The first hour checks error/abstention/queue/resource budgets, restores a test artifact and samples trace redaction. Readiness must distinguish a healthy API from an unavailable GPU or invalid model cache; liveness alone is insufficient.
+
+### 4.10 Long-term trajectory
+
+The proposed architecture creates shared contracts, durable evidence and an explicit experiment boundary. Those capabilities make later MCP, agents, voice and hosting easier without committing the core to one vendor. A new engineer should be able to run a no-key supplied-contract example, inspect an archived failed result and understand why a model was not promoted.
+
+Reversibility is 4/5 for provider, trace and framework adapters, 3/5 for typed API version evolution and 2/5 for hosted data migration after real users arrive. Introduced debt includes maintaining SQLite/Postgres parity, compatibility adapters, dataset annotation and a larger optional dependency matrix. Review unused integrations quarterly and remove experiments that never meet their entry gate; do not let research prototypes become undocumented production paths.
+
+| Horizon | Capacity allocation / decision | Stop or defer rule |
+|---|---|---|
+| Months 1-2 | Prioritize P0/P1 and local P2, labeling and one frozen study; reserve 48 laptop GPU-hours initially. | If qualification or useful yield is inconclusive, publish experimental scope and spend the next cycle on diagnosed failures. No hosted/voice expansion consumes the qualification budget. |
+| Months 3-4 | Only after a target user completes the core journey, admit at most one provider/tool/tracing spike at a time. | If it does not improve a named task within its call/memory/cost budget, retain existing code and archive the experiment. |
+| Months 5-6 | Choose between another accuracy study and a private hosted pilot using observed demand and operational capacity. | Hosting stays deferred without owner budget, region, identity, restore and usefulness evidence. No simultaneous agent-framework migration. |
+
+This is a sequencing envelope for an owner plus one implementation stream, not a staffing or delivery commitment. Review the allocation after each frozen report; do not convert optional features into calendar promises.
+
+After at most two frozen studies within the approved compute/annotation budget, hold an explicit owner review. Continue the integrated accuracy roadmap only if the observed task has a worthwhile improvement signal or a specific, testable failure diagnosis justifying another bounded study. Otherwise retain research-only status, narrow the supported domain through a new declared protocol, or consider the verifier-only alternative; the owner chooses. Hosting requires repeat usefulness/demand and operational readiness, and cannot substitute for an inconclusive core result.
+
+### 4.11 Design and user journey
+
+The interface should show the contract before GPU execution and show the image beside its requirement evidence afterwards. Current studio/history/ablation navigation can support that progression; framework names belong in diagnostics or settings only when the user needs them to make a choice. Preserve the existing visual language while making unsupported predicates, provider use and unverified evidence legible.
+
+The emotional journey is uncertainty about the prompt, confidence about the confirmed contract, patient waiting with real stage progress, then either evidence-supported acceptance or a useful explanation of failure. Do not replace honest unknowns with a green completion badge. Mobile users need a single-column image/evidence flow, and keyboard/screen-reader users need field errors, focus return and status announcements.
+
+```text
+Studio empty -> prompt or supplied contract -> review/edit -> capability check
+  -> confirm -> queued/running (reconnect/cancel) -> image + evidence
+  -> qualified / constraints failed / unverified / execution failed
+  -> history -> replay exact contract/profile -> export evidence or create new revision
+```
+
+| Feature | Loading | Empty | Error | Success | Partial |
+|---|---|---|---|---|---|
+| Contract editor | Parsing with deadline | Example supplied contract | Field/predicate error | Confirmed immutable revision | Unsupported fields retained and explained |
+| Job | Queued/running stage | No job submitted | Retryable vs terminal code | Execution completed | Recovery/reconnect/cancel pending |
+| Evidence | Verifier active | No observations yet | Missing/corrupt evidence | Requirements qualified | Unknowns remain visible |
+| History | Bounded list load | First-run guidance | Retry with filter preserved | Authorized saved results | Archived version / missing bundle |
+| Provider settings | Capability probe | No cloud key required | Provider unavailable | Allowed capabilities recorded | Some capabilities unavailable |
+
+## 5. Failure modes, non-scope and follow-up work
+
+### Failure Modes Registry (current exposure -> required outcome)
+
+“Test” below describes planned coverage unless an existing test file is named. A planned mitigation does not close a current gap. Critical current gaps are highlighted where lost state or missing evidence could be silent.
+
+| Codepath | Failure mode | Current rescued? | Test / required evidence | User sees now -> planned | Logged? |
+|---|---|---|---|---|---|
+| API process | Restart loses JOBS handle | N | Restart/reconnect integration | Unknown job -> stable recovered job | Memory only -> persistent events |
+| Multi-process API | Two locks allow two GPU jobs | N | Two-process/supervisor fault test | Possible OOM -> queued or capacity error | Partial -> lease + device owner |
+| Artifact reader | Corrupt JSON becomes absent | N (CRITICAL GAP) | Corrupt/truncated artifact fixtures | Missing panel -> corrupt evidence warning | No -> typed incident |
+| Qualification UI | Hard pass confused with complete evidence | Partial | `tests/test_contract_evidence.py` + all UI surfaces | Narrow pass -> explicit coverage/unknown |
+| Worker | Dies before DB commit | N | Kill before/after atomic rename | Lost status -> reconciled or failed | Partial -> durable event |
+| Verifier | Reflections counted as objects | N for quality | Frozen reflection/occlusion labels | Wrong diagnostic -> calibrated/abstain | Saved raw outputs |
+| Color verification | Ambiguous mask / wrong noun | Partial unknown support | Binding/classification human rubric | Unknown/failure -> same, calibrated |
+| Provider | Refusal/empty/schema/timeout | Partial | Provider fault matrix | Generic fallback -> typed permitted recovery | Partial -> redacted trace |
+| Retrieval | No local hits / web outage | Partial | Offline/empty/hostile-content fixtures | Optional failure -> no contract drift | Provenance + safe diagnostics |
+| Redis (planned) | Lost/duplicate wakeup | Planned DB scan | Drop/duplicate transport message | Durable queued state | Event IDs |
+| Stale lease (planned) | Old process continues using GPU | Planned quarantine | Paused worker and failed termination | Recovery required, no second worker | Supervisor incident |
+| Hosted routes (planned) | Cross-owner run access | Not currently a hosted identity system | Two-user negative endpoint/tool tests | 404/403 without data disclosure | Security event |
+| Training | Data leakage / loss-only promotion | Pilot remains disabled | Split hashes + locked promotion | Experimental or rejected | MLflow + manifest |
+| Trace backend (planned) | Collector unavailable / secret capture | Planned bounded local export | Down collector + secret fixture | Generation proceeds; export warning | Dropped-count metric |
+| Voice/callback/A2A (conditional) | Transcript drift / forged event / repeated side effect | Not implemented | Consent/confirm/signature/dedup fixtures | Clear failure and text/manual path | Scoped audit |
+
+Current critical silent gaps: corrupt artifacts treated as absent and lost transient execution state after interruption. Multi-process GPU ownership is a critical deployment risk if naive API replication is introduced. No new component in this draft is described as currently tested or repaired.
+
+### NOT in scope for the first qualified local release
+
+1. Mandatory installation of every overlapping agent/retrieval framework: UC2 asks whether the intended goal is a laboratory or a maintained product.
+2. Public SaaS launch before identity, quotas, restore and residency decisions: complete hosted prerequisites remain in P5.
+3. ElevenLabs voice, n8n notification delivery and A2A deployment before a named user journey: conditional follow-ups preserve the original options.
+4. A second production Streamlit interface: prototype only when a researcher needs it.
+5. Replacement of the current vector store without a comparative migration benchmark: keep evidence and corpus lineage.
+6. Training on scraped or unlicensed images, or accepting generated labels as independent truth: data review is required.
+7. Large local LLMs, simultaneous agent models or distributed training on the 6 GB GPU: require measured compatibility or a separately approved remote compute experiment.
+8. Aesthetic redesign, a framework rewrite or a new workflow engine without a demonstrated requirement.
+9. Claims of hallucination elimination, universal correctness or qualification from training loss.
+
+### Follow-up TODO proposals (planning backlog; do not mark implemented)
+
+| ID | What / why / context | Pros / cons | Effort human -> CC-assisted | Priority / dependencies |
+|---|---|---|---|---|
+| F1 | Run the optional agent/retrieval comparison against the existing LangGraph/Milvus baseline for a named task. | Broader interoperability evidence / maintenance and labeling cost. | L -> M | P3; P0 labels and P3 budgets. |
+| F2 | Add voice only after transcript-to-contract confirmation has a useful target audience. | Accessibility and hands-free input / audio privacy, cost and error handling. | M -> S-M | P3; P1 contract editor and explicit owner gate. |
+| F3 | Prototype n8n/A2A external workflows with scoped identities and event deduplication. | Integrations / deployment and security complexity. | L -> M | P3; P2 durable jobs and P5 auth. |
+| F4 | Choose hosting region, audience, provider key ownership and monthly budget; rehearse restore. | Concrete deployable service / recurring operational duty. | L -> M | P2; P2 storage and owner decisions. |
+
+These are proposed updates to the backlog. They remain in this plan until approval; `TODOS.md` is not silently rewritten during review. Each includes enough context to revisit without assuming a hosted business model.
+
+### Dream state delta and diagram audit
+
+After P0-P3 the product has a supported local workflow, honest qualification, typed contracts, recoverable jobs and controlled integrations. P4 may improve visual accuracy only if its paired studies succeed. P5 adds a hosted service and optional voice/workflows after owner and operational gates; none is a prerequisite for locally measured quality.
+
+Existing architecture documents mix historical and current descriptions. This planning change only adds diagrams in this plan, so no application diagram is silently replaced. Implementation must reconcile `docs/architecture.md`, `docs/04_SYSTEM_ARCHITECTURE.md`, `docs/14_INDEX_AND_RETRIEVAL_ARCHITECTURE.md` and `docs/16_CONSTRAINT_CONTROL.md` with the chosen scope; in particular, Turbo defaults and the optional regional controller must remain distinct.
+
+## 6. CEO implementation tasks
+
+These are future implementation tasks synthesized from findings, not completed work. Priority P1 blocks its applicable release, P2 follows within the selected phase and P3 is conditional follow-up. Effort excludes GPU runtime, annotation turnaround and owner decisions.
+
+- [ ] **C1 (P1, human: 3-5d / CC: 1-3d)** - evaluation - Freeze requirement coverage, human labeling rubric and disjoint calibration/benchmark manifests. Surfaced by 1.1 and P0: current proxy results cannot qualify reduction. Files: `src/verification/contract_evidence.py`, `src/training/evaluation.py`, `configs/evaluation_pilot.json`, evaluation scripts and docs. Verify: split/hash tests, blinded label audit, frozen evaluation report.
+- [ ] **C2 (P1, human: 2-4d / CC: 1-2d)** - qualification - Separate operational outcome, evidence coverage and strict qualification in schemas, storage and reporting. Surfaced by 4.4: missing evidence can be confused with acceptance. Files: core context, verification, reflection, API, run state and report modules. Verify: unknown/corrupt/legacy fixtures cannot emit qualified status.
+- [ ] **C3 (P1, human: 2-3d / CC: 1-2d)** - delivery - Define tested dependency profiles, CPU CI, explicit GPU gates and artifact policy. Surfaced by 4.5/4.9: broad Python declaration and no current remote checks. Files: requirements, pyproject, frontend package, Docker/Compose, proposed CI workflow and docs. Verify: clean Windows/Linux installs, remote CI URLs, recorded GPU gate.
+- [ ] **C4 (P1, human: 4-6d / CC: 2-3d)** - interface - Add typed contract review, allowlisted profiles and identical CLI/API/UI identity. Surfaced by P1/4.11: web cannot submit supplied contracts or choose tested controller. Files: intent models, API/service, CLI, frontend API/types/editor/run views. Verify: offline contract journey, identity/cache parity, unsupported-before-GPU and accessibility checks.
+- [ ] **C5 (P1, human: 5-8d / CC: 2-4d)** - jobs - Add durable submission, worker supervision, cancellation and recovery. Surfaced by 4.1/4.4: memory jobs and process-local GPU lock. Files: API, core DB, proposed job service/supervisor, migrations and tests. Verify: duplicate delivery, restart, stale process and cancel/commit races with one GPU owner.
+- [ ] **C6 (P1, human: 2-4d / CC: 1-2d)** - artifacts - Finalize and reconcile checksummed bundles; distinguish pending/missing/corrupt. Surfaced by 4.2: JSON corruption becomes absence. Files: artifact service, API readers, persistence and export tests. Verify: disk full, corrupt JSON/image, rename-before-commit and stale cache fixtures.
+- [ ] **C7 (P1 for hosting, human: 5-8d / CC: 2-4d)** - hosting - Add optional PostgreSQL/Redis profile with owner scopes, quotas, migrations and backup restoration. Surfaced by 4.3/4.9: local trust assumptions do not support public exposure. Files: repository/config, auth/API service, deployment/migration/runbook and isolation tests. Verify: two-user access denial, lost wakeup, restore rehearsal; no hosted activation before owner gate.
+- [ ] **C8 (P2, human: 3-5d / CC: 1-3d)** - providers - Extend the existing router with capability and permission policies, structured output and bounded rescue. Surfaced by 4.2/P3: provider fallback can change capability and privacy context. Files: router/adapters, extraction/QA callers, config and provider fixtures. Verify: refusal/empty/schema/auth/timeout/budget matrix without paid CI calls.
+- [ ] **C9 (P2, human: 2-3d / CC: 1-2d)** - observability - Compare existing MLflow and one tracing candidate; instrument redacted stage/job metrics. Surfaced by 4.8: fragmented incident reconstruction. Files: tracking, pipeline hooks, API middleware/config and a spike report. Verify: failed-run correlation, collector outage, secret fixtures and laptop RAM measurement.
+- [ ] **C10 (P2, human: 2-4d / CC: 1-2d)** - tools - Expose read-only MCP schema/status/evidence tools through the same access policy. Surfaced by P3: external tools need scope and stable IDs. Files: proposed MCP adapter, shared services and tool contract tests. Verify: unauthorized IDs, invalid paths, timeout and no GPU side effects.
+- [ ] **C11 (P2 conditional, human: 4-8d / CC: 2-4d)** - ML - Curate failure-focused datasets and run compute-bounded LoRA/QLoRA promotion experiments. Surfaced by P4: 90-image loss-only pilot remains experimental. Files: existing training/data/evaluation/registry modules, dataset manifests/configs and reports. Verify: license/split/duplicate checks, resume equivalence, frozen CSR and artifact-regression study.
+- [ ] **C12 (P3, human: 1-3d per experiment / CC: 0.5-2d)** - optional integrations - Evaluate Streamlit, CrewAI/ADK, LlamaIndex/Chroma/RAGAS/GraphRAG, speech, n8n and A2A only against named entry gates. Surfaced by matrix/F1-F3: overlapping frameworks need evidence of value. Files: isolated experiment scripts/configs/reports; core service only if a benchmark supports adoption. Verify: same task/budget baseline, resource use and rollback; no implied production installation.
+- [ ] **C13 (P1, human: 1-2d / CC: 0.5-1d)** - product evidence - Correct unsupported competitor/quality claims and validate the next integration with task-based user sessions. Surfaced by the competitive and audience check: old comparison prose claims advantages without current evidence. Files: `docs/10_COMPETITOR_ANALYSIS.md`, `docs/WHY_NOT_COMFYUI.md`, release/research docs and a user-study report. Verify: every comparative claim has a dated primary source or matched experiment; observed user tasks determine optional-feature priority.
+
+## 7. CEO independent voices and completion
+
+### CODEX SAYS (CEO: document-only strategy challenge)
+
+The CLI review completed with exit 0 after a repository-read attempt stalled and was interrupted. The successful review consumed the frozen embedded document and made no independent source-verification claim. Its six concerns were early task discovery, a verifier-only alternative, task-derived usefulness thresholds, statistical power, incremental-value ablations and an explicit core-product stop decision. The draft incorporates each as a planning correction; customer demand and measured quality remain unknown.
+
+### INDEPENDENT CODEX SUBAGENT (CEO: source-grounded strategy and spec)
+
+No Claude model was available through the collaboration interface, so a fresh-context Codex subagent supplied the requested independent review role. Round 1 found six specification issues (7/10); they were amended. Round 2 returned PASS on completeness, consistency, clarity, scope and feasibility, overall 9/10, with no blocking document issues. The plan is not implementation-authorized or empirically qualified by those scores.
+
+| Dimension | Subagent initial | CLI frozen review | Consensus / disposition |
+|---|---|---|---|
+| Premises valid | OK | OK | CONFIRMED: experimental baseline and no framework-count accuracy claim. |
+| Right problem | OK | CONCERN | DISAGREE: T6 preserves research value while adding observed-task usefulness gates. |
+| Scope calibration | CONCERN | CONCERN | CONFIRMED concern: local/hosted gates split and expansion conditional. |
+| Alternatives explored | OK | CONCERN | DISAGREE: T5 adds verifier-only alternative without forcing a pivot. |
+| Competitive/market risks | CONCERN | CONCERN | CONFIRMED concern: dated claims and task observation required. |
+| Six-month trajectory | CONCERN | CONCERN | CONFIRMED concern: compute allocation, stop rules and owner review added. |
+
+Consensus is 4/6 matched judgments and two strategic disagreements, not six passes. Reviews saw successive documented revisions; the final specification re-check is subagent-only and marks all six amended strategic dimensions OK subject to owner gates. Both independent instances are from the Codex family; this is independent context, not cross-model diversity. Raw/summarized evidence is in `reports/planning/ceo_codex.md` and `ceo_subagent.md`.
+
+### CEO completion summary
+
+| Required output | Result |
+|---|---|
+| Mode selected | SELECTIVE EXPANSION; Approach B draft, alternatives A/C/D preserved. |
+| System audit | Existing React/FastAPI/LangGraph/ML stack reused; transient jobs, uncalibrated evidence and stale comparisons identified. |
+| Step 0 | Seven named premises; reuse map; dream diagram; four alternatives; six adjacent opportunities; temporal decisions. |
+| Section 1: architecture | API/worker boundary and duplicate runtime ownership addressed in plan; scaling limits explicit. |
+| Section 2: errors | Fourteen critical service-boundary rows; missing/corrupt and lost-state gaps called out. |
+| Section 3: security | Eight threat rows; seven high-impact scenarios if exposed without controls; conditional hosted gates. |
+| Section 4: data/UX | Twelve interaction rows, four data paths, submission/job state machine and transition table. |
+| Section 5: quality | Shared schemas, stage reuse and tested runtime profiles planned. |
+| Section 6: tests | Eight test-flow branches, fault specifications and independent GPU/human evidence gates. |
+| Section 7: performance | GPU/system-memory, queue, percentile measurement and experiment budgets specified. |
+| Section 8: observability | Identity correlation, redaction, metrics, alerts and recovery runbooks specified. |
+| Section 9: deployment | Additive migrations, conditional profiles, rollout/rollback diagrams and post-deploy checks. |
+| Section 10: future | Reversibility 2-4/5 by boundary; six-month allocation and two-study owner review. |
+| Section 11: design | Full contract-to-evidence journey and loading/empty/error/success/partial matrix; deeper review follows. |
+| NOT in scope | Nine first-release exclusions/conditional boundaries written. |
+| What already exists | Twelve-row reuse map written. |
+| Dream state delta | P0-P3 local outcome and P4/P5 conditional delta written. |
+| Error/rescue registry | Fourteen boundaries, two critical current integrity/recovery gaps. |
+| Failure modes | Fifteen rows; two current silent critical gaps; multiprocess GPU exposure separately flagged. |
+| TODOS updates | Four contextual follow-up proposals retained here, approval pending. |
+| Scope proposals | Six presented; five draft includes, one conditional deferral; taste decisions retained. |
+| CEO plan | External mirrored artifact written and synchronized. |
+| Outside voices | Codex subagent then CLI sequentially; CLI successful pass document-only. |
+| Lake Score | 7/7 enumerated coverage choices select complete handling: replay command, eligibility, refresh, contract diff, bundle, calibration coverage, interrupted-run test. This is review choice coverage, not product performance. |
+| Diagrams produced | Dream state, before/after architecture, four data paths, error flow, job states, test coverage, rollout/rollback and user journey. |
+| Stale diagrams | Historical architecture and competitor descriptions identified; no application document silently rewritten. |
+| Unresolved decisions | UC1-UC2, T1-T6 and conditional owner budget/audience/threshold choices remain at the final gate. |
+| Spec loop | Two iterations; six initial spec issues fixed; six CLI strategy corrections incorporated; final spec 9/10 PASS. |
+
+Phase 1 complete. Future implementation tasks C1-C13 and a phase JSONL artifact are written. Completion means the planning review ran; current application risks and empirical gaps remain open.
+
+## 8. Design review
+
+### Step 0: scope and evidence
+
+This is an application workspace, with contract review, profile selection, progress/recovery, image evidence, history and benchmark interpretation in scope. No `DESIGN.md` was found. The initial design completeness is 6/10: the CEO plan covers broad states and intent but leaves screen hierarchy, exact action labels, responsive navigation, focus management and profile-exception handling unspecified. A complete design specification would make those decisions explicit while preserving the current React interface.
+
+Reuse `frontend/src/index.css` dark neutrals, existing Inter/JetBrains Mono typography, studio/history/ablation navigation, score/evidence primitives, localStorage reconnect behavior and the existing image preview. This is a deliberate project-consistency exception to the generic skill's preference for a new typeface: replacing typography is not necessary to solve the requested product issues. Add locally served fonts if needed for offline parity rather than introduce another external dependency.
+
+The installed gstack designer was probed and generation failed before any image request: `No OpenAI API key found.` No key was requested or installed. The fallback artifact is `C:/Users/vaish/.gstack/projects/vaishak-v-nair-FrameGenX/designs/contract-workspace-20261015/workspace-sketch.html`, with an unchanged copy of the saved experimental bottle PNG. It is an unapproved static wireframe, not a rendered/browser-tested mockup. No browser automation was attempted because the earlier approval rejection still applies.
+
+Primary focus: separate execution from qualification, put contract confirmation before GPU use, keep unknown requirements visible, define recovery/cancel behavior and make the same task usable on narrow screens and keyboard. Independent design voices run next, followed by all seven passes.
+
+## GSTACK REVIEW REPORT
+
+CEO complete with explicit concerns and pending owner choices. Design, DX and Engineering reviews pending. Final approval not requested yet.
+
+END PLAN
+BEGIN STATIC HTML SOURCE
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FrameGenX contract workspace - planning sketch</title>
+<style>
+:root{color-scheme:dark;--bg:#000;--surface:#101010;--line:#555;--text:#fafafa;--muted:#b8b8c0;--warn:#ffd186;--focus:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 Inter,Arial,sans-serif}a{color:#cde0ff}a:visited{color:#e3ccff}a:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:3px}header,main,footer{max-width:1280px;margin:auto;padding:24px}header{display:flex;align-items:center;gap:32px;border-bottom:1px solid var(--line)}strong.brand{font-size:24px}nav{display:flex;gap:24px;flex-wrap:wrap}nav a{display:inline-block;min-height:44px;padding:10px 0}.notice{padding:12px 16px;background:#251d10;color:var(--warn);margin:0 0 24px}h1{font-size:28px;line-height:1.2;margin:0 0 12px}h2{font-size:22px;margin:28px 0 12px}h3{font-size:18px;margin:20px 0 8px}p{margin:8px 0}.muted{color:var(--muted)}.workspace{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(320px,1fr);gap:32px}section{scroll-margin-top:20px}.panel{background:var(--surface);border:1px solid var(--line);padding:24px;border-radius:8px}.field{margin:16px 0}label{display:block;font-weight:600;margin-bottom:6px}input,select,button{font:inherit;min-height:44px;border:1px solid #777;border-radius:4px;padding:10px;background:#171717;color:var(--text);max-width:100%}input{width:100%}button.primary{background:#fafafa;color:#000;width:100%;font-weight:600}button[disabled]{opacity:1;cursor:default}.status{display:inline-block;padding:4px 10px;border:1px solid #d5ae61;color:var(--warn);border-radius:4px}.facts{display:grid;grid-template-columns:1fr 1fr;gap:8px}.facts div{padding:8px 0;border-bottom:1px solid var(--line)}table{width:100%;border-collapse:collapse;margin-top:16px}th,td{text-align:left;vertical-align:top;padding:12px 8px;border-bottom:1px solid var(--line)}caption{text-align:left;font-weight:600;padding:8px 0}img{display:block;width:100%;max-width:512px;height:auto;margin:auto}code{font-size:14px;overflow-wrap:anywhere}details{padding:12px 0;border-bottom:1px solid var(--line)}summary{cursor:pointer;min-height:44px;padding:8px 0}.run{margin-top:48px;padding-top:32px;border-top:1px solid var(--line)}.history{margin-top:48px}.small{font-size:16px}footer{border-top:1px solid var(--line);color:var(--muted)}
+@media(max-width:900px){header{align-items:flex-start;gap:16px;flex-direction:column}.workspace{grid-template-columns:1fr;gap:20px}header,main,footer{padding:20px}.panel{padding:20px}}
+@media(max-width:480px){header,main,footer{padding:16px}h1{font-size:25px}nav{gap:16px}.panel{padding:16px}.facts{grid-template-columns:1fr}table,tbody,tr,th,td{display:block}thead{display:none}td{padding:6px 0;border:0}tr{border-bottom:1px solid var(--line);padding:10px 0}}
+</style>
+<header><strong class="brand">FrameGenX</strong><nav aria-label="Planning views"><a href="#review">Contract review</a><a href="#result">Run evidence</a><a href="#history">History</a></nav></header>
+<main>
+<p class="notice"><strong>Draft planning sketch.</strong> This file illustrates layout and wording. Controls are disabled; no job is submitted. The image is an unchanged saved experimental output, not a newly qualified result.</p>
+<section id="review"><h1>Review your image requirements</h1><p class="muted">Confirm the objects, colors and relationships before using the GPU.</p>
+<div class="workspace"><div class="panel"><h2>Contract</h2><div class="field"><label for="prompt">Image request</label><input id="prompt" value="Two green bottles on a white surface" readonly></div><table><caption>Illustrative requirements to confirm</caption><thead><tr><th>Requirement</th><th>Expected</th><th>Coverage</th></tr></thead><tbody><tr><td>Bottles</td><td>Exactly 2</td><td>Count diagnostic</td></tr><tr><td>Each bottle's color</td><td>Green</td><td>Experimental color check</td></tr><tr><td>Surface</td><td>White</td><td>Unverified by this profile</td></tr></tbody></table><details><summary>Inspect the versioned contract JSON</summary><p class="muted">The application will show the exact validated contract and revision hash here.</p></details></div>
+<aside class="panel" aria-label="Generation settings"><h2>Generate</h2><div class="field"><label for="profile">Generation profile</label><select id="profile" disabled><option>Instance control - experimental</option></select></div><p class="muted">Only installed, supported profiles appear. Unchecked requirements remain in your contract.</p><div class="field"><label for="seed">Seed</label><input id="seed" value="43" readonly></div><p class="notice">This contract has a requirement the profile cannot verify. The result cannot be fully qualified automatically.</p><button class="primary" disabled>Confirm contract and generate</button><p class="muted">Draft sketch: generation is disabled.</p></aside></div></section>
+<section class="run" id="result"><h1>Run evidence</h1><p>Execution completed <span aria-hidden="true">·</span> <strong class="status">Unverified</strong></p><p class="muted">Saved experimental output. Passing operational checks does not establish the full contract.</p><div class="workspace"><div><img src="saved-bottles.png" alt="Saved experimental image showing two green bottles and visible background artifacts; not a qualified result."><p class="muted">The image remains unchanged from the saved run.</p></div><div class="panel"><h2>Requirement evidence</h2><p><strong>Review remaining requirements</strong></p><p class="muted">The local run reported two green bottles. Its full-contract status remains unverified and background artifacts need inspection.</p><details open><summary>Unknown or unsupported requirements</summary><p>Surface/background and image quality are not qualified by the operational count/color checks.</p></details><details><summary>Attempts and repair changes</summary><p>Show each original image, recorded seed and the actual repair edits. Keep the confirmed contract fixed.</p></details><details><summary>Provenance and reproducibility</summary><p><code>Run e2f31522-0b8f-48cc-a173-b5af48557ce8</code></p><p>Profile, model/verifier revisions, hashes and a reproduction command belong here.</p></details></div></div></section>
+<section class="history" id="history"><h2>History</h2><p class="muted">Each row separates execution status from qualification. A restored or archived run retains its original evidence scope.</p><table><thead><tr><th>Run</th><th>Execution</th><th>Qualification</th><th>Next action</th></tr></thead><tbody><tr><td>Two green bottles</td><td>Completed</td><td>Unverified</td><td><a href="#result">Inspect evidence</a></td></tr></tbody></table></section>
+</main><footer>Planning artifact only. No browser automation, live visual validation, accessibility certification or approval is claimed.</footer>
+</html>
+
+END HTML

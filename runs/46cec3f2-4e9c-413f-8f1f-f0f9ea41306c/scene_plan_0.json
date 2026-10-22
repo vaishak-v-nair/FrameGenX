@@ -1,0 +1,37 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "17d61331-76a5-494e-939f-d903447aa4b9",
+      "class_name": "adventurer",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 60,
+        "ymin": 122,
+        "xmax": 215,
+        "ymax": 389,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "80af7b05-3161-4a9b-88b4-afd1b6b0aa4c",
+      "class_name": "sword",
+      "attributes": [
+        "ancient"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 296,
+        "ymin": 122,
+        "xmax": 451,
+        "ymax": 389,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "accept": false,
+  "reward": 0.6299,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": false,
+  "prompt_edits": [
+    "adventurer holding sword",
+    "sword, prominent, clearly visible"
+  ]
+}

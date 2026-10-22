@@ -1,0 +1,23 @@
+[
+  {
+    "id": "coco_222235",
+    "caption": "A cat is playing with a plan in a park.",
+    "image": "http://images.cocodataset.org/val2017/000000222235.jpg",
+    "score": 0.016287678476996297,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_424162",
+    "caption": "a couple of women that have a dog on a leash",
+    "image": "http://images.cocodataset.org/val2017/000000424162.jpg",
+    "score": 0.00967741935483871,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_329219",
+    "caption": "A man standing next to a dog on the ground.",
+    "image": "http://images.cocodataset.org/val2017/000000329219.jpg",
+    "score": 0.009523809523809523,
+    "retrieval_mode": "hybrid_rrf"
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "860a0aef-89e5-4c3e-9920-c2f378a51492",
+      "class_name": "car",
+      "attributes": [
+        "red"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 60,
+        "ymin": 122,
+        "xmax": 215,
+        "ymax": 389,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "2d067a42-2bfb-4a60-98cf-5dbc15ed251a",
+      "class_name": "bicycle",
+      "attributes": [
+        "blue"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 296,
+        "ymin": 122,
+        "xmax": 451,
+        "ymax": 389,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    }
+  ]
+}

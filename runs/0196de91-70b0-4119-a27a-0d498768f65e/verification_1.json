@@ -1,0 +1,96 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "apple",
+      "expected": 3,
+      "detected": 4
+    },
+    {
+      "type": "spatial_violation",
+      "class_name": "apple->table",
+      "expected": "above",
+      "detected": "subject center_y=331 >= object center_y=256"
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "apple": 4,
+      "table": 1
+    },
+    "expected_counts": {
+      "apple": 3,
+      "table": 1
+    }
+  },
+  "clip_cos": 0.2927,
+  "clip_norm": 0.571,
+  "vqa_score": 0.6667,
+  "vqa_vacuous": false,
+  "reward": 0.6188,
+  "spatial_result": {
+    "passed": false,
+    "total": 1,
+    "verified": 0,
+    "failures": [
+      {
+        "subject": "apple",
+        "predicate": "above",
+        "object": "table",
+        "reason": "subject center_y=331 >= object center_y=256"
+      }
+    ],
+    "results": [
+      {
+        "relationship": {
+          "subject": "apple",
+          "predicate": "above",
+          "object": "table"
+        },
+        "passed": false,
+        "reason": "subject center_y=331 >= object center_y=256",
+        "subject_box": {
+          "xmin": 41.27300262451172,
+          "ymin": 248.45663452148438,
+          "xmax": 193.32861328125,
+          "ymax": 414.0732727050781,
+          "score": 0.8415499925613403
+        },
+        "object_box": {
+          "xmin": 0.5325164794921875,
+          "ymin": 0.0627288818359375,
+          "xmax": 511.609619140625,
+          "ymax": 511.81964111328125,
+          "score": 0.7012309432029724
+        }
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Are there red apple in the image?",
+      "expected": "yes",
+      "class_name": "apple",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "color",
+      "question": "What color is the apple?",
+      "expected": "red",
+      "class_name": "apple",
+      "answer": "red",
+      "correct": true
+    },
+    {
+      "type": "existence",
+      "question": "Is there a table in the image?",
+      "expected": "yes",
+      "class_name": "table",
+      "answer": "no",
+      "correct": false
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+Evaluation directory: E:\BrosKi\framegenx\runs\training\76fada99-67db-4fbe-a508-c0ef96e6042f\evaluation_557b015ef7a8
+
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s]
+Loading weights: 100%|##########| 196/196 [00:00<00:00, 3699.30it/s]
+
+Loading weights:   0%|          | 0/517 [00:00<?, ?it/s]
+Loading weights:  75%|#######4  | 386/517 [00:00<00:00, 3857.02it/s]
+Loading weights: 100%|##########| 517/517 [00:00<00:00, 3852.05it/s]
+W1014 22:02:03.283000 21468 venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+[adapt] LoRA FAILED, skipping: evaluated (When using the offline mode, you must specify a `weight_name`.)
+Traceback (most recent call last):
+  File "E:\BrosKi\framegenx\scripts\evaluate_adapter.py", line 129, in main
+    raise RuntimeError("Exported candidate did not activate through the real application LoRA hook")
+RuntimeError: Exported candidate did not activate through the real application LoRA hook
+{
+  "status": "failed",
+  "metric_scope": "paired_NF4_generation_pilot_only",
+  "full_contract_CSR": null,
+  "quality_status": "unverified",
+  "promotion_status": "unqualified",
+  "adapter": {
+    "quality_status": "unverified",
+    "experimental": true,
+    "training_run_id": "76fada99-67db-4fbe-a508-c0ef96e6042f",
+    "adapter_sha256": "aaaeb9b68609b11ffc032c1a57c765b983b339af22c7e396c24bfd72b289953b",
+    "base_model": "stabilityai/stable-diffusion-xl-base-1.0"
+  },
+  "protocol_sha256": "557b015ef7a87e0d50d47dd2a42285760f708348cec26daf1e469599f47e9087",
+  "protocol": {
+    "schema": "framegenx-paired-pilot-v1",
+    "steps": 25,
+    "guidance_scale": 7.0,
+    "sampler": "diffusers_StableDiffusionXLPipeline",
+    "negative_prompt_policy": "default_zero_conditioning",
+    "seeds": [
+      42,
+      43
+    ],
+    "cases": [
+      {
+        "id": "apple_count_color",
+        "prompt": "Exactly three red apples arranged in a row on a plain white table, with each apple clearly separated.",
+        "requirements": [
+          "Exactly three apples are visible.",
+          "Every apple is red.",
+          "The apples form a clearly separated row.",
+          "A white table is visible."
+        ]
+      },
+      {
+        "id": "vehicle_binding",
+        "prompt": "One red car to the left of one blue bus on a plain gray road.",
+        "requirements": [
+          "Exactly one car is visible.",
+          "Exactly one bus is visible.",
+          "The car is red.",
+          "The bus is blue.",
+          "The car is left of the bus.",
+          "A gray road is visible."
+        ]
+      },
+      {
+        "id": "animal_relation",
+        "prompt": "Exactly one cat on the left and exactly one dog on the right, clearly separated.",
+        "requirements": [
+          "Exactly one cat is visible.",
+          "Exactly one dog is visible.",
+          "The cat is left of the dog.",
+          "The animals are clearly separated."
+        ]
+      },
+      {
+        "id": "bottle_negation",
+        "prompt": "Exactly two green bottles on a white table. No red bottle.",
+        "requirements": [
+          "Exactly two bottles are visible.",
+          "Both bottles are green.",
+          "A white table is visible.",
+          "No red bottle is visible."
+        ]
+      }
+    ]
+  },
+  "evaluator_code_sha256": "a182bddc8172b95fd0b801c3a9e5a6882f42c67c36ca2657699cd7a7c994488d",
+  "model_snapshot": "462165984030d82259a11f4367a4eed129e94a7b",
+  "model_sha256": "83e012a805b84c7ca28e5646747c90a243c65c8ba4f070e2d7ddc9d74661e139",
+  "error": "RuntimeError: Exported candidate did not activate through the real application LoRA hook",
+  "elapsed_seconds": 51.65214980000019
+}

@@ -1,0 +1,66 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "neon lights",
+      "expected": 1,
+      "detected": 0
+    },
+    {
+      "type": "count_mismatch",
+      "class_name": "river",
+      "expected": 1,
+      "detected": 0
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "city skyline": 1,
+      "neon lights": 0,
+      "river": 0
+    },
+    "expected_counts": {
+      "city skyline": 1,
+      "neon lights": 1,
+      "river": 1
+    }
+  },
+  "clip_cos": 0.2004,
+  "clip_norm": 0.2018,
+  "vqa_score": 0.0,
+  "vqa_vacuous": false,
+  "reward": 0.1009,
+  "spatial_result": {
+    "passed": true,
+    "total": 0,
+    "verified": 0,
+    "failures": []
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there a city skyline in the image?",
+      "expected": "yes",
+      "class_name": "city skyline",
+      "answer": "no",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there a neon neon lights in the image?",
+      "expected": "yes",
+      "class_name": "neon lights",
+      "answer": "no",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there a river in the image?",
+      "expected": "yes",
+      "class_name": "river",
+      "answer": "no",
+      "correct": false
+    }
+  ]
+}

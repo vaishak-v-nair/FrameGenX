@@ -1,0 +1,23 @@
+[
+  {
+    "id": "coco_136772",
+    "caption": "a small bowl of fruit on a table",
+    "image": "http://images.cocodataset.org/val2017/000000136772.jpg",
+    "score": 0.016185271922976842,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_213935",
+    "caption": "A pile of oranges, apples and pears next to each other.",
+    "image": "http://images.cocodataset.org/val2017/000000213935.jpg",
+    "score": 0.00967741935483871,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_37777",
+    "caption": "The dining table near the kitchen has a bowl of fruit on it.",
+    "image": "http://images.cocodataset.org/val2017/000000037777.jpg",
+    "score": 0.009523809523809523,
+    "retrieval_mode": "hybrid_rrf"
+  }
+]

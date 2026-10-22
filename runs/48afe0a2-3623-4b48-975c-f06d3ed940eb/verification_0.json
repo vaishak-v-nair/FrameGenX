@@ -1,0 +1,179 @@
+{
+  "accepted": false,
+  "hard_failures": [],
+  "signals": {
+    "detected_counts": {
+      "cat": 1,
+      "chair": 1
+    },
+    "raw_detected_counts": {
+      "cat": 1,
+      "chair": 1
+    },
+    "expected_counts": {
+      "cat": 1,
+      "chair": 1
+    }
+  },
+  "clip_cos": 0.3136,
+  "clip_norm": 0.6543,
+  "vqa_score": null,
+  "vqa_vacuous": false,
+  "vqa_status": "unavailable",
+  "reward": null,
+  "spatial_result": {
+    "passed": true,
+    "total": 1,
+    "verified": 1,
+    "failures": [],
+    "results": [
+      {
+        "relationship": {
+          "subject": "cat",
+          "predicate": "above",
+          "object": "chair"
+        },
+        "passed": true,
+        "reason": "subject center_y=195 < object center_y=286",
+        "subject_box": {
+          "xmin": 142.6938934326172,
+          "ymin": 64.98905944824219,
+          "xmax": 370.986328125,
+          "ymax": 325.91461181640625,
+          "score": 0.8499178886413574
+        },
+        "object_box": {
+          "xmin": 118.56988525390625,
+          "ymin": 66.06494140625,
+          "xmax": 486.17999267578125,
+          "ymax": 505.01690673828125,
+          "score": 0.7891812920570374
+        }
+      }
+    ]
+  },
+  "contract_evidence": {
+    "status": "unverified",
+    "scope": "extracted_contract_only",
+    "counts": {
+      "total": 7,
+      "passed": 3,
+      "failed": 0,
+      "unverified": 4
+    },
+    "requirements": [
+      {
+        "kind": "object_count",
+        "target": "cat",
+        "expected": 1,
+        "status": "passed",
+        "method": "grounding_dino",
+        "observation": {
+          "detected": 1
+        }
+      },
+      {
+        "kind": "object_count",
+        "target": "chair",
+        "expected": 1,
+        "status": "passed",
+        "method": "grounding_dino",
+        "observation": {
+          "detected": 1
+        }
+      },
+      {
+        "kind": "attribute",
+        "target": "cat",
+        "expected": "red",
+        "status": "unverified",
+        "reason": "attribute binding has no calibrated hard verifier",
+        "observation": {
+          "vqa_answers": [
+            "unavailable"
+          ]
+        }
+      },
+      {
+        "kind": "bounding_box",
+        "target": "cat",
+        "expected": {
+          "xmin": 60,
+          "ymin": 122,
+          "xmax": 215,
+          "ymax": 389,
+          "z_index": 1
+        },
+        "status": "unverified",
+        "reason": "declared entity box is not checked"
+      },
+      {
+        "kind": "attribute",
+        "target": "chair",
+        "expected": "blue",
+        "status": "unverified",
+        "reason": "attribute binding has no calibrated hard verifier",
+        "observation": {
+          "vqa_answers": [
+            "unavailable"
+          ]
+        }
+      },
+      {
+        "kind": "bounding_box",
+        "target": "chair",
+        "expected": {
+          "xmin": 296,
+          "ymin": 122,
+          "xmax": 451,
+          "ymax": 389,
+          "z_index": 1
+        },
+        "status": "unverified",
+        "reason": "declared entity box is not checked"
+      },
+      {
+        "kind": "spatial_relation",
+        "target": "cat->chair",
+        "expected": "above",
+        "status": "passed",
+        "method": "box_geometry",
+        "reason": "subject center_y=195 < object center_y=286"
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there a red cat in the image?",
+      "expected": "yes",
+      "class_name": "cat",
+      "answer": "unavailable",
+      "correct": null
+    },
+    {
+      "type": "color",
+      "question": "What color is the cat?",
+      "expected": "red",
+      "class_name": "cat",
+      "answer": "unavailable",
+      "correct": null
+    },
+    {
+      "type": "existence",
+      "question": "Is there a blue chair in the image?",
+      "expected": "yes",
+      "class_name": "chair",
+      "answer": "unavailable",
+      "correct": null
+    },
+    {
+      "type": "color",
+      "question": "What color is the chair?",
+      "expected": "blue",
+      "class_name": "chair",
+      "answer": "unavailable",
+      "correct": null
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "accepted": false,
+  "failures": [
+    {
+      "type": "spatial_violation",
+      "class_name": "cat->wall",
+      "expected": "above",
+      "detected": "subject center_y=285 >= object center_y=256"
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "cat": 2,
+      "wall": 1
+    },
+    "expected_counts": {
+      "cat": 2,
+      "wall": 1
+    }
+  },
+  "root_causes": [
+    "Scene under-populated -> weak object planning",
+    "Prompt misalignment -> RAG or prompt issue",
+    "Objects clustered -> bad composition"
+  ],
+  "actions": []
+}

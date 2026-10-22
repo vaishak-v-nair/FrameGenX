@@ -1,0 +1,30 @@
+{
+  "schema": "framegenx-paired-pilot-v1",
+  "steps": 25,
+  "guidance_scale": 7.0,
+  "sampler": "diffusers_StableDiffusionXLPipeline",
+  "negative_prompt_policy": "default_zero_conditioning",
+  "seeds": [42, 43],
+  "cases": [
+    {
+      "id": "apple_count_color",
+      "prompt": "Exactly three red apples arranged in a row on a plain white table, with each apple clearly separated.",
+      "requirements": ["Exactly three apples are visible.", "Every apple is red.", "The apples form a clearly separated row.", "A white table is visible."]
+    },
+    {
+      "id": "vehicle_binding",
+      "prompt": "One red car to the left of one blue bus on a plain gray road.",
+      "requirements": ["Exactly one car is visible.", "Exactly one bus is visible.", "The car is red.", "The bus is blue.", "The car is left of the bus.", "A gray road is visible."]
+    },
+    {
+      "id": "animal_relation",
+      "prompt": "Exactly one cat on the left and exactly one dog on the right, clearly separated.",
+      "requirements": ["Exactly one cat is visible.", "Exactly one dog is visible.", "The cat is left of the dog.", "The animals are clearly separated."]
+    },
+    {
+      "id": "bottle_negation",
+      "prompt": "Exactly two green bottles on a white table. No red bottle.",
+      "requirements": ["Exactly two bottles are visible.", "Both bottles are green.", "A white table is visible.", "No red bottle is visible."]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "prompt": "floating islands suspended in a mystical sky, ethereal sky\u2011borne islands, cascading waterfalls plunging into misty valleys, towering waterfalls of crystal water, ancient ruins draped in thick vines, crumbling vine\u2011covered stone temples, adventurer wielding an ancient sword, heroic figure with weathered blade, standing on a jagged cliff edge, rugged cliffside silhouette at sunset, warm amber sun setting over the horizon, fantasy video game aesthetic, mythical landscape atmosphere",
+  "width": 512,
+  "height": 512,
+  "steps": 4,
+  "cfg_scale": 0.0,
+  "seed": null,
+  "base_model": "stabilityai/sdxl-turbo",
+  "controlnet": null,
+  "control_image_mode": "none",
+  "oom_fallback": null,
+  "created_at": "2026-08-26T19:30:31.049541+00:00",
+  "lora_adapters": [
+    {
+      "name": "pixel-art",
+      "source": "nerijs/pixel-art-xl",
+      "weight": 1.0,
+      "enabled": false
+    }
+  ],
+  "lora_load_report": []
+}

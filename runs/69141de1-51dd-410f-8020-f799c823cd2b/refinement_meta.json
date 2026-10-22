@@ -1,0 +1,7 @@
+{
+  "model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "strength": 0.3,
+  "steps": 20,
+  "input_image": "generated_0.png",
+  "output_image": "refined_final.png"
+}

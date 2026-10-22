@@ -1,0 +1,12 @@
+{
+  "accept": false,
+  "reward": null,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "paper",
+  "hard_ok": false,
+  "prompt_edits": [
+    "exactly 1 car, individually visible",
+    "One red car to the left of one blue bus on a plain gray road., prominent, clearly visible"
+  ]
+}

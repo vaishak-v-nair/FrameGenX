@@ -1,0 +1,27 @@
+{
+  "accepted": false,
+  "failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "banana",
+      "expected": 3,
+      "detected": 5
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "banana": 5,
+      "bowl": 1
+    },
+    "expected_counts": {
+      "banana": 3,
+      "bowl": 1
+    }
+  },
+  "root_causes": [
+    "Scene under-populated -> weak object planning",
+    "Prompt misalignment -> RAG or prompt issue",
+    "Objects clustered -> bad composition"
+  ],
+  "actions": []
+}

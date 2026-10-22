@@ -1,0 +1,11 @@
+{
+  "width": 512,
+  "height": 512,
+  "steps": 25,
+  "cfg_scale": 7.0,
+  "sampler": "euler_a",
+  "seed": 43,
+  "region_controller": "fusion",
+  "bootstrap_steps": 12,
+  "regional_steps": 12
+}

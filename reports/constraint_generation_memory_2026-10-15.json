@@ -1,0 +1,7 @@
+{
+  "Scope": "generator_process_working_set_snapshot_not_system_peak",
+  "ProcessId": 8360,
+  "WorkingSetGB": 0.64468992,
+  "PeakWorkingSetGB": 5.100167168,
+  "RecordedAt": "2026-10-15T13:14:35.1779821+05:30"
+}

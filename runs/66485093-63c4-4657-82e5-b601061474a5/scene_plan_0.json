@@ -1,0 +1,22 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "d65662b5-db03-41ad-92b4-b0ff9789ab0b",
+      "class_name": "car",
+      "attributes": [
+        "futuristic",
+        "cyberpunk"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 96,
+        "ymin": 96,
+        "xmax": 415,
+        "ymax": 415,
+        "z_index": 1
+      },
+      "z_index": 1
+    }
+  ]
+}

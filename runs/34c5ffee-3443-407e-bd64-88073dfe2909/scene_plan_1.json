@@ -1,0 +1,24 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "e7203949-fc6b-4395-92a1-ecf396094eeb",
+      "class_name": "sunset",
+      "attributes": [
+        "beautiful",
+        "orange",
+        "pink",
+        "purple"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 76,
+        "ymin": 91,
+        "xmax": 405,
+        "ymax": 420,
+        "z_index": 1
+      },
+      "z_index": 1
+    }
+  ]
+}

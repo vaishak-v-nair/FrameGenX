@@ -1,0 +1,23 @@
+[
+  {
+    "id": "coco_487583",
+    "caption": "A white toilet and cup in a room.",
+    "image": "http://images.cocodataset.org/val2017/000000487583.jpg",
+    "score": 0.01578814627994956,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_7574",
+    "caption": "A kitchen with a very messy counter space.",
+    "image": "http://images.cocodataset.org/val2017/000000007574.jpg",
+    "score": 0.015584415584415583,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_527750",
+    "caption": "There is a man standing next to the kitchen counter.",
+    "image": "http://images.cocodataset.org/val2017/000000527750.jpg",
+    "score": 0.009836065573770491,
+    "retrieval_mode": "hybrid_rrf"
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "created_at": "2026-08-16T15:59:34.834536+00:00",
+  "prompt": "a beautiful sunset",
+  "parsed": {
+    "subject": "sunset",
+    "objects": [
+      "sunset"
+    ],
+    "colors": [],
+    "primary_subject": "sunset",
+    "secondary_objects": []
+  },
+  "constraints": [
+    {
+      "type": "object_count",
+      "value": 1,
+      "target": "sunset",
+      "priority": "critical"
+    }
+  ],
+  "rag_hits": [],
+  "rag_influence": {
+    "depth_required": false,
+    "lighting_complex": false
+  },
+  "execution_plan": {
+    "has_human": false,
+    "has_depth": false,
+    "risk_level": "low"
+  },
+  "signal_map": {
+    "object_count": {
+      "threshold": 1
+    },
+    "class_uniqueness": {
+      "threshold": 1
+    },
+    "depth_layers": {
+      "threshold": 2
+    },
+    "spatial_ratio": {
+      "threshold": 0.2
+    },
+    "embedding": {
+      "threshold": 1.0
+    }
+  },
+  "entities": [
+    {
+      "id": "0b470cbf-0056-4b7d-959c-8ef464ac1c1e",
+      "class_name": "sunset",
+      "attributes": [
+        "beautiful"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    }
+  ],
+  "spatial_relationships": [],
+  "negations": []
+}

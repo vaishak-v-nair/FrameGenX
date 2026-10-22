@@ -1,0 +1,9 @@
+{
+  "model": "stabilityai/sdxl-turbo",
+  "reused_generate_pipe": false,
+  "strength": 0.35,
+  "steps": 6,
+  "guidance_scale": 0.0,
+  "input_image": "generated_2.png",
+  "output_image": "refined_final.png"
+}

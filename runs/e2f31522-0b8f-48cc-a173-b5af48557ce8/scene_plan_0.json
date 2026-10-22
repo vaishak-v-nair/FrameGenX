@@ -1,0 +1,90 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "bottle1",
+      "class_name": "bottle",
+      "attributes": [
+        "green"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 82,
+        "ymin": 102,
+        "xmax": 174,
+        "ymax": 451,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "bottle2",
+      "class_name": "bottle",
+      "attributes": [
+        "green"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 338,
+        "ymin": 102,
+        "xmax": 430,
+        "ymax": 451,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "table",
+      "class_name": "table",
+      "attributes": [
+        "white"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": true
+    }
+  ],
+  "instance_regions": {
+    "enabled": true,
+    "schema": "framegenx-instance-regions-v1",
+    "resolution": 512,
+    "background_prompt": "white table.",
+    "regions": [
+      {
+        "entity_id": "bottle1",
+        "class_name": "bottle",
+        "attributes": [
+          "green"
+        ],
+        "prompt": "one single green bottle, centered whole object.",
+        "shape": "box",
+        "box": [
+          0.16,
+          0.2,
+          0.33999999999999997,
+          0.88
+        ]
+      },
+      {
+        "entity_id": "bottle2",
+        "class_name": "bottle",
+        "attributes": [
+          "green"
+        ],
+        "prompt": "one single green bottle, centered whole object.",
+        "shape": "box",
+        "box": [
+          0.66,
+          0.2,
+          0.84,
+          0.88
+        ]
+      }
+    ],
+    "method": "spatially_routed_cross_attention",
+    "quality_status": "unverified"
+  }
+}

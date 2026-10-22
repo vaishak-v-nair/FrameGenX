@@ -1,0 +1,138 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "spatial_violation",
+      "class_name": "person->surface",
+      "expected": "on",
+      "detected": "object 'surface' not detected"
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "person": 1
+    },
+    "raw_detected_counts": {
+      "person": 1
+    },
+    "expected_counts": {
+      "person": 1
+    }
+  },
+  "clip_cos": 0.3682,
+  "clip_norm": 0.8729,
+  "vqa_score": 0.5,
+  "vqa_vacuous": false,
+  "vqa_status": "observed",
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there a glowing plant in the image?",
+      "expected": "yes",
+      "class_name": "plant",
+      "answer": "no",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there a spacesuit person in the image?",
+      "expected": "yes",
+      "class_name": "person",
+      "answer": "yes",
+      "correct": true
+    }
+  ],
+  "reward": 0.6865,
+  "spatial_result": {
+    "passed": false,
+    "total": 1,
+    "verified": 0,
+    "failures": [
+      {
+        "subject": "person",
+        "predicate": "on",
+        "object": "surface",
+        "reason": "object 'surface' not detected"
+      }
+    ],
+    "results": [
+      {
+        "relationship": {
+          "subject": "person",
+          "predicate": "on",
+          "object": "surface"
+        },
+        "passed": false,
+        "reason": "object 'surface' not detected"
+      }
+    ]
+  },
+  "contract_evidence": {
+    "status": "failed",
+    "scope": "extracted_contract_only",
+    "counts": {
+      "total": 5,
+      "passed": 1,
+      "failed": 1,
+      "unverified": 3
+    },
+    "requirements": [
+      {
+        "kind": "object_count",
+        "target": "person",
+        "expected": 1,
+        "status": "passed",
+        "method": "grounding_dino",
+        "observation": {
+          "detected": 1
+        }
+      },
+      {
+        "kind": "object_presence",
+        "target": "plant",
+        "expected": true,
+        "status": "unverified",
+        "reason": "vision QA is diagnostic, not a calibrated presence gate",
+        "observation": {
+          "vqa_answers": [
+            "no"
+          ]
+        }
+      },
+      {
+        "kind": "attribute",
+        "target": "plant",
+        "expected": "glowing",
+        "status": "unverified",
+        "reason": "attribute binding has no calibrated hard verifier"
+      },
+      {
+        "kind": "attribute",
+        "target": "person",
+        "expected": "spacesuit",
+        "status": "unverified",
+        "reason": "attribute binding has no calibrated hard verifier"
+      },
+      {
+        "kind": "spatial_relation",
+        "target": "person->surface",
+        "expected": "on",
+        "status": "failed",
+        "method": "box_geometry",
+        "reason": "object 'surface' not detected"
+      }
+    ]
+  },
+  "detected_boxes": {
+    "person": [
+      {
+        "xmin": 260.4770812988281,
+        "ymin": 101.65364074707031,
+        "xmax": 355.3072814941406,
+        "ymax": 366.40777587890625,
+        "score": 0.8629536032676697
+      }
+    ]
+  },
+  "count_method": "grounding_dino"
+}

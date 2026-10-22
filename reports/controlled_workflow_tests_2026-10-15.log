@@ -1,0 +1,55 @@
+..............................................................F......... [ 79%]
+...................                                                      [100%]
+================================== FAILURES ===================================
+________ test_reflect_stage_blocks_hard_failure_even_with_high_reward _________
+
+mock_config = {'paths': {'output_dir': 'E:\\BrosKi\\framegenx\\.pytest_tmp_controlled_workflow_20261015\\test_reflect_stage_blocks_h...E:\\BrosKi\\framegenx\\.pytest_tmp_controlled_workflow_20261015\\test_reflect_stage_blocks_hard0\\runs\\framegenx.db'}}
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000027EF0881BD0>
+
+    def test_reflect_stage_blocks_hard_failure_even_with_high_reward(mock_config, monkeypatch):
+        ctx = RunContext(prompt="two cats", config=mock_config)
+        ctx.contract = {"prompt": "two cats"}
+        ctx.verification_report = {
+            "hard_failures": [{"type": "count_mismatch", "class_name": "cat",
+                               "expected": 2, "detected": 1}],
+            "reward": 0.99,
+        }
+        monkeypatch.setattr("src.reflection.reflector.build_corrective_edits",
+                            lambda report, contract, details: ["exactly two cats"])
+>       ReflectStage({"reflection": {"mode": "hard_only", "tau": 0.73}}).run(ctx)
+
+tests\test_stage_graph.py:280: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <src.reflection.reflector.ReflectStage object at 0x0000027EF06BA660>
+ctx = RunContext(prompt='two cats', run_id='9f5d2465-cc02-4262-8755-cc0c69b04b77', start_time=1792048819.084947, config={'pa...={}, ref_image_paths=[], reward_history=[], prompt_edits=[], decision={}, is_successful=False, repair_loops_executed=0)
+
+    def run(self, ctx: RunContext) -> None:
+        report = ctx.verification_report or {}
+        reward = report.get("reward", 0.0)
+        failures = report.get("hard_failures")
+        hard_ok = isinstance(failures, list) and not failures
+    
+        if self.mode == "hard_only":
+            accept = hard_ok
+        else:
+            # Legacy reward-gated mode
+            accept = hard_ok and reward is not None and reward >= self.tau
+    
+        edits: List[str] = []
+        if not accept:
+            # Pull vqa_details from the saved verification artifact fields
+            import json
+            vqa_details = []
+            vpath = ctx.run_dir / f"verification_{ctx.attempt}.json"
+            if vpath.exists():
+                with open(vpath, "r", encoding="utf-8") as f:
+                    vqa_details = (json.load(f)).get("vqa_details", [])
+>           edits = build_corrective_edits(report, ctx.contract or {}, vqa_details,
+                use_llm=not self.config.get("reflection", {}).get("deterministic_only", False))
+E           TypeError: test_reflect_stage_blocks_hard_failure_even_with_high_reward.<locals>.<lambda>() got an unexpected keyword argument 'use_llm'
+
+src\reflection\reflector.py:140: TypeError
+=========================== short test summary info ===========================
+FAILED tests/test_stage_graph.py::test_reflect_stage_blocks_hard_failure_even_with_high_reward
+1 failed, 90 passed in 84.06s (0:01:24)

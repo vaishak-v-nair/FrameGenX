@@ -1,0 +1,32 @@
+{
+  "elapsed_seconds": 42.29056649999984,
+  "error_type": "RuntimeError",
+  "image_sha256": "1fd398604391398a4b308fc6e41ac5ad9f2cc85b4362a714290178d75e77058b",
+  "provider_failures": [
+    {
+      "error_type": "APIConnectionError",
+      "http_status": null,
+      "provider": "Ollama"
+    },
+    {
+      "error_type": "APITimeoutError",
+      "http_status": null,
+      "provider": "Nvidia"
+    },
+    {
+      "error_type": "InternalServerError",
+      "http_status": 503,
+      "provider": "Gemini"
+    }
+  ],
+  "requested_provider_and_model": [
+    "Gemini",
+    "gemini-flash-latest"
+  ],
+  "requirements": [
+    "Exactly three apples are visible.",
+    "Every apple is red."
+  ],
+  "scope": "one_generated_public_synthetic_image_dependency_probe_not_CSR",
+  "status": "unavailable"
+}

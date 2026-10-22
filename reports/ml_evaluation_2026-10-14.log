@@ -1,0 +1,17 @@
+Evaluation directory: E:\BrosKi\framegenx\runs\training\76fada99-67db-4fbe-a508-c0ef96e6042f\evaluation_557b015ef7a8
+
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s]
+Loading weights: 100%|##########| 196/196 [00:00<00:00, 3744.15it/s]
+
+Loading weights:   0%|          | 0/517 [00:00<?, ?it/s]
+Loading weights:  79%|#######8  | 408/517 [00:00<00:00, 4078.09it/s]
+Loading weights: 100%|##########| 517/517 [00:00<00:00, 4287.79it/s]
+W1014 22:12:05.287000 26200 venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+E:\BrosKi\framegenx\venv\Lib\site-packages\peft\tuners\tuners_utils.py:302: UserWarning: Already found a `peft_config` attribute in the model. This will lead to having multiple adapters in the model. Make sure to know what you are doing!
+  warnings.warn(
+No LoRA keys associated to NoneType found with the prefix='text_encoder'. This is safe to ignore if LoRA state dict didn't originally have any NoneType related params. You can also try specifying `prefix=None` to resolve the warning. Otherwise, open an issue if you think it's unexpected: https://github.com/huggingface/diffusers/issues/new
+No LoRA keys associated to NoneType found with the prefix='text_encoder_2'. This is safe to ignore if LoRA state dict didn't originally have any NoneType related params. You can also try specifying `prefix=None` to resolve the warning. Otherwise, open an issue if you think it's unexpected: https://github.com/huggingface/diffusers/issues/new
+[adapt] LoRA loaded: evaluated (E:\BrosKi\framegenx\runs\training\76fada99-67db-4fbe-a508-c0ef96e6042f\checkpoint-000048\adapter.safetensors) w=1.0
+Sampled apple_count_color_42_baseline; 70.3s
+Sampled apple_count_color_42_candidate; 97.3s
+Sampled apple_count_color_43_baseline; 119.0s

@@ -1,0 +1,95 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "3e4de959-e97a-49a9-90bc-341b768c6855",
+      "class_name": "book",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 0,
+        "ymin": 5,
+        "xmax": 120,
+        "ymax": 165,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "4bb01372-4b6e-49ac-8f08-5023e15c5dd9",
+      "class_name": "book",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 220,
+        "ymin": 5,
+        "xmax": 380,
+        "ymax": 165,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "c6eadf6d-6462-4b23-9181-2ae46dcde566",
+      "class_name": "book",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 300,
+        "ymin": 5,
+        "xmax": 460,
+        "ymax": 165,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "2cfbc446-42c0-4960-8a75-ebccb78be781",
+      "class_name": "book",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 50,
+        "ymin": 175,
+        "xmax": 210,
+        "ymax": 335,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "c69cede1-6392-4c07-8979-6baf1f9725a0",
+      "class_name": "book",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 130,
+        "ymin": 175,
+        "xmax": 290,
+        "ymax": 335,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "81ebcbf4-e4b2-468c-baa7-6904acc86b8b",
+      "class_name": "desk",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 390,
+        "ymin": 175,
+        "xmax": 511,
+        "ymax": 335,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    }
+  ]
+}

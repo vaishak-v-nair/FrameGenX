@@ -1,0 +1,16 @@
+{
+  "accept": false,
+  "reward": 0.0625,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": false,
+  "prompt_edits": [
+    "exactly 1 person, each clearly separated, distinct objects, prominently featured",
+    "person toward city",
+    "sharp focus, highly detailed",
+    "person, prominent, clearly visible",
+    "plant, prominent, clearly visible",
+    "city, prominent, clearly visible"
+  ]
+}

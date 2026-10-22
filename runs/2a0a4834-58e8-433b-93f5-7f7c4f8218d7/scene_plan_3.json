@@ -1,0 +1,80 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "c053ba36-eec8-4445-9b69-8ecfe7a2fc81",
+      "class_name": "candle",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 113,
+        "ymin": 158,
+        "xmax": 308,
+        "ymax": 353,
+        "z_index": 2
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "33672800-0908-49d0-9546-a68f690633ef",
+      "class_name": "candle",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 80,
+        "ymin": 35,
+        "xmax": 234,
+        "ymax": 189,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "cbce0bc8-daf3-49f6-a882-6b418e6bdcba",
+      "class_name": "candle",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 277,
+        "ymin": 35,
+        "xmax": 431,
+        "ymax": 189,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "3445faa6-f5a1-46b6-b1bc-42607377c73d",
+      "class_name": "candle",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 80,
+        "ymin": 322,
+        "xmax": 234,
+        "ymax": 476,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "bb2a0b09-fd31-4900-b243-98ca2568c63d",
+      "class_name": "cake",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 277,
+        "ymin": 322,
+        "xmax": 431,
+        "ymax": 476,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "schema_version": "2.0",
+  "created_at": "2026-08-24T15:29:44.754094+00:00",
+  "prompt": "Panoramic view of jagged alpine peaks at sunrise, wildflowers in bloom in the foreground, layers of mist filling the valleys below, warm golden light painting the summit, ultra-wide composition, photorealistic landscape photography, hyper-detailed, no people",
+  "parsed": {
+    "subject": "jagged alpine peaks",
+    "objects": [
+      "panoramic view",
+      "jagged alpine peaks",
+      "sunrise",
+      "wildflowers",
+      "foreground",
+      "layers",
+      "mist",
+      "valleys",
+      "warm golden light",
+      "summit",
+      "ultra-wide composition",
+      "photorealistic landscape photography",
+      "hyper-detailed"
+    ],
+    "colors": [
+      "golden"
+    ],
+    "primary_subject": "jagged alpine peaks",
+    "secondary_objects": [
+      "wildflowers",
+      "mist",
+      "valleys",
+      "light",
+      "summit",
+      "foreground",
+      "layers"
+    ]
+  },
+  "constraints": [
+    {
+      "type": "object_count",
+      "value": 1,
+      "target": "jagged alpine peaks",
+      "priority": "critical"
+    }
+  ],
+  "rag_hits": [],
+  "rag_influence": {
+    "depth_required": false,
+    "lighting_complex": false
+  },
+  "execution_plan": {
+    "has_human": false,
+    "has_depth": true,
+    "risk_level": "medium"
+  },
+  "signal_map": {
+    "object_count": {
+      "threshold": 1
+    },
+    "class_uniqueness": {
+      "threshold": 1
+    },
+    "depth_layers": {
+      "threshold": 2
+    },
+    "spatial_ratio": {
+      "threshold": 0.2
+    },
+    "embedding": {
+      "threshold": 1.0
+    }
+  },
+  "entities": [
+    {
+      "id": "9fe80713-243a-4f16-8fa1-7c9eff502439",
+      "class_name": "wildflower",
+      "attributes": [
+        "bloom"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": true
+    }
+  ],
+  "spatial_relationships": [],
+  "negations": [
+    "people"
+  ]
+}

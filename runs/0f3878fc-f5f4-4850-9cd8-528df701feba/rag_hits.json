@@ -1,0 +1,23 @@
+[
+  {
+    "id": "coco_343976",
+    "caption": "A city street lit up in a night scene with cars in the background.",
+    "image": "http://images.cocodataset.org/val2017/000000343976.jpg",
+    "score": 0.015989911727616643,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_565012",
+    "caption": "a digitally manipulated image of cars on a highway at night in the city",
+    "image": "http://images.cocodataset.org/val2017/000000565012.jpg",
+    "score": 0.01572420634920635,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_558558",
+    "caption": "A city traffic signal and street at night.",
+    "image": "http://images.cocodataset.org/val2017/000000558558.jpg",
+    "score": 0.015542521994134896,
+    "retrieval_mode": "hybrid_rrf"
+  }
+]

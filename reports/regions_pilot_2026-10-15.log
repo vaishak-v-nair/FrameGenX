@@ -1,0 +1,15 @@
+Regional evaluation directory: E:\BrosKi\framegenx\runs\constraint_control\e172e12bdea1c6fc
+
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s]
+Loading weights: 100%|##########| 196/196 [00:00<00:00, 2197.14it/s]
+
+Loading weights:   0%|          | 0/517 [00:00<?, ?it/s]
+Loading weights:  46%|####5     | 236/517 [00:00<00:00, 2358.03it/s]
+Loading weights:  91%|#########1| 472/517 [00:00<00:00, 1489.52it/s]
+Loading weights: 100%|##########| 517/517 [00:00<00:00, 1603.03it/s]
+W1015 11:49:00.006000 8324 venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Saved apple_count_color_43_baseline.png; 125.2s
+Saved apple_count_color_43_candidate.png; 222.1s
+Saved vehicle_binding_43_baseline.png; 222.1s
+Saved vehicle_binding_43_candidate.png; 304.0s
+{"status": "generated_pending_independent_review", "generation_fingerprint": "e172e12bdea1c6fc2aec387c6cef7f7478d0383c8a3fa8b3bac5e76961d194f6", "peak_reserved_gb": 2.365587456, "elapsed_seconds": 307.4014094999993}

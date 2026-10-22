@@ -1,0 +1,25 @@
+model: stabilityai/stable-diffusion-xl-base-1.0
+method: qlora
+dataset: data/training/constraint_expanded_v1/records.jsonl
+output_root: runs/training
+tracking_db: runs/mlflow.db
+experiment: framegenx-expanded-constraint-feasibility
+resolution: 256
+rank: 4
+lora_alpha: 4
+learning_rate: 0.00001
+max_steps: 320
+gradient_accumulation: 2
+seed: 1729
+deterministic: true
+checkpoint_every: 80
+validation_every: 80
+validation_limit: 12
+max_vram_gb: 5.5
+min_free_vram_gb: 3.0
+max_runtime_seconds: 1800
+max_total_runtime_seconds: 2700
+max_process_rss_gb: 7.0
+min_available_ram_gb: 1.0
+snr_gamma: 5.0
+target_modules: [to_q, to_k, to_v, to_out.0]

@@ -1,0 +1,14 @@
+{
+  "accept": false,
+  "reward": 0.3766,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": false,
+  "prompt_edits": [
+    "Add adventurer prominently",
+    "Adventurer holding sword",
+    "adventurer, prominent, clearly visible",
+    "sword, prominent, clearly visible"
+  ]
+}

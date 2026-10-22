@@ -1,0 +1,22 @@
+{
+  "prompt": "only 1 person, nothing else similar, only 1 city, nothing else similar, person, prominent, clearly visible, plant, prominent, clearly visible, city, prominent, clearly visible",
+  "width": 512,
+  "height": 512,
+  "steps": 4,
+  "cfg_scale": 0.0,
+  "seed": null,
+  "base_model": "stabilityai/sdxl-turbo",
+  "controlnet": null,
+  "control_image_mode": "none",
+  "oom_fallback": null,
+  "created_at": "2026-08-26T18:31:25.201844+00:00",
+  "lora_adapters": [
+    {
+      "name": "pixel-art",
+      "source": "nerijs/pixel-art-xl",
+      "weight": 1.0,
+      "enabled": false
+    }
+  ],
+  "lora_load_report": []
+}

@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-10-16T09:30:59.4656181+05:30",
+  "scope": "Planning package verification only; no application test or quality qualification",
+  "status": "PASSED_PLANNING_ARTIFACT_CHECKS",
+  "plan": "docs/plans/STACK_EVOLUTION_PLAN.md",
+  "plan_sha256": "6C852928582E68F05C001704CD8428BDF39BD2BCA81A74D9CA5E78D14F65BF1B",
+  "decisions": {
+    "total": 74,
+    "mechanical": 63,
+    "taste": 9,
+    "challenges": 2
+  },
+  "tasks": {
+    "phases": [
+      {
+        "phase": "ceo-review",
+        "count": 13
+      },
+      {
+        "phase": "design-review",
+        "count": 4
+      },
+      {
+        "phase": "devex-review",
+        "count": 5
+      },
+      {
+        "phase": "eng-review",
+        "count": 8
+      }
+    ],
+    "total": 30
+  },
+  "checks": {
+    "terminal_review_heading": true,
+    "terminal_unresolved_status": true,
+    "audit_contiguous_74": true,
+    "audit_classification": true,
+    "ceo_eleven_sections": true,
+    "design_seven_passes": true,
+    "dx_eight_passes": true,
+    "engineering_four_passes": true,
+    "test_map_32_groups": true,
+    "test_requirements_32_rows": true,
+    "failure_registry_32_rows": true,
+    "qa_artifact_exists": true,
+    "all_review_records_exist": true,
+    "aggregate_30_four_phases": true,
+    "aggregate_current_run_only": true,
+    "unapproved_todos_six": true,
+    "submission_lookup_correct": true,
+    "http_all_calls_authenticated": true,
+    "explicit_v1_contract_required": true,
+    "no_approval_claim": true,
+    "original_proposal_retained": true
+  },
+  "failed": [],
+  "qa_artifact": "C:\\Users\\vaish\\.gstack\\projects\\vaishak-v-nair-FrameGenX\\vaish-main-eng-review-test-plan-20261015-214500.md",
+  "verification_attempts": [
+    "Initial inline validator had CRLF and PowerShell pipeline-coercion errors; application was not executed.",
+    "This fail-fast script corrects those validator errors and reruns all planning-artifact checks."
+  ],
+  "limitations": [
+    "No application implementation or dependency adoption",
+    "No new application suite/clean install/CI/browser/a11y/GPU workload",
+    "No calibrated hallucination reduction verified",
+    "Review instances are same-family Codex; CLI document-only",
+    "Owner approval pending; stale July logs do not clear this plan"
+  ]
+}

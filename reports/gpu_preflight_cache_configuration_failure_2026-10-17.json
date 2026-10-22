@@ -1,0 +1,9 @@
+{
+  "deterministic": true,
+  "elapsed_seconds": 10.669682099998681,
+  "error": "LocalEntryNotFoundError: Cannot find the requested files in the disk cache and outgoing traffic has been disabled. To enable hf.co look-ups and downloads online, set 'local_files_only' to False.",
+  "method": "qlora",
+  "model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "resolution": 512,
+  "status": "failed"
+}

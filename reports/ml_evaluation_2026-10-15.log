@@ -1,0 +1,189 @@
+Evaluation directory: E:\BrosKi\framegenx\runs\training\76fada99-67db-4fbe-a508-c0ef96e6042f\evaluation_557b015ef7a8_74fc501e
+
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s]
+Loading weights: 100%|##########| 196/196 [00:00<00:00, 3743.46it/s]
+
+Loading weights:   0%|          | 0/517 [00:00<?, ?it/s]
+Loading weights:  79%|#######9  | 411/517 [00:00<00:00, 4089.34it/s]
+Loading weights: 100%|##########| 517/517 [00:00<00:00, 4252.01it/s]
+W1015 11:01:11.220000 2388 venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+E:\BrosKi\framegenx\venv\Lib\site-packages\peft\tuners\tuners_utils.py:302: UserWarning: Already found a `peft_config` attribute in the model. This will lead to having multiple adapters in the model. Make sure to know what you are doing!
+  warnings.warn(
+No LoRA keys associated to NoneType found with the prefix='text_encoder'. This is safe to ignore if LoRA state dict didn't originally have any NoneType related params. You can also try specifying `prefix=None` to resolve the warning. Otherwise, open an issue if you think it's unexpected: https://github.com/huggingface/diffusers/issues/new
+No LoRA keys associated to NoneType found with the prefix='text_encoder_2'. This is safe to ignore if LoRA state dict didn't originally have any NoneType related params. You can also try specifying `prefix=None` to resolve the warning. Otherwise, open an issue if you think it's unexpected: https://github.com/huggingface/diffusers/issues/new
+[adapt] LoRA loaded: evaluated (E:\BrosKi\framegenx\runs\training\76fada99-67db-4fbe-a508-c0ef96e6042f\checkpoint-000048\adapter.safetensors) w=1.0
+Sampled apple_count_color_42_baseline; 98.9s
+Sampled apple_count_color_42_candidate; 122.2s
+Sampled apple_count_color_43_baseline; 142.7s
+Sampled apple_count_color_43_candidate; 166.0s
+Sampled vehicle_binding_42_baseline; 186.7s
+Sampled vehicle_binding_42_candidate; 210.1s
+Sampled vehicle_binding_43_baseline; 230.8s
+Sampled vehicle_binding_43_candidate; 254.4s
+Sampled animal_relation_42_baseline; 286.8s
+Sampled animal_relation_42_candidate; 354.5s
+Sampled animal_relation_43_baseline; 404.8s
+Sampled animal_relation_43_candidate; 476.6s
+Sampled bottle_negation_42_baseline; 526.7s
+Sampled bottle_negation_42_candidate; 600.0s
+Sampled bottle_negation_43_baseline; 648.4s
+Sampled bottle_negation_43_candidate; 719.6s
+Decoded apple_count_color_42_baseline.png
+Decoded apple_count_color_42_candidate.png
+Decoded apple_count_color_43_baseline.png
+Decoded apple_count_color_43_candidate.png
+Decoded vehicle_binding_42_baseline.png
+Decoded vehicle_binding_42_candidate.png
+Decoded vehicle_binding_43_baseline.png
+Decoded vehicle_binding_43_candidate.png
+Decoded animal_relation_42_baseline.png
+Decoded animal_relation_42_candidate.png
+Decoded animal_relation_43_baseline.png
+Decoded animal_relation_43_candidate.png
+Decoded bottle_negation_42_baseline.png
+Decoded bottle_negation_42_candidate.png
+Decoded bottle_negation_43_baseline.png
+Decoded bottle_negation_43_candidate.png
+{
+  "status": "generated_pending_independent_review",
+  "metric_scope": "paired_NF4_generation_pilot_only",
+  "full_contract_CSR": null,
+  "quality_status": "unverified",
+  "promotion_status": "unqualified",
+  "adapter": {
+    "quality_status": "unverified",
+    "experimental": true,
+    "training_run_id": "76fada99-67db-4fbe-a508-c0ef96e6042f",
+    "adapter_sha256": "aaaeb9b68609b11ffc032c1a57c765b983b339af22c7e396c24bfd72b289953b",
+    "base_model": "stabilityai/stable-diffusion-xl-base-1.0"
+  },
+  "protocol_sha256": "557b015ef7a87e0d50d47dd2a42285760f708348cec26daf1e469599f47e9087",
+  "protocol": {
+    "schema": "framegenx-paired-pilot-v1",
+    "steps": 25,
+    "guidance_scale": 7.0,
+    "sampler": "diffusers_StableDiffusionXLPipeline",
+    "negative_prompt_policy": "default_zero_conditioning",
+    "seeds": [
+      42,
+      43
+    ],
+    "cases": [
+      {
+        "id": "apple_count_color",
+        "prompt": "Exactly three red apples arranged in a row on a plain white table, with each apple clearly separated.",
+        "requirements": [
+          "Exactly three apples are visible.",
+          "Every apple is red.",
+          "The apples form a clearly separated row.",
+          "A white table is visible."
+        ]
+      },
+      {
+        "id": "vehicle_binding",
+        "prompt": "One red car to the left of one blue bus on a plain gray road.",
+        "requirements": [
+          "Exactly one car is visible.",
+          "Exactly one bus is visible.",
+          "The car is red.",
+          "The bus is blue.",
+          "The car is left of the bus.",
+          "A gray road is visible."
+        ]
+      },
+      {
+        "id": "animal_relation",
+        "prompt": "Exactly one cat on the left and exactly one dog on the right, clearly separated.",
+        "requirements": [
+          "Exactly one cat is visible.",
+          "Exactly one dog is visible.",
+          "The cat is left of the dog.",
+          "The animals are clearly separated."
+        ]
+      },
+      {
+        "id": "bottle_negation",
+        "prompt": "Exactly two green bottles on a white table. No red bottle.",
+        "requirements": [
+          "Exactly two bottles are visible.",
+          "Both bottles are green.",
+          "A white table is visible.",
+          "No red bottle is visible."
+        ]
+      }
+    ]
+  },
+  "evaluator_code_sha256": "5acd0c7175aadc49847cf131eb2024676868018dafc5962fb3f61d581e12b141",
+  "generation_signature": {
+    "model_sha256": "83e012a805b84c7ca28e5646747c90a243c65c8ba4f070e2d7ddc9d74661e139",
+    "model_snapshot": "462165984030d82259a11f4367a4eed129e94a7b",
+    "adapter_sha256": "aaaeb9b68609b11ffc032c1a57c765b983b339af22c7e396c24bfd72b289953b",
+    "protocol_sha256": "557b015ef7a87e0d50d47dd2a42285760f708348cec26daf1e469599f47e9087",
+    "profile": {
+      "model": "stabilityai/stable-diffusion-xl-base-1.0",
+      "method": "qlora",
+      "resolution": 512,
+      "rank": 4,
+      "lora_alpha": 4,
+      "seed": 42,
+      "deterministic": true,
+      "target_modules": [
+        "to_q",
+        "to_k",
+        "to_v",
+        "to_out.0"
+      ]
+    },
+    "code_sha256": {
+      "scripts/evaluate_adapter.py": "5acd0c7175aadc49847cf131eb2024676868018dafc5962fb3f61d581e12b141",
+      "src/generation/lora.py": "b3aeb62d2a53422a278d15d2907e5bf91171823a6f6c2379c0efea11282df714",
+      "src/training/__init__.py": "aca72bc9f769cf6fe512d1644242602b4b0218ec67c667236409363ac16594e4",
+      "src/training/cache.py": "ad2c992b0540a9efb6e721559593ba92e98cdc38f09ae7a9832b16295d85489a",
+      "src/training/common.py": "f7f5f06284803dab9dfb80c91d520ed5106756522d375093f5c3914bfeb398fe",
+      "src/training/data.py": "96ad57f38bd53a4a363f033889ac47299672fd9d4a2bdb038eb9caac340199e9",
+      "src/training/evaluation.py": "988ca2ed202f49990a7daa6bf793f19673fde3e964449f041b43dc86f1603a5a",
+      "src/training/export.py": "8daa4154ae4ab28a7c464312b0e259da0e92d208216d7cca498a1999997170d9",
+      "src/training/model.py": "122c58565a7156abed3e198643d336bae36c78e323b7f45cb2ea14838123938c",
+      "src/training/objective.py": "6ab1d14580f9938b7d5f3639487b6529e579eabd7b03d5d71b897a8c6f9c2da5",
+      "src/training/preflight.py": "425753cbfbe53266d8366d92888ada096eeb8c51b01c4d2e562e06d6f3928642",
+      "src/training/prepare.py": "b5d52d62cd2b83e9bf5ca051d083aba64c1953dd995415ebc07fe98acc55c2ec",
+      "src/training/registry.py": "934990223c0e54e227cb1ea41877d685ca2344d52020217bdb2a8196f96eade3",
+      "src/training/tracking.py": "5ff96adb2e978e436fcd69b4700efc45059f2cc536dab7e6314cb29c3322c565",
+      "src/training/train.py": "8356816e8a2a54326bb75ccb9b5f758ed5890ced27bb83c651d31bddf7f95d53"
+    },
+    "packages": {
+      "torch": "2.13.0+cu130",
+      "diffusers": "0.39.0",
+      "transformers": "5.13.0",
+      "peft": "0.19.1",
+      "bitsandbytes": "0.50.2",
+      "safetensors": "0.8.0"
+    },
+    "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+    "cuda": "13.0"
+  },
+  "generation_fingerprint": "74fc501e6a1f13599eee6adb69bafd4e2ae79e6d9b78a6ec06b9e75577cf9094",
+  "model_snapshot": "462165984030d82259a11f4367a4eed129e94a7b",
+  "model_sha256": "83e012a805b84c7ca28e5646747c90a243c65c8ba4f070e2d7ddc9d74661e139",
+  "reused_samples": 0,
+  "runtime_adapter_load_report": [
+    {
+      "name": "evaluated",
+      "source": "E:\\BrosKi\\framegenx\\runs\\training\\76fada99-67db-4fbe-a508-c0ef96e6042f\\checkpoint-000048\\adapter.safetensors",
+      "weight": 1.0,
+      "loaded": true,
+      "activated": true,
+      "training_provenance": {
+        "quality_status": "unverified",
+        "experimental": true,
+        "training_run_id": "76fada99-67db-4fbe-a508-c0ef96e6042f",
+        "adapter_sha256": "aaaeb9b68609b11ffc032c1a57c765b983b339af22c7e396c24bfd72b289953b",
+        "base_model": "stabilityai/stable-diffusion-xl-base-1.0"
+      }
+    }
+  ],
+  "exported_diffusers_adapter_loaded": true,
+  "peak_reserved_gb": 2.365587456,
+  "elapsed_seconds": 735.027703,
+  "peak_allocated_gb": 2.21735424
+}

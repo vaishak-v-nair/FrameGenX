@@ -1,0 +1,48 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "cf609fe3-dda3-45a6-b404-08f5c7e65d3d",
+      "class_name": "person",
+      "attributes": [
+        "spacesuit"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 5,
+        "ymin": 138,
+        "xmax": 123,
+        "ymax": 374,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "9c011bff-3fda-4604-896f-43272f6bd9c1",
+      "class_name": "plant",
+      "attributes": [
+        "glowing"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": true
+    },
+    {
+      "id": "5376e3a8-099d-4026-87ec-964ce0af32f8",
+      "class_name": "city",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 224,
+        "ymin": 112,
+        "xmax": 347,
+        "ymax": 399,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    }
+  ]
+}

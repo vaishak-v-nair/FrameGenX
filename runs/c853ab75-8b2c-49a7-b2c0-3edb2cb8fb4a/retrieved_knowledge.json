@@ -1,0 +1,41 @@
+{
+  "caption_hits": [
+    {
+      "id": "web_search",
+      "caption": "Web Context: Apr 27, 2026 \u00b7 This cinematic fantasy art depicts an adventurer on a cliff, gazing at a sunset over floating islands, waterfalls, and vine \u2026 May 6, 2025 \u00b7 25 hand-tested Midjourney prompts to create stunning fantasy scenes. From floating islands to magical forests, find \u2026 Jan 20, 2026 \u00b7 Unleash your creativity with our Fantasy Video Prompt Epic Scene Generator! Craft stunning visuals with ease. Get \u2026",
+      "image": "",
+      "score": 1.0,
+      "retrieval_mode": "web_search"
+    }
+  ],
+  "layout_blueprint": {
+    "entity_count": 2,
+    "name": "Dual Horizontal Split",
+    "description": "Two distinct entities placed side-by-side with clear separation",
+    "boxes": [
+      {
+        "anchor": "center_left",
+        "ymin": 0.2,
+        "xmin": 0.08,
+        "ymax": 0.8,
+        "xmax": 0.46,
+        "z_index": 1
+      },
+      {
+        "anchor": "center_right",
+        "ymin": 0.2,
+        "xmin": 0.54,
+        "ymax": 0.8,
+        "xmax": 0.92,
+        "z_index": 1
+      }
+    ]
+  },
+  "style_preset": {
+    "preset_name": "photorealistic",
+    "descriptors": "photograph, 35mm lens, sharp focus, natural lighting, subsurface scattering, authentic textures",
+    "lighting": "soft directional daylight with realistic ambient bounce",
+    "camera": "eye-level 50mm f/2.8 lens, shallow depth of field",
+    "negative": "cartoon, illustration, 3d render, distorted, oversaturated, plastic"
+  }
+}

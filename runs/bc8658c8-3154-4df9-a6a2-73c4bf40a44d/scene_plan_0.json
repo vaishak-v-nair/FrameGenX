@@ -1,0 +1,38 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "e91a017b-9e2d-4a28-9654-3c776c712062",
+      "class_name": "peak",
+      "attributes": [
+        "jagged",
+        "alpine"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 60,
+        "ymin": 122,
+        "xmax": 215,
+        "ymax": 389,
+        "z_index": 1
+      },
+      "z_index": 1
+    },
+    {
+      "id": "68aac0f3-f82f-4c05-a1a9-b16e3fbbd5ee",
+      "class_name": "wildflower",
+      "attributes": [
+        "wild"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 296,
+        "ymin": 122,
+        "xmax": 451,
+        "ymax": 389,
+        "z_index": 1
+      },
+      "z_index": 1
+    }
+  ]
+}

@@ -1,0 +1,884 @@
+Updating 47d639ab..82530ac1
+Created autostash: 21b7aa74
+Fast-forward
+ .github/dependabot.yml                             |   10 +
+ .github/workflows/arm-setup-smoke.yml              |    2 +-
+ .github/workflows/cso-runtime-images.yml           |   10 +-
+ .github/workflows/cso-runtime-promote.yml          |    2 +-
+ .github/workflows/cso-runtime-qualification.yml    |    2 +-
+ .github/workflows/cso-scanner-images.yml           |    8 +-
+ .github/workflows/eval-sweep.yml                   |    4 +-
+ .github/workflows/evals-marathon.yml               |   16 +-
+ .github/workflows/evals-periodic.yml               |   48 +-
+ .github/workflows/evals.yml                        |   26 +-
+ .github/workflows/free-tests.yml                   |   60 +-
+ .github/workflows/model-policy-freshness.yml       |    2 +-
+ .github/workflows/native-qualification.yml         |   12 +-
+ .github/workflows/scorecard.yml                    |    6 +-
+ .github/workflows/version-gate.yml                 |    1 +
+ .github/workflows/windows-free-tests.yml           |   20 +-
+ .github/workflows/windows-pregate-e2e.yml          |  245 +++
+ .github/workflows/windows-setup-e2e.yml            |  320 ++-
+ .osv-scanner.toml                                  |   17 +-
+ CHANGELOG.md                                       |  317 +++
+ README.md                                          |   16 +-
+ TODOS.md                                           |   65 +-
+ VERSION                                            |    2 +-
+ agents-digest/gstack-AGENTS.md                     |    2 +-
+ autoplan/DRIVER.md                                 |   70 +-
+ autoplan/DRIVER.md.tmpl                            |   27 +-
+ autoplan/SKILL.md                                  |    2 +-
+ autoplan/SKILL.md.tmpl                             |    2 +-
+ autoplan/sections/ceo-phase.md                     |    2 +-
+ autoplan/sections/dx-phase.md                      |    4 +-
+ autoplan/sections/dx-phase.md.tmpl                 |    4 +-
+ autoplan/sections/eng-phase.md                     |    2 +-
+ benchmark/SKILL.md                                 |   14 +-
+ bin/gstack-approval-classes                        |   84 +
+ bin/gstack-artifact                                |   18 +
+ bin/gstack-autoplan                                |  158 +-
+ bin/gstack-autoplan-snapshot.ts                    |    5 +-
+ bin/gstack-browser-ensure                          |   18 +-
+ bin/gstack-bun-version.sh                          |  169 +-
+ bin/gstack-capy-install                            |  528 ++++-
+ bin/gstack-capy-session                            |   38 +-
+ bin/gstack-ceo-plan-find                           |   50 +
+ bin/gstack-claude-root.sh                          |   28 +
+ bin/gstack-config                                  |   11 +-
+ bin/gstack-doctor                                  |  131 +-
+ bin/gstack-doctor-check.sh                         |  133 +-
+ bin/gstack-doctor-components.sh                    |   81 +-
+ bin/gstack-error-capture                           |    4 +
+ bin/gstack-eval-plan                               |   70 +-
+ bin/gstack-evidence                                |   22 +-
+ bin/gstack-ff-update                               |  317 +++
+ bin/gstack-gate                                    |   10 +-
+ bin/gstack-gate-diff                               |   13 +-
+ bin/gstack-gbrain-sync.ts                          |   36 +-
+ bin/gstack-install-verdict.sh                      |   79 +-
+ bin/gstack-issue-links                             |  147 +-
+ bin/gstack-lease                                   |  128 +-
+ bin/gstack-memorable                               |    9 +-
+ bin/gstack-node-runtime.sh                         |  120 ++
+ bin/gstack-plan-reality                            |   12 +-
+ bin/gstack-pregate                                 |  106 +-
+ bin/gstack-sanitize-echo.sh                        |   19 +
+ bin/gstack-session-update                          |  219 +-
+ bin/gstack-ship-policy                             |   11 +-
+ bin/gstack-ship-queue                              |  161 ++
+ bin/gstack-ship-receipt                            |   47 +-
+ bin/gstack-skill-end                               |   16 +-
+ bin/gstack-skill-start                             |   12 +-
+ bin/gstack-specialist-stats                        |    4 +-
+ bin/gstack-state-matrix                            |   76 +
+ bin/gstack-timeline-log                            |    7 +-
+ bin/gstack-timeline-read                           |   89 +-
+ bin/gstack-update-check                            |  149 +-
+ bin/gstack-upgrade                                 |   96 +-
+ bin/gstack-windows-bash.ts                         |   43 +
+ browse/SKILL.md                                    |   15 +-
+ browse/src/browser-manager.ts                      |   45 +
+ browse/src/meta-commands.ts                        |   11 +-
+ browse/src/server.ts                               |    7 +-
+ browse/src/terminal-agent.ts                       |  101 +-
+ browse/test/tab-external-close-dispatch.test.ts    |  107 +
+ browse/test/tab-external-close.test.ts             |   80 +
+ .../test/terminal-agent-publication-lock.test.ts   |   38 +-
+ browse/test/terminal-agent-signal-cleanup.test.ts  |  218 ++
+ bun.lock                                           |   61 +-
+ canary/SKILL.md                                    |   14 +-
+ capy/skill/gstack/SKILL.md                         |   12 +-
+ capy/skill/gstack/scripts/install.sh               |   18 +-
+ capy/support.env                                   |    2 +-
+ cso/SKILL.md                                       |   13 +-
+ cso/SKILL.md.tmpl                                  |   13 +-
+ design-consultation/SKILL.md                       |   14 +-
+ design-review/SKILL.md                             |   14 +-
+ devex-review/SKILL.md                              |   85 +-
+ devex-review/SKILL.md.tmpl                         |   65 +-
+ docs/ADDING_A_HOST.md                              |    2 +-
+ docs/TESTING_INTERNALS.md                          |   37 +-
+ docs/agent-ready-errors.md                         |   65 +
+ docs/autoplan-guard-troubleshooting.md             |    5 +
+ docs/capy-install.md                               |  241 ++-
+ docs/designs/FIX_WAVE_2026_10_15.md                |  207 ++
+ docs/designs/field-list-2-2026-10-16/PLAN.md       |  147 ++
+ .../field-list-2-2026-10-16/ROUND2-OBLIGATIONS.md  |   42 +
+ docs/eval-models.md                                |   89 +
+ docs/evals/headroom-diagnosis-2026-10.md           |   36 +
+ docs/howto-ios-testing-with-gstack.md              |   11 +
+ docs/pregate.md                                    |  194 +-
+ docs/ship-policy.md                                |  206 +-
+ docs/skills.md                                     |    4 +-
+ docs/test-audit-2026-10.md                         |   31 +
+ docs/troubleshooting.md                            | 1105 +++++++++-
+ docs/unattended.md                                 |   87 +-
+ eval-plan/SKILL.md                                 |   15 +
+ eval-plan/SKILL.md.tmpl                            |   15 +
+ gstack-upgrade/SKILL.md                            |   52 +-
+ gstack-upgrade/SKILL.md.tmpl                       |   52 +-
+ hosts/claude/hooks/spawn-bin.ts                    |   31 +-
+ investigate/sections/flake.md                      |   24 +
+ investigate/sections/flake.md.tmpl                 |   24 +
+ ios-qa/daemon/src/devicectl.ts                     |   41 +-
+ ios-qa/daemon/src/tunnel-bootstrap.ts              |    4 +
+ ios-qa/daemon/test/devicectl-launch-env.test.ts    |  111 +
+ land-and-deploy/SKILL.md                           |   14 +-
+ lib/approval-citations.ts                          |  228 ++
+ lib/approval-classes.ts                            |  262 +++
+ lib/autoplan-budget.ts                             |  163 ++
+ lib/autoplan-checkpoint.ts                         |  273 +++
+ lib/autoplan-confirm.ts                            |  147 ++
+ lib/autoplan-export.ts                             |   30 +-
+ lib/autoplan-gate.ts                               |  296 ++-
+ lib/autoplan-plan-text.ts                          |   37 +
+ lib/autoplan-prompts.ts                            |   36 +-
+ lib/autoplan-public.ts                             |  175 ++
+ lib/autoplan-reconcile.ts                          |   99 +-
+ lib/autoplan-revise.ts                             |  112 +-
+ lib/autoplan-run.ts                                |  102 +-
+ lib/autoplan-state.ts                              |   36 +-
+ lib/changelog-check.ts                             |   14 +-
+ lib/claude-journal-records.ts                      |   77 +-
+ lib/coordinator-contract.ts                        |    4 +-
+ lib/cso/cli.ts                                     |  149 +-
+ lib/cso/contracts.ts                               |    1 +
+ lib/cso/docker.ts                                  |   45 +-
+ lib/cso/process.ts                                 |   55 +-
+ lib/cso/scanner-executor.ts                        |   21 +-
+ lib/cso/snapshot.ts                                |   84 +-
+ lib/cso/watchdog.c                                 |    7 +-
+ lib/doctor-components.ts                           |   54 +-
+ lib/dx-error-capture.ts                            |  520 +++++
+ lib/dx-error-contract.ts                           |   59 +
+ lib/eval-models.ts                                 |  160 ++
+ lib/eval-plan.ts                                   |  108 +-
+ lib/gate-diff/git.ts                               |   11 -
+ lib/gate-list.ts                                   |   91 +-
+ lib/gbrain-exec.ts                                 |   47 +-
+ lib/headless-artifacts.ts                          |   33 +-
+ lib/install-verdict.ts                             |  110 +-
+ lib/issue-links.ts                                 |  128 +-
+ lib/plan-reality.ts                                |   61 +-
+ lib/pregate/checks/guards.ts                       |   30 +-
+ lib/pregate/checks/lanes.ts                        |  163 +-
+ lib/pregate/checks/secrets.ts                      |   71 +-
+ lib/pregate/checks/timing.ts                       |  227 ++
+ lib/pregate/config.ts                              |   34 +-
+ lib/pregate/context.ts                             |   89 +-
+ lib/pregate/docs-lane.ts                           |   59 +
+ lib/pregate/import-graph.ts                        |  197 +-
+ lib/pregate/index.ts                               |   60 +-
+ lib/pregate/lane-selection.ts                      |   43 +-
+ lib/pregate/runtime.ts                             |  199 +-
+ lib/pregate/supervise.ts                           |  189 ++
+ lib/pregate/types.ts                               |   14 +-
+ lib/qa-deadline.ts                                 |    4 +-
+ lib/redact-engine.ts                               |  117 +-
+ lib/redact-patterns.ts                             |   17 +
+ lib/regen.ts                                       |   20 +-
+ lib/restamp.ts                                     |   11 +-
+ lib/result-codes-release.ts                        |   86 +
+ lib/result-codes.ts                                |  229 +-
+ lib/runtime-pins.ts                                |   37 +-
+ lib/sanitize-echo.ts                               |   31 +
+ lib/script-invocation.ts                           |  260 +++
+ lib/ship-policy.ts                                 |   94 +-
+ lib/ship-queue-gate.ts                             |  232 ++
+ lib/ship-queue.ts                                  |  397 ++++
+ lib/ship-receipt.ts                                |   19 +-
+ lib/spend-ledger.ts                                |   10 +
+ lib/state-matrix.ts                                |  143 ++
+ package.json                                       |    7 +-
+ plan-ceo-review/sections/review-sections.md        |   67 +-
+ plan-design-review/sections/review-sections.md     |    4 +
+ .../sections/review-sections.md.tmpl               |    4 +
+ plan-devex-review/SKILL.md                         |    8 +-
+ plan-devex-review/SKILL.md.tmpl                    |    3 +-
+ plan-devex-review/dx-hall-of-fame.md               |   97 +-
+ plan-devex-review/sections/checklist.md            |    5 +-
+ plan-devex-review/sections/checklist.md.tmpl       |    5 +-
+ plan-devex-review/sections/review-sections.md      |  119 +-
+ plan-devex-review/sections/review-sections.md.tmpl |   55 +-
+ plan-eng-review/SKILL.md                           |    7 +-
+ plan-eng-review/SKILL.md.tmpl                      |    7 +-
+ plan-eng-review/sections/review-sections.md        |   70 +-
+ qa/sections/browser-setup.md                       |   14 +-
+ qa/sections/system-functional.md                   |    2 +-
+ review/checklist.md                                |    8 +
+ review/sections/review-army.md                     |   10 +-
+ review/specialists/state-machines.md               |   62 +
+ scrape/SKILL.md                                    |   14 +-
+ scripts/free-test-durations.json                   | 2222 +++++++++++---------
+ scripts/free-test-seed-allowlist.json              |    5 +-
+ scripts/harness-version.json                       |    2 +-
+ scripts/lib/windows-curation.ts                    |   46 +-
+ scripts/pr-dependencies.ts                         |    2 +-
+ scripts/resolvers/aside.ts                         |   15 +-
+ scripts/resolvers/autoplan-driver.ts               |   21 +-
+ scripts/resolvers/dx.ts                            |   16 +-
+ scripts/resolvers/index.ts                         |    4 +-
+ scripts/resolvers/outside-voice-steps.ts           |   75 +-
+ scripts/resolvers/plan-reality.ts                  |    2 +-
+ scripts/resolvers/preamble.ts                      |    2 +-
+ .../preamble/generate-completion-status.ts         |    5 +
+ scripts/resolvers/qa.ts                            |    2 +-
+ scripts/resolvers/review-army.ts                   |   10 +-
+ scripts/test-free-shards.ts                        |   19 +
+ scripts/test-health-report.ts                      |   15 +-
+ scripts/test-pr-profile.ts                         |    1 +
+ scripts/ubicloud/ubi-runner.sh                     |   18 +-
+ setup                                              |   49 +-
+ setup.ps1                                          |   94 +-
+ ship/SKILL.md                                      |   13 +-
+ ship/SKILL.md.tmpl                                 |   13 +-
+ ship/sections/handoff.md                           |   17 +-
+ ship/sections/handoff.md.tmpl                      |   17 +-
+ ship/sections/pr-body.md                           |   15 +-
+ ship/sections/pr-body.md.tmpl                      |   15 +-
+ ship/sections/review-army.md                       |   10 +-
+ ship/sections/tests.md                             |    8 +-
+ ship/sections/tests.md.tmpl                        |    8 +-
+ spec/sections/gate-and-file.md                     |    4 +-
+ test/approval-classes.test.ts                      |  394 ++++
+ test/aside-driver.test.ts                          |    9 +
+ test/autoplan-answer-invalidation.test.ts          |   39 +-
+ test/autoplan-budget.test.ts                       |  260 +++
+ test/autoplan-capy-e2e.test.ts                     |   10 +-
+ test/autoplan-checkpoint.test.ts                   |  187 ++
+ test/autoplan-compaction-preserved-segment.test.ts |  167 ++
+ test/autoplan-driver.test.ts                       |    2 +-
+ test/autoplan-durability.test.ts                   |  126 ++
+ test/autoplan-gate-artifacts.test.ts               |  139 ++
+ test/autoplan-gate-judgment.test.ts                |  200 +-
+ test/autoplan-pairing.test.ts                      |   63 +
+ test/autoplan-public-export.test.ts                |  136 ++
+ test/autoplan-record.test.ts                       |   11 +-
+ test/autoplan-residuals.test.ts                    |  144 +-
+ test/autoplan-revise.test.ts                       |   12 +-
+ test/autoplan-run-concurrency.test.ts              |    8 +-
+ test/autoplan-run-recovery.test.ts                 |   82 +-
+ test/bun-resolve.test.ts                           |  141 ++
+ test/bun-version-drift.test.ts                     |   39 +-
+ test/bun-version-shells.test.ts                    |  114 +
+ test/capy-review-voice.test.ts                     |  212 ++
+ test/capy-skill-wrapper.test.ts                    |  115 +-
+ test/ceo-plan-find-cross-branch.test.ts            |   99 +
+ test/cso-audit-paths.test.ts                       |  347 +++
+ test/cso-distribution.test.ts                      |    2 +-
+ test/cso-docker-argv0.test.ts                      |  173 ++
+ test/cso-git-hardening.test.ts                     |   20 +-
+ test/cso-json-redaction.test.ts                    |  141 ++
+ test/cso-scanner-release.test.ts                   |    2 +-
+ test/dependency-security.test.ts                   |   12 +
+ test/design-doc-data-guard.test.ts                 |    6 +
+ ...ctor-corpus-ship-docsync-launch-failure.test.ts |   49 +
+ test/docsync-command-grammar.test.ts               |   25 +
+ test/docsync-lifecycle-interface.test.ts           |    9 +
+ test/doctor-components.test.ts                     |   11 +-
+ test/dx-error-capture.test.ts                      |  361 ++++
+ test/dx-error-contract-grader.test.ts              |   65 +
+ test/dx-error-contract.test.ts                     |   88 +
+ test/egress-receipt-wiring.test.ts                 |    4 +
+ test/eng-finding-retry-budget.test.ts              |    2 +-
+ test/eval-models.test.ts                           |  202 ++
+ test/eval-plan-prereg-diagnostics.test.ts          |  123 ++
+ .../autoplan-pairing/run-20261014-pairs.json       |  181 ++
+ test/fixtures/context-budget.json                  |   42 +-
+ .../38336400566-t1-fail-derived-current-claim.json |   92 +
+ .../38336400566-t1-fail-derived-prose-claim.json   |   92 +
+ .../38336400566-t1-fail.json                       |   91 +
+ .../38829994639-t1-pass.json                       |   91 +
+ .../38972920715-t1-pass.json                       |   91 +
+ .../ship-docsync-launch-failure/inventory.json     |   29 +
+ test/fixtures/docsync-store-38969924945-bash.json  |   65 +
+ test/fixtures/dx-error-contract-case.ts            |  113 +
+ test/fixtures/golden/agy-ship-SKILL.md             |   21 +-
+ test/fixtures/golden/claude-ship-SKILL.md          |   13 +-
+ test/fixtures/golden/codex-ship-SKILL.md           |   21 +-
+ test/fixtures/golden/factory-ship-SKILL.md         |   21 +-
+ test/fixtures/module-size-ratchet.json             |    9 +-
+ test/fixtures/pregate-timing/flaky.test.ts.txt     |   62 +
+ test/fixtures/pregate-timing/test_flaky.py.txt     |   25 +
+ test/fixtures/session-update-heartbeat.sh          |   99 +
+ test/fixtures/ship-queue/gbrain-stamp-pair.json    |   28 +
+ test/fixtures/skill-md-size-allowlist.json         |   95 +
+ .../base/src/takes/proposals.ts.txt                |   35 +
+ .../base/test/proposals.test.ts.txt                |   24 +
+ test/fixtures/state-matrix-6792/capture.json       |   13 +
+ .../state-matrix-6792/captured-output.jsonl        |   10 +
+ test/fixtures/state-matrix-6792/expect.json        |   30 +
+ .../head/src/takes/proposals.ts.txt                |   51 +
+ .../head/test/proposals.test.ts.txt                |   39 +
+ test/fixtures/windows-bash-resolution.json         |  109 +
+ test/free-seed-ratchet.test.ts                     |    1 +
+ test/gate-list.test.ts                             |   39 +-
+ test/gbrain-source-gitignore.test.ts               |   87 +
+ test/gbrain-spawn-windows-shell.test.ts            |   11 +-
+ test/gbrain-sync-no-bash-message.test.ts           |   32 +
+ test/gen-skill-docs.test.ts                        |   24 +-
+ test/gstack-browser-ensure.test.ts                 |   33 +-
+ test/gstack-capy-install.test.ts                   |  598 +++++-
+ test/gstack-ceo-plan-find.test.ts                  |  119 ++
+ test/gstack-docs-candidate.test.ts                 |    7 +-
+ test/gstack-doctor.test.ts                         |  275 ++-
+ test/gstack-ff-update.test.ts                      |  441 ++++
+ test/gstack-lease.test.ts                          |  196 +-
+ test/gstack-memorable.test.ts                      |   11 +
+ test/gstack-next-version.test.ts                   |  111 +-
+ test/gstack-ship-queue.test.ts                     |  390 ++++
+ test/gstack-skill-start.test.ts                    |   23 +
+ test/gstack-upgrade-bin.test.ts                    |  120 +-
+ test/gstack-upgrade-fresh-shell.test.ts            |    5 +-
+ test/gstack-upgrade-path-spelling.test.ts          |  105 +
+ test/held-install-recovery.test.ts                 |  192 ++
+ test/helpers/auq-sdk-capture.ts                    |    3 +-
+ test/helpers/autoplan-capy.ts                      |    6 +-
+ test/helpers/autoplan-guard-pty.ts                 |    2 +-
+ test/helpers/autoplan-run-fixture.ts               |   13 +-
+ test/helpers/carve-guards.ts                       |    4 +-
+ test/helpers/docsync-fault-eval.ts                 |    5 +-
+ test/helpers/docsync-observer.ts                   |    4 +-
+ test/helpers/free-fixtures-data.ts                 |    9 +
+ test/helpers/pregate-fixture.ts                    |   33 +-
+ test/helpers/qa-browser-deadline-evidence.ts       |    1 +
+ test/helpers/qa-callers-fixture.ts                 |    2 +-
+ test/helpers/qa-functional-fixture.ts              |    2 +
+ test/helpers/restamp-fixture.ts                    |    3 +-
+ test/helpers/ship-queue-fixture.ts                 |  108 +
+ test/helpers/state-matrix-fixture.ts               |   55 +
+ test/helpers/third-party-actions.ts                |    2 +-
+ test/helpers/touchfiles-data.ts                    |   30 +-
+ test/hermetic-skill-runtime.test.ts                |    3 +-
+ test/host-conformance.test.ts                      |    2 +
+ test/install-verdict.test.ts                       |   67 +-
+ test/model-policy-workflow.test.ts                 |    9 +-
+ test/osv-ignore-expiry.test.ts                     |   15 +
+ test/outside-voice-native-deadline.test.ts         |   84 +
+ test/plan-design-sdk-fixture.test.ts               |   13 +-
+ test/plan-reality.test.ts                          |   56 +-
+ test/plan-tune-cathedral.test.ts                   |    2 +-
+ test/pregate-bats-nested.test.ts                   |  135 ++
+ test/pregate-docs-lane-review.test.ts              |   63 +
+ test/pregate-guards.test.ts                        |   61 +-
+ test/pregate-import-graph-paths.test.ts            |  163 ++
+ test/pregate-invalidation.test.ts                  |    2 +-
+ test/pregate-manifest-paths.test.ts                |   79 +
+ test/pregate-remote-gbrain.test.ts                 |   91 +
+ test/pregate-remote.test.ts                        |  179 ++
+ test/pregate-secrets-source-context.test.ts        |   80 +
+ test/pregate-selection.test.ts                     |  142 +-
+ test/pregate-supervise.test.ts                     |  227 ++
+ test/pregate-timing.test.ts                        |  145 ++
+ test/pregate-wtree-refusal.test.ts                 |  117 ++
+ test/qa-browser-deadline-evidence.test.ts          |   19 +
+ test/qa-exploratory-callers.test.ts                |   47 +
+ test/qa-functional-prompt.test.ts                  |    7 +-
+ test/readme-skill-lists.test.ts                    |   57 +
+ test/redact-engine.test.ts                         |   16 +
+ test/redact-prepush-hook.test.ts                   |    3 +
+ test/redact-prepush-rebase-force-push.test.ts      |   66 +-
+ test/redact-prepush-scan-range.test.ts             |  141 +-
+ test/restamp-gate-ahead-changelog.test.ts          |   95 +
+ test/review-army-budget.test.ts                    |   60 +
+ test/review-entry-and-design-clarity-au.test.ts    |   36 +-
+ test/review-workflow-clarity.test.ts               |   18 +
+ test/run-in-background-guidance.test.ts            |   37 +-
+ test/runtime-pins.test.ts                          |   60 +
+ test/sanitize-echo.test.ts                         |   64 +
+ test/script-invocation-tripwire.test.ts            |  141 ++
+ test/script-invocation.test.ts                     |  227 ++
+ test/section-capture-native-tools.test.ts          |    8 +
+ test/session-update-autostash.test.ts              |  303 ++-
+ test/session-update-heartbeat.test.ts              |   31 +
+ test/session-update-held-banner.test.ts            |  213 ++
+ test/session-update-hook-hold.test.ts              |  110 +-
+ test/session-update-stages.test.ts                 |   48 +-
+ test/setup-claude-code-migration.test.ts           |    2 +-
+ test/setup-cursor-legacy-skills.test.ts            |   94 +
+ test/setup-hook-canonical-paths.test.ts            |   89 +-
+ test/setup-hook-syntax-gate.test.ts                |    4 +-
+ test/setup-playwright-best-effort.test.ts          |   68 +-
+ test/setup-ps1.test.ts                             |  176 +-
+ test/ship-issue-intent.test.ts                     |  190 +-
+ test/ship-measure-sweep.test.ts                    |   33 +-
+ test/ship-measure.test.ts                          |    2 +-
+ test/ship-policy-compat.test.ts                    |   87 +
+ test/skill-e2e-dx-error-contract.test.ts           |   67 +
+ test/skill-e2e-review-army.test.ts                 |   77 +-
+ test/skill-end-completion-durability.test.ts       |  153 ++
+ test/skill-md-size-guard.test.ts                   |  118 ++
+ test/state-matrix.test.ts                          |  136 ++
+ test/state-root-config-merge.test.ts               |   21 +-
+ test/team-mode.test.ts                             |    2 +-
+ test/test-free-shards-git-maintenance.test.ts      |  106 +
+ test/test-health-report.test.ts                    |   23 +-
+ test/test-of-test-ratchet.test.ts                  |    1 +
+ test/test-value-bar.test.ts                        |    3 +-
+ test/third-party-actions.test.ts                   |    3 +
+ test/timeline-stop-hook-slug.test.ts               |    3 +
+ test/timeline.test.ts                              |   60 +
+ test/tree-receipt-gbrain-pair.test.ts              |   64 +
+ test/ubicloud-runner.test.ts                       |   25 +
+ test/update-check-main-moved.test.ts               |  203 ++
+ test/upgrade-setup-recovery.test.ts                |    2 +
+ test/upgrade-template-pins.test.ts                 |    4 +-
+ test/workflow-action-pins.test.ts                  |   11 +
+ test/wtree-consumers.test.ts                       |  106 +
+ 424 files changed, 30068 insertions(+), 3321 deletions(-)
+ create mode 100644 .github/workflows/windows-pregate-e2e.yml
+ create mode 100755 bin/gstack-approval-classes
+ create mode 100755 bin/gstack-ceo-plan-find
+ create mode 100644 bin/gstack-claude-root.sh
+ create mode 100755 bin/gstack-error-capture
+ create mode 100755 bin/gstack-ff-update
+ create mode 100644 bin/gstack-node-runtime.sh
+ create mode 100644 bin/gstack-sanitize-echo.sh
+ create mode 100755 bin/gstack-ship-queue
+ create mode 100755 bin/gstack-state-matrix
+ create mode 100755 bin/gstack-windows-bash.ts
+ create mode 100644 browse/test/tab-external-close-dispatch.test.ts
+ create mode 100644 browse/test/tab-external-close.test.ts
+ create mode 100644 browse/test/terminal-agent-signal-cleanup.test.ts
+ create mode 100644 docs/agent-ready-errors.md
+ create mode 100644 docs/designs/FIX_WAVE_2026_10_15.md
+ create mode 100644 docs/designs/field-list-2-2026-10-16/PLAN.md
+ create mode 100644 docs/designs/field-list-2-2026-10-16/ROUND2-OBLIGATIONS.md
+ create mode 100644 docs/eval-models.md
+ create mode 100644 ios-qa/daemon/test/devicectl-launch-env.test.ts
+ create mode 100644 lib/approval-citations.ts
+ create mode 100644 lib/approval-classes.ts
+ create mode 100644 lib/autoplan-budget.ts
+ create mode 100644 lib/autoplan-checkpoint.ts
+ create mode 100644 lib/autoplan-confirm.ts
+ create mode 100644 lib/autoplan-public.ts
+ create mode 100644 lib/dx-error-capture.ts
+ create mode 100644 lib/dx-error-contract.ts
+ create mode 100644 lib/eval-models.ts
+ create mode 100644 lib/pregate/checks/timing.ts
+ create mode 100644 lib/pregate/docs-lane.ts
+ create mode 100644 lib/pregate/supervise.ts
+ create mode 100644 lib/result-codes-release.ts
+ create mode 100644 lib/sanitize-echo.ts
+ create mode 100644 lib/script-invocation.ts
+ create mode 100644 lib/ship-queue-gate.ts
+ create mode 100644 lib/ship-queue.ts
+ create mode 100644 lib/state-matrix.ts
+ create mode 100644 review/specialists/state-machines.md
+ create mode 100644 test/approval-classes.test.ts
+ create mode 100644 test/autoplan-budget.test.ts
+ create mode 100644 test/autoplan-checkpoint.test.ts
+ create mode 100644 test/autoplan-compaction-preserved-segment.test.ts
+ create mode 100644 test/autoplan-durability.test.ts
+ create mode 100644 test/autoplan-gate-artifacts.test.ts
+ create mode 100644 test/autoplan-pairing.test.ts
+ create mode 100644 test/autoplan-public-export.test.ts
+ create mode 100644 test/bun-resolve.test.ts
+ create mode 100644 test/bun-version-shells.test.ts
+ create mode 100644 test/capy-review-voice.test.ts
+ create mode 100644 test/ceo-plan-find-cross-branch.test.ts
+ create mode 100644 test/cso-audit-paths.test.ts
+ create mode 100644 test/cso-docker-argv0.test.ts
+ create mode 100644 test/cso-json-redaction.test.ts
+ create mode 100644 test/detector-corpus-ship-docsync-launch-failure.test.ts
+ create mode 100644 test/dx-error-capture.test.ts
+ create mode 100644 test/dx-error-contract-grader.test.ts
+ create mode 100644 test/dx-error-contract.test.ts
+ create mode 100644 test/eval-models.test.ts
+ create mode 100644 test/eval-plan-prereg-diagnostics.test.ts
+ create mode 100644 test/fixtures/autoplan-pairing/run-20261014-pairs.json
+ create mode 100644 test/fixtures/detector-corpora/ship-docsync-launch-failure/38336400566-t1-fail-derived-current-claim.json
+ create mode 100644 test/fixtures/detector-corpora/ship-docsync-launch-failure/38336400566-t1-fail-derived-prose-claim.json
+ create mode 100644 test/fixtures/detector-corpora/ship-docsync-launch-failure/38336400566-t1-fail.json
+ create mode 100644 test/fixtures/detector-corpora/ship-docsync-launch-failure/38829994639-t1-pass.json
+ create mode 100644 test/fixtures/detector-corpora/ship-docsync-launch-failure/38972920715-t1-pass.json
+ create mode 100644 test/fixtures/detector-corpora/ship-docsync-launch-failure/inventory.json
+ create mode 100644 test/fixtures/docsync-store-38969924945-bash.json
+ create mode 100644 test/fixtures/dx-error-contract-case.ts
+ create mode 100644 test/fixtures/pregate-timing/flaky.test.ts.txt
+ create mode 100644 test/fixtures/pregate-timing/test_flaky.py.txt
+ create mode 100755 test/fixtures/session-update-heartbeat.sh
+ create mode 100644 test/fixtures/ship-queue/gbrain-stamp-pair.json
+ create mode 100644 test/fixtures/skill-md-size-allowlist.json
+ create mode 100644 test/fixtures/state-matrix-6792/base/src/takes/proposals.ts.txt
+ create mode 100644 test/fixtures/state-matrix-6792/base/test/proposals.test.ts.txt
+ create mode 100644 test/fixtures/state-matrix-6792/capture.json
+ create mode 100644 test/fixtures/state-matrix-6792/captured-output.jsonl
+ create mode 100644 test/fixtures/state-matrix-6792/expect.json
+ create mode 100644 test/fixtures/state-matrix-6792/head/src/takes/proposals.ts.txt
+ create mode 100644 test/fixtures/state-matrix-6792/head/test/proposals.test.ts.txt
+ create mode 100644 test/fixtures/windows-bash-resolution.json
+ create mode 100644 test/gbrain-sync-no-bash-message.test.ts
+ create mode 100644 test/gstack-ceo-plan-find.test.ts
+ create mode 100644 test/gstack-ff-update.test.ts
+ create mode 100644 test/gstack-ship-queue.test.ts
+ create mode 100644 test/gstack-upgrade-path-spelling.test.ts
+ create mode 100644 test/held-install-recovery.test.ts
+ create mode 100644 test/helpers/ship-queue-fixture.ts
+ create mode 100644 test/helpers/state-matrix-fixture.ts
+ create mode 100644 test/outside-voice-native-deadline.test.ts
+ create mode 100644 test/pregate-bats-nested.test.ts
+ create mode 100644 test/pregate-docs-lane-review.test.ts
+ create mode 100644 test/pregate-import-graph-paths.test.ts
+ create mode 100644 test/pregate-manifest-paths.test.ts
+ create mode 100644 test/pregate-remote-gbrain.test.ts
+ create mode 100644 test/pregate-remote.test.ts
+ create mode 100644 test/pregate-secrets-source-context.test.ts
+ create mode 100644 test/pregate-supervise.test.ts
+ create mode 100644 test/pregate-timing.test.ts
+ create mode 100644 test/pregate-wtree-refusal.test.ts
+ create mode 100644 test/readme-skill-lists.test.ts
+ create mode 100644 test/restamp-gate-ahead-changelog.test.ts
+ create mode 100644 test/sanitize-echo.test.ts
+ create mode 100644 test/script-invocation-tripwire.test.ts
+ create mode 100644 test/script-invocation.test.ts
+ create mode 100644 test/session-update-heartbeat.test.ts
+ create mode 100644 test/session-update-held-banner.test.ts
+ create mode 100644 test/setup-cursor-legacy-skills.test.ts
+ create mode 100644 test/ship-policy-compat.test.ts
+ create mode 100644 test/skill-e2e-dx-error-contract.test.ts
+ create mode 100644 test/skill-end-completion-durability.test.ts
+ create mode 100644 test/skill-md-size-guard.test.ts
+ create mode 100644 test/state-matrix.test.ts
+ create mode 100644 test/test-free-shards-git-maintenance.test.ts
+ create mode 100644 test/tree-receipt-gbrain-pair.test.ts
+ create mode 100644 test/update-check-main-moved.test.ts
+ create mode 100644 test/wtree-consumers.test.ts
+Applied autostash.
+Codex skill profile: gpt
+Source: C:\Users\vaish\.codex\config.toml
+Building browse binary...
+bun install v1.4.2 (744846f84)
+
++ @anthropic-ai/claude-agent-sdk@0.2.141
++ @huggingface/transformers@4.3.0
+
+14 packages installed [37.90s]
+$ bash scripts/build.sh
+$ mkdir -p extension/lib && cp node_modules/xterm/lib/xterm.js extension/lib/xterm.js && cp node_modules/xterm/css/xterm.css extension/lib/xterm.css && cp node_modules/xterm-addon-fit/lib/xterm-addon-fit.js extension/lib/xterm-addon-fit.js
+Rendering skills for: claude (recorded in /c/Users/vaish/.claude/skills/gstack/.gstack-installed-hosts; GSTACK_RENDER_HOSTS=all renders every host)
+$ bun run scripts/gen-skill-docs.ts --host claude
+GENERATED: SKILL.md
+GENERATED: autoplan/SKILL.md
+GENERATED: benchmark/SKILL.md
+GENERATED: benchmark-models/SKILL.md
+GENERATED: browse/SKILL.md
+GENERATED: canary/SKILL.md
+GENERATED: careful/SKILL.md
+GENERATED: codex/SKILL.md
+GENERATED: context-restore/SKILL.md
+GENERATED: context-save/SKILL.md
+GENERATED: cso/SKILL.md
+GENERATED: design-consultation/SKILL.md
+GENERATED: design-html/SKILL.md
+GENERATED: design-review/SKILL.md
+GENERATED: design-shotgun/SKILL.md
+GENERATED: deslop-shared-libs/SKILL.md
+GENERATED: devex-review/SKILL.md
+GENERATED: diagram/SKILL.md
+GENERATED: document-generate/SKILL.md
+GENERATED: document-release/SKILL.md
+GENERATED: eval-plan/SKILL.md
+GENERATED: freeze/SKILL.md
+GENERATED: gstack-upgrade/SKILL.md
+GENERATED: guard/SKILL.md
+GENERATED: health/SKILL.md
+GENERATED: investigate/SKILL.md
+GENERATED: ios-clean/SKILL.md
+GENERATED: ios-design-review/SKILL.md
+GENERATED: ios-fix/SKILL.md
+GENERATED: ios-qa/SKILL.md
+GENERATED: ios-sync/SKILL.md
+GENERATED: land-and-deploy/SKILL.md
+GENERATED: landing-report/SKILL.md
+GENERATED: learn/SKILL.md
+GENERATED: make-pdf/SKILL.md
+GENERATED: office-hours/SKILL.md
+GENERATED: open-gstack-browser/SKILL.md
+GENERATED: pair-agent/SKILL.md
+GENERATED: plan-ceo-review/SKILL.md
+GENERATED: plan-design-review/SKILL.md
+GENERATED: plan-devex-review/SKILL.md
+GENERATED: plan-eng-review/SKILL.md
+GENERATED: plan-tune/SKILL.md
+GENERATED: qa/SKILL.md
+GENERATED: qa/templates/functional-report-template.md
+GENERATED: qa-only/SKILL.md
+GENERATED: retro/SKILL.md
+GENERATED: review/SKILL.md
+GENERATED: scrape/SKILL.md
+GENERATED: setup-browser-cookies/SKILL.md
+GENERATED: setup-deploy/SKILL.md
+GENERATED: setup-gbrain/SKILL.md
+GENERATED: ship/SKILL.md
+GENERATED: skillify/SKILL.md
+GENERATED: spec/SKILL.md
+GENERATED: sync-gbrain/SKILL.md
+GENERATED: test-audit/SKILL.md
+GENERATED: unfreeze/SKILL.md
+GENERATED: autoplan/sections/ceo-phase.md
+GENERATED: autoplan/sections/design-phase.md
+GENERATED: autoplan/sections/dx-phase.md
+GENERATED: autoplan/sections/eng-phase.md
+GENERATED: autoplan/sections/phase-close.md
+GENERATED: autoplan/sections/tasks-aggregator.md
+GENERATED: autoplan/sections/unattended.md
+GENERATED: browse/sections/command-list.md
+GENERATED: codex/sections/challenge-mode.md
+GENERATED: codex/sections/consult-mode.md
+GENERATED: codex/sections/review-mode.md
+GENERATED: cso/sections/audit-phases.md
+GENERATED: design-consultation/sections/proposal-and-preview.md
+GENERATED: design-html/sections/detector-install-offer.md
+GENERATED: design-html/sections/doctrine.md
+GENERATED: design-html/sections/pretext-patterns.md
+GENERATED: design-shotgun/sections/doctrine.md
+GENERATED: document-release/sections/audit-scope.md
+GENERATED: document-release/sections/release-body.md
+GENERATED: investigate/sections/backlog.md
+GENERATED: investigate/sections/eval-bisect.md
+GENERATED: investigate/sections/flake.md
+GENERATED: investigate/sections/polluter.md
+GENERATED: investigate/sections/race.md
+GENERATED: land-and-deploy/sections/first-run-validation.md
+GENERATED: land-and-deploy/sections/merge-and-deploy.md
+GENERATED: land-and-deploy/sections/readiness-gate.md
+GENERATED: office-hours/sections/design-and-handoff.md
+GENERATED: office-hours/sections/phase-2a-startup-diagnostic.md
+GENERATED: office-hours/sections/phase-2b-builder-brainstorm.md
+GENERATED: plan-ceo-review/sections/checklist.md
+GENERATED: plan-ceo-review/sections/review-sections.md
+GENERATED: plan-design-review/sections/checklist.md
+GENERATED: plan-design-review/sections/review-sections.md
+GENERATED: plan-devex-review/sections/checklist.md
+GENERATED: plan-devex-review/sections/review-sections.md
+GENERATED: plan-eng-review/sections/checklist.md
+GENERATED: plan-eng-review/sections/review-sections.md
+GENERATED: qa-only/sections/exploratory.md
+GENERATED: qa-only/sections/reporting.md
+GENERATED: qa/sections/browser-setup.md
+GENERATED: qa/sections/browser-verify.md
+GENERATED: qa/sections/exploratory.md
+GENERATED: qa/sections/qa-patterns.md
+GENERATED: qa/sections/scope.md
+GENERATED: qa/sections/system-functional.md
+GENERATED: qa/sections/test-bootstrap.md
+GENERATED: retro/sections/report-format.md
+GENERATED: review/sections/adversarial.md
+GENERATED: review/sections/plan-completion.md
+GENERATED: review/sections/review-army.md
+GENERATED: review/sections/shared-code-reuse.md
+GENERATED: setup-gbrain/sections/brain-init.md
+GENERATED: setup-gbrain/sections/claude-md-persist.md
+GENERATED: setup-gbrain/sections/engine-remediation.md
+GENERATED: setup-gbrain/sections/transcript-gate.md
+GENERATED: ship/sections/adversarial.md
+GENERATED: ship/sections/apple-release.md
+GENERATED: ship/sections/changelog.md
+GENERATED: ship/sections/documentation.md
+GENERATED: ship/sections/greptile-early.md
+GENERATED: ship/sections/greptile.md
+GENERATED: ship/sections/handoff.md
+GENERATED: ship/sections/measure.md
+GENERATED: ship/sections/plan-completion.md
+GENERATED: ship/sections/pr-body.md
+GENERATED: ship/sections/review-army.md
+GENERATED: ship/sections/shared-code-reuse.md
+GENERATED: ship/sections/test-coverage.md
+GENERATED: ship/sections/tests.md
+GENERATED: spec/sections/gate-and-file.md
+GENERATED: review/design-checklist.md
+GENERATED: lib/dom-dump.js
+GENERATED: autoplan/DRIVER.md
+
+Token Budget (claude host)
+════════════════════════════════════════════════════════════
+  design-review                   1969 lines  ~ 34207 tokens
+  plan-eng-review/sections/review-sections.md  1544 lines  ~ 24336 tokens
+  office-hours                    1363 lines  ~ 23694 tokens
+  plan-ceo-review                 1286 lines  ~ 20156 tokens
+  plan-design-review              1240 lines  ~ 21177 tokens
+  ship                            1233 lines  ~ 20142 tokens
+  review                          1214 lines  ~ 20150 tokens
+  retro                           1207 lines  ~ 17941 tokens
+  plan-ceo-review/sections/review-sections.md  1207 lines  ~ 20421 tokens
+  devex-review                    1165 lines  ~ 20156 tokens
+  setup-gbrain                    1087 lines  ~ 14992 tokens
+  plan-devex-review               1085 lines  ~ 16886 tokens
+  plan-devex-review/sections/review-sections.md  1059 lines  ~ 16314 tokens
+  land-and-deploy                 1037 lines  ~ 18151 tokens
+  plan-tune                       1001 lines  ~ 14053 tokens
+  autoplan                         994 lines  ~ 16310 tokens
+  sync-gbrain                      947 lines  ~ 14733 tokens
+  design-shotgun                   914 lines  ~ 14267 tokens
+  spec                             905 lines  ~ 14181 tokens
+  codex                            901 lines  ~ 14952 tokens
+  design-html                      878 lines  ~ 13863 tokens
+  design-consultation              830 lines  ~ 15501 tokens
+  document-generate                829 lines  ~ 11220 tokens
+  skillify                         799 lines  ~ 11076 tokens
+  qa                               793 lines  ~ 12850 tokens
+  investigate                      759 lines  ~ 12781 tokens
+  pair-agent                       738 lines  ~ 10615 tokens
+  plan-design-review/sections/review-sections.md   732 lines  ~ 12746 tokens
+  ship/sections/review-army.md     732 lines  ~ 12382 tokens
+  health                           721 lines  ~ 10971 tokens
+  plan-eng-review                  716 lines  ~ 13006 tokens
+  canary                           708 lines  ~ 12822 tokens
+  office-hours/sections/design-and-handoff.md   707 lines  ~ 10410 tokens
+  ios-qa                           657 lines  ~ 11080 tokens
+  context-save                     642 lines  ~  9903 tokens
+  document-release/sections/release-body.md   641 lines  ~  9097 tokens
+  context-restore                  623 lines  ~ 10430 tokens
+  setup-deploy                     616 lines  ~ 10976 tokens
+  qa-only                          604 lines  ~ 10992 tokens
+  design-consultation/sections/proposal-and-preview.md   596 lines  ~ 10552 tokens
+  document-release                 568 lines  ~  9726 tokens
+  learn                            530 lines  ~  8282 tokens
+  eval-plan                        527 lines  ~  9613 tokens
+  test-audit                       511 lines  ~  9853 tokens
+  landing-report                   496 lines  ~  8296 tokens
+  browse                           479 lines  ~  8574 tokens
+  ship/sections/test-coverage.md   479 lines  ~  8955 tokens
+  spec/sections/gate-and-file.md   473 lines  ~  7521 tokens
+  benchmark                        465 lines  ~  7453 tokens
+  ship/sections/tests.md           454 lines  ~  6764 tokens
+  ios-design-review                443 lines  ~  8063 tokens
+  scrape                           440 lines  ~  7007 tokens
+  ios-clean                        437 lines  ~  7874 tokens
+  ios-fix                          434 lines  ~  7766 tokens
+  gstack-upgrade                   433 lines  ~  6006 tokens
+  ios-sync                         429 lines  ~  7890 tokens
+  open-gstack-browser              422 lines  ~  4744 tokens
+  make-pdf                         417 lines  ~  5085 tokens
+  ship/sections/plan-completion.md   388 lines  ~  6486 tokens
+  ship/sections/adversarial.md     363 lines  ~  6609 tokens
+  land-and-deploy/sections/readiness-gate.md   309 lines  ~  3988 tokens
+  diagram                          306 lines  ~  4126 tokens
+  review/sections/adversarial.md   297 lines  ~  5804 tokens
+  benchmark-models                 293 lines  ~  4027 tokens
+  setup-gbrain/sections/brain-init.md   270 lines  ~  2929 tokens
+  codex/sections/review-mode.md    266 lines  ~  4106 tokens
+  review/sections/review-army.md   266 lines  ~  4159 tokens
+  ship/sections/pr-body.md         266 lines  ~  4061 tokens
+  land-and-deploy/sections/merge-and-deploy.md   251 lines  ~  4091 tokens
+  SKILL.md                         244 lines  ~  4067 tokens
+  setup-browser-cookies            238 lines  ~  3460 tokens
+  review/sections/plan-completion.md   233 lines  ~  4247 tokens
+  qa/sections/qa-patterns.md       227 lines  ~  2847 tokens
+  codex/sections/consult-mode.md   222 lines  ~  3260 tokens
+  deslop-shared-libs               215 lines  ~  3298 tokens
+  autoplan/sections/ceo-phase.md   196 lines  ~  3153 tokens
+  land-and-deploy/sections/first-run-validation.md   189 lines  ~  2476 tokens
+  browse/sections/command-list.md   177 lines  ~  4296 tokens
+  cso                              172 lines  ~  4509 tokens
+  autoplan/sections/eng-phase.md   165 lines  ~  2579 tokens
+  office-hours/sections/phase-2a-startup-diagnostic.md   164 lines  ~  3398 tokens
+  autoplan/sections/dx-phase.md    156 lines  ~  2499 tokens
+  codex/sections/challenge-mode.md   151 lines  ~  2498 tokens
+  design-html/sections/pretext-patterns.md   146 lines  ~  1216 tokens
+  autoplan/sections/design-phase.md   129 lines  ~  2120 tokens
+  retro/sections/report-format.md   128 lines  ~  1433 tokens
+  ship/sections/documentation.md   119 lines  ~  2116 tokens
+  cso/sections/audit-phases.md     117 lines  ~  3875 tokens
+  qa/sections/browser-setup.md     115 lines  ~  2718 tokens
+  careful                          113 lines  ~  1267 tokens
+  qa-only/sections/exploratory.md   108 lines  ~  2115 tokens
+  setup-gbrain/sections/transcript-gate.md   106 lines  ~  1327 tokens
+  freeze                           102 lines  ~  1138 tokens
+  ship/sections/apple-release.md    99 lines  ~  4475 tokens
+  ship/sections/greptile.md         96 lines  ~  1508 tokens
+  guard                             93 lines  ~  1032 tokens
+  qa/sections/exploratory.md        93 lines  ~  1925 tokens
+  design-html/sections/doctrine.md    87 lines  ~  1177 tokens
+  design-shotgun/sections/doctrine.md    87 lines  ~  1177 tokens
+  qa/sections/test-bootstrap.md     87 lines  ~  1817 tokens
+  qa-only/sections/reporting.md     79 lines  ~  1220 tokens
+  investigate/sections/flake.md     75 lines  ~  1188 tokens
+  autoplan/sections/tasks-aggregator.md    72 lines  ~  1028 tokens
+  setup-gbrain/sections/engine-remediation.md    72 lines  ~   971 tokens
+  autoplan/sections/phase-close.md    71 lines  ~  1279 tokens
+  ship/sections/measure.md          67 lines  ~  1110 tokens
+  qa/sections/system-functional.md    62 lines  ~   993 tokens
+  ship/sections/greptile-early.md    58 lines  ~   863 tokens
+  document-release/sections/audit-scope.md    52 lines  ~   841 tokens
+  ship/sections/changelog.md        48 lines  ~   514 tokens
+  unfreeze                          44 lines  ~   436 tokens
+  office-hours/sections/phase-2b-builder-brainstorm.md    44 lines  ~   855 tokens
+  design-html/sections/detector-install-offer.md    41 lines  ~   911 tokens
+  setup-gbrain/sections/claude-md-persist.md    41 lines  ~   371 tokens
+  plan-ceo-review/sections/checklist.md    38 lines  ~   490 tokens
+  plan-devex-review/sections/checklist.md    35 lines  ~   433 tokens
+  plan-eng-review/sections/checklist.md    35 lines  ~   418 tokens
+  review/sections/shared-code-reuse.md    35 lines  ~   585 tokens
+  ship/sections/shared-code-reuse.md    35 lines  ~   585 tokens
+  investigate/sections/polluter.md    34 lines  ~   499 tokens
+  investigate/sections/backlog.md    32 lines  ~   455 tokens
+  investigate/sections/race.md      28 lines  ~   378 tokens
+  plan-design-review/sections/checklist.md    28 lines  ~   314 tokens
+  ship/sections/handoff.md          28 lines  ~   400 tokens
+  investigate/sections/eval-bisect.md    26 lines  ~   369 tokens
+  qa/sections/scope.md              24 lines  ~   397 tokens
+  qa/sections/browser-verify.md     20 lines  ~   288 tokens
+  autoplan/sections/unattended.md    12 lines  ~   159 tokens
+────────────────────────────────────────────────────────────
+  TOTAL                          55201 lines  ~897723 tokens
+
+GENERATED: gstack/llms.txt
+GENERATED: agents-digest/gstack-AGENTS.md
+[gen-agents-digest] agents-digest/gstack-AGENTS.md: 1767 bytes (budget 2048)
+GENERATED: bin/gstack-doctor-components.sh
+ [215ms]  bundle  15 modules
+ [689ms] compile  browse/dist/browse.exe
+  [75ms]  bundle  1 modules
+ [601ms] compile  browse/dist/find-browse.exe
+ [411ms]  bundle  31 modules
+ [652ms] compile  design/dist/design.exe
+[3.109s]  bundle  344 modules
+[1078ms] compile  make-pdf/dist/pdf.exe
+  [53ms]  bundle  2 modules
+ [783ms] compile  bin/gstack-global-discover.exe
+ [443ms]  bundle  28 modules
+ [950ms] compile  C:/Users/vaish/.claude/skills/gstack/bin/.gstack-cso-stage.c3P8Oi/gstack-cso-core.exe
+launcher-windows.c
+publish-lock.c
+rm: cannot remove '/c/Users/vaish/.claude/skills/gstack/bin/.gstack-cso-stage.c3P8Oi/gstack-cso-publish-lock.exe': Permission denied
+Building Node-compatible server bundle...
+Bundled 84 modules in 789ms
+
+  server-node.mjs  0.69 MB  (entry point)
+
+Node server bundle ready: C:/Users/vaish/.claude/skills/gstack/browse/dist/server-node.mjs
+Qualified CSO images were not preloaded: Contained target execution requires a Linux or macOS host with amd64/arm64 Linux Docker images. Static audits remain available.
+  linked skills: autoplan benchmark-models benchmark browse canary careful codex context-restore context-save cso design-consultation design-html design-review design-shotgun deslop-shared-libs devex-review diagram document-generate document-release eval-plan freeze gstack-upgrade guard health investigate ios-clean ios-design-review ios-fix ios-qa ios-sync land-and-deploy landing-report learn make-pdf office-hours open-gstack-browser pair-agent plan-ceo-review plan-design-review plan-devex-review plan-eng-review plan-tune qa-only qa retro review scrape setup-browser-cookies setup-deploy setup-gbrain ship skillify spec sync-gbrain test-audit unfreeze
+  note: Windows install uses file copies (no Developer Mode required). Re-run ./setup after every 'git pull' to refresh skill files.
+  linked root skill alias: gstack
+gstack ready (claude).
+  browse: /c/Users/vaish/.claude/skills/gstack/browse/dist/browse.exe
+  browser: gstack browser (fallback). Install Aside for the primary path: aside.com (macOS 15+)
+  healed hook registrations: removed 0, repointed 1 (backup: settings.json.bak.<ts>; note: later registrations in this run move the rollback pointer — restore the heal's own .bak file directly if needed)
+gbrain not detected — brain-aware blocks suppressed in planning-skill SKILL.md files (zero token overhead).
+  To enable: install gbrain via /setup-gbrain, then re-run ./setup or 'gstack-config gbrain-refresh'.
+
+Plan-tune cathedral hooks not installed (non-interactive setup).
+Install with: ./setup --plan-tune-hooks
+  (or set GSTACK_PLAN_TUNE_HOOKS=yes, or run the commands below)
+  /c/Users/vaish/.claude/skills/gstack/bin/gstack-settings-hook add-event --event PostToolUse \
+    --matcher '(AskUserQuestion|mcp__.*__AskUserQuestion)' \
+    --command bash /c/Users/vaish/.claude/skills/gstack/hosts/claude/hooks/question-log-hook --source plan-tune-cathedral --timeout 5
+  /c/Users/vaish/.claude/skills/gstack/bin/gstack-settings-hook add-event --event PreToolUse \
+    --matcher '(AskUserQuestion|mcp__.*__AskUserQuestion)' \
+    --command bash /c/Users/vaish/.claude/skills/gstack/hosts/claude/hooks/question-preference-hook --source plan-tune-cathedral --timeout 5
+  re-pointed Stop hook to bash /c/Users/vaish/.claude/skills/gstack/hosts/claude/hooks/timeline-stop-hook (previous registration held a stale path)
+
+Tip: gstack can block pushes containing credentials (per-repo git hook).
+     Enable once: gstack-config set redact_prepush_hook true — /ship
+     installs the hook automatically in every repo you ship from.
+
+Install summary:
+  HOST      TIER             SCOPE    RESULT     VERSION                     DESTINATION  (source)
+  claude    full             global   updated    1.91.101.0 -> 1.91.117.0    ~/.claude/skills  (source: ~/.claude/skills/gstack)
+
+Moved 14 customized SKILL.md file(s) to /c/Users/vaish/.gstack/backups/skills/20261017T101931 before installing gstack's: autoplan benchmark browse canary cso design-consultation design-review devex-review gstack-upgrade land-and-deploy plan-devex-review plan-eng-review scrape ship
+  Those were gstack-generated files you had edited; restore anything you meant to keep under a different skill name.
+gstack ready (claude)

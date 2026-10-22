@@ -1,0 +1,65 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "308225c8-69b7-48eb-b9a1-df3857b3351b",
+      "class_name": "bird",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 60,
+        "ymin": 60,
+        "xmax": 215,
+        "ymax": 215,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "c7edc680-6095-4c1d-8259-cfbe6cb461c1",
+      "class_name": "bird",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 296,
+        "ymin": 60,
+        "xmax": 451,
+        "ymax": 215,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "17b91bbd-d49b-4295-9ddf-98e451799b46",
+      "class_name": "bird",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 60,
+        "ymin": 296,
+        "xmax": 215,
+        "ymax": 451,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "53e9de9f-12a3-47e7-b949-fc8ec705de97",
+      "class_name": "bird",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 296,
+        "ymin": 296,
+        "xmax": 451,
+        "ymax": 451,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    }
+  ]
+}

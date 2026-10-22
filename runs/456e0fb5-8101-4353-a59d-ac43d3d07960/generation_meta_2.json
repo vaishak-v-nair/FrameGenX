@@ -1,0 +1,32 @@
+{
+  "prompt": "person on surface, plant, prominent, clearly visible, Imagine a futuristic alien landscape with glowing plants and a person in a spacesuit walking on a smooth crystalline surface toward a distant city under a purple sky.",
+  "width": 512,
+  "height": 512,
+  "steps": 4,
+  "cfg_scale": 0.0,
+  "seed": null,
+  "preview_source": "final_pipeline_decode",
+  "base_model": "stabilityai/sdxl-turbo",
+  "resolved_base_model": "stabilityai/sdxl-turbo",
+  "controlnet": null,
+  "control_image_mode": "none",
+  "oom_fallback": null,
+  "created_at": "2026-10-15T13:55:01.394248+00:00",
+  "lora_adapters": [
+    {
+      "name": "pixel-art",
+      "source": "nerijs/pixel-art-xl",
+      "weight": 1.0,
+      "enabled": false
+    }
+  ],
+  "lora_load_report": [
+    {
+      "name": "pixel-art",
+      "source": "nerijs/pixel-art-xl",
+      "weight": 1.0,
+      "loaded": false,
+      "skipped": "enabled: false"
+    }
+  ]
+}

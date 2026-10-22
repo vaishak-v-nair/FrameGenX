@@ -1,0 +1,138 @@
+{
+  "schema_version": "2.0",
+  "created_at": "2026-08-25T09:43:52.615961+00:00",
+  "prompt": "three red apples on a wooden table",
+  "parsed": {
+    "subject": "apples",
+    "objects": [
+      "apples",
+      "table"
+    ],
+    "colors": [
+      "red"
+    ],
+    "primary_subject": "apples",
+    "secondary_objects": [
+      "table"
+    ]
+  },
+  "constraints": [
+    {
+      "type": "object_count",
+      "value": 1,
+      "target": "apples",
+      "priority": "critical"
+    },
+    {
+      "type": "spatial_relation",
+      "value": {
+        "subject": "apple",
+        "predicate": "above",
+        "object": "table"
+      },
+      "target": "apple->table",
+      "priority": "high"
+    }
+  ],
+  "rag_hits": [],
+  "rag_influence": {
+    "depth_required": false,
+    "lighting_complex": false
+  },
+  "execution_plan": {
+    "has_human": false,
+    "has_depth": false,
+    "risk_level": "medium"
+  },
+  "signal_map": {
+    "object_count": {
+      "threshold": 1
+    },
+    "class_uniqueness": {
+      "threshold": 1
+    },
+    "depth_layers": {
+      "threshold": 2
+    },
+    "spatial_ratio": {
+      "threshold": 0.2
+    },
+    "embedding": {
+      "threshold": 1.0
+    }
+  },
+  "entities": [
+    {
+      "id": "afa0dff2-7984-4a7d-9fbf-4492f6c1bc51",
+      "class_name": "apple",
+      "attributes": [
+        "red"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "41cf9b04-c8de-4895-81e2-2b84a466320b",
+      "class_name": "apple",
+      "attributes": [
+        "red"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "7bdec971-744c-4b0c-b5ec-8465bfd1f7ae",
+      "class_name": "apple",
+      "attributes": [
+        "red"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "d37433aa-a303-4873-b090-b58d43338642",
+      "class_name": "table",
+      "attributes": [
+        "wooden"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": false
+    }
+  ],
+  "spatial_relationships": [
+    {
+      "subject": "apple",
+      "predicate": "above",
+      "object": "table"
+    }
+  ],
+  "negations": [],
+  "repair_policy": {
+    "mappings": [
+      {
+        "failure": "object_missing",
+        "action": "prominently featured"
+      },
+      {
+        "failure": "duplicate_object",
+        "action": ""
+      },
+      {
+        "failure": "text_missing",
+        "action": "with clearly legible text"
+      },
+      {
+        "failure": "low_alignment",
+        "action": "sharp focus, highly detailed"
+      }
+    ]
+  }
+}

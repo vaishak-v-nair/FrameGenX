@@ -1,0 +1,35 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "0760bf8c-7621-4486-8360-c42c7cd9dbd6",
+      "class_name": "car",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 60,
+        "ymin": 122,
+        "xmax": 215,
+        "ymax": 389,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "49aa03d4-f304-49dd-ba67-20ddb6614934",
+      "class_name": "car",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 296,
+        "ymin": 122,
+        "xmax": 451,
+        "ymax": 389,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    }
+  ]
+}

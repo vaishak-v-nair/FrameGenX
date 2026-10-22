@@ -1,0 +1,29 @@
+# Keep the build context small and secrets out of image layers.
+.git
+.gitignore
+.dockerignore
+.env
+
+# Local environments and caches
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.ruff_cache/
+.vscode/
+framegenx.egg-info/
+
+# Runtime artifacts live on the host via compose volumes
+runs/
+reports/
+results.md
+
+# Frontend build inputs we regenerate inside the image
+frontend/node_modules/
+frontend/dist/
+
+# Heavy local artifacts that must never enter the image
+*.vhdx
+*.db
+data/index/*.milvus

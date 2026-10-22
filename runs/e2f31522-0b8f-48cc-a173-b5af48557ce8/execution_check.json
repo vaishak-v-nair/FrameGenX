@@ -1,0 +1,19 @@
+{
+  "run_id": "e2f31522-0b8f-48cc-a173-b5af48557ce8",
+  "exit_code": 0,
+  "seed": 43,
+  "detected_counts": {
+    "bottle": 2
+  },
+  "observed_colors": [
+    "green",
+    "green"
+  ],
+  "accepted": true,
+  "contract_evidence_status": "unverified",
+  "generation_seconds": 114.19,
+  "peak_gpu_reserved_gb": 2.563,
+  "image_sha256": "81fcdcece7333b804a6b58180d91453be340e38945450416fc8868d01a5341a4",
+  "image_path": "E:\\BrosKi\\framegenx\\runs\\e2f31522-0b8f-48cc-a173-b5af48557ce8\\generated_0.png",
+  "full_contract_CSR": null
+}

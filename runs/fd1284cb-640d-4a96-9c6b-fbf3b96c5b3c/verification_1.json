@@ -1,0 +1,154 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "spatial_violation",
+      "class_name": "adventurer->sword",
+      "expected": "holding",
+      "detected": "unsupported predicate 'holding'"
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "adventurer": 1,
+      "sword": 1
+    },
+    "raw_detected_counts": {
+      "adventurer": 1,
+      "sword": 1
+    },
+    "expected_counts": {
+      "adventurer": 1,
+      "sword": 1
+    }
+  },
+  "clip_cos": 0.3487,
+  "clip_norm": 0.7949,
+  "vqa_score": 1.0,
+  "vqa_vacuous": false,
+  "vqa_status": "observed",
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there an adventurer in the image?",
+      "expected": "yes",
+      "class_name": "adventurer",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "existence",
+      "question": "Is there an ancient sword in the image?",
+      "expected": "yes",
+      "class_name": "sword",
+      "answer": "yes",
+      "correct": true
+    }
+  ],
+  "reward": 0.8975,
+  "spatial_result": {
+    "passed": false,
+    "total": 1,
+    "verified": 0,
+    "failures": [
+      {
+        "subject": "adventurer",
+        "predicate": "holding",
+        "object": "sword",
+        "reason": "unsupported predicate 'holding'"
+      }
+    ],
+    "results": [
+      {
+        "relationship": {
+          "subject": "adventurer",
+          "predicate": "holding",
+          "object": "sword"
+        },
+        "passed": false,
+        "reason": "unsupported predicate 'holding'",
+        "subject_box": {
+          "xmin": 341.9931335449219,
+          "ymin": 138.36024475097656,
+          "xmax": 448.5843200683594,
+          "ymax": 384.23712158203125,
+          "score": 0.7448121905326843
+        },
+        "object_box": {
+          "xmin": 266.3965759277344,
+          "ymin": 130.197265625,
+          "xmax": 459.9710998535156,
+          "ymax": 374.1084899902344,
+          "score": 0.5093824863433838
+        }
+      }
+    ]
+  },
+  "contract_evidence": {
+    "status": "unverified",
+    "scope": "extracted_contract_only",
+    "counts": {
+      "total": 4,
+      "passed": 2,
+      "failed": 0,
+      "unverified": 2
+    },
+    "requirements": [
+      {
+        "kind": "object_count",
+        "target": "adventurer",
+        "expected": 1,
+        "status": "passed",
+        "method": "grounding_dino",
+        "observation": {
+          "detected": 1
+        }
+      },
+      {
+        "kind": "object_count",
+        "target": "sword",
+        "expected": 1,
+        "status": "passed",
+        "method": "grounding_dino",
+        "observation": {
+          "detected": 1
+        }
+      },
+      {
+        "kind": "attribute",
+        "target": "sword",
+        "expected": "ancient",
+        "status": "unverified",
+        "reason": "attribute binding has no calibrated hard verifier"
+      },
+      {
+        "kind": "spatial_relation",
+        "target": "adventurer->sword",
+        "expected": "holding",
+        "status": "unverified",
+        "reason": "unsupported predicate 'holding'"
+      }
+    ]
+  },
+  "detected_boxes": {
+    "adventurer": [
+      {
+        "xmin": 341.9931335449219,
+        "ymin": 138.36024475097656,
+        "xmax": 448.5843200683594,
+        "ymax": 384.23712158203125,
+        "score": 0.7448121905326843
+      }
+    ],
+    "sword": [
+      {
+        "xmin": 266.3965759277344,
+        "ymin": 130.197265625,
+        "xmax": 459.9710998535156,
+        "ymax": 374.1084899902344,
+        "score": 0.5093824863433838
+      }
+    ]
+  },
+  "count_method": "grounding_dino"
+}

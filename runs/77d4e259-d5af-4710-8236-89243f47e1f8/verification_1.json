@@ -1,0 +1,40 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "spacesuit",
+      "expected": 1,
+      "detected": 3
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "spacesuit": 3
+    },
+    "expected_counts": {
+      "spacesuit": 1
+    }
+  },
+  "clip_cos": 0.3328,
+  "clip_norm": 0.7314,
+  "vqa_score": 0.0,
+  "vqa_vacuous": false,
+  "reward": 0.3657,
+  "spatial_result": {
+    "passed": true,
+    "total": 0,
+    "verified": 0,
+    "failures": []
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there a 2026 latest spacesuit in the image?",
+      "expected": "yes",
+      "class_name": "spacesuit",
+      "answer": "error",
+      "correct": false
+    }
+  ]
+}

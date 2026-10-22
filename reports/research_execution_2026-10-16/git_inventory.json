@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-10-17T10:27:29.3480196+05:30",
+  "tracked_changed_count": 2064,
+  "changed_run_artifacts": 1863,
+  "changed_python_bytecode": 56,
+  "index_policy": "No index cleanup, unstaging, removal, reset, commit or push performed",
+  "new_ignores": [
+    "runs/research_data/",
+    "runs/research_cards/",
+    "runs/research_jupyter/",
+    "runs/mlflow_research.db*",
+    "venv/",
+    ".venv/",
+    "node_modules/",
+    "frontend/dist/",
+    "__pycache__/",
+    "*.py[cod]",
+    ".pytest_cache/",
+    ".pytest_tmp*/",
+    ".ruff_cache/",
+    ".ipynb_checkpoints/"
+  ],
+  "limitation": "Ignore patterns prevent new generated additions; already tracked/staged artifacts still count toward the IDE Git change limit",
+  "final_snapshot": {
+    "generated_at": "2026-10-17T05:56:11.028639+00:00",
+    "tracked_changed_count": 2065,
+    "changed_run_artifacts": 1863,
+    "changed_python_bytecode": 56,
+    "visible_untracked_count": 1009,
+    "ide_warning_resolution": "not visually verified"
+  }
+}

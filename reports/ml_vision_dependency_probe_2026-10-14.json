@@ -1,0 +1,22 @@
+{
+  "error_type": "RuntimeError",
+  "provider_failures": [
+    {
+      "error_type": "APIConnectionError",
+      "http_status": null,
+      "provider": "Ollama"
+    },
+    {
+      "error_type": "APITimeoutError",
+      "http_status": null,
+      "provider": "Nvidia"
+    },
+    {
+      "error_type": "InternalServerError",
+      "http_status": 503,
+      "provider": "Gemini"
+    }
+  ],
+  "scope": "one_public_synthetic_image_provider_dependency_probe",
+  "status": "unavailable"
+}

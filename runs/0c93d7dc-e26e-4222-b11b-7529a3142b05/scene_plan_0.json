@@ -1,0 +1,38 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "54063921-5e30-498c-8f41-1871ec7fd62a",
+      "class_name": "car",
+      "attributes": [
+        "futuristic",
+        "cyberpunk"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 60,
+        "ymin": 122,
+        "xmax": 215,
+        "ymax": 389,
+        "z_index": 1
+      },
+      "z_index": 1
+    },
+    {
+      "id": "0f3e9283-d6e1-46c1-b263-ec86b68b1e76",
+      "class_name": "bridge",
+      "attributes": [
+        "glowing"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 296,
+        "ymin": 122,
+        "xmax": 451,
+        "ymax": 389,
+        "z_index": 1
+      },
+      "z_index": 1
+    }
+  ]
+}

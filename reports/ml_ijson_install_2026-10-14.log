@@ -1,0 +1,9 @@
+Looking in indexes: https://pypi.org/simple, https://download.pytorch.org/whl/cu130
+Collecting ijson==3.6.0
+  Downloading ijson-3.6.0-cp314-cp314-win_amd64.whl.metadata (24 kB)
+Downloading ijson-3.6.0-cp314-cp314-win_amd64.whl (55 kB)
+Installing collected packages: ijson
+Successfully installed ijson-3.6.0
+
+[notice] A new release of pip is available: 26.1.2 -> 26.2.1
+[notice] To update, run: E:\BrosKi\framegenx\venv\Scripts\python.exe -m pip install --upgrade pip

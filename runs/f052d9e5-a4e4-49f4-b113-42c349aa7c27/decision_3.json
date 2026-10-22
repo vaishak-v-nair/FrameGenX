@@ -1,0 +1,23 @@
+{
+  "accept": false,
+  "reward": 0.2282,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": false,
+  "prompt_edits": [
+    "Feature single object",
+    "Add sword",
+    "Add prominent cliff",
+    "Adventurer holding sword",
+    "Adventurer on cliff",
+    "sharp focus, highly detailed",
+    "adventurer, prominent, clearly visible",
+    "floating island, prominent, clearly visible",
+    "waterfall, prominent, clearly visible",
+    "ruin, prominent, clearly visible",
+    "vine, prominent, clearly visible",
+    "sword, prominent, clearly visible",
+    "cliff, prominent, clearly visible"
+  ]
+}

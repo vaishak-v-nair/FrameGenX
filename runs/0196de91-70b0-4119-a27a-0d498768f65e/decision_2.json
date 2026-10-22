@@ -1,0 +1,12 @@
+{
+  "accept": false,
+  "reward": 0.5987,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": false,
+  "prompt_edits": [
+    "only 3 apple, nothing else similar",
+    "table, prominent, clearly visible"
+  ]
+}

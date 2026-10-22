@@ -1,0 +1,81 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "candle",
+      "expected": 4,
+      "detected": 6
+    },
+    {
+      "type": "count_mismatch",
+      "class_name": "cake",
+      "expected": 1,
+      "detected": 2
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "candle": 6,
+      "cake": 2
+    },
+    "expected_counts": {
+      "candle": 4,
+      "cake": 1
+    }
+  },
+  "clip_cos": 0.337,
+  "clip_norm": 0.7479,
+  "vqa_score": 1.0,
+  "vqa_vacuous": false,
+  "reward": 0.874,
+  "spatial_result": {
+    "passed": true,
+    "total": 1,
+    "verified": 1,
+    "failures": [],
+    "results": [
+      {
+        "relationship": {
+          "subject": "candle",
+          "predicate": "above",
+          "object": "birthday cake"
+        },
+        "passed": true,
+        "reason": "subject center_y=178 < object center_y=260",
+        "subject_box": {
+          "xmin": 358.91229248046875,
+          "ymin": 47.07441711425781,
+          "xmax": 384.8082275390625,
+          "ymax": 308.435302734375,
+          "score": 0.6160696744918823
+        },
+        "object_box": {
+          "xmin": 78.08308410644531,
+          "ymin": 40.93775939941406,
+          "xmax": 442.3221435546875,
+          "ymax": 478.73443603515625,
+          "score": 0.48460692167282104
+        }
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Are there candle in the image?",
+      "expected": "yes",
+      "class_name": "candle",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "existence",
+      "question": "Is there a cake in the image?",
+      "expected": "yes",
+      "class_name": "cake",
+      "answer": "yes",
+      "correct": true
+    }
+  ]
+}

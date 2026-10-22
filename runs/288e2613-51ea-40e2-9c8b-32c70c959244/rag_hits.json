@@ -1,0 +1,23 @@
+[
+  {
+    "id": "coco_151516",
+    "caption": "A beautiful bird with brown wings, glides over the water",
+    "image": "http://images.cocodataset.org/val2017/000000151516.jpg",
+    "score": 0.01492537313432836,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_553094",
+    "caption": "a fighter het flying up in the air",
+    "image": "http://images.cocodataset.org/val2017/000000553094.jpg",
+    "score": 0.009836065573770491,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_123585",
+    "caption": "a few birds eating stuff off the ground",
+    "image": "http://images.cocodataset.org/val2017/000000123585.jpg",
+    "score": 0.00967741935483871,
+    "retrieval_mode": "hybrid_rrf"
+  }
+]

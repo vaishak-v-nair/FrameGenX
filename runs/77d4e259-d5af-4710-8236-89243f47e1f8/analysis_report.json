@@ -1,0 +1,25 @@
+{
+  "accepted": false,
+  "failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "spacesuit",
+      "expected": 1,
+      "detected": 4
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "spacesuit": 4
+    },
+    "expected_counts": {
+      "spacesuit": 1
+    }
+  },
+  "root_causes": [
+    "Scene under-populated -> weak object planning",
+    "Prompt misalignment -> RAG or prompt issue",
+    "Objects clustered -> bad composition"
+  ],
+  "actions": []
+}

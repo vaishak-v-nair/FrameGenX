@@ -1,0 +1,23 @@
+[
+  {
+    "id": "coco_182417",
+    "caption": "A beautiful dessert waiting to be shared by two people",
+    "image": "http://images.cocodataset.org/val2017/000000182417.jpg",
+    "score": 0.01597542242703533,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_452122",
+    "caption": "An airplane flying in the air during the day.",
+    "image": "http://images.cocodataset.org/val2017/000000452122.jpg",
+    "score": 0.009836065573770491,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_453841",
+    "caption": "Cars and trucks stopped at an intersection at twilight.",
+    "image": "http://images.cocodataset.org/val2017/000000453841.jpg",
+    "score": 0.00967741935483871,
+    "retrieval_mode": "hybrid_rrf"
+  }
+]

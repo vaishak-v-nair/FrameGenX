@@ -1,0 +1,75 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "adventurer",
+      "expected": 1,
+      "detected": 2
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "adventurer": 2,
+      "sword": 1
+    },
+    "expected_counts": {
+      "adventurer": 1,
+      "sword": 1
+    }
+  },
+  "clip_cos": 0.2609,
+  "clip_norm": 0.4437,
+  "vqa_score": 0.0,
+  "vqa_vacuous": false,
+  "reward": 0.2218,
+  "spatial_result": {
+    "passed": true,
+    "total": 1,
+    "verified": 1,
+    "failures": [],
+    "results": [
+      {
+        "relationship": {
+          "subject": "adventurer",
+          "predicate": "holding",
+          "object": "sword"
+        },
+        "passed": true,
+        "reason": "unknown predicate 'holding': skipped",
+        "subject_box": {
+          "xmin": 482.3311462402344,
+          "ymin": 436.55218505859375,
+          "xmax": 496.2845764160156,
+          "ymax": 490.37225341796875,
+          "score": 0.5363004803657532
+        },
+        "object_box": {
+          "xmin": 400.505615234375,
+          "ymin": 180.66259765625,
+          "xmax": 409.48455810546875,
+          "ymax": 257.63165283203125,
+          "score": 0.48716336488723755
+        }
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there an adventurer in the image?",
+      "expected": "yes",
+      "class_name": "adventurer",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there an ancient sword in the image?",
+      "expected": "yes",
+      "class_name": "sword",
+      "answer": "error",
+      "correct": false
+    }
+  ]
+}

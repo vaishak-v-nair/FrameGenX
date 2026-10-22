@@ -1,0 +1,81 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "adventurer",
+      "expected": 1,
+      "detected": 6
+    },
+    {
+      "type": "count_mismatch",
+      "class_name": "sword",
+      "expected": 1,
+      "detected": 6
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "adventurer": 6,
+      "sword": 6
+    },
+    "expected_counts": {
+      "adventurer": 1,
+      "sword": 1
+    }
+  },
+  "clip_cos": 0.2295,
+  "clip_norm": 0.3182,
+  "vqa_score": 0.0,
+  "vqa_vacuous": false,
+  "reward": 0.1591,
+  "spatial_result": {
+    "passed": true,
+    "total": 1,
+    "verified": 1,
+    "failures": [],
+    "results": [
+      {
+        "relationship": {
+          "subject": "adventurer",
+          "predicate": "holding",
+          "object": "sword"
+        },
+        "passed": true,
+        "reason": "unknown predicate 'holding': skipped",
+        "subject_box": {
+          "xmin": 48.27466583251953,
+          "ymin": 12.938125610351562,
+          "xmax": 188.7469482421875,
+          "ymax": 245.57041931152344,
+          "score": 0.6329441070556641
+        },
+        "object_box": {
+          "xmin": 312.0326232910156,
+          "ymin": 179.17645263671875,
+          "xmax": 382.4706726074219,
+          "ymax": 282.8748474121094,
+          "score": 0.5900101661682129
+        }
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there an adventurer in the image?",
+      "expected": "yes",
+      "class_name": "adventurer",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there an ancient sword in the image?",
+      "expected": "yes",
+      "class_name": "sword",
+      "answer": "error",
+      "correct": false
+    }
+  ]
+}

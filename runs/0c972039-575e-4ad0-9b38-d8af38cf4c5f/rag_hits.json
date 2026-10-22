@@ -1,0 +1,23 @@
+[
+  {
+    "id": "coco_311295",
+    "caption": "A field with various wildlife and trees in the background.",
+    "image": "http://images.cocodataset.org/val2017/000000311295.jpg",
+    "score": 0.009836065573770491,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_45596",
+    "caption": "A view A large metal structure near the side of a building",
+    "image": "http://images.cocodataset.org/val2017/000000045596.jpg",
+    "score": 0.00967741935483871,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_229747",
+    "caption": "A photo of an outside with various things in the scene.",
+    "image": "http://images.cocodataset.org/val2017/000000229747.jpg",
+    "score": 0.009523809523809523,
+    "retrieval_mode": "hybrid_rrf"
+  }
+]

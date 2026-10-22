@@ -1,4 +1,11 @@
-# Current State Audit
+# Historical implementation audit
+
+> This undated legacy audit predates the current pipeline. Its descriptions of
+> missing repair loops, benchmarks, configuration, SQLite and tests, and its
+> references to a YOLO verifier, are superseded. For current behavior use the
+> [README](../README.md), [architecture](architecture.md),
+> [approved task board](../reports/planning/EXECUTION_TASKS.md) and the dated
+> execution reports. Preserved below as historical design context.
 
 ## Overview
 FrameGenX has been successfully migrated from a series of monolithic Jupyter Notebooks (N0-N7) into a modular Python package (`src/`). The overarching sequential flow (Intent -> Scene -> Generation -> Control -> QA -> Reporting) exists structurally.

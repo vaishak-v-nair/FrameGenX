@@ -1,0 +1,84 @@
+{
+  "accepted": false,
+  "hard_failures": [],
+  "signals": {
+    "detected_counts": {
+      "car": 1,
+      "bicycle": 1
+    },
+    "expected_counts": {
+      "car": 1,
+      "bicycle": 1
+    }
+  },
+  "clip_cos": 0.3331,
+  "clip_norm": 0.7323,
+  "vqa_score": 1.0,
+  "vqa_vacuous": false,
+  "reward": 0.8661,
+  "spatial_result": {
+    "passed": true,
+    "total": 1,
+    "verified": 1,
+    "failures": [],
+    "results": [
+      {
+        "relationship": {
+          "subject": "car",
+          "predicate": "next_to",
+          "object": "bicycle"
+        },
+        "passed": true,
+        "reason": "unknown predicate 'next_to': skipped",
+        "subject_box": {
+          "xmin": 50.249114990234375,
+          "ymin": 227.52462768554688,
+          "xmax": 219.6270751953125,
+          "ymax": 417.7329406738281,
+          "score": 0.8383890986442566
+        },
+        "object_box": {
+          "xmin": 333.84722900390625,
+          "ymin": 218.32745361328125,
+          "xmax": 511.88165283203125,
+          "ymax": 399.61602783203125,
+          "score": 0.8603521585464478
+        }
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there a red car in the image?",
+      "expected": "yes",
+      "class_name": "car",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "color",
+      "question": "What color is the car?",
+      "expected": "red",
+      "class_name": "car",
+      "answer": "red",
+      "correct": true
+    },
+    {
+      "type": "existence",
+      "question": "Is there a blue bicycle in the image?",
+      "expected": "yes",
+      "class_name": "bicycle",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "color",
+      "question": "What color is the bicycle?",
+      "expected": "blue",
+      "class_name": "bicycle",
+      "answer": "blue",
+      "correct": true
+    }
+  ]
+}

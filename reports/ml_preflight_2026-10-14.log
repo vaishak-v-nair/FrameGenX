@@ -1,0 +1,6 @@
+W1014 20:42:49.082000 23876 venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Loaded quantized UNet; starting real 512px backward probe
+E:\BrosKi\framegenx\src\training\preflight.py:51: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:823.)
+  result.update(loss=float(loss), changed_adapter_tensors=changed,
+{'status': 'passed', 'method': 'qlora', 'resolution': 512, 'trainable_parameters': 5806080, 'nf4_linear_modules': 743, 'loss': 0.9510887861251831, 'changed_adapter_tensors': 1120, 'peak_allocated_gb': 2.18578944, 'peak_reserved_gb': 2.311061504, 'dtype': 'torch.bfloat16', 'elapsed_seconds': 40.46298019999995}

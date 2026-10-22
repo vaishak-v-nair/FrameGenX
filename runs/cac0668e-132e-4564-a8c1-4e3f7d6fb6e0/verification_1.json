@@ -1,0 +1,80 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "banana",
+      "expected": 3,
+      "detected": 5
+    },
+    {
+      "type": "count_mismatch",
+      "class_name": "bowl",
+      "expected": 1,
+      "detected": 0
+    },
+    {
+      "type": "spatial_violation",
+      "class_name": "banana->bowl",
+      "expected": "inside",
+      "detected": "object 'bowl' not detected"
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "banana": 5,
+      "bowl": 0
+    },
+    "expected_counts": {
+      "banana": 3,
+      "bowl": 1
+    }
+  },
+  "clip_cos": 0.3272,
+  "clip_norm": 0.7088,
+  "vqa_score": 1.0,
+  "vqa_vacuous": false,
+  "reward": 0.8544,
+  "spatial_result": {
+    "passed": false,
+    "total": 1,
+    "verified": 0,
+    "failures": [
+      {
+        "subject": "banana",
+        "predicate": "inside",
+        "object": "bowl",
+        "reason": "object 'bowl' not detected"
+      }
+    ],
+    "results": [
+      {
+        "relationship": {
+          "subject": "banana",
+          "predicate": "inside",
+          "object": "bowl"
+        },
+        "passed": false,
+        "reason": "object 'bowl' not detected"
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Are there banana in the image?",
+      "expected": "yes",
+      "class_name": "banana",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "existence",
+      "question": "Is there a wooden bowl in the image?",
+      "expected": "yes",
+      "class_name": "bowl",
+      "answer": "yes",
+      "correct": true
+    }
+  ]
+}

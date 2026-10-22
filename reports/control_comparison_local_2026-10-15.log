@@ -1,0 +1,55 @@
+Local verification report: E:\BrosKi\framegenx\runs\constraint_control\1650c5c998968391\local_verification_960b80c5941f.json
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/978 [00:00<?, ?it/s]
+Loading weights:  23%|##3       | 229/978 [00:00<00:00, 2283.90it/s]
+Loading weights:  48%|####7     | 467/978 [00:00<00:00, 2323.99it/s]
+Loading weights:  72%|#######1  | 700/978 [00:00<00:00, 2095.26it/s]
+Loading weights:  93%|#########3| 912/978 [00:00<00:00, 1979.72it/s]
+Loading weights: 100%|##########| 978/978 [00:00<00:00, 2062.85it/s]
+[transformers] You are using a model of type `sam2_video` to instantiate a model of type `sam2`. This may be expected if you are loading a checkpoint that shares a subset of the architecture (e.g., loading a `sam2_video` checkpoint into `Sam2Model`), but is otherwise not supported and can yield errors. Please verify that the checkpoint is compatible with the model you are instantiating.
+
+Loading weights:   0%|          | 0/309 [00:00<?, ?it/s]
+Loading weights:  63%|######3   | 196/309 [00:00<00:00, 1952.24it/s]
+Loading weights: 100%|##########| 309/309 [00:00<00:00, 1778.00it/s]
+Verified apple_count_color_42_baseline.png: observed_diagnostics; counts={'apple': 6}
+Verified apple_count_color_42_candidate.png: observed_diagnostics; counts={'apple': 3}
+Verified apple_count_color_43_baseline.png: observed_diagnostics; counts={'apple': 4}
+Verified apple_count_color_43_candidate.png: observed_diagnostics; counts={'apple': 4}
+Verified vehicle_binding_42_baseline.png: observed_diagnostics; counts={'car': 2, 'bus': 2}
+Verified vehicle_binding_42_candidate.png: observed_diagnostics; counts={'car': 2, 'bus': 1}
+Verified vehicle_binding_43_baseline.png: observed_diagnostics; counts={'car': 0, 'bus': 1}
+Verified vehicle_binding_43_candidate.png: observed_diagnostics; counts={'car': 5, 'bus': 1}
+Verified animal_relation_42_baseline.png: observed_diagnostics; counts={'cat': 1, 'dog': 0}
+Verified animal_relation_42_candidate.png: observed_diagnostics; counts={'cat': 1, 'dog': 1}
+Verified animal_relation_43_baseline.png: observed_diagnostics; counts={'cat': 3, 'dog': 1}
+Verified animal_relation_43_candidate.png: observed_diagnostics; counts={'cat': 2, 'dog': 0}
+Verified bottle_negation_42_baseline.png: observed_diagnostics; counts={'bottle': 2}
+Verified bottle_negation_42_candidate.png: observed_diagnostics; counts={'bottle': 2}
+Verified bottle_negation_43_baseline.png: observed_diagnostics; counts={'bottle': 1}
+Verified bottle_negation_43_candidate.png: observed_diagnostics; counts={'bottle': 2}
+{
+  "arms": {
+    "baseline": {
+      "images": 8,
+      "observed_images": 8,
+      "unknown_images": 0,
+      "count_check_passes": 1,
+      "count_and_geometry_passes": 1,
+      "chromatic_binding_applicable_images": 6,
+      "chromatic_binding_supported_images": 1
+    },
+    "candidate": {
+      "images": 8,
+      "observed_images": 8,
+      "unknown_images": 0,
+      "count_check_passes": 4,
+      "count_and_geometry_passes": 4,
+      "chromatic_binding_applicable_images": 6,
+      "chromatic_binding_supported_images": 3
+    }
+  },
+  "full_contract_CSR": null,
+  "scope": "uncalibrated_local_verifier_diagnostics_only",
+  "promotion_status": "unqualified"
+}

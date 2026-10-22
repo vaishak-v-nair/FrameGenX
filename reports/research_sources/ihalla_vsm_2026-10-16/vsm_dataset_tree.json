@@ -1,0 +1,434 @@
+[
+  {
+    "type": "directory",
+    "oid": "e61d3257c0074ff4851250c1a9e9bb4b747f678e",
+    "size": 0,
+    "path": "Cards"
+  },
+  {
+    "type": "directory",
+    "oid": "316bfe3f87b572c0d562a99127354a8eb719e5e5",
+    "size": 0,
+    "path": "ChessImages"
+  },
+  {
+    "type": "directory",
+    "oid": "a30837cd0fd19feefac4c34d15175052520e59f8",
+    "size": 0,
+    "path": "validators"
+  },
+  {
+    "type": "directory",
+    "oid": "c6bfb43441370be5b7f0e358e79385fefe14a10c",
+    "size": 0,
+    "path": "validators/templates"
+  },
+  {
+    "type": "directory",
+    "oid": "3457c30bc70d467235d57d615805f449861eebff",
+    "size": 0,
+    "path": "validators/templates/chess"
+  },
+  {
+    "type": "file",
+    "oid": "870de66a2fd6d33d054f0dc694671d43f3a6def0",
+    "size": 2567,
+    "path": ".gitattributes"
+  },
+  {
+    "type": "file",
+    "oid": "478d0a743ec0d9c2a22895a7223c2a320014a114",
+    "size": 719636480,
+    "lfs": {
+      "oid": "050395809171aba0370539a333d85f5ee79d3c1648ab8b12b3ee75ced3327c91",
+      "size": 719636480,
+      "pointerSize": 134
+    },
+    "xetHash": "1490efb5d15f13d2f22fe4af684618511b443d99e731218a2f5c953fab6c18c6",
+    "path": "Cards/card_imgs.tar"
+  },
+  {
+    "type": "file",
+    "oid": "e5964a942d9381bf51ddd0d6f1c4cc91584b0adc",
+    "size": 133120,
+    "lfs": {
+      "oid": "3fda191bf90f90a20d3a581110c5a5238c606af5fe91c66fe96f7b96dd2fe5e0",
+      "size": 133120,
+      "pointerSize": 131
+    },
+    "xetHash": "0aa8483f3430294cd819528b0e6a78f5ffac8463e5a4e069b7acb4e2493e8d1d",
+    "path": "Cards/templates.tar"
+  },
+  {
+    "type": "file",
+    "oid": "7f5146c9d3790be404967c7230cae145339e4f87",
+    "size": 1438745,
+    "path": "ChessImages/test_fen.json"
+  },
+  {
+    "type": "file",
+    "oid": "ab25eac5b3f104ef9275600bf28c422643ae5bd0",
+    "size": 464148480,
+    "lfs": {
+      "oid": "f1267722e47817a60a268d4f747d4686de2c8c13708b2f68c90d8b8ef2aa3552",
+      "size": 464148480,
+      "pointerSize": 134
+    },
+    "xetHash": "8d389518dd338b571f9a1f7f34a9b2aa97441b0fc4cda49ec7a8e738b8a1ff46",
+    "path": "ChessImages/test_images.tar"
+  },
+  {
+    "type": "file",
+    "oid": "6c03cf77f909d24126f015550ecd722339f35f4f",
+    "size": 13323788,
+    "lfs": {
+      "oid": "5712f5c9f8a8b09620b08ca71e15eb317226a67ce3f96589c0b1cdfb72687a15",
+      "size": 13323788,
+      "pointerSize": 133
+    },
+    "xetHash": "8a02f70d7a1cb899b683d58cd8371153946d75019977cffe33484e16da3a093d",
+    "path": "ChessImages/train_fen.json"
+  },
+  {
+    "type": "file",
+    "oid": "f45d4d58b477e88b03825bc637f10f7b67f3c3ef",
+    "size": 4302612480,
+    "lfs": {
+      "oid": "28eeda44eff3046195888a5cf3d8e69e77435195661d55cf625e6d879a464258",
+      "size": 4302612480,
+      "pointerSize": 135
+    },
+    "xetHash": "2978acbf4546728b94127322a752cc4eb31f237a381d39a625c3b91375623bb7",
+    "path": "ChessImages/train_images.tar"
+  },
+  {
+    "type": "file",
+    "oid": "40056abcdc3738da816518671fdcf5df6c345964",
+    "size": 7386,
+    "path": "README.md"
+  },
+  {
+    "type": "file",
+    "oid": "92422e9a698a49061740d6d7d1108207a0ea515c",
+    "size": 4323,
+    "path": "validators/cards_validator.py"
+  },
+  {
+    "type": "file",
+    "oid": "53acdb2ba05fdad8ed51da3f89337a0a6c9c6fde",
+    "size": 9947,
+    "path": "validators/chess_validator.py"
+  },
+  {
+    "type": "file",
+    "oid": "3c9324955c595f5b2d1ea2d73ed915ca4a1de4bb",
+    "size": 822,
+    "lfs": {
+      "oid": "b97a4414b2660dd610b1ae00d62a13541c6bd5efd168d190944281bfe076060e",
+      "size": 822,
+      "pointerSize": 128
+    },
+    "xetHash": "879902ce977b66e9c8b8e5a1bb62369ee4b0a9d26c2834309e607bb19e6ff84e",
+    "path": "validators/templates/chess/bishop_bb.png"
+  },
+  {
+    "type": "file",
+    "oid": "73b804fd991963fcc26c9c3fa71095625582d5cf",
+    "size": 836,
+    "lfs": {
+      "oid": "8dfb51d9841db465a9f3a46af4da1f40e09edeba7c90daac6d22bd67175f79d7",
+      "size": 836,
+      "pointerSize": 128
+    },
+    "xetHash": "e5c76f7dcc7857c3b8689c3d7c4dc3d24265170d3ecad11bb01b8d0bd31a47f2",
+    "path": "validators/templates/chess/bishop_bw.png"
+  },
+  {
+    "type": "file",
+    "oid": "3b8184f4ea501c795e17e14ccaad2ad173934beb",
+    "size": 1229,
+    "lfs": {
+      "oid": "96c7e2fe0b13787e68978bf85b6506e1a4466e601ef24c15d824f6c78534e403",
+      "size": 1229,
+      "pointerSize": 129
+    },
+    "xetHash": "d6b6e878a1efb2f6322ae607f0b78aa3518571b0c426c002adc278987a4085f3",
+    "path": "validators/templates/chess/bishop_wb.png"
+  },
+  {
+    "type": "file",
+    "oid": "710d4ebcf266bae3efb5d220519fdc730ecaf472",
+    "size": 1230,
+    "lfs": {
+      "oid": "a619394bef9a3d2f3032ce65f6d37ca161a11fe6e2848e82181f18dec507ad9b",
+      "size": 1230,
+      "pointerSize": 129
+    },
+    "xetHash": "f0dd6293ffaec88a2d27478279bb0375d0ded81d3c6852f1c2f4be33a43d10f4",
+    "path": "validators/templates/chess/bishop_ww.png"
+  },
+  {
+    "type": "file",
+    "oid": "fd88ff079eb0fbc708976fb78cc8769f76e05be9",
+    "size": 108,
+    "lfs": {
+      "oid": "02f3eaf1d030dbb3269dca94a59e1e17a6012c6449b977ce1ea268802d2d9b1b",
+      "size": 108,
+      "pointerSize": 128
+    },
+    "xetHash": "bc4641edab4882426c546bdead59687b6d8cb2abb078521756991aa163caa360",
+    "path": "validators/templates/chess/empty_b.png"
+  },
+  {
+    "type": "file",
+    "oid": "813438751917acd625ac22d0067ad4be6849cd5e",
+    "size": 108,
+    "lfs": {
+      "oid": "3f8f4e3edb7c9c11706907b662c9bd9bf17c74a3fd51610e8593843e37bdea55",
+      "size": 108,
+      "pointerSize": 128
+    },
+    "xetHash": "4697db3aac843e32bbd516a6da28c2f4d9bae3163c177d090231393b43a6b95f",
+    "path": "validators/templates/chess/empty_w.png"
+  },
+  {
+    "type": "file",
+    "oid": "6ff50c90daae82bde629f5b64b7745238395d632",
+    "size": 1424,
+    "lfs": {
+      "oid": "2e8d61c0c6d221a77083895309f193684e308f7a77c5a42ba598a974022c29a5",
+      "size": 1424,
+      "pointerSize": 129
+    },
+    "xetHash": "dabbb65794eafad1e659a48c0fdcf8b6bff3e3878bfa9356c83d4277ec2470c4",
+    "path": "validators/templates/chess/king_bb.png"
+  },
+  {
+    "type": "file",
+    "oid": "005659c7094188c113cdc2264b959df87ea77a71",
+    "size": 1418,
+    "lfs": {
+      "oid": "d72898eb1596c397d8a583dd2bb81285e998329db30107c6fdd644c78cb69a15",
+      "size": 1418,
+      "pointerSize": 129
+    },
+    "xetHash": "71569b8d2ddd708896d85bb2e736b672f4a377ccb80b31382b4f39bbbab1114c",
+    "path": "validators/templates/chess/king_bw.png"
+  },
+  {
+    "type": "file",
+    "oid": "84f38228619d0c0ad9c03b6361438e35f15988f0",
+    "size": 1347,
+    "lfs": {
+      "oid": "cef26dca8b1d84188ee39cdbe2538c13f84cfe66a977545b4a77173d5c221616",
+      "size": 1347,
+      "pointerSize": 129
+    },
+    "xetHash": "2d32967971f0d52501a35cf3ce33ea79ef6bf73ac6009b6c3343947b12d375c6",
+    "path": "validators/templates/chess/king_wb.png"
+  },
+  {
+    "type": "file",
+    "oid": "0d30891ae763c1a4aa98b77066263a0836c4e162",
+    "size": 1344,
+    "lfs": {
+      "oid": "145a631c3b8bfe9e2d1e9ab2a7b03ef9b2633dae10703d92cd79e76f51d56c95",
+      "size": 1344,
+      "pointerSize": 129
+    },
+    "xetHash": "1b0b679fecf83ae73c97ea8e050fc9bb1f6881985d95e63224202eeff0331139",
+    "path": "validators/templates/chess/king_ww.png"
+  },
+  {
+    "type": "file",
+    "oid": "29f59e0f4956df3543d6ef3a62cca592ffc71d28",
+    "size": 1188,
+    "lfs": {
+      "oid": "be61180470cacf0187c8e72d4ed63e71a8b52f7003fb12a38d3ca169040b0cd5",
+      "size": 1188,
+      "pointerSize": 129
+    },
+    "xetHash": "63b8aefb52a133b7bac3718e1e45c670f269de44ae32c81f9700997c9873cedf",
+    "path": "validators/templates/chess/knight_bb.png"
+  },
+  {
+    "type": "file",
+    "oid": "5b7c1bb2dd9467c254c226e45082a4c9b402937e",
+    "size": 1199,
+    "lfs": {
+      "oid": "035b4bdc6109df7b94f63d629674eb8bb5d1be0e1437ba6f070944d3d5acdaab",
+      "size": 1199,
+      "pointerSize": 129
+    },
+    "xetHash": "d65c49e0a6709909512cd6656535b42a151e4f1523be1143663d83c7351cb2e1",
+    "path": "validators/templates/chess/knight_bw.png"
+  },
+  {
+    "type": "file",
+    "oid": "b84398bd2695244cedef10a315eecebd11c712e3",
+    "size": 1335,
+    "lfs": {
+      "oid": "da4652badcf9200c7480f0b56449f75a74b8855e2c564b0696a8a83be820344b",
+      "size": 1335,
+      "pointerSize": 129
+    },
+    "xetHash": "7e9db94125bcd15b557658df1448d4c602ffe783076e38a17f03d0c8269074fc",
+    "path": "validators/templates/chess/knight_wb.png"
+  },
+  {
+    "type": "file",
+    "oid": "645a4419e95e629338aabada0eec98f65a6e69a2",
+    "size": 1331,
+    "lfs": {
+      "oid": "5b4ac8d78d49f71cc62ef3989e8cdbcb1cf8c1acdf970a4cb7821e04348ff6f1",
+      "size": 1331,
+      "pointerSize": 129
+    },
+    "xetHash": "81d7f21326ee39127a045b23e6284054f675f05d686dded8d774d0cb07ae0a10",
+    "path": "validators/templates/chess/knight_ww.png"
+  },
+  {
+    "type": "file",
+    "oid": "007b439d55ab475a6fbd67ac166c24b1b96b3744",
+    "size": 568,
+    "lfs": {
+      "oid": "6d4e3a0ab21bee998f2398dad1b0d3e4417dbd0b79d1cbdeb671f7c0b4eaf9ce",
+      "size": 568,
+      "pointerSize": 128
+    },
+    "xetHash": "4b630d69e5093e19b3afcead85b8dc9238a654657c34710ef780a579cc669148",
+    "path": "validators/templates/chess/pawn_bb.png"
+  },
+  {
+    "type": "file",
+    "oid": "e621e5e512073e9ed6da337919ca2377442f9ae5",
+    "size": 551,
+    "lfs": {
+      "oid": "4b21e5de6bef9b8c6fec85f963d58dca7059435977004db1cb36566da91a0c5d",
+      "size": 551,
+      "pointerSize": 128
+    },
+    "xetHash": "b047435f4db68ca8290a13b08d312ee21521838942dba87b6ce810aec144b035",
+    "path": "validators/templates/chess/pawn_bw.png"
+  },
+  {
+    "type": "file",
+    "oid": "b8c45efc7c7d3d2567d1b17ff6f373f643517902",
+    "size": 819,
+    "lfs": {
+      "oid": "38585e013e87e44f8ed9597302663b7b81632338d9818bf9ddc4bcf07e852ae9",
+      "size": 819,
+      "pointerSize": 128
+    },
+    "xetHash": "e305de0577ea026c2d730df2776326efa10742a3273edb259bb4a5f84d129a5d",
+    "path": "validators/templates/chess/pawn_wb.png"
+  },
+  {
+    "type": "file",
+    "oid": "b043c251f93fa12441f86a3c498e15d0dca60dc9",
+    "size": 823,
+    "lfs": {
+      "oid": "d50bf2fc73256de0d074ff2647cc86525741774a10e26bd81d1ec458bfcd213a",
+      "size": 823,
+      "pointerSize": 128
+    },
+    "xetHash": "4cecc2f4f5b7c47f68ade75ce720277a7c1f53da460f76f2508fa75d5e4ee371",
+    "path": "validators/templates/chess/pawn_ww.png"
+  },
+  {
+    "type": "file",
+    "oid": "e23ca4c26f871f9c2dbf9bd26cd1291dc2b1e87c",
+    "size": 1493,
+    "lfs": {
+      "oid": "6e253d98829f8ca69f623748c9bbd2a064111e0266f2295a2ab3f2de18382002",
+      "size": 1493,
+      "pointerSize": 129
+    },
+    "xetHash": "1ac15006239aad48ac3cd6e91700d10ee01c30ea176c05bea5ca13d43b884aeb",
+    "path": "validators/templates/chess/queen_bb.png"
+  },
+  {
+    "type": "file",
+    "oid": "c5066c372f3d6c5c5977f4298f75b7617b34bb60",
+    "size": 1529,
+    "lfs": {
+      "oid": "89ade757ec77d8a4d5d0b0f9d7968a983783caae2042abf2ac2569702a99686a",
+      "size": 1529,
+      "pointerSize": 129
+    },
+    "xetHash": "29abaaac376427ea0bce6d21e9a34f835c0ee2d1875de20b76e93fed1d80399e",
+    "path": "validators/templates/chess/queen_bw.png"
+  },
+  {
+    "type": "file",
+    "oid": "dde54a83a60a501568d2f1e6b9c3cd10e29903a6",
+    "size": 1748,
+    "lfs": {
+      "oid": "23d53b2345cc769a57c358cbc49693aef6f2376fc4d1b18740639de732ee6380",
+      "size": 1748,
+      "pointerSize": 129
+    },
+    "xetHash": "9e32078231b02dc0838bae0bf225eea09fa61139f2675729c18885e1dafe4ffb",
+    "path": "validators/templates/chess/queen_wb.png"
+  },
+  {
+    "type": "file",
+    "oid": "f7f3ef5cf6664ea3b45e735fd1f062292b8e3720",
+    "size": 1763,
+    "lfs": {
+      "oid": "8da620f3958076de1638e1ddeacc8f8cbf85049d13018eeeb7d19f2770db918e",
+      "size": 1763,
+      "pointerSize": 129
+    },
+    "xetHash": "69233c3b42386bef70ec7457b1c6b3bed1fed5fe8a3ae942b64825053494b2af",
+    "path": "validators/templates/chess/queen_ww.png"
+  },
+  {
+    "type": "file",
+    "oid": "3db33320d19f02014050e1a1da6c7a1caef6f710",
+    "size": 323,
+    "lfs": {
+      "oid": "3a9ca05bd118ead92caafe0e73a6fdd604ccb1bc479e91417dee8873f74f3902",
+      "size": 323,
+      "pointerSize": 128
+    },
+    "xetHash": "950c957bba4976de88fe8761dfcbcd85238f2a487e27943c2670628bd6a9f8b0",
+    "path": "validators/templates/chess/rook_bb.png"
+  },
+  {
+    "type": "file",
+    "oid": "7a55e2e92d1ff4e31e57e5ff24c1807c7ce4c4fd",
+    "size": 1936,
+    "lfs": {
+      "oid": "3fa5c5cbbd303ded8a51f3b5015b3a995e25b740871bffed3204f0ea71be3d0f",
+      "size": 1936,
+      "pointerSize": 129
+    },
+    "xetHash": "56c15ebb0d48368d14761e81ae258b2fa03ab01c157e565757056b166f31bc81",
+    "path": "validators/templates/chess/rook_bw.png"
+  },
+  {
+    "type": "file",
+    "oid": "4a4cf8ffb1ccdc3633f596e1d9f3c0007a403c69",
+    "size": 2205,
+    "lfs": {
+      "oid": "ef7a6e1d51ab1537fbdf3e8286aa0061378e5adf9cb4d50dd6aa92dd657b2430",
+      "size": 2205,
+      "pointerSize": 129
+    },
+    "xetHash": "f485cabb1cf07ed42bb4cd6d6652926a0a182272d55120810d75d1bc02ddcecb",
+    "path": "validators/templates/chess/rook_wb.png"
+  },
+  {
+    "type": "file",
+    "oid": "031b6804aed001c4a349377d59c185d29d461941",
+    "size": 2203,
+    "lfs": {
+      "oid": "819779f226e18752595aafe699e858c1430201fe1970649e5bb41ff918518e75",
+      "size": 2203,
+      "pointerSize": 129
+    },
+    "xetHash": "89e68eb8fa4d62866e1f9d5bab489a33b0d4296ffb533d4f8972f3698f8589e2",
+    "path": "validators/templates/chess/rook_ww.png"
+  }
+]

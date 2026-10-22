@@ -1,0 +1,654 @@
+{
+  "adapters_enabled": false,
+  "full_contract_CSR": null,
+  "generation_directory": "E:\\BrosKi\\framegenx\\runs\\constraint_control\\1650c5c998968391",
+  "generation_peak_reserved_gb": 2.581594112,
+  "generation_result_sha256": "00829d01c42338faafe3f62e1071d70920c09b103da3cf86eab7197ae058da05",
+  "generation_seconds": 708.2598221999997,
+  "mlflow_run_id": "7ce64b6419cd4836be5e2094a1706464",
+  "native_pipeline_parity": {
+    "exact": true,
+    "max_abs_difference": 0.0
+  },
+  "paired_changes": {
+    "improved_pairs": 3,
+    "matched_pairs": 8,
+    "regressed_pairs": 0,
+    "unchanged_pairs": 5
+  },
+  "pairs": [
+    {
+      "baseline": {
+        "chromatic_binding_supported": false,
+        "color_classes": {
+          "apple": {
+            "detected_instances": 6,
+            "expected_colors": [
+              "red",
+              "red",
+              "red"
+            ],
+            "reason": "instance count differs; color binding cannot establish the contract",
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "unknown"
+          },
+          "table": {
+            "detected_instances": 0,
+            "expected_colors": [
+              "white"
+            ],
+            "reason": "achromatic/unsupported color requires calibration",
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "unknown"
+          }
+        },
+        "count_check_passed": false,
+        "counts": {
+          "apple": 6
+        },
+        "file": "apple_count_color_42_baseline.png",
+        "geometry_passed": true,
+        "image_sha256": "ba5a3aeb1309daa7a0aa189932978d792502013a40a312b2a384a81786f02e50",
+        "joint_operational_checks_passed": false,
+        "observed": true
+      },
+      "candidate": {
+        "chromatic_binding_supported": true,
+        "color_classes": {
+          "apple": {
+            "detected_instances": 3,
+            "expected_colors": [
+              "red",
+              "red",
+              "red"
+            ],
+            "observed_colors": [
+              "red",
+              "red",
+              "red"
+            ],
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "supported_diagnostic"
+          },
+          "table": {
+            "detected_instances": 0,
+            "expected_colors": [
+              "white"
+            ],
+            "reason": "achromatic/unsupported color requires calibration",
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "unknown"
+          }
+        },
+        "count_check_passed": true,
+        "counts": {
+          "apple": 3
+        },
+        "file": "apple_count_color_42_candidate.png",
+        "geometry_passed": true,
+        "image_sha256": "092d62ccaaa82567b14abea4269aada11f3f5f4ef837e772267c1640feefcf31",
+        "joint_operational_checks_passed": true,
+        "observed": true
+      },
+      "case_id": "apple_count_color",
+      "prompt": "Exactly three red apples arranged in a row on a plain white table, with each apple clearly separated.",
+      "requirements": [
+        "Exactly three apples are visible.",
+        "Every apple is red.",
+        "The apples form a clearly separated row.",
+        "A white table is visible."
+      ],
+      "seed": 42
+    },
+    {
+      "baseline": {
+        "chromatic_binding_supported": false,
+        "color_classes": {
+          "apple": {
+            "detected_instances": 4,
+            "expected_colors": [
+              "red",
+              "red",
+              "red"
+            ],
+            "reason": "instance count differs; color binding cannot establish the contract",
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "unknown"
+          },
+          "table": {
+            "detected_instances": 0,
+            "expected_colors": [
+              "white"
+            ],
+            "reason": "achromatic/unsupported color requires calibration",
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "unknown"
+          }
+        },
+        "count_check_passed": false,
+        "counts": {
+          "apple": 4
+        },
+        "file": "apple_count_color_43_baseline.png",
+        "geometry_passed": true,
+        "image_sha256": "3391927c690a96df381543ef8d351eb361cd2b6d813c85e3bffe38b2cadac4ec",
+        "joint_operational_checks_passed": false,
+        "observed": true
+      },
+      "candidate": {
+        "chromatic_binding_supported": false,
+        "color_classes": {
+          "apple": {
+            "detected_instances": 4,
+            "expected_colors": [
+              "red",
+              "red",
+              "red"
+            ],
+            "reason": "instance count differs; color binding cannot establish the contract",
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "unknown"
+          },
+          "table": {
+            "detected_instances": 0,
+            "expected_colors": [
+              "white"
+            ],
+            "reason": "achromatic/unsupported color requires calibration",
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "unknown"
+          }
+        },
+        "count_check_passed": false,
+        "counts": {
+          "apple": 4
+        },
+        "file": "apple_count_color_43_candidate.png",
+        "geometry_passed": true,
+        "image_sha256": "3735783c8f0e1c58465d5573c42deb3b249dcbef8b6216074900930a3f646fa4",
+        "joint_operational_checks_passed": false,
+        "observed": true
+      },
+      "case_id": "apple_count_color",
+      "prompt": "Exactly three red apples arranged in a row on a plain white table, with each apple clearly separated.",
+      "requirements": [
+        "Exactly three apples are visible.",
+        "Every apple is red.",
+        "The apples form a clearly separated row.",
+        "A white table is visible."
+      ],
+      "seed": 43
+    },
+    {
+      "baseline": {
+        "chromatic_binding_supported": false,
+        "color_classes": {
+          "bus": {
+            "detected_instances": 2,
+            "expected_colors": [
+              "blue"
+            ],
+            "reason": "instance count differs; color binding cannot establish the contract",
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "unknown"
+          },
+          "car": {
+            "detected_instances": 2,
+            "expected_colors": [
+              "red"
+            ],
+            "reason": "instance count differs; color binding cannot establish the contract",
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "unknown"
+          },
+          "road": {
+            "detected_instances": 0,
+            "expected_colors": [
+              "gray"
+            ],
+            "reason": "achromatic/unsupported color requires calibration",
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "unknown"
+          }
+        },
+        "count_check_passed": false,
+        "counts": {
+          "bus": 2,
+          "car": 2
+        },
+        "file": "vehicle_binding_42_baseline.png",
+        "geometry_passed": true,
+        "image_sha256": "3308283b3a32ad44b1192420d6b41adac82434e21a5a7f50b095342097e68249",
+        "joint_operational_checks_passed": false,
+        "observed": true
+      },
+      "candidate": {
+        "chromatic_binding_supported": false,
+        "color_classes": {
+          "bus": {
+            "detected_instances": 1,
+            "expected_colors": [
+              "blue"
+            ],
+            "observed_colors": [
+              "blue"
+            ],
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "supported_diagnostic"
+          },
+          "car": {
+            "detected_instances": 2,
+            "expected_colors": [
+              "red"
+            ],
+            "reason": "instance count differs; color binding cannot establish the contract",
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "unknown"
+          },
+          "road": {
+            "detected_instances": 0,
+            "expected_colors": [
+              "gray"
+            ],
+            "reason": "achromatic/unsupported color requires calibration",
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "unknown"
+          }
+        },
+        "count_check_passed": false,
+        "counts": {
+          "bus": 1,
+          "car": 2
+        },
+        "file": "vehicle_binding_42_candidate.png",
+        "geometry_passed": true,
+        "image_sha256": "1b8abf052670bce35290c91ab7ce0115387852deb8fedfb647c2b7cb3b9fb406",
+        "joint_operational_checks_passed": false,
+        "observed": true
+      },
+      "case_id": "vehicle_binding",
+      "prompt": "One red car to the left of one blue bus on a plain gray road.",
+      "requirements": [
+        "Exactly one car is visible.",
+        "Exactly one bus is visible.",
+        "The car is red.",
+        "The bus is blue.",
+        "The car is left of the bus.",
+        "A gray road is visible."
+      ],
+      "seed": 42
+    },
+    {
+      "baseline": {
+        "chromatic_binding_supported": false,
+        "color_classes": {
+          "bus": {
+            "detected_instances": 1,
+            "expected_colors": [
+              "blue"
+            ],
+            "observed_colors": [
+              "red"
+            ],
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "contradicted_diagnostic"
+          },
+          "car": {
+            "detected_instances": 0,
+            "expected_colors": [
+              "red"
+            ],
+            "reason": "instance count differs; color binding cannot establish the contract",
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "unknown"
+          },
+          "road": {
+            "detected_instances": 0,
+            "expected_colors": [
+              "gray"
+            ],
+            "reason": "achromatic/unsupported color requires calibration",
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "unknown"
+          }
+        },
+        "count_check_passed": false,
+        "counts": {
+          "bus": 1,
+          "car": 0
+        },
+        "file": "vehicle_binding_43_baseline.png",
+        "geometry_passed": false,
+        "image_sha256": "cc34abc7ffd9c08835d824f9d8a9fcd6e547656ea34efd99728c71501aac8cc6",
+        "joint_operational_checks_passed": false,
+        "observed": true
+      },
+      "candidate": {
+        "chromatic_binding_supported": false,
+        "color_classes": {
+          "bus": {
+            "detected_instances": 1,
+            "expected_colors": [
+              "blue"
+            ],
+            "observed_colors": [
+              "blue"
+            ],
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "supported_diagnostic"
+          },
+          "car": {
+            "detected_instances": 5,
+            "expected_colors": [
+              "red"
+            ],
+            "reason": "instance count differs; color binding cannot establish the contract",
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "unknown"
+          },
+          "road": {
+            "detected_instances": 0,
+            "expected_colors": [
+              "gray"
+            ],
+            "reason": "achromatic/unsupported color requires calibration",
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "unknown"
+          }
+        },
+        "count_check_passed": false,
+        "counts": {
+          "bus": 1,
+          "car": 5
+        },
+        "file": "vehicle_binding_43_candidate.png",
+        "geometry_passed": true,
+        "image_sha256": "8008d6c63806b6aba000e7d0cabffafe307d8be7e4603ead5d797a464b48ead7",
+        "joint_operational_checks_passed": false,
+        "observed": true
+      },
+      "case_id": "vehicle_binding",
+      "prompt": "One red car to the left of one blue bus on a plain gray road.",
+      "requirements": [
+        "Exactly one car is visible.",
+        "Exactly one bus is visible.",
+        "The car is red.",
+        "The bus is blue.",
+        "The car is left of the bus.",
+        "A gray road is visible."
+      ],
+      "seed": 43
+    },
+    {
+      "baseline": {
+        "chromatic_binding_supported": null,
+        "color_classes": {},
+        "count_check_passed": false,
+        "counts": {
+          "cat": 1,
+          "dog": 0
+        },
+        "file": "animal_relation_42_baseline.png",
+        "geometry_passed": false,
+        "image_sha256": "c2e38859a3cb6c2ff734da3c2d6dba154f16f6c015b47b190d81306c54efc868",
+        "joint_operational_checks_passed": false,
+        "observed": true
+      },
+      "candidate": {
+        "chromatic_binding_supported": null,
+        "color_classes": {},
+        "count_check_passed": true,
+        "counts": {
+          "cat": 1,
+          "dog": 1
+        },
+        "file": "animal_relation_42_candidate.png",
+        "geometry_passed": true,
+        "image_sha256": "75e6f41e44ee5d728d93fdb0f829c93cc4a2941d98963eab1b2635499dfe152d",
+        "joint_operational_checks_passed": true,
+        "observed": true
+      },
+      "case_id": "animal_relation",
+      "prompt": "Exactly one cat on the left and exactly one dog on the right, clearly separated.",
+      "requirements": [
+        "Exactly one cat is visible.",
+        "Exactly one dog is visible.",
+        "The cat is left of the dog.",
+        "The animals are clearly separated."
+      ],
+      "seed": 42
+    },
+    {
+      "baseline": {
+        "chromatic_binding_supported": null,
+        "color_classes": {},
+        "count_check_passed": false,
+        "counts": {
+          "cat": 3,
+          "dog": 1
+        },
+        "file": "animal_relation_43_baseline.png",
+        "geometry_passed": true,
+        "image_sha256": "fcd4d006999275fdc7fb0a3bd1614d503109eb90b736c61a6959388499e41298",
+        "joint_operational_checks_passed": false,
+        "observed": true
+      },
+      "candidate": {
+        "chromatic_binding_supported": null,
+        "color_classes": {},
+        "count_check_passed": false,
+        "counts": {
+          "cat": 2,
+          "dog": 0
+        },
+        "file": "animal_relation_43_candidate.png",
+        "geometry_passed": false,
+        "image_sha256": "3f99369d31b344f330f916cb7c737432d5644d4e07b12f2ee15d481417599189",
+        "joint_operational_checks_passed": false,
+        "observed": true
+      },
+      "case_id": "animal_relation",
+      "prompt": "Exactly one cat on the left and exactly one dog on the right, clearly separated.",
+      "requirements": [
+        "Exactly one cat is visible.",
+        "Exactly one dog is visible.",
+        "The cat is left of the dog.",
+        "The animals are clearly separated."
+      ],
+      "seed": 43
+    },
+    {
+      "baseline": {
+        "chromatic_binding_supported": true,
+        "color_classes": {
+          "bottle": {
+            "detected_instances": 2,
+            "expected_colors": [
+              "green",
+              "green"
+            ],
+            "observed_colors": [
+              "green",
+              "green"
+            ],
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "supported_diagnostic"
+          },
+          "table": {
+            "detected_instances": 0,
+            "expected_colors": [
+              "white"
+            ],
+            "reason": "achromatic/unsupported color requires calibration",
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "unknown"
+          }
+        },
+        "count_check_passed": true,
+        "counts": {
+          "bottle": 2
+        },
+        "file": "bottle_negation_42_baseline.png",
+        "geometry_passed": true,
+        "image_sha256": "5e88aaafb6f822bfb026f3037d7afdd12adbddcd7f5caefafde4dfc9a2a8bba2",
+        "joint_operational_checks_passed": true,
+        "observed": true
+      },
+      "candidate": {
+        "chromatic_binding_supported": true,
+        "color_classes": {
+          "bottle": {
+            "detected_instances": 2,
+            "expected_colors": [
+              "green",
+              "green"
+            ],
+            "observed_colors": [
+              "green",
+              "green"
+            ],
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "supported_diagnostic"
+          },
+          "table": {
+            "detected_instances": 0,
+            "expected_colors": [
+              "white"
+            ],
+            "reason": "achromatic/unsupported color requires calibration",
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "unknown"
+          }
+        },
+        "count_check_passed": true,
+        "counts": {
+          "bottle": 2
+        },
+        "file": "bottle_negation_42_candidate.png",
+        "geometry_passed": true,
+        "image_sha256": "b9de71de0f3f82a7f5994f0bdc166b23b891fd8cd47be2237837977c07c85c59",
+        "joint_operational_checks_passed": true,
+        "observed": true
+      },
+      "case_id": "bottle_negation",
+      "prompt": "Exactly two green bottles on a white table. No red bottle.",
+      "requirements": [
+        "Exactly two bottles are visible.",
+        "Both bottles are green.",
+        "A white table is visible.",
+        "No red bottle is visible."
+      ],
+      "seed": 42
+    },
+    {
+      "baseline": {
+        "chromatic_binding_supported": false,
+        "color_classes": {
+          "bottle": {
+            "detected_instances": 1,
+            "expected_colors": [
+              "green",
+              "green"
+            ],
+            "reason": "instance count differs; color binding cannot establish the contract",
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "unknown"
+          },
+          "table": {
+            "detected_instances": 0,
+            "expected_colors": [
+              "white"
+            ],
+            "reason": "achromatic/unsupported color requires calibration",
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "unknown"
+          }
+        },
+        "count_check_passed": false,
+        "counts": {
+          "bottle": 1
+        },
+        "file": "bottle_negation_43_baseline.png",
+        "geometry_passed": true,
+        "image_sha256": "9bbe2ce603dda5cc3b237c177cf8f947c4e1610f4097735eb418f937e2681f7d",
+        "joint_operational_checks_passed": false,
+        "observed": true
+      },
+      "candidate": {
+        "chromatic_binding_supported": true,
+        "color_classes": {
+          "bottle": {
+            "detected_instances": 2,
+            "expected_colors": [
+              "green",
+              "green"
+            ],
+            "observed_colors": [
+              "green",
+              "green"
+            ],
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "supported_diagnostic"
+          },
+          "table": {
+            "detected_instances": 0,
+            "expected_colors": [
+              "white"
+            ],
+            "reason": "achromatic/unsupported color requires calibration",
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "status": "unknown"
+          }
+        },
+        "count_check_passed": true,
+        "counts": {
+          "bottle": 2
+        },
+        "file": "bottle_negation_43_candidate.png",
+        "geometry_passed": true,
+        "image_sha256": "81fcdcece7333b804a6b58180d91453be340e38945450416fc8868d01a5341a4",
+        "joint_operational_checks_passed": true,
+        "observed": true
+      },
+      "case_id": "bottle_negation",
+      "prompt": "Exactly two green bottles on a white table. No red bottle.",
+      "requirements": [
+        "Exactly two bottles are visible.",
+        "Both bottles are green.",
+        "A white table is visible.",
+        "No red bottle is visible."
+      ],
+      "seed": 43
+    }
+  ],
+  "promotion_status": "unqualified",
+  "schema": "framegenx-controlled-comparison-v1",
+  "scope": "uncalibrated_local_operational_diagnostics",
+  "summary": {
+    "baseline": {
+      "chromatic_applicable_images": 6,
+      "chromatic_supported_images": 1,
+      "count_and_geometry_passes": 1,
+      "count_check_passes": 1,
+      "joint_operational_check_passes": 1,
+      "observed_images": 8,
+      "total_images": 8,
+      "unknown_images": 0
+    },
+    "candidate": {
+      "chromatic_applicable_images": 6,
+      "chromatic_supported_images": 3,
+      "count_and_geometry_passes": 4,
+      "count_check_passes": 4,
+      "joint_operational_check_passes": 4,
+      "observed_images": 8,
+      "total_images": 8,
+      "unknown_images": 0
+    }
+  },
+  "trained_adapter_improvement": null,
+  "verification_file": "E:\\BrosKi\\framegenx\\runs\\constraint_control\\1650c5c998968391\\local_verification_960b80c5941f.json",
+  "verification_peak_reserved_gb": 1.952448512,
+  "verification_seconds": 117.34274570000161,
+  "verification_sha256": "6bc76e19dc9aedf75668f057c8dc591069c6ab3844db1d901b0c8a526af8d287"
+}

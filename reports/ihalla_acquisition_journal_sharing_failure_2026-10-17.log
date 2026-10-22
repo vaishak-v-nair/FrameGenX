@@ -1,0 +1,42 @@
+I-HallA: 1/40 verified image downloads
+I-HallA: 2/40 verified image downloads
+I-HallA: 3/40 verified image downloads
+I-HallA: 4/40 verified image downloads
+I-HallA: 5/40 verified image downloads
+I-HallA: 6/40 verified image downloads
+I-HallA: 7/40 verified image downloads
+I-HallA: 8/40 verified image downloads
+I-HallA: 9/40 verified image downloads
+I-HallA: 10/40 verified image downloads
+I-HallA: 11/40 verified image downloads
+I-HallA: 12/40 verified image downloads
+I-HallA: 13/40 verified image downloads
+I-HallA: 14/40 verified image downloads
+I-HallA: 15/40 verified image downloads
+I-HallA: 16/40 verified image downloads
+I-HallA: 17/40 verified image downloads
+I-HallA: 18/40 verified image downloads
+I-HallA: 19/40 verified image downloads
+I-HallA: 20/40 verified image downloads
+I-HallA: 21/40 verified image downloads
+I-HallA: 22/40 verified image downloads
+I-HallA: 23/40 verified image downloads
+I-HallA: 24/40 verified image downloads
+I-HallA: 25/40 verified image downloads
+I-HallA: 26/40 verified image downloads
+I-HallA: 27/40 verified image downloads
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\BrosKi\framegenx\src\datasets\ihalla.py", line 177, in <module>
+    main()
+    ~~~~^^
+  File "E:\BrosKi\framegenx\src\datasets\ihalla.py", line 172, in main
+    result = acquire(project_path(args.output), args.per_group)
+  File "E:\BrosKi\framegenx\src\datasets\ihalla.py", line 154, in acquire
+    atomic_json(output / "acquisition.json", manifest)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BrosKi\framegenx\src\training\common.py", line 59, in atomic_json
+    os.replace(name, path)
+    ~~~~~~~~~~^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'E:\\BrosKi\\framegenx\\data\\evaluation\\ihalla_v1_prefix\\acquisition.json.t73geciv.tmp' -> 'E:\\BrosKi\\framegenx\\data\\evaluation\\ihalla_v1_prefix\\acquisition.json'

@@ -1,0 +1,9 @@
+[
+  {
+    "id": "web_search",
+    "caption": "Web Context: ",
+    "image": "",
+    "score": 1.0,
+    "retrieval_mode": "web_search"
+  }
+]

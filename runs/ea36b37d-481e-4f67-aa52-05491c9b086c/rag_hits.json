@@ -1,0 +1,23 @@
+[
+  {
+    "id": "coco_131138",
+    "caption": "a desk with a cup plate laptop monitor and keyboard",
+    "image": "http://images.cocodataset.org/val2017/000000131138.jpg",
+    "score": 0.016234796404019036,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_435003",
+    "caption": "A laptop computer sitting on a desk next to a desktop monitor.",
+    "image": "http://images.cocodataset.org/val2017/000000435003.jpg",
+    "score": 0.015873015873015872,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_464476",
+    "caption": "A laptop computer sitting on top of a table.",
+    "image": "http://images.cocodataset.org/val2017/000000464476.jpg",
+    "score": 0.015806214827501833,
+    "retrieval_mode": "hybrid_rrf"
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "2f29da62-cea6-4d28-8d1d-332d05c62320",
+      "class_name": "dog",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 60,
+        "ymin": 122,
+        "xmax": 215,
+        "ymax": 389,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "18f434e3-eb17-4dae-a921-d12d61287975",
+      "class_name": "dog",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 296,
+        "ymin": 122,
+        "xmax": 451,
+        "ymax": 389,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    }
+  ]
+}

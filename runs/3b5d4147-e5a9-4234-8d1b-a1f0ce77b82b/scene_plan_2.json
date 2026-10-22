@@ -1,0 +1,56 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "fc004898-e2f5-4198-b004-53e125010aa9",
+      "class_name": "apple",
+      "attributes": [
+        "red"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 5,
+        "ymin": 138,
+        "xmax": 123,
+        "ymax": 374,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "ff956c15-1e6b-4a66-8e45-298f761ffeed",
+      "class_name": "table",
+      "attributes": [
+        "wooden"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 224,
+        "ymin": 112,
+        "xmax": 347,
+        "ymax": 399,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "d5d80eac-6b25-4d46-a267-73e2c4f1c2ac",
+      "class_name": "bottle",
+      "attributes": [
+        "green"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 328,
+        "ymin": 138,
+        "xmax": 446,
+        "ymax": 374,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+CLEVR: 100 complete annotated scenes
+COCO annotations downloaded; streaming selected metadata
+VSR: 300 licensed consensus positives; 91 evaluation-only negatives
+COCO: 300 count examples with visible noncrowd instances
+{
+  "records": 791,
+  "positive_by_source_and_split": {
+    "clevr": {
+      "train": 80,
+      "validation": 10,
+      "test": 10
+    },
+    "vsr": {
+      "validation": 30,
+      "train": 240,
+      "test": 30
+    },
+    "coco": {
+      "train": 240,
+      "test": 30,
+      "validation": 30
+    }
+  },
+  "negative_examples": 91,
+  "dataset_sha256": "6ad7ac828aa6e7554f4c16a32e202c4011cecdd4ff11f4d3b857f022a2ffd8e9",
+  "image_groups": 700,
+  "seed": 1729,
+  "requested_positive_per_source": 300,
+  "requested_clevr": 100,
+  "prior_split_manifests": [
+    {
+      "path": "E:\\BrosKi\\framegenx\\data\\training\\constraint_pilot\\records.jsonl",
+      "dataset_sha256": "5377fd0a2c0856160a00d51f46d1345ea54d0c5101e8289b5136a5a4bd5d1619",
+      "image_groups": 108
+    }
+  ],
+  "prior_reserved_image_groups": 108,
+  "split_method": "seeded_sha256_image_groups_80_10_10_with_prior_reservations",
+  "preprocessing": "full_image_letterbox_no_crop_no_flip",
+  "training_truth_limit": "COCO annotation exhaustiveness and VSR validator errors remain possible"
+}

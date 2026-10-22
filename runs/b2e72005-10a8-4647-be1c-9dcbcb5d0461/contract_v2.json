@@ -1,0 +1,95 @@
+{
+  "schema_version": "2.0",
+  "created_at": "2026-08-16T14:20:36.214875+00:00",
+  "prompt": "a futuristic cyberpunk car driving on a glowing bridge",
+  "parsed": {
+    "subject": "car",
+    "objects": [
+      "car",
+      "bridge"
+    ],
+    "colors": [
+      "glowing"
+    ],
+    "primary_subject": "car",
+    "secondary_objects": [
+      "bridge"
+    ]
+  },
+  "constraints": [
+    {
+      "type": "object_count",
+      "value": 1,
+      "target": "car",
+      "priority": "critical"
+    },
+    {
+      "type": "spatial_relation",
+      "value": {
+        "subject": "car",
+        "predicate": "on",
+        "object": "bridge"
+      },
+      "target": "car->bridge",
+      "priority": "high"
+    }
+  ],
+  "rag_hits": [],
+  "rag_influence": {
+    "depth_required": false,
+    "lighting_complex": false
+  },
+  "execution_plan": {
+    "has_human": false,
+    "has_depth": true,
+    "risk_level": "medium"
+  },
+  "signal_map": {
+    "object_count": {
+      "threshold": 1
+    },
+    "class_uniqueness": {
+      "threshold": 1
+    },
+    "depth_layers": {
+      "threshold": 2
+    },
+    "spatial_ratio": {
+      "threshold": 0.2
+    },
+    "embedding": {
+      "threshold": 1.0
+    }
+  },
+  "entities": [
+    {
+      "id": "ceb9bcbe-0ff2-40cf-9737-258cc0ae17bf",
+      "class_name": "car",
+      "attributes": [
+        "futuristic",
+        "cyberpunk"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    },
+    {
+      "id": "b4f9739c-15ae-498c-8fdf-67067138d4e7",
+      "class_name": "bridge",
+      "attributes": [
+        "glowing"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    }
+  ],
+  "spatial_relationships": [
+    {
+      "subject": "car",
+      "predicate": "on",
+      "object": "bridge"
+    }
+  ],
+  "negations": []
+}

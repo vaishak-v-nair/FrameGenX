@@ -1,0 +1,79 @@
+{
+  "caption_hits": [
+    {
+      "id": "coco_311295",
+      "caption": "A field with various wildlife and trees in the background.",
+      "image": "http://images.cocodataset.org/val2017/000000311295.jpg",
+      "score": 0.009836065573770491,
+      "retrieval_mode": "hybrid_rrf"
+    },
+    {
+      "id": "coco_45596",
+      "caption": "A view A large metal structure near the side of a building",
+      "image": "http://images.cocodataset.org/val2017/000000045596.jpg",
+      "score": 0.00967741935483871,
+      "retrieval_mode": "hybrid_rrf"
+    },
+    {
+      "id": "coco_229747",
+      "caption": "A photo of an outside with various things in the scene.",
+      "image": "http://images.cocodataset.org/val2017/000000229747.jpg",
+      "score": 0.009523809523809523,
+      "retrieval_mode": "hybrid_rrf"
+    }
+  ],
+  "layout_blueprint": {
+    "entity_count": 5,
+    "name": "Five Object Dynamic Array",
+    "description": "Center focal entity surrounded by 4 satellite objects",
+    "boxes": [
+      {
+        "anchor": "center",
+        "ymin": 0.3,
+        "xmin": 0.3,
+        "ymax": 0.7,
+        "xmax": 0.7,
+        "z_index": 2
+      },
+      {
+        "anchor": "top_left",
+        "ymin": 0.06,
+        "xmin": 0.06,
+        "ymax": 0.38,
+        "xmax": 0.38,
+        "z_index": 1
+      },
+      {
+        "anchor": "top_right",
+        "ymin": 0.06,
+        "xmin": 0.62,
+        "ymax": 0.38,
+        "xmax": 0.94,
+        "z_index": 1
+      },
+      {
+        "anchor": "bottom_left",
+        "ymin": 0.62,
+        "xmin": 0.06,
+        "ymax": 0.94,
+        "xmax": 0.38,
+        "z_index": 1
+      },
+      {
+        "anchor": "bottom_right",
+        "ymin": 0.62,
+        "xmin": 0.62,
+        "ymax": 0.94,
+        "xmax": 0.94,
+        "z_index": 1
+      }
+    ]
+  },
+  "style_preset": {
+    "preset_name": "photorealistic",
+    "descriptors": "photograph, 35mm lens, sharp focus, natural lighting, subsurface scattering, authentic textures",
+    "lighting": "soft directional daylight with realistic ambient bounce",
+    "camera": "eye-level 50mm f/2.8 lens, shallow depth of field",
+    "negative": "cartoon, illustration, 3d render, distorted, oversaturated, plastic"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "schema_version": "2.0",
+  "created_at": "2026-08-26T05:47:03.071772+00:00",
+  "prompt": "three cups on a kitchen counter",
+  "parsed": {
+    "subject": "cups",
+    "objects": [
+      "cups",
+      "kitchen counter"
+    ],
+    "colors": [],
+    "primary_subject": "cups",
+    "secondary_objects": [
+      "kitchen counter"
+    ]
+  },
+  "constraints": [
+    {
+      "type": "object_count",
+      "value": 3,
+      "target": "cup",
+      "priority": "critical"
+    },
+    {
+      "type": "spatial_relation",
+      "value": {
+        "subject": "cup",
+        "predicate": "above",
+        "object": "counter"
+      },
+      "target": "cup->counter",
+      "priority": "high"
+    }
+  ],
+  "rag_hits": [],
+  "rag_influence": {
+    "depth_required": false,
+    "lighting_complex": false
+  },
+  "execution_plan": {
+    "has_human": false,
+    "has_depth": false,
+    "risk_level": "medium"
+  },
+  "signal_map": {
+    "object_count": {
+      "threshold": 1
+    },
+    "class_uniqueness": {
+      "threshold": 1
+    },
+    "depth_layers": {
+      "threshold": 2
+    },
+    "spatial_ratio": {
+      "threshold": 0.2
+    },
+    "embedding": {
+      "threshold": 1.0
+    }
+  },
+  "entities": [
+    {
+      "id": "1c6ae7e9-1c82-4fde-a25d-884c96926c5c",
+      "class_name": "cup",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "b0d34f5a-bb6a-42ac-89d2-992f18b4b9fc",
+      "class_name": "cup",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "f325a352-a5dc-4247-8515-c845c4c462cd",
+      "class_name": "cup",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "10e2a0f9-48ea-49d6-861f-891354bfe0c8",
+      "class_name": "counter",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": false
+    }
+  ],
+  "spatial_relationships": [
+    {
+      "subject": "cup",
+      "predicate": "above",
+      "object": "counter"
+    }
+  ],
+  "negations": [],
+  "repair_policy": {
+    "mappings": [
+      {
+        "failure": "object_missing",
+        "action": "prominently featured"
+      },
+      {
+        "failure": "duplicate_object",
+        "action": ""
+      },
+      {
+        "failure": "text_missing",
+        "action": "with clearly legible text"
+      },
+      {
+        "failure": "low_alignment",
+        "action": "sharp focus, highly detailed"
+      }
+    ]
+  }
+}

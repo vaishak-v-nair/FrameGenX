@@ -1,0 +1,13 @@
+{
+  "accept": false,
+  "reward": 0.638,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": false,
+  "prompt_edits": [
+    "exactly 1 jagged alpine peaks, each clearly separated, distinct objects",
+    "exactly 1 summit, each clearly separated, distinct objects",
+    "summit, prominent, clearly visible"
+  ]
+}

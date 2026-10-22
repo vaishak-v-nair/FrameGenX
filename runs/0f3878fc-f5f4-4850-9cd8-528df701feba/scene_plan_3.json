@@ -1,0 +1,49 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "5f0d8cdf-fd85-452f-a741-454a9e9b4325",
+      "class_name": "city skyline",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 0,
+        "ymin": 133,
+        "xmax": 113,
+        "ymax": 379,
+        "z_index": 1
+      },
+      "z_index": 1
+    },
+    {
+      "id": "4d9c27ce-65d6-425a-bdb3-7e9220636bcd",
+      "class_name": "neon lights",
+      "attributes": [
+        "neon"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 234,
+        "ymin": 107,
+        "xmax": 367,
+        "ymax": 404,
+        "z_index": 1
+      },
+      "z_index": 1
+    },
+    {
+      "id": "bd17a78c-72b9-48de-b16d-a86a6db14fe9",
+      "class_name": "river",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 308,
+        "ymin": 133,
+        "xmax": 436,
+        "ymax": 379,
+        "z_index": 1
+      },
+      "z_index": 1
+    }
+  ]
+}

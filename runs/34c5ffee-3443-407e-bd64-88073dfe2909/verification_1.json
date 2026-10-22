@@ -1,0 +1,64 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "sunset",
+      "expected": 1,
+      "detected": 2
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "sunset": 2
+    },
+    "expected_counts": {
+      "sunset": 1
+    }
+  },
+  "clip_cos": 0.2722,
+  "clip_norm": 0.4889,
+  "vqa_score": 0.0,
+  "vqa_vacuous": false,
+  "reward": 0.2445,
+  "spatial_result": {
+    "passed": true,
+    "total": 0,
+    "verified": 0,
+    "failures": []
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there a beautiful orange pink purple sunset in the image?",
+      "expected": "yes",
+      "class_name": "sunset",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "color",
+      "question": "What color is the sunset?",
+      "expected": "orange",
+      "class_name": "sunset",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "color",
+      "question": "What color is the sunset?",
+      "expected": "pink",
+      "class_name": "sunset",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "color",
+      "question": "What color is the sunset?",
+      "expected": "purple",
+      "class_name": "sunset",
+      "answer": "error",
+      "correct": false
+    }
+  ]
+}

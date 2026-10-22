@@ -1,0 +1,39 @@
+Local verification report: E:\BrosKi\framegenx\runs\constraint_control\7bf7ecd0bd068780\local_verification_235de808cf8c.json
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/978 [00:00<?, ?it/s]
+Loading weights:  73%|#######3  | 717/978 [00:00<00:00, 7163.59it/s]
+Loading weights: 100%|##########| 978/978 [00:00<00:00, 7173.07it/s]
+[transformers] You are using a model of type `sam2_video` to instantiate a model of type `sam2`. This may be expected if you are loading a checkpoint that shares a subset of the architecture (e.g., loading a `sam2_video` checkpoint into `Sam2Model`), but is otherwise not supported and can yield errors. Please verify that the checkpoint is compatible with the model you are instantiating.
+
+Loading weights:   0%|          | 0/309 [00:00<?, ?it/s]
+Loading weights: 100%|##########| 309/309 [00:00<00:00, 6425.33it/s]
+Verified apple_count_color_43_baseline.png: observed_diagnostics; counts={'apple': 4}
+Verified apple_count_color_43_candidate.png: observed_diagnostics; counts={'apple': 4}
+Verified bottle_negation_43_baseline.png: observed_diagnostics; counts={'bottle': 1}
+Verified bottle_negation_43_candidate.png: observed_diagnostics; counts={'bottle': 2}
+{
+  "arms": {
+    "baseline": {
+      "images": 2,
+      "observed_images": 2,
+      "unknown_images": 0,
+      "count_check_passes": 0,
+      "count_and_geometry_passes": 0,
+      "chromatic_binding_applicable_images": 2,
+      "chromatic_binding_supported_images": 0
+    },
+    "candidate": {
+      "images": 2,
+      "observed_images": 2,
+      "unknown_images": 0,
+      "count_check_passes": 1,
+      "count_and_geometry_passes": 1,
+      "chromatic_binding_applicable_images": 2,
+      "chromatic_binding_supported_images": 1
+    }
+  },
+  "full_contract_CSR": null,
+  "scope": "uncalibrated_local_verifier_diagnostics_only",
+  "promotion_status": "unqualified"
+}

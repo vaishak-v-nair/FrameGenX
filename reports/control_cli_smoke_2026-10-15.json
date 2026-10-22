@@ -1,0 +1,53 @@
+{
+  "scope": "actual offline CLI generation and verification, bounded operational checks",
+  "run_id": "21cb7dfb-d9fb-4981-b956-aee644768372",
+  "exit_code": 0,
+  "generation_backend": "nf4_sdxl_instance_fusion",
+  "recorded_seed": 43,
+  "images_exactly_match_research": true,
+  "latents_exactly_match_research": true,
+  "image_sha256": "81fcdcece7333b804a6b58180d91453be340e38945450416fc8868d01a5341a4",
+  "verification_sha256": "eabf3427827be53ffe302f873270f965dc90f6b4b90c81e52c2d3cfb088707f2",
+  "decision_sha256": "018dd9c055e90800af521ab24d3fec1905be685fa3b502e1da910a47ef6c7738",
+  "generation_meta_sha256": "d81690700798b2ebf9709cc7d5b4d08f150d16189d56092844caad3afd7c829c",
+  "accepted_artifact_and_decision_agree": true,
+  "hard_failures": [],
+  "detected_counts": {
+    "bottle": 2
+  },
+  "observed_colors": {
+    "expected_colors": [
+      "green",
+      "green"
+    ],
+    "detected_instances": 2,
+    "status": "supported_diagnostic",
+    "scope": "uncalibrated_instance_color_diagnostic",
+    "observed_colors": [
+      "green",
+      "green"
+    ]
+  },
+  "contract_negations_preserved": [
+    {
+      "class_name": "bottle",
+      "attribute": "red"
+    }
+  ],
+  "contract_evidence_status": "unverified",
+  "vqa_status": "disabled",
+  "peak_reserved_gb": 2.562719744,
+  "generation_seconds": 136.09499940000023,
+  "sampler": "EulerDiscreteScheduler",
+  "deterministic_algorithms": true,
+  "code_sha256": {
+    "src/generation/controlled.py": "666b77a2e661a04e15ec85217059e88562e5d07933b0b159a2040c6e0c34111e",
+    "src/generation/conditioning.py": "5687d5808f74a48dfd84cac7eca02585b993d44badfd746fc84e9b4dc1874523",
+    "src/generation/fusion.py": "4fedcae908e6ee6043ce18d61eaf4377fc72175380856893f71fc12f0b20c622",
+    "src/generation/regions.py": "18cf8f0f722cafe39264d497ac4621b5cbb36d3e30016aed9f610ab004a3ff87",
+    "src/training/model.py": "122c58565a7156abed3e198643d336bae36c78e323b7f45cb2ea14838123938c",
+    "src/training/cache.py": "ad2c992b0540a9efb6e721559593ba92e98cdc38f09ae7a9832b16295d85489a",
+    "src/training/common.py": "f7f5f06284803dab9dfb80c91d520ed5106756522d375093f5c3914bfeb398fe"
+  },
+  "full_contract_CSR": null
+}

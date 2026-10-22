@@ -1,0 +1,146 @@
+[
+  {
+    "repo": "kaist-cvml/I-HallA-v1.0",
+    "revision": "e750fd025b1473819234d07ee2d467bb05b3cd9c",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/kaist-cvml/I-HallA-v1.0/e750fd025b1473819234d07ee2d467bb05b3cd9c/README.md",
+    "local": "reports\\research_sources\\ihalla_vsm_2026-10-16\\ihalla\\README.md",
+    "sha256": "DCFE523363D97E11477FAD0D53356EBCD1AE524600D1B312A8CB8E4287DB1387"
+  },
+  {
+    "repo": "kaist-cvml/I-HallA-v1.0",
+    "revision": "e750fd025b1473819234d07ee2d467bb05b3cd9c",
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/kaist-cvml/I-HallA-v1.0/e750fd025b1473819234d07ee2d467bb05b3cd9c/LICENSE",
+    "local": "reports\\research_sources\\ihalla_vsm_2026-10-16\\ihalla\\LICENSE",
+    "sha256": "7AF733872AA4B56E5EDA55FE1BAEAE7BD42B859F04857D6085F70B3030CDCA2E"
+  },
+  {
+    "repo": "kaist-cvml/I-HallA-v1.0",
+    "revision": "e750fd025b1473819234d07ee2d467bb05b3cd9c",
+    "path": "requirements.txt",
+    "url": "https://raw.githubusercontent.com/kaist-cvml/I-HallA-v1.0/e750fd025b1473819234d07ee2d467bb05b3cd9c/requirements.txt",
+    "local": "reports\\research_sources\\ihalla_vsm_2026-10-16\\ihalla\\requirements.txt",
+    "sha256": "7AF3D526A7E8320E981FB986AC3902EFD01D3C7DAA4B37A0E04E332A78791CE2"
+  },
+  {
+    "repo": "kaist-cvml/I-HallA-v1.0",
+    "revision": "e750fd025b1473819234d07ee2d467bb05b3cd9c",
+    "path": "run.py",
+    "url": "https://raw.githubusercontent.com/kaist-cvml/I-HallA-v1.0/e750fd025b1473819234d07ee2d467bb05b3cd9c/run.py",
+    "local": "reports\\research_sources\\ihalla_vsm_2026-10-16\\ihalla\\run.py",
+    "sha256": "8ED6B94CDAE0AEA323F933D2E3EEB628FC0B98ED4A071CF6B908A86D966C0F09"
+  },
+  {
+    "repo": "kaist-cvml/I-HallA-v1.0",
+    "revision": "e750fd025b1473819234d07ee2d467bb05b3cd9c",
+    "path": "agents/EvaluationAgent.py",
+    "url": "https://raw.githubusercontent.com/kaist-cvml/I-HallA-v1.0/e750fd025b1473819234d07ee2d467bb05b3cd9c/agents/EvaluationAgent.py",
+    "local": "reports\\research_sources\\ihalla_vsm_2026-10-16\\ihalla\\agents\\EvaluationAgent.py",
+    "sha256": "97CC4B6A5C379516004D5213EA1B3409959F1C63FFA447FDA515448A5E84B76F"
+  },
+  {
+    "repo": "bhosalems/VSM",
+    "revision": "0972d3e97392a4ddca5c032abd935a3592b0ca41",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/bhosalems/VSM/0972d3e97392a4ddca5c032abd935a3592b0ca41/README.md",
+    "local": "reports\\research_sources\\ihalla_vsm_2026-10-16\\vsm\\README.md",
+    "sha256": "6004D57A8B15F376BC6808B172BDEEDF32E23572C4B0BE91216BF0EF51E0E02E"
+  },
+  {
+    "repo": "bhosalems/VSM",
+    "revision": "0972d3e97392a4ddca5c032abd935a3592b0ca41",
+    "path": "datasets/README.md",
+    "url": "https://raw.githubusercontent.com/bhosalems/VSM/0972d3e97392a4ddca5c032abd935a3592b0ca41/datasets/README.md",
+    "local": "reports\\research_sources\\ihalla_vsm_2026-10-16\\vsm\\datasets\\README.md",
+    "sha256": "1C06A57688EFABD03F921D7DB52356F072DBD2D9FAB12907A8B255EED0812F0B"
+  },
+  {
+    "repo": "bhosalems/VSM",
+    "revision": "0972d3e97392a4ddca5c032abd935a3592b0ca41",
+    "path": "datasets/HF_README.md",
+    "url": "https://raw.githubusercontent.com/bhosalems/VSM/0972d3e97392a4ddca5c032abd935a3592b0ca41/datasets/HF_README.md",
+    "local": "reports\\research_sources\\ihalla_vsm_2026-10-16\\vsm\\datasets\\HF_README.md",
+    "sha256": "7358C78C5B64E24B6CFF7AF1D20E2AF1775BADAC251F01A1B063BA74F496026B"
+  },
+  {
+    "repo": "bhosalems/VSM",
+    "revision": "0972d3e97392a4ddca5c032abd935a3592b0ca41",
+    "path": "datasets/download.py",
+    "url": "https://raw.githubusercontent.com/bhosalems/VSM/0972d3e97392a4ddca5c032abd935a3592b0ca41/datasets/download.py",
+    "local": "reports\\research_sources\\ihalla_vsm_2026-10-16\\vsm\\datasets\\download.py",
+    "sha256": "F7D9C50A4F5302BF24A91AE5423D6C8AB69D6FE5C647C83F31EBEF0386716056"
+  },
+  {
+    "repo": "bhosalems/VSM",
+    "revision": "0972d3e97392a4ddca5c032abd935a3592b0ca41",
+    "path": "datasets/dataset.py",
+    "url": "https://raw.githubusercontent.com/bhosalems/VSM/0972d3e97392a4ddca5c032abd935a3592b0ca41/datasets/dataset.py",
+    "local": "reports\\research_sources\\ihalla_vsm_2026-10-16\\vsm\\datasets\\dataset.py",
+    "sha256": "17C325149CEA72FE634D4059BF5E94487C8F664E8F68E79A9BF04B2B216369F4"
+  },
+  {
+    "repo": "bhosalems/VSM",
+    "revision": "0972d3e97392a4ddca5c032abd935a3592b0ca41",
+    "path": "requirements.txt",
+    "url": "https://raw.githubusercontent.com/bhosalems/VSM/0972d3e97392a4ddca5c032abd935a3592b0ca41/requirements.txt",
+    "local": "reports\\research_sources\\ihalla_vsm_2026-10-16\\vsm\\requirements.txt",
+    "sha256": "A76811EE25CD6574D493876846D490894D0AE5927D3E291DA2BAA42F636704EC"
+  },
+  {
+    "repo": "bhosalems/VSM",
+    "revision": "0972d3e97392a4ddca5c032abd935a3592b0ca41",
+    "path": "evaluation/cards_validator.py",
+    "url": "https://raw.githubusercontent.com/bhosalems/VSM/0972d3e97392a4ddca5c032abd935a3592b0ca41/evaluation/cards_validator.py",
+    "local": "reports\\research_sources\\ihalla_vsm_2026-10-16\\vsm\\evaluation\\cards_validator.py",
+    "sha256": "61FCAA2BE35C77451D79AFA9ABC5FBE0E8707DB5B3063593068C919B352C27C6"
+  },
+  {
+    "repo": "bhosalems/VSM",
+    "revision": "0972d3e97392a4ddca5c032abd935a3592b0ca41",
+    "path": "evaluation/shapes_validator.py",
+    "url": "https://raw.githubusercontent.com/bhosalems/VSM/0972d3e97392a4ddca5c032abd935a3592b0ca41/evaluation/shapes_validator.py",
+    "local": "reports\\research_sources\\ihalla_vsm_2026-10-16\\vsm\\evaluation\\shapes_validator.py",
+    "sha256": "CDF9BFD5B5B98F99CD8E783355F63326EF2C61E9CC9B45E8970339636818CF2C"
+  },
+  {
+    "repo": "bhosalems/VSM",
+    "revision": "0972d3e97392a4ddca5c032abd935a3592b0ca41",
+    "path": "DDPM-IP/guided_diffusion/gaussian_diffusion.py",
+    "url": "https://raw.githubusercontent.com/bhosalems/VSM/0972d3e97392a4ddca5c032abd935a3592b0ca41/DDPM-IP/guided_diffusion/gaussian_diffusion.py",
+    "local": "reports\\research_sources\\ihalla_vsm_2026-10-16\\vsm\\DDPM-IP\\guided_diffusion\\gaussian_diffusion.py",
+    "sha256": "8D396F2BA52F03D0C85855544B867EAD2A521B8BE63BD3943BAE17DEA65B3D10"
+  },
+  {
+    "repo": "bhosalems/VSM",
+    "revision": "0972d3e97392a4ddca5c032abd935a3592b0ca41",
+    "path": "DDPM-IP/LICENSE",
+    "url": "https://raw.githubusercontent.com/bhosalems/VSM/0972d3e97392a4ddca5c032abd935a3592b0ca41/DDPM-IP/LICENSE",
+    "local": "reports\\research_sources\\ihalla_vsm_2026-10-16\\vsm\\DDPM-IP\\LICENSE",
+    "sha256": "86BBB73E855821D7C401912FD4BF82E34313E6E3B6FD6F909F2B6CC9E209A53B"
+  },
+  {
+    "repo": "bhosalems/VSM",
+    "revision": "0972d3e97392a4ddca5c032abd935a3592b0ca41",
+    "path": "latent-diffusion/ldm/models/diffusion/ddpm.py",
+    "url": "https://raw.githubusercontent.com/bhosalems/VSM/0972d3e97392a4ddca5c032abd935a3592b0ca41/latent-diffusion/ldm/models/diffusion/ddpm.py",
+    "local": "reports\\research_sources\\ihalla_vsm_2026-10-16\\vsm\\latent-diffusion\\ldm\\models\\diffusion\\ddpm.py",
+    "sha256": "FAE4B123D573292A8F04C503B5B1E12B2E018CF1AC29EF97601C70F32E743775"
+  },
+  {
+    "repo": "bhosalems/VSM",
+    "revision": "0972d3e97392a4ddca5c032abd935a3592b0ca41",
+    "path": "latent-diffusion/configs/latent-diffusion/chess-ldm-vq-f4_uc-finetune.yaml",
+    "url": "https://raw.githubusercontent.com/bhosalems/VSM/0972d3e97392a4ddca5c032abd935a3592b0ca41/latent-diffusion/configs/latent-diffusion/chess-ldm-vq-f4_uc-finetune.yaml",
+    "local": "reports\\research_sources\\ihalla_vsm_2026-10-16\\vsm\\latent-diffusion\\configs\\latent-diffusion\\chess-ldm-vq-f4_uc-finetune.yaml",
+    "sha256": "5EF8F8A285FC123A987E20A29360A1C633DA62B69C7511E1EA95A1400BC4189F"
+  },
+  {
+    "repo": "bhosalems/VSM",
+    "revision": "0972d3e97392a4ddca5c032abd935a3592b0ca41",
+    "path": "latent-diffusion/LICENSE",
+    "url": "https://raw.githubusercontent.com/bhosalems/VSM/0972d3e97392a4ddca5c032abd935a3592b0ca41/latent-diffusion/LICENSE",
+    "local": "reports\\research_sources\\ihalla_vsm_2026-10-16\\vsm\\latent-diffusion\\LICENSE",
+    "sha256": "2BA3D36721ED0263CBC1050936BA34809D296FE629D802F7BC453007FAEFBDB3"
+  }
+]

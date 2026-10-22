@@ -1,0 +1,97 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "sword",
+      "expected": 1,
+      "detected": 2
+    },
+    {
+      "type": "spatial_violation",
+      "class_name": "adventurer->cliff",
+      "expected": "standing_on",
+      "detected": "object 'cliff' not detected"
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "adventurer": 1,
+      "sword": 2
+    },
+    "expected_counts": {
+      "adventurer": 1,
+      "sword": 1
+    }
+  },
+  "clip_cos": 0.3305,
+  "clip_norm": 0.722,
+  "vqa_score": 1.0,
+  "vqa_vacuous": false,
+  "reward": 0.861,
+  "spatial_result": {
+    "passed": false,
+    "total": 2,
+    "verified": 1,
+    "failures": [
+      {
+        "subject": "adventurer",
+        "predicate": "standing_on",
+        "object": "cliff",
+        "reason": "object 'cliff' not detected"
+      }
+    ],
+    "results": [
+      {
+        "relationship": {
+          "subject": "adventurer",
+          "predicate": "holding",
+          "object": "sword"
+        },
+        "passed": true,
+        "reason": "unknown predicate 'holding': skipped",
+        "subject_box": {
+          "xmin": 183.01805114746094,
+          "ymin": 71.4515380859375,
+          "xmax": 278.950927734375,
+          "ymax": 250.42752075195312,
+          "score": 0.8653312921524048
+        },
+        "object_box": {
+          "xmin": 182.5419921875,
+          "ymin": 104.85842895507812,
+          "xmax": 193.03646850585938,
+          "ymax": 248.69320678710938,
+          "score": 0.46255531907081604
+        }
+      },
+      {
+        "relationship": {
+          "subject": "adventurer",
+          "predicate": "standing_on",
+          "object": "cliff"
+        },
+        "passed": false,
+        "reason": "object 'cliff' not detected"
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there an adventurer in the image?",
+      "expected": "yes",
+      "class_name": "adventurer",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "existence",
+      "question": "Is there an ancient sword in the image?",
+      "expected": "yes",
+      "class_name": "sword",
+      "answer": "yes",
+      "correct": true
+    }
+  ]
+}

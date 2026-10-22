@@ -1,0 +1,54 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "1d23b058-5327-405d-8c96-b6a1f7d73273",
+      "class_name": "city",
+      "attributes": [
+        "futuristic",
+        "cyberpunk",
+        "detailed",
+        "photorealistic"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 45,
+        "ymin": 148,
+        "xmax": 143,
+        "ymax": 364,
+        "z_index": 1
+      },
+      "z_index": 1
+    },
+    {
+      "id": "c512df37-b4c0-4a61-9528-0b2858c44a3d",
+      "class_name": "river",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 204,
+        "ymin": 122,
+        "xmax": 307,
+        "ymax": 389,
+        "z_index": 1
+      },
+      "z_index": 1
+    },
+    {
+      "id": "beecb8b6-5c27-4ea7-88a2-d4da1a89cc90",
+      "class_name": "neon lights",
+      "attributes": [
+        "neon"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 368,
+        "ymin": 148,
+        "xmax": 466,
+        "ymax": 364,
+        "z_index": 1
+      },
+      "z_index": 1
+    }
+  ]
+}

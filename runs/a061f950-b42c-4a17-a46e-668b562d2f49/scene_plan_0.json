@@ -1,0 +1,35 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "8277a4c8-7076-41c6-955b-fc1c896befe9",
+      "class_name": "horse",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 60,
+        "ymin": 122,
+        "xmax": 215,
+        "ymax": 389,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "e16dfe63-a454-48aa-bc7c-4e4d89565f58",
+      "class_name": "horse",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 296,
+        "ymin": 122,
+        "xmax": 451,
+        "ymax": 389,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    }
+  ]
+}

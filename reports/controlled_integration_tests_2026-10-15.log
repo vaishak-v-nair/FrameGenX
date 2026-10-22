@@ -1,0 +1,30 @@
+.....F................................                                   [100%]
+================================== FAILURES ===================================
+__________ test_color_and_negation_cannot_be_certified_by_count_pass __________
+
+    def test_color_and_negation_cannot_be_certified_by_count_pass():
+        contract = {
+            "entities": [{"class_name": "cat", "attributes": ["red"]}],
+            "constraints": [{"type": "object_count", "target": "cat", "value": 1}],
+            "negations": ["dog"],
+        }
+        evidence = build_contract_evidence(
+            contract, _count_decision(cat=1), {},
+            {"vqa_details": [{"type": "color", "class_name": "cat",
+                              "expected": "red", "answer": "red", "correct": True}]},
+        )
+        assert evidence["status"] == "unverified"
+        assert evidence["counts"] == {"total": 3, "passed": 1,
+                                       "failed": 0, "unverified": 2}
+>       assert evidence["requirements"][1]["observation"] == {"vqa_answers": ["red"]}
+E       AssertionError: assert {'vqa_answers...tances': None} == {'vqa_answers': ['red']}
+E         
+E         Omitting 1 identical items, use -vv to show
+E         Left contains 1 more item:
+E         {'local_instances': None}
+E         Use -v to get more diff
+
+tests\test_contract_evidence.py:25: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_contract_evidence.py::test_color_and_negation_cannot_be_certified_by_count_pass
+1 failed, 37 passed in 31.45s

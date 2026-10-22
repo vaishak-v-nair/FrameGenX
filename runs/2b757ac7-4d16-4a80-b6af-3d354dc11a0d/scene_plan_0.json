@@ -1,0 +1,50 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "4d65ead8-c7a0-4967-a83c-b8323e2b39c9",
+      "class_name": "cat",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 45,
+        "ymin": 148,
+        "xmax": 143,
+        "ymax": 364,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "2c85a8cd-47cc-4ad3-a4b4-993a6c14215b",
+      "class_name": "cat",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 204,
+        "ymin": 122,
+        "xmax": 307,
+        "ymax": 389,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "b75e4d4d-c6b7-40c0-b15f-70fc43138fee",
+      "class_name": "wall",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 368,
+        "ymin": 148,
+        "xmax": 466,
+        "ymax": 364,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    }
+  ]
+}

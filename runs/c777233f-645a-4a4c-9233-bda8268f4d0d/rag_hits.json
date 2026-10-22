@@ -1,0 +1,23 @@
+[
+  {
+    "id": "coco_262895",
+    "caption": "A man wearing a tie, jacket and white shirt.",
+    "image": "http://images.cocodataset.org/val2017/000000262895.jpg",
+    "score": 0.016129032258064516,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_244833",
+    "caption": "A yellow and a green motorcycle in the back of an auditorium.",
+    "image": "http://images.cocodataset.org/val2017/000000244833.jpg",
+    "score": 0.015806214827501833,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_215723",
+    "caption": "Two men smiling and wearing yellow jackets behind construction markers.",
+    "image": "http://images.cocodataset.org/val2017/000000215723.jpg",
+    "score": 0.015584415584415583,
+    "retrieval_mode": "hybrid_rrf"
+  }
+]

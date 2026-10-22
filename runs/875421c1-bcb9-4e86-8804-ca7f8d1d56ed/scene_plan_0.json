@@ -1,0 +1,50 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "d77f5a4d-b539-4d86-8cc0-65c4a4743363",
+      "class_name": "astronaut",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 45,
+        "ymin": 148,
+        "xmax": 143,
+        "ymax": 364,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "d2fb5a8e-88ba-4eab-84c9-4aa5234fa27a",
+      "class_name": "astronaut",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 204,
+        "ymin": 122,
+        "xmax": 307,
+        "ymax": 389,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "35d0919b-be5f-4e13-94b7-69fbbf492795",
+      "class_name": "astronaut",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 368,
+        "ymin": 148,
+        "xmax": 466,
+        "ymax": 364,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    }
+  ]
+}

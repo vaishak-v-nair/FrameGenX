@@ -1,0 +1,96 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "af7f6a1f-7c39-4e7c-9313-5fdeedb9e873",
+      "class_name": "floating island",
+      "attributes": [
+        "floating"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": true
+    },
+    {
+      "id": "1bc78780-f4a6-4595-8687-711c188dc409",
+      "class_name": "waterfall",
+      "attributes": [
+        "cascading"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": true
+    },
+    {
+      "id": "ae166207-271b-42ab-bc3a-5cdab5370f2a",
+      "class_name": "ruin",
+      "attributes": [
+        "ancient"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": true
+    },
+    {
+      "id": "a8957881-194b-4691-b7a1-85832cbde167",
+      "class_name": "vine",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": true
+    },
+    {
+      "id": "016c28f1-8655-4135-8c6b-f143a30623cc",
+      "class_name": "adventurer",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 113,
+        "ymin": 158,
+        "xmax": 308,
+        "ymax": 353,
+        "z_index": 2
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "5261a2d9-471e-4d00-8b20-75ae62948a6e",
+      "class_name": "sword",
+      "attributes": [
+        "ancient"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 80,
+        "ymin": 35,
+        "xmax": 234,
+        "ymax": 189,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "c6d96b05-b874-4e21-ae18-a229f340f85d",
+      "class_name": "cliff",
+      "attributes": [
+        "jagged"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 277,
+        "ymin": 35,
+        "xmax": 431,
+        "ymax": 189,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    }
+  ]
+}

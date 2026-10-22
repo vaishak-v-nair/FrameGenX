@@ -1,0 +1,17 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "5f69dadd-c7ad-4cf5-98ea-b25654766331",
+      "class_name": "sign",
+      "attributes": [
+        "rustic",
+        "wooden"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": false
+    }
+  ]
+}

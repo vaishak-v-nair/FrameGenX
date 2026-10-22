@@ -1,0 +1,97 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "9ef3dcb0-c527-445c-b196-c8706ea448c7",
+      "class_name": "peak",
+      "attributes": [
+        "jagged",
+        "alpine"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 20,
+        "ymin": 20,
+        "xmax": 150,
+        "ymax": 150,
+        "z_index": 1
+      },
+      "z_index": 1
+    },
+    {
+      "id": "0704c47a-a98a-4b76-a3a6-b14e0f906a4f",
+      "class_name": "wildflower",
+      "attributes": [
+        "blooming"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 190,
+        "ymin": 20,
+        "xmax": 320,
+        "ymax": 150,
+        "z_index": 1
+      },
+      "z_index": 1
+    },
+    {
+      "id": "a976eb63-f0cb-4275-b355-3a760e8ba72a",
+      "class_name": "mist",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 360,
+        "ymin": 20,
+        "xmax": 490,
+        "ymax": 150,
+        "z_index": 1
+      },
+      "z_index": 1
+    },
+    {
+      "id": "03597b91-d16b-4afa-b6c6-8b8a5e56c673",
+      "class_name": "valley",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 20,
+        "ymin": 190,
+        "xmax": 150,
+        "ymax": 320,
+        "z_index": 1
+      },
+      "z_index": 1
+    },
+    {
+      "id": "25fe8925-f5d4-4758-bc4c-91a069824618",
+      "class_name": "light",
+      "attributes": [
+        "warm",
+        "golden"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 190,
+        "ymin": 190,
+        "xmax": 320,
+        "ymax": 320,
+        "z_index": 1
+      },
+      "z_index": 1
+    },
+    {
+      "id": "06206253-2695-4615-a3d9-e0f30e9c7df9",
+      "class_name": "summit",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 360,
+        "ymin": 190,
+        "xmax": 490,
+        "ymax": 320,
+        "z_index": 1
+      },
+      "z_index": 1
+    }
+  ]
+}

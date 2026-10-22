@@ -1,0 +1,13 @@
+{
+  "accept": false,
+  "reward": 0.0015,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": false,
+  "prompt_edits": [
+    "only 1 wildflower, nothing else similar",
+    "jagged alpine peaks, prominent, clearly visible",
+    "wildflower, prominent, clearly visible"
+  ]
+}

@@ -1,0 +1,152 @@
+FFF..................................................................... [ 21%]
+........................................................................ [ 43%]
+........................................................................ [ 64%]
+........................................................................ [ 86%]
+..............................................                           [100%]
+================================== FAILURES ===================================
+_ test_notebook_error_preserves_actual_outputs_and_original_structure[RuntimeError] _
+
+tmp_path = WindowsPath('E:/BrosKi/framegenx/.pytest_tmp_final_regression/test_notebook_error_preserves_0')
+fault = <class 'RuntimeError'>
+
+    @pytest.mark.parametrize("fault", [RuntimeError, KeyboardInterrupt])
+    def test_notebook_error_preserves_actual_outputs_and_original_structure(tmp_path, fault):
+        path = tmp_path / "experiment.ipynb"
+        notebook = nbformat.v4.new_notebook(cells=[
+            nbformat.v4.new_markdown_cell("# Research"),
+            nbformat.v4.new_code_cell("print('measured output')"),
+            nbformat.v4.new_code_cell("raise RuntimeError('failure')"),
+        ])
+        nbformat.write(notebook, path)
+    
+        class FailingClient:
+            def __init__(self, value, **options):
+                self.notebook, self.options = value, options
+    
+            def execute(self):
+                cell = self.notebook.cells[1]
+                cell.execution_count = 1
+                cell.outputs = [nbformat.v4.new_output("stream", name="stdout", text="measured output\n")]
+                self.options["on_cell_executed"](cell, 1, {"content": {"status": "ok"}})
+                # Outputs must already be durable before the following cell fails.
+                assert nbformat.read(path, as_version=4).cells[1].execution_count == 1
+                self.notebook.cells[2].execution_count = 2
+                self.notebook.cells[2].outputs = [nbformat.v4.new_output(
+                    "error", ename=fault.__name__, evalue="injected", traceback=[])]
+                raise fault("injected notebook failure")
+    
+        with pytest.raises(fault):
+            execute_notebook(path, client_type=FailingClient)
+        saved = nbformat.read(path, as_version=4)
+        nbformat.validate(saved)
+        assert [cell.source for cell in saved.cells] == [cell.source for cell in notebook.cells]
+        assert saved.cells[1].outputs[0].text == "measured output\n"
+        assert saved.cells[2].outputs[0].ename == fault.__name__
+>       assert saved.metadata.framegenx_execution.execution_status == ("interrupted" if fault is KeyboardInterrupt else "failed")
+E       AssertionError: assert 'running' == 'failed'
+E         
+E         - failed
+E         + running
+
+tests\research\test_notebook_recovery.py:43: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Notebook cell 2/3: ok
+_ test_notebook_error_preserves_actual_outputs_and_original_structure[KeyboardInterrupt] _
+
+tmp_path = WindowsPath('E:/BrosKi/framegenx/.pytest_tmp_final_regression/test_notebook_error_preserves_1')
+fault = <class 'KeyboardInterrupt'>
+
+    @pytest.mark.parametrize("fault", [RuntimeError, KeyboardInterrupt])
+    def test_notebook_error_preserves_actual_outputs_and_original_structure(tmp_path, fault):
+        path = tmp_path / "experiment.ipynb"
+        notebook = nbformat.v4.new_notebook(cells=[
+            nbformat.v4.new_markdown_cell("# Research"),
+            nbformat.v4.new_code_cell("print('measured output')"),
+            nbformat.v4.new_code_cell("raise RuntimeError('failure')"),
+        ])
+        nbformat.write(notebook, path)
+    
+        class FailingClient:
+            def __init__(self, value, **options):
+                self.notebook, self.options = value, options
+    
+            def execute(self):
+                cell = self.notebook.cells[1]
+                cell.execution_count = 1
+                cell.outputs = [nbformat.v4.new_output("stream", name="stdout", text="measured output\n")]
+                self.options["on_cell_executed"](cell, 1, {"content": {"status": "ok"}})
+                # Outputs must already be durable before the following cell fails.
+                assert nbformat.read(path, as_version=4).cells[1].execution_count == 1
+                self.notebook.cells[2].execution_count = 2
+                self.notebook.cells[2].outputs = [nbformat.v4.new_output(
+                    "error", ename=fault.__name__, evalue="injected", traceback=[])]
+                raise fault("injected notebook failure")
+    
+        with pytest.raises(fault):
+            execute_notebook(path, client_type=FailingClient)
+        saved = nbformat.read(path, as_version=4)
+        nbformat.validate(saved)
+        assert [cell.source for cell in saved.cells] == [cell.source for cell in notebook.cells]
+        assert saved.cells[1].outputs[0].text == "measured output\n"
+        assert saved.cells[2].outputs[0].ename == fault.__name__
+>       assert saved.metadata.framegenx_execution.execution_status == ("interrupted" if fault is KeyboardInterrupt else "failed")
+E       AssertionError: assert 'running' == 'interrupted'
+E         
+E         - interrupted
+E         + running
+
+tests\research\test_notebook_recovery.py:43: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Notebook cell 2/3: ok
+_________ test_early_rerun_failure_cannot_retain_old_success_outputs __________
+
+tmp_path = WindowsPath('E:/BrosKi/framegenx/.pytest_tmp_final_regression/test_early_rerun_failure_canno0')
+
+    def test_early_rerun_failure_cannot_retain_old_success_outputs(tmp_path):
+        path = tmp_path / "experiment.ipynb"
+        stale = nbformat.v4.new_code_cell("print('old success')", execution_count=9,
+            outputs=[nbformat.v4.new_output("stream", name="stdout", text="OLD_SUCCESS_MUST_DISAPPEAR\n")])
+        notebook = nbformat.v4.new_notebook(cells=[stale])
+        nbformat.write(notebook, path)
+    
+        class StartupFailure:
+            def __init__(self, *args, **kwargs):
+                pass
+    
+            def execute(self):
+                raise RuntimeError("injected kernel startup failure")
+    
+        with pytest.raises(RuntimeError):
+            execute_notebook(path, client_type=StartupFailure)
+        saved = nbformat.read(path, as_version=4)
+        assert saved.cells[0].execution_count is None and saved.cells[0].outputs == []
+>       assert saved.metadata.framegenx_execution.execution_status == "failed"
+E       AssertionError: assert 'running' == 'failed'
+E         
+E         - failed
+E         + running
+
+tests\research\test_notebook_recovery.py:65: AssertionError
+============================== warnings summary ===============================
+tests/test_region_fusion.py: 14 warnings
+  E:\BrosKi\framegenx\venv\Lib\site-packages\torch\jit\_script.py:359: DeprecationWarning: `torch.jit.script_method` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+tests/test_region_fusion.py::test_uncontrolled_fusion_matches_actual_diffusers_euler_cfg_and_zero_negative
+tests/test_region_fusion.py::test_uncontrolled_fusion_matches_actual_diffusers_euler_cfg_and_zero_negative
+tests/test_region_fusion.py::test_regional_fusion_advances_scheduler_once_per_timestep_and_is_seeded
+tests/test_region_fusion.py::test_regional_fusion_advances_scheduler_once_per_timestep_and_is_seeded
+tests/test_region_fusion.py::test_fusion_rejects_missing_region_conditioning_and_backgrounds
+  E:\BrosKi\framegenx\venv\Lib\site-packages\diffusers\schedulers\scheduling_euler_discrete.py:436: DeprecationWarning: __array__ implementation doesn't accept a copy keyword, so passing copy=False failed. __array__ must implement 'dtype' and 'copy' keyword arguments. To learn more, see the migration guide https://numpy.org/devdocs/numpy_2_0_migration_guide.html#adapting-to-changes-in-the-copy-keyword
+    sigmas = np.array(((1 - self.alphas_cumprod) / self.alphas_cumprod) ** 0.5)
+
+tests/test_training.py::test_local_mlflow_refuses_nonfinite_metrics_and_records_failure
+  E:\BrosKi\framegenx\venv\Lib\site-packages\mlflow\store\tracking\sqlalchemy_store.py:327: SADeprecationWarning: The ``noload`` loader strategy is deprecated and will be removed in a future release.  This option produces incorrect results by returning ``None`` for related items. (deprecated since: 2.1)
+    sqlalchemy.orm.configure_mappers()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/research/test_notebook_recovery.py::test_notebook_error_preserves_actual_outputs_and_original_structure[RuntimeError]
+FAILED tests/research/test_notebook_recovery.py::test_notebook_error_preserves_actual_outputs_and_original_structure[KeyboardInterrupt]
+FAILED tests/research/test_notebook_recovery.py::test_early_rerun_failure_cannot_retain_old_success_outputs
+3 failed, 331 passed, 20 warnings in 170.29s (0:02:50)

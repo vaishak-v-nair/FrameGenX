@@ -1,0 +1,112 @@
+{
+  "schema_version": "2.0",
+  "created_at": "2026-08-23T16:17:59.702875+00:00",
+  "prompt": "three red apples on a table",
+  "parsed": {
+    "subject": "apples",
+    "objects": [
+      "apples",
+      "table"
+    ],
+    "colors": [
+      "red"
+    ],
+    "primary_subject": "apples",
+    "secondary_objects": [
+      "table"
+    ]
+  },
+  "constraints": [
+    {
+      "type": "object_count",
+      "value": 3,
+      "target": "apples",
+      "priority": "critical"
+    },
+    {
+      "type": "spatial_relation",
+      "value": {
+        "subject": "apples",
+        "predicate": "on",
+        "object": "table"
+      },
+      "target": "apples->table",
+      "priority": "high"
+    }
+  ],
+  "rag_hits": [],
+  "rag_influence": {
+    "depth_required": false,
+    "lighting_complex": false
+  },
+  "execution_plan": {
+    "has_human": false,
+    "has_depth": false,
+    "risk_level": "medium"
+  },
+  "signal_map": {
+    "object_count": {
+      "threshold": 1
+    },
+    "class_uniqueness": {
+      "threshold": 1
+    },
+    "depth_layers": {
+      "threshold": 2
+    },
+    "spatial_ratio": {
+      "threshold": 0.2
+    },
+    "embedding": {
+      "threshold": 1.0
+    }
+  },
+  "entities": [
+    {
+      "id": "7fab465c-4066-4e47-b3d1-1606d83027fa",
+      "class_name": "apple",
+      "attributes": [
+        "red"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    },
+    {
+      "id": "69128b64-ebc5-46d1-9e9c-1dd67e7ff0f1",
+      "class_name": "apple",
+      "attributes": [
+        "red"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    },
+    {
+      "id": "60427f6d-747a-4eeb-a5e8-13690a3724b0",
+      "class_name": "apple",
+      "attributes": [
+        "red"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    },
+    {
+      "id": "995dd521-47f7-4ed1-9682-9779914d6c2b",
+      "class_name": "table",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    }
+  ],
+  "spatial_relationships": [
+    {
+      "subject": "apples",
+      "predicate": "on",
+      "object": "table"
+    }
+  ],
+  "negations": []
+}

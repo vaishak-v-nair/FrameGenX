@@ -1,0 +1,41 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "95f8acfc-7322-42e5-9ec6-9721d0e55423",
+      "class_name": "dragon",
+      "attributes": [
+        "massive",
+        "steampunk",
+        "mechanical"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 60,
+        "ymin": 122,
+        "xmax": 215,
+        "ymax": 389,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "254bad09-db66-4116-96af-d1e9d15db6c4",
+      "class_name": "skyscraper",
+      "attributes": [
+        "futuristic"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 296,
+        "ymin": 122,
+        "xmax": 451,
+        "ymax": 389,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    }
+  ]
+}

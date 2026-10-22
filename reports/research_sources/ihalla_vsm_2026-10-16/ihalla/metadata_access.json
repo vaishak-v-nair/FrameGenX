@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://docs.google.com/spreadsheets/d/1QdIse3GloFp7HkwoFmK_L3zHZkODoE11N1jIt6O_NAc/export?format=xlsx",
+    "bytes": 76844,
+    "sha256": "E460E4BA2338E2CACD23A038AFEF278B121DA2C58AC5465761FDBD476DF9534F",
+    "status": "downloaded_metadata_only",
+    "name": "captions"
+  },
+  {
+    "url": "https://docs.google.com/spreadsheets/d/146LXyXh8ivRz_psXU1mY3iMUgMZIh1hadOhnkiM_jUE/export?format=xlsx",
+    "bytes": 42702,
+    "sha256": "BF88EBD3F12B95DE83C2BA623EF28C1362BD2F2058619FFA5E0417153CF95220",
+    "status": "downloaded_metadata_only",
+    "name": "qa_history"
+  }
+]

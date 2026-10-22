@@ -1,0 +1,98 @@
+{
+  "schema_version": "2.0",
+  "created_at": "2026-08-24T08:16:23.874832+00:00",
+  "prompt": "Panoramic view of jagged alpine peaks at sunrise, wildflowers in bloom in the foreground, layers of mist filling the valleys below, warm golden light painting the summit, ultra-wide composition, photorealistic landscape photography, hyper-detailed, no people",
+  "parsed": {
+    "subject": "jagged alpine peaks",
+    "objects": [
+      "panoramic view",
+      "jagged alpine peaks",
+      "sunrise",
+      "wildflowers",
+      "foreground",
+      "layers",
+      "mist",
+      "valleys",
+      "warm golden light",
+      "summit",
+      "ultra-wide composition",
+      "photorealistic landscape photography",
+      "hyper-detailed"
+    ],
+    "colors": [
+      "golden",
+      "warm"
+    ],
+    "primary_subject": "jagged alpine peaks",
+    "secondary_objects": [
+      "wildflowers",
+      "mist",
+      "valleys",
+      "light",
+      "summit",
+      "foreground"
+    ]
+  },
+  "constraints": [
+    {
+      "type": "object_count",
+      "value": 1,
+      "target": "jagged alpine peaks",
+      "priority": "critical"
+    }
+  ],
+  "rag_hits": [],
+  "rag_influence": {
+    "depth_required": false,
+    "lighting_complex": false
+  },
+  "execution_plan": {
+    "has_human": false,
+    "has_depth": true,
+    "risk_level": "medium"
+  },
+  "signal_map": {
+    "object_count": {
+      "threshold": 1
+    },
+    "class_uniqueness": {
+      "threshold": 1
+    },
+    "depth_layers": {
+      "threshold": 2
+    },
+    "spatial_ratio": {
+      "threshold": 0.2
+    },
+    "embedding": {
+      "threshold": 1.0
+    }
+  },
+  "entities": [
+    {
+      "id": "e91a017b-9e2d-4a28-9654-3c776c712062",
+      "class_name": "peak",
+      "attributes": [
+        "jagged",
+        "alpine"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    },
+    {
+      "id": "68aac0f3-f82f-4c05-a1a9-b16e3fbbd5ee",
+      "class_name": "wildflower",
+      "attributes": [
+        "wild"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    }
+  ],
+  "spatial_relationships": [],
+  "negations": [
+    "people"
+  ]
+}

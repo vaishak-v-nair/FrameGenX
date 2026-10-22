@@ -1,0 +1,95 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "3e4de959-e97a-49a9-90bc-341b768c6855",
+      "class_name": "book",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 20,
+        "ymin": 20,
+        "xmax": 150,
+        "ymax": 150,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "4bb01372-4b6e-49ac-8f08-5023e15c5dd9",
+      "class_name": "book",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 190,
+        "ymin": 20,
+        "xmax": 320,
+        "ymax": 150,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "c6eadf6d-6462-4b23-9181-2ae46dcde566",
+      "class_name": "book",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 360,
+        "ymin": 20,
+        "xmax": 490,
+        "ymax": 150,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "2cfbc446-42c0-4960-8a75-ebccb78be781",
+      "class_name": "book",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 20,
+        "ymin": 190,
+        "xmax": 150,
+        "ymax": 320,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "c69cede1-6392-4c07-8979-6baf1f9725a0",
+      "class_name": "book",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 190,
+        "ymin": 190,
+        "xmax": 320,
+        "ymax": 320,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "81ebcbf4-e4b2-468c-baa7-6904acc86b8b",
+      "class_name": "desk",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 360,
+        "ymin": 190,
+        "xmax": 490,
+        "ymax": 320,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    }
+  ]
+}

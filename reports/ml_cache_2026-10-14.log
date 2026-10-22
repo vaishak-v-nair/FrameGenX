@@ -1,0 +1,20 @@
+W1014 20:56:37.046000 384 venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s]
+Loading weights: 100%|##########| 196/196 [00:00<00:00, 3223.77it/s]
+Cached text_encoder for 108 positive captions
+
+Loading weights:   0%|          | 0/517 [00:00<?, ?it/s]
+Loading weights:  48%|####7     | 246/517 [00:00<00:00, 2457.81it/s]
+Loading weights: 100%|##########| 517/517 [00:00<00:00, 2757.47it/s]
+Cached text_encoder_2 for 108 positive captions
+Cached full-image latents: 12/108
+Cached full-image latents: 24/108
+Cached full-image latents: 36/108
+Cached full-image latents: 48/108
+Cached full-image latents: 60/108
+Cached full-image latents: 72/108
+Cached full-image latents: 84/108
+Cached full-image latents: 96/108
+Cached full-image latents: 108/108
+{"cache": "E:\\BrosKi\\framegenx\\data\\training\\constraint_pilot\\cache\\f0aded45835b528b41b2", "items": 108, "signature": {"dataset_sha256": "5377fd0a2c0856160a00d51f46d1345ea54d0c5101e8289b5136a5a4bd5d1619", "model": "stabilityai/stable-diffusion-xl-base-1.0", "model_snapshot": "462165984030d82259a11f4367a4eed129e94a7b", "resolution": 512, "preprocessing": "rgb_full_image_letterbox_gray_no_crop_no_flip_latent_mode_v1", "cache_code_sha256": "794224ed780d7086d1b2aa1df95fd0512f155ace9fa769d688155555e108608b"}}

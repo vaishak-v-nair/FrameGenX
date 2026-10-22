@@ -1,0 +1,15 @@
+{
+  "compared_adapter_tensors": 1120,
+  "differing_tensors": 0,
+  "elapsed_seconds": 273.6493435000002,
+  "max_abs_difference": 0.0,
+  "peak_reserved_gb": 2.480930816,
+  "process_peak_working_set_gb": 4.761575424,
+  "runs": [
+    "b6bb213b-b547-4800-a69d-988576d2a53c",
+    "76e76a9a-efe5-4269-b10f-08cbf59017b3",
+    "9a4aea46-518e-4b03-ae40-a60cb0ea6285"
+  ],
+  "scope": "real_CUDA_optimizer_resume_only_not_quality_validation",
+  "status": "passed"
+}

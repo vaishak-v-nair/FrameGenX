@@ -1,0 +1,23 @@
+[
+  {
+    "id": "coco_312340",
+    "caption": "A black and white cat sitting on top of leaves.",
+    "image": "http://images.cocodataset.org/val2017/000000312340.jpg",
+    "score": 0.015648286140089417,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_240940",
+    "caption": "A cat sitting on the floor watching television.",
+    "image": "http://images.cocodataset.org/val2017/000000240940.jpg",
+    "score": 0.01543560606060606,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_491497",
+    "caption": "A fluffy white chair that faces away fro a television.",
+    "image": "http://images.cocodataset.org/val2017/000000491497.jpg",
+    "score": 0.009836065573770491,
+    "retrieval_mode": "hybrid_rrf"
+  }
+]

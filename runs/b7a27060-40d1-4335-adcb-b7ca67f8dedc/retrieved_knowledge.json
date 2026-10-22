@@ -1,0 +1,55 @@
+{
+  "caption_hits": [
+    {
+      "id": "coco_527220",
+      "caption": "A red car next to a gas station sign and parked blue and silver motorcycles.",
+      "image": "http://images.cocodataset.org/val2017/000000527220.jpg",
+      "score": 0.016393442622950817,
+      "retrieval_mode": "hybrid_rrf"
+    },
+    {
+      "id": "coco_543043",
+      "caption": "There is a red car parked next to an old bus.",
+      "image": "http://images.cocodataset.org/val2017/000000543043.jpg",
+      "score": 0.01597542242703533,
+      "retrieval_mode": "hybrid_rrf"
+    },
+    {
+      "id": "coco_426166",
+      "caption": "A light blue bicycle chained to a pole on the sidewalk in front of a red building.",
+      "image": "http://images.cocodataset.org/val2017/000000426166.jpg",
+      "score": 0.01543560606060606,
+      "retrieval_mode": "hybrid_rrf"
+    }
+  ],
+  "layout_blueprint": {
+    "entity_count": 2,
+    "name": "Dual Horizontal Split",
+    "description": "Two distinct entities placed side-by-side with clear separation",
+    "boxes": [
+      {
+        "anchor": "center_left",
+        "ymin": 0.2,
+        "xmin": 0.08,
+        "ymax": 0.8,
+        "xmax": 0.46,
+        "z_index": 1
+      },
+      {
+        "anchor": "center_right",
+        "ymin": 0.2,
+        "xmin": 0.54,
+        "ymax": 0.8,
+        "xmax": 0.92,
+        "z_index": 1
+      }
+    ]
+  },
+  "style_preset": {
+    "preset_name": "photorealistic",
+    "descriptors": "photograph, 35mm lens, sharp focus, natural lighting, subsurface scattering, authentic textures",
+    "lighting": "soft directional daylight with realistic ambient bounce",
+    "camera": "eye-level 50mm f/2.8 lens, shallow depth of field",
+    "negative": "cartoon, illustration, 3d render, distorted, oversaturated, plastic"
+  }
+}

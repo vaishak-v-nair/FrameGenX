@@ -1,0 +1,47 @@
+{
+  "caption_hits": [
+    {
+      "id": "coco_178982",
+      "caption": "A view of a sign that leads to Brooklyn and Queens.",
+      "image": "http://images.cocodataset.org/val2017/000000178982.jpg",
+      "score": 0.016185271922976842,
+      "retrieval_mode": "hybrid_rrf"
+    },
+    {
+      "id": "coco_394328",
+      "caption": "There is an indoor toilet underneath a sign that says please flush.",
+      "image": "http://images.cocodataset.org/val2017/000000394328.jpg",
+      "score": 0.015253029223093371,
+      "retrieval_mode": "hybrid_rrf"
+    },
+    {
+      "id": "coco_509258",
+      "caption": "A street sign shows directions to highways and towns.",
+      "image": "http://images.cocodataset.org/val2017/000000509258.jpg",
+      "score": 0.015027870680044592,
+      "retrieval_mode": "hybrid_rrf"
+    }
+  ],
+  "layout_blueprint": {
+    "entity_count": 1,
+    "name": "Single Subject Centered",
+    "description": "Dominant single foreground subject centered in frame",
+    "boxes": [
+      {
+        "anchor": "center",
+        "ymin": 0.15,
+        "xmin": 0.15,
+        "ymax": 0.85,
+        "xmax": 0.85,
+        "z_index": 1
+      }
+    ]
+  },
+  "style_preset": {
+    "preset_name": "photorealistic",
+    "descriptors": "photograph, 35mm lens, sharp focus, natural lighting, subsurface scattering, authentic textures",
+    "lighting": "soft directional daylight with realistic ambient bounce",
+    "camera": "eye-level 50mm f/2.8 lens, shallow depth of field",
+    "negative": "cartoon, illustration, 3d render, distorted, oversaturated, plastic"
+  }
+}

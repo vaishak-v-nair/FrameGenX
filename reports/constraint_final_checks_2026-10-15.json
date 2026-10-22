@@ -1,0 +1,12 @@
+{
+  "scope": "current local evidence integrity; no browser or full-CSR qualification",
+  "experiment_snapshot_and_current_sources_match": true,
+  "generation_image_and_latent_hashes_checked": 16,
+  "assistant_review_images_hash_checked": 16,
+  "gallery_images": 16,
+  "gallery_local_links_checked": 32,
+  "documentation_local_links_checked": 65,
+  "broken_links": [],
+  "test_suite": "288 passed, 20 dependency warnings",
+  "full_contract_CSR": null
+}

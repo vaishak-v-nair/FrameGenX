@@ -1,0 +1,29 @@
+{
+  "accepted": false,
+  "failures": [
+    {
+      "type": "spatial_violation",
+      "class_name": "adventurer->sword",
+      "expected": "holding",
+      "detected": "unsupported predicate 'holding'"
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "adventurer": 1,
+      "sword": 1
+    },
+    "raw_detected_counts": {
+      "adventurer": 1,
+      "sword": 1
+    },
+    "expected_counts": {
+      "adventurer": 1,
+      "sword": 1
+    }
+  },
+  "root_causes": [],
+  "actions": [
+    "Review adventurer->sword: expected holding; unsupported predicate 'holding'."
+  ]
+}

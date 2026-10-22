@@ -1,0 +1,14 @@
+{
+  "accept": false,
+  "reward": 0.2099,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": false,
+  "prompt_edits": [
+    "One sword",
+    "sharp focus, highly detailed",
+    "adventurer, prominent, clearly visible",
+    "sword, prominent, clearly visible"
+  ]
+}

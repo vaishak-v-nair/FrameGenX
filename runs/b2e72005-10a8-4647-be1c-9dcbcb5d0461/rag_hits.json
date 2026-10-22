@@ -1,0 +1,23 @@
+[
+  {
+    "id": "coco_228436",
+    "caption": "there is a bike that is parked on a small bridge",
+    "image": "http://images.cocodataset.org/val2017/000000228436.jpg",
+    "score": 0.015932377049180328,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_86220",
+    "caption": "A car and a public transit vehicle on a road.",
+    "image": "http://images.cocodataset.org/val2017/000000086220.jpg",
+    "score": 0.0151131221719457,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_555050",
+    "caption": "A car driving in an intersection, past a furniture shop.",
+    "image": "http://images.cocodataset.org/val2017/000000555050.jpg",
+    "score": 0.015073529411764706,
+    "retrieval_mode": "hybrid_rrf"
+  }
+]

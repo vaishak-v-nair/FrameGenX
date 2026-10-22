@@ -1,0 +1,8 @@
+{
+  "width": 512,
+  "height": 512,
+  "steps": 4,
+  "cfg_scale": 0.0,
+  "sampler": "euler_a",
+  "seed": 42
+}

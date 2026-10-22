@@ -1,0 +1,30 @@
+{
+  "summary": {
+    "baseline": {
+      "total_images": 8,
+      "observed_images": 8,
+      "unknown_images": 0,
+      "count_check_passes": 1,
+      "count_and_geometry_passes": 1,
+      "chromatic_applicable_images": 6,
+      "chromatic_supported_images": 1,
+      "joint_operational_check_passes": 1
+    },
+    "candidate": {
+      "total_images": 8,
+      "observed_images": 8,
+      "unknown_images": 0,
+      "count_check_passes": 4,
+      "count_and_geometry_passes": 4,
+      "chromatic_applicable_images": 6,
+      "chromatic_supported_images": 3,
+      "joint_operational_check_passes": 4
+    }
+  },
+  "paired_changes": {
+    "matched_pairs": 8,
+    "improved_pairs": 3,
+    "regressed_pairs": 0,
+    "unchanged_pairs": 5
+  }
+}

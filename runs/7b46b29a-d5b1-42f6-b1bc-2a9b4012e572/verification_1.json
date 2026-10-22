@@ -1,0 +1,68 @@
+{
+  "accepted": false,
+  "hard_failures": [],
+  "signals": {
+    "detected_counts": {
+      "cup": 3,
+      "counter": 1
+    },
+    "expected_counts": {
+      "cup": 3,
+      "counter": 1
+    }
+  },
+  "clip_cos": 0.3254,
+  "clip_norm": 0.7015,
+  "vqa_score": 1.0,
+  "vqa_vacuous": false,
+  "reward": 0.8508,
+  "spatial_result": {
+    "passed": true,
+    "total": 1,
+    "verified": 1,
+    "failures": [],
+    "results": [
+      {
+        "relationship": {
+          "subject": "cup",
+          "predicate": "above",
+          "object": "counter"
+        },
+        "passed": true,
+        "reason": "subject center_y=374 < object center_y=445",
+        "subject_box": {
+          "xmin": 202.09603881835938,
+          "ymin": 287.82952880859375,
+          "xmax": 405.0248107910156,
+          "ymax": 460.197021484375,
+          "score": 0.7827235460281372
+        },
+        "object_box": {
+          "xmin": 0.14971923828125,
+          "ymin": 378.1512145996094,
+          "xmax": 511.851806640625,
+          "ymax": 511.4759216308594,
+          "score": 0.593482255935669
+        }
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Are there cup in the image?",
+      "expected": "yes",
+      "class_name": "cup",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "existence",
+      "question": "Is there a counter in the image?",
+      "expected": "yes",
+      "class_name": "counter",
+      "answer": "yes",
+      "correct": true
+    }
+  ]
+}

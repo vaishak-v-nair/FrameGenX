@@ -1,0 +1,19 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "d4b09150-3e2c-4be3-afe3-715c268536ce",
+      "class_name": "tree",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 96,
+        "ymin": 96,
+        "xmax": 415,
+        "ymax": 415,
+        "z_index": 1
+      },
+      "z_index": 1
+    }
+  ]
+}

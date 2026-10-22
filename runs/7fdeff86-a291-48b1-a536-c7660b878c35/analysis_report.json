@@ -1,0 +1,27 @@
+{
+  "accepted": false,
+  "failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "book",
+      "expected": 5,
+      "detected": 3
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "book": 3,
+      "desk": 1
+    },
+    "expected_counts": {
+      "book": 5,
+      "desk": 1
+    }
+  },
+  "root_causes": [
+    "Scene under-populated -> weak object planning",
+    "Prompt misalignment -> RAG or prompt issue",
+    "Objects clustered -> bad composition"
+  ],
+  "actions": []
+}

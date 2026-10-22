@@ -1,0 +1,1205 @@
+[
+  {
+    "id": "C6",
+    "title": "Finalize and reconcile checksummed bundles; distinguish pending/missing/corrupt",
+    "scope": "approved staged roadmap",
+    "phase": "ceo-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in 4.2: JSON corruption becomes absence"
+    },
+    "execution": {
+      "files": [
+        "src/api.py",
+        "src/core/artifacts.py"
+      ],
+      "status": "pending",
+      "action": "Finalize and reconcile checksummed bundles; distinguish pending/missing/corrupt"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "C3",
+    "title": "Define tested dependency profiles, CPU CI, explicit GPU gates and artifact policy",
+    "scope": "approved staged roadmap",
+    "phase": "ceo-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in 4.5/4.9: broad Python declaration and no current remote checks"
+    },
+    "execution": {
+      "files": [
+        "pyproject.toml",
+        "requirements.txt",
+        "frontend/package.json",
+        "Dockerfile",
+        "docker-compose.yml",
+        ".github/workflows/ci.yml"
+      ],
+      "status": "pending",
+      "action": "Define tested dependency profiles, CPU CI, explicit GPU gates and artifact policy"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "C1",
+    "title": "Freeze requirement coverage, human labeling rubric and disjoint calibration/benchmark manifests",
+    "scope": "approved staged roadmap",
+    "phase": "ceo-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in 1.1 and P0: current proxy results cannot qualify reduction"
+    },
+    "execution": {
+      "files": [
+        "src/verification/contract_evidence.py",
+        "src/training/evaluation.py",
+        "configs/evaluation_pilot.json"
+      ],
+      "status": "pending",
+      "action": "Freeze requirement coverage, human labeling rubric and disjoint calibration/benchmark manifests"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "C7",
+    "title": "Add optional PostgreSQL/Redis profile with owner scopes, quotas, migrations and backup restoration",
+    "scope": "approved staged roadmap",
+    "phase": "ceo-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in 4.3/4.9: local trust assumptions do not support public exposure"
+    },
+    "execution": {
+      "files": [
+        "src/core/db.py",
+        "src/api.py",
+        "docker-compose.yml"
+      ],
+      "status": "pending",
+      "action": "Add optional PostgreSQL/Redis profile with owner scopes, quotas, migrations and backup restoration"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "C4",
+    "title": "Add typed contract review, allowlisted profiles and identical CLI/API/UI identity",
+    "scope": "approved staged roadmap",
+    "phase": "ceo-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in P1/4.11: web cannot submit supplied contracts or choose tested controller"
+    },
+    "execution": {
+      "files": [
+        "src/intent/models.py",
+        "src/api.py",
+        "src/cli.py",
+        "frontend/src/App.jsx"
+      ],
+      "status": "pending",
+      "action": "Add typed contract review, allowlisted profiles and identical CLI/API/UI identity"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "C5",
+    "title": "Add durable submission, worker supervision, cancellation and recovery",
+    "scope": "approved staged roadmap",
+    "phase": "ceo-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in 4.1/4.4: memory jobs and process-local GPU lock"
+    },
+    "execution": {
+      "files": [
+        "src/api.py",
+        "src/core/db.py",
+        "src/core/jobs.py",
+        "src/core/worker.py"
+      ],
+      "status": "pending",
+      "action": "Add durable submission, worker supervision, cancellation and recovery"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "C13",
+    "title": "Correct unsupported competitor/quality claims and validate the next integration with task-based user sessions",
+    "scope": "approved staged roadmap",
+    "phase": "ceo-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in Competitive/audience check: old comparison claims lack current evidence"
+    },
+    "execution": {
+      "files": [
+        "docs/10_COMPETITOR_ANALYSIS.md",
+        "docs/WHY_NOT_COMFYUI.md"
+      ],
+      "status": "pending",
+      "action": "Correct unsupported competitor/quality claims and validate the next integration with task-based user sessions"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "C2",
+    "title": "Separate operational outcome, evidence coverage and strict qualification in schemas, storage and reporting",
+    "scope": "approved staged roadmap",
+    "phase": "ceo-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in 4.4: missing evidence can be confused with acceptance"
+    },
+    "execution": {
+      "files": [
+        "src/core/context.py",
+        "src/verification/verify_stage.py",
+        "src/reflection/reflector.py",
+        "src/api.py",
+        "frontend/src/runState.js"
+      ],
+      "status": "pending",
+      "action": "Separate operational outcome, evidence coverage and strict qualification in schemas, storage and reporting"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "D4",
+    "title": "Implement labeled responsive evidence, focus management and meaningful status announcements",
+    "scope": "approved staged roadmap",
+    "phase": "design-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in Pass 6 and both voices: mobile context and modal/validation behavior were unspecified"
+    },
+    "execution": {
+      "files": [
+        "frontend/src/index.css",
+        "frontend/src/App.jsx",
+        "frontend/src/components/RunHistory.jsx"
+      ],
+      "status": "pending",
+      "action": "Implement labeled responsive evidence, focus management and meaningful status announcements"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "D2",
+    "title": "Implement shared execution/qualification/evidence states and correct diagnostic labels",
+    "scope": "approved staged roadmap",
+    "phase": "design-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in Passes 2/4/5: binary accepted badges and \u201cVQA Precision\u201d mislead"
+    },
+    "execution": {
+      "files": [
+        "frontend/src/runState.js",
+        "frontend/src/components/RunHistory.jsx",
+        "frontend/src/components/AblationDashboard.jsx"
+      ],
+      "status": "pending",
+      "action": "Implement shared execution/qualification/evidence states and correct diagnostic labels"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "D1",
+    "title": "Specify and implement contract/profile capability review without dropping requirements",
+    "scope": "approved staged roadmap",
+    "phase": "design-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in Design Passes 1-3: eligibility and verification coverage conflicted; editing interactions were absent"
+    },
+    "execution": {
+      "files": [
+        "frontend/src/App.jsx",
+        "src/api.py"
+      ],
+      "status": "pending",
+      "action": "Specify and implement contract/profile capability review without dropping requirements"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "D3",
+    "title": "Add authoritative job action map, URL restoration and separate editable drafts",
+    "scope": "approved staged roadmap",
+    "phase": "design-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in Passes 1-3: reconnect and historical run selection lacked ownership rules"
+    },
+    "execution": {
+      "files": [
+        "frontend/src/App.jsx",
+        "frontend/src/runState.js"
+      ],
+      "status": "pending",
+      "action": "Add authoritative job action map, URL restoration and separate editable drafts"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "E4",
+    "title": "Implement canonical stable instance/predicate identities and final-pixel/attempt-bound exact coverage",
+    "scope": "approved staged roadmap",
+    "phase": "eng-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in source review and CLI/G04-G06/G15-G16: class-level deduplication and schema-only confirmation lose meaning"
+    },
+    "execution": {
+      "files": [
+        "src/intent/models.py",
+        "src/verification/contract_evidence.py",
+        "src/core/stage.py",
+        "frontend/src",
+        "tests/test_contract_revision.py (proposed)"
+      ],
+      "status": "pending",
+      "action": "Implement canonical stable instance/predicate identities and final-pixel/attempt-bound exact coverage"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "E1",
+    "title": "Enforce the common physical-device gate before CUDA across all entrypoints and contain supervised children",
+    "scope": "approved staged roadmap",
+    "phase": "eng-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in both voices/G10: API-only locking cannot enforce the hardware contract"
+    },
+    "execution": {
+      "files": [
+        "src/core/device_owner.py (proposed)",
+        "src/cli.py",
+        "benchmark.py",
+        "src/training",
+        "src/verification",
+        "src/retrieval",
+        "tests/test_device_ownership.py (proposed)"
+      ],
+      "status": "pending",
+      "action": "Enforce the common physical-device gate before CUDA across all entrypoints and contain supervised children"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "E6",
+    "title": "Add local session/capability, Host/Origin and legacy-route protection plus allowlisted private/derivative exports",
+    "scope": "approved staged roadmap",
+    "phase": "eng-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in CLI/G22-G23: loopback/CORS and raw bundle promises leave browser/export gaps"
+    },
+    "execution": {
+      "files": [
+        "src/api.py",
+        "src/core/access.py (proposed)",
+        "src/core/evidence_export.py (proposed)",
+        "frontend/src",
+        "tests/test_local_access.py (proposed)"
+      ],
+      "status": "pending",
+      "action": "Add local session/capability, Host/Origin and legacy-route protection plus allowlisted private/derivative exports"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "E5",
+    "title": "Replace the old partial registry gate with one versioned typed all-gates evaluator",
+    "scope": "approved staged roadmap",
+    "phase": "eng-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in source review/G26: positive overall interval does not enforce precision/calibration/category/usefulness gates"
+    },
+    "execution": {
+      "files": [
+        "src/training/registry.py",
+        "src/training/evaluation.py",
+        "src/verification/qualification.py (proposed)",
+        "tests/test_training.py"
+      ],
+      "status": "pending",
+      "action": "Replace the old partial registry gate with one versioned typed all-gates evaluator"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "E3",
+    "title": "Implement the complete cancel/finalizer/reconciler transition table and guarded durability helpers",
+    "scope": "approved staged roadmap",
+    "phase": "eng-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in both voices/G17-G19: leased/finalizing recovery and cancel cutoff were incomplete"
+    },
+    "execution": {
+      "files": [
+        "src/jobs (proposed)",
+        "src/core/context.py",
+        "src/core/artifacts.py (proposed)",
+        "tests/test_job_recovery.py (proposed)",
+        "tests/test_artifact_commit.py (proposed)"
+      ],
+      "status": "pending",
+      "action": "Implement the complete cancel/finalizer/reconciler transition table and guarded durability helpers"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "E7",
+    "title": "Freeze full source/build identities and restore database plus referenced payloads in clean isolated package/container profiles",
+    "scope": "approved staged roadmap",
+    "phase": "eng-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in both voices/G27: manifests alone cannot restore pixels, and HEAD omits working-tree source"
+    },
+    "execution": {
+      "files": [
+        "pyproject.toml",
+        "Dockerfile",
+        "docker-compose.yml",
+        ".github/workflows (proposed)",
+        "scripts",
+        "examples/evidence (proposed)"
+      ],
+      "status": "pending",
+      "action": "Freeze full source/build identities and restore database plus referenced payloads in clean isolated package/container profiles"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "E2",
+    "title": "Implement the P0 durable submission/key/digest/seed foundation and rejection-aware lookup before v1 clients",
+    "scope": "approved staged roadmap",
+    "phase": "eng-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in both voices/G07-G09: a rejected submission may have no job"
+    },
+    "execution": {
+      "files": [
+        "src/core/db.py",
+        "src/jobs/admission.py (proposed)",
+        "src/api.py",
+        "src/cli.py",
+        "tests/test_submissions.py (proposed)"
+      ],
+      "status": "pending",
+      "action": "Implement the P0 durable submission/key/digest/seed foundation and rejection-aware lookup before v1 clients"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "E8",
+    "title": "Make CPU tests hermetic and enforce bounded deadline/queue/index/cache policies with recorded peak resource evidence",
+    "scope": "approved staged roadmap",
+    "phase": "eng-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in G02/G12/G24/G31 and Pass 4: .env coupling and p95-only/uncapped retries cannot support the proposed guarantees"
+    },
+    "execution": {
+      "files": [
+        "tests/conftest.py",
+        "src/core/db.py",
+        "src/jobs (proposed)",
+        "scripts",
+        "requirements.txt",
+        ".github/workflows (proposed)"
+      ],
+      "status": "pending",
+      "action": "Make CPU tests hermetic and enforce bounded deadline/queue/index/cache policies with recorded peak resource evidence"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "X3",
+    "title": "Consolidate compatibility/setup/error/upgrade guides and executable examples",
+    "scope": "approved staged roadmap",
+    "phase": "devex-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in Passes 4-6: conflicting prerequisites and duplicated instructions"
+    },
+    "execution": {
+      "files": [
+        "README.md",
+        "TESTING.md",
+        "CONTRIBUTING.md",
+        "pyproject.toml",
+        "requirements.txt",
+        "docs/COMPATIBILITY.md",
+        "docs/ERRORS.md",
+        "docs/UPGRADING.md"
+      ],
+      "status": "pending",
+      "action": "Consolidate compatibility/setup/error/upgrade guides and executable examples"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "X2",
+    "title": "Implement shared v1 operations, result/error schemas and explicit automation exit/reconcile behavior",
+    "scope": "approved staged roadmap",
+    "phase": "devex-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in Passes 2/3: execution success can be mistaken for qualification and uncertain POST can duplicate work"
+    },
+    "execution": {
+      "files": [
+        "src/api.py",
+        "src/cli.py",
+        "src/core/jobs.py"
+      ],
+      "status": "pending",
+      "action": "Implement shared v1 operations, result/error schemas and explicit automation exit/reconcile behavior"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "X1",
+    "title": "Add the dependency-free evidence inspector and compact real example with integrity/error handling",
+    "scope": "approved staged roadmap",
+    "phase": "devex-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in DX Pass 1 and both voices: first-use deliverable was unspecified"
+    },
+    "execution": {
+      "files": [
+        "scripts/inspect_example.py",
+        "examples/evidence/green-bottles",
+        "README.md"
+      ],
+      "status": "pending",
+      "action": "Add the dependency-free evidence inspector and compact real example with integrity/error handling"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "C11",
+    "title": "Curate failure-focused datasets and run compute-bounded LoRA/QLoRA promotion experiments",
+    "scope": "approved staged roadmap",
+    "phase": "ceo-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in P4: 90-image loss-only pilot remains experimental"
+    },
+    "execution": {
+      "files": [
+        "src/training/data.py",
+        "src/training/evaluation.py",
+        "src/training/registry.py"
+      ],
+      "status": "pending",
+      "action": "Curate failure-focused datasets and run compute-bounded LoRA/QLoRA promotion experiments"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "C9",
+    "title": "Compare existing MLflow and one tracing candidate; instrument redacted stage/job metrics",
+    "scope": "approved staged roadmap",
+    "phase": "ceo-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in 4.8: fragmented incident reconstruction"
+    },
+    "execution": {
+      "files": [
+        "src/training/tracking.py",
+        "src/core/stage.py",
+        "src/api.py"
+      ],
+      "status": "pending",
+      "action": "Compare existing MLflow and one tracing candidate; instrument redacted stage/job metrics"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "C8",
+    "title": "Extend the existing router with capability and permission policies, structured output and bounded rescue",
+    "scope": "approved staged roadmap",
+    "phase": "ceo-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in 4.2/P3: provider fallback can change capability and privacy context"
+    },
+    "execution": {
+      "files": [
+        "src/core/llm_router.py",
+        "src/intent/extractor.py",
+        "src/verification/qa.py"
+      ],
+      "status": "pending",
+      "action": "Extend the existing router with capability and permission policies, structured output and bounded rescue"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "C10",
+    "title": "Expose read-only MCP schema/status/evidence tools through the same access policy",
+    "scope": "approved staged roadmap",
+    "phase": "ceo-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in P3: external tools need scope and stable IDs"
+    },
+    "execution": {
+      "files": [
+        "src/integrations/mcp.py",
+        "src/api.py"
+      ],
+      "status": "pending",
+      "action": "Expose read-only MCP schema/status/evidence tools through the same access policy"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "X5",
+    "title": "Run prerequisite-aware contributor task observations and retain local redacted friction reports",
+    "scope": "approved staged roadmap",
+    "phase": "devex-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in Pass 8: roleplay and targets are not measured onboarding"
+    },
+    "execution": {
+      "files": [
+        "docs/COMPATIBILITY.md",
+        "reports/dx_tasks"
+      ],
+      "status": "pending",
+      "action": "Run prerequisite-aware contributor task observations and retain local redacted friction reports"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "X4",
+    "title": "Add owner-approved licensing/notices, changelog and safe issue/extension guidance",
+    "scope": "approved staged roadmap",
+    "phase": "devex-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in Passes 5/7: distribution/support assumptions are unestablished"
+    },
+    "execution": {
+      "files": [
+        "LICENSE",
+        "NOTICE",
+        "CHANGELOG.md",
+        "CONTRIBUTING.md"
+      ],
+      "status": "pending",
+      "action": "Add owner-approved licensing/notices, changelog and safe issue/extension guidance"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "C12",
+    "title": "Evaluate Streamlit, CrewAI/ADK, LlamaIndex/Chroma/RAGAS/GraphRAG, speech, n8n and A2A only against named entry gates",
+    "scope": "approved staged roadmap",
+    "phase": "ceo-review",
+    "planning": {
+      "artifact": "docs/plans/STACK_EVOLUTION_PLAN.md",
+      "status": "reviewed_approved",
+      "action": "Resolve specification in matrix/F1-F3: overlapping frameworks need evidence of value"
+    },
+    "execution": {
+      "files": [
+        "scripts/experiments",
+        "docs/research.md"
+      ],
+      "status": "pending",
+      "action": "Evaluate Streamlit, CrewAI/ADK, LlamaIndex/Chroma/RAGAS/GraphRAG, speech, n8n and A2A only against named entry gates"
+    },
+    "verification": {
+      "status": "pending",
+      "action": "Run feature-specific assertions and empirical gates listed in the approved plan; record commands and evidence"
+    },
+    "acceptance": {
+      "status": "pending",
+      "requires": "Declared local/hosted/qualification scope gates; approval is not runtime certification"
+    }
+  },
+  {
+    "id": "R01",
+    "title": "Record approval and task decomposition",
+    "scope": "current requested research slice",
+    "planning": {
+      "status": "engineering_reviewed",
+      "artifact": "docs/plans/RESEARCH_TRAINING_EXECUTION_PLAN.md"
+    },
+    "execution": {
+      "status": "completed",
+      "evidence": "reports/planning/APPROVAL_2026-10-16.md"
+    },
+    "verification": {
+      "status": "passed_artifact_checks"
+    },
+    "acceptance": {
+      "status": "user_A_recorded"
+    },
+    "evidence": [
+      "docs/plans/RESEARCH_TRAINING_EXECUTION_PLAN.md",
+      "docs/17_RESEARCH_EXPERIMENTS.md",
+      "reports/ihalla_vsm_research_2026-10-17.md",
+      "reports/research_execution_2026-10-16/execution_summary.json"
+    ],
+    "notes": "Approval receipt and separate 43-task board were recorded before implementation."
+  },
+  {
+    "id": "R02",
+    "title": "Audit and safely acquire permitted research assets",
+    "scope": "current requested research slice",
+    "planning": {
+      "status": "engineering_reviewed",
+      "artifact": "docs/plans/RESEARCH_TRAINING_EXECUTION_PLAN.md"
+    },
+    "execution": {
+      "status": "bounded_assets_acquired",
+      "evidence": null
+    },
+    "verification": {
+      "status": "hashes_and_safe_import_verified"
+    },
+    "acceptance": {
+      "status": "bounded_scope_verified"
+    },
+    "evidence": [
+      "docs/plans/RESEARCH_TRAINING_EXECUTION_PLAN.md",
+      "docs/17_RESEARCH_EXPERIMENTS.md",
+      "reports/ihalla_vsm_research_2026-10-17.md",
+      "reports/research_execution_2026-10-16/execution_summary.json"
+    ],
+    "notes": "VSM Cards pinned archives and 4096 grids; I-HallA public metadata only; no image training."
+  },
+  {
+    "id": "R03",
+    "title": "Freeze disjoint data/protocol/resource budget",
+    "scope": "current requested research slice",
+    "planning": {
+      "status": "engineering_reviewed",
+      "artifact": "docs/plans/RESEARCH_TRAINING_EXECUTION_PLAN.md"
+    },
+    "execution": {
+      "status": "completed",
+      "evidence": null
+    },
+    "verification": {
+      "status": "locked_data_source_runtime_verified"
+    },
+    "acceptance": {
+      "status": "feasibility_protocol_verified"
+    },
+    "evidence": [
+      "docs/plans/RESEARCH_TRAINING_EXECUTION_PLAN.md",
+      "docs/17_RESEARCH_EXPERIMENTS.md",
+      "reports/ihalla_vsm_research_2026-10-17.md",
+      "reports/research_execution_2026-10-16/execution_summary.json"
+    ],
+    "notes": "2908/600/588 grouped splits; fixed protocol, source snapshots, runtime versions and CPU limits."
+  },
+  {
+    "id": "R04",
+    "title": "Train classical ML Cards diagnostic",
+    "scope": "current requested research slice",
+    "planning": {
+      "status": "engineering_reviewed",
+      "artifact": "docs/plans/RESEARCH_TRAINING_EXECUTION_PLAN.md"
+    },
+    "execution": {
+      "status": "trained",
+      "evidence": null
+    },
+    "verification": {
+      "status": "held_out_synthetic_diagnostics_recorded"
+    },
+    "acceptance": {
+      "status": "experimental_diagnostic_only"
+    },
+    "evidence": [
+      "docs/plans/RESEARCH_TRAINING_EXECUTION_PLAN.md",
+      "docs/17_RESEARCH_EXPERIMENTS.md",
+      "reports/ihalla_vsm_research_2026-10-17.md",
+      "reports/research_execution_2026-10-16/execution_summary.json"
+    ],
+    "notes": "2940 test examples from 588 held-out grids; balanced accuracy/AUC 1.0; no generic verifier qualification."
+  },
+  {
+    "id": "R05",
+    "title": "Train learned-variance DL baseline and VSM experiment",
+    "scope": "current requested research slice",
+    "planning": {
+      "status": "engineering_reviewed",
+      "artifact": "docs/plans/RESEARCH_TRAINING_EXECUTION_PLAN.md"
+    },
+    "execution": {
+      "status": "trained_cpu_both_arms",
+      "evidence": null
+    },
+    "verification": {
+      "status": "checkpoints_tracking_and_same_seed_repeat_verified"
+    },
+    "acceptance": {
+      "status": "execution_verified_quality_unverified"
+    },
+    "evidence": [
+      "docs/plans/RESEARCH_TRAINING_EXECUTION_PLAN.md",
+      "docs/17_RESEARCH_EXPERIMENTS.md",
+      "reports/ihalla_vsm_research_2026-10-17.md",
+      "reports/research_execution_2026-10-16/execution_summary.json"
+    ],
+    "notes": "500 steps each, 3 local MLflow runs FINISHED; all 26 tensors per arm and 64 PNGs reproduced exactly at the same seed."
+  },
+  {
+    "id": "R06",
+    "title": "Create and execute Jupyter experiment",
+    "scope": "current requested research slice",
+    "planning": {
+      "status": "engineering_reviewed",
+      "artifact": "docs/plans/RESEARCH_TRAINING_EXECUTION_PLAN.md"
+    },
+    "execution": {
+      "status": "executed_and_reexecuted",
+      "evidence": null
+    },
+    "verification": {
+      "status": "7_cells_and_intact_run_reuse_passed"
+    },
+    "acceptance": {
+      "status": "workflow_verified"
+    },
+    "evidence": [
+      "docs/plans/RESEARCH_TRAINING_EXECUTION_PLAN.md",
+      "docs/17_RESEARCH_EXPERIMENTS.md",
+      "reports/ihalla_vsm_research_2026-10-17.md",
+      "reports/research_execution_2026-10-16/execution_summary.json"
+    ],
+    "notes": "Fresh-kernel execution and rerun completed; no errors or stale outputs; rerun reused intact evidence without retraining."
+  },
+  {
+    "id": "R07",
+    "title": "Run paired sampling and honest domain evaluation",
+    "scope": "current requested research slice",
+    "planning": {
+      "status": "engineering_reviewed",
+      "artifact": "docs/plans/RESEARCH_TRAINING_EXECUTION_PLAN.md"
+    },
+    "execution": {
+      "status": "measured",
+      "evidence": null
+    },
+    "verification": {
+      "status": "all_64_planned_samples_recorded"
+    },
+    "acceptance": {
+      "status": "quality_gate_not_met"
+    },
+    "evidence": [
+      "docs/plans/RESEARCH_TRAINING_EXECUTION_PLAN.md",
+      "docs/17_RESEARCH_EXPERIMENTS.md",
+      "reports/ihalla_vsm_research_2026-10-17.md",
+      "reports/research_execution_2026-10-16/execution_summary.json"
+    ],
+    "notes": "0/32 valid per arm; all invalid outputs retained; full-contract CSR null and reduction claim false."
+  },
+  {
+    "id": "R08",
+    "title": "Prepare I-HallA held-out QA adapter",
+    "scope": "current requested research slice",
+    "planning": {
+      "status": "engineering_reviewed",
+      "artifact": "docs/plans/RESEARCH_TRAINING_EXECUTION_PLAN.md"
+    },
+    "execution": {
+      "status": "partial_metadata_only",
+      "evidence": null
+    },
+    "verification": {
+      "status": "metadata_inspection_only"
+    },
+    "acceptance": {
+      "status": "blocked_images_vqa_and_training_partition"
+    },
+    "evidence": [
+      "docs/plans/RESEARCH_TRAINING_EXECUTION_PLAN.md",
+      "docs/17_RESEARCH_EXPERIMENTS.md",
+      "reports/ihalla_vsm_research_2026-10-17.md",
+      "reports/research_execution_2026-10-16/execution_summary.json"
+    ],
+    "notes": "Public caption/history-QA metadata inspected; image assets, permitted VQA and reviewed disjoint training data not configured."
+  },
+  {
+    "id": "R09",
+    "title": "Connect versioned research evidence to FastAPI and React",
+    "scope": "current requested research slice",
+    "planning": {
+      "status": "engineering_reviewed",
+      "artifact": "docs/plans/RESEARCH_TRAINING_EXECUTION_PLAN.md"
+    },
+    "execution": {
+      "status": "implemented",
+      "evidence": null
+    },
+    "verification": {
+      "status": "api_frontend_contract_build_lint_passed"
+    },
+    "acceptance": {
+      "status": "partial_browser_unverified"
+    },
+    "evidence": [
+      "docs/plans/RESEARCH_TRAINING_EXECUTION_PLAN.md",
+      "docs/17_RESEARCH_EXPERIMENTS.md",
+      "reports/ihalla_vsm_research_2026-10-17.md",
+      "reports/research_execution_2026-10-16/execution_summary.json"
+    ],
+    "notes": "Actual FastAPI mount, 86 artifacts, built assets and frontend payload parser verified in CPU-only process; rendered UI not verified."
+  },
+  {
+    "id": "R10",
+    "title": "Decide SDXL variance-head/sampler compatibility before activation",
+    "scope": "current requested research slice",
+    "planning": {
+      "status": "engineering_reviewed",
+      "artifact": "docs/plans/RESEARCH_TRAINING_EXECUTION_PLAN.md"
+    },
+    "execution": {
+      "status": "compatibility_decision_complete",
+      "evidence": null
+    },
+    "verification": {
+      "status": "checkpoint_incompatibility_verified"
+    },
+    "acceptance": {
+      "status": "blocked_incompatible_and_unqualified"
+    },
+    "evidence": [
+      "docs/plans/RESEARCH_TRAINING_EXECUTION_PLAN.md",
+      "docs/17_RESEARCH_EXPERIMENTS.md",
+      "reports/ihalla_vsm_research_2026-10-17.md",
+      "reports/research_execution_2026-10-16/execution_summary.json"
+    ],
+    "notes": "Six-channel RGB Cards DDPM is not an SDXL latent LoRA/variance-head adapter; no automatic activation."
+  },
+  {
+    "id": "R11",
+    "title": "Run advanced software tests",
+    "scope": "current requested research slice",
+    "planning": {
+      "status": "engineering_reviewed",
+      "artifact": "docs/plans/RESEARCH_TRAINING_EXECUTION_PLAN.md"
+    },
+    "execution": {
+      "status": "completed_tested_scope",
+      "evidence": null
+    },
+    "verification": {
+      "status": "passed_cpu_api_notebook_frontend_gates"
+    },
+    "acceptance": {
+      "status": "partial_browser_gpu_hosted_human_unverified"
+    },
+    "evidence": [
+      "docs/plans/RESEARCH_TRAINING_EXECUTION_PLAN.md",
+      "docs/17_RESEARCH_EXPERIMENTS.md",
+      "reports/ihalla_vsm_research_2026-10-17.md",
+      "reports/research_execution_2026-10-16/execution_summary.json"
+    ],
+    "notes": "334 CPU regressions and 9 frontend state cases passed; actual notebook/tracking/API checked; pressure/browser/GPU/hosted/calibration gates remain."
+  },
+  {
+    "id": "R12",
+    "title": "Write reproducible handoff and actual outcomes",
+    "scope": "current requested research slice",
+    "planning": {
+      "status": "engineering_reviewed",
+      "artifact": "docs/plans/RESEARCH_TRAINING_EXECUTION_PLAN.md"
+    },
+    "execution": {
+      "status": "completed",
+      "evidence": null
+    },
+    "verification": {
+      "status": "handoff_and_evidence_recorded"
+    },
+    "acceptance": {
+      "status": "handoff_recorded"
+    },
+    "evidence": [
+      "docs/plans/RESEARCH_TRAINING_EXECUTION_PLAN.md",
+      "docs/17_RESEARCH_EXPERIMENTS.md",
+      "reports/ihalla_vsm_research_2026-10-17.md",
+      "reports/research_execution_2026-10-16/execution_summary.json"
+    ],
+    "notes": "Run guide, executed notebook, JSON/Markdown summary, source/runtime/checkpoint hashes and retained failure history saved."
+  },
+  {
+    "id": "R13",
+    "title": "Identify and use ChatGPT Dots when clarified",
+    "scope": "current requested research slice",
+    "planning": {
+      "status": "clarification_pending",
+      "artifact": "docs/plans/RESEARCH_TRAINING_EXECUTION_PLAN.md"
+    },
+    "execution": {
+      "status": "awaiting_clarification",
+      "evidence": null
+    },
+    "verification": {
+      "status": "not_run"
+    },
+    "acceptance": {
+      "status": "awaiting_service_identification"
+    },
+    "evidence": [
+      "docs/plans/RESEARCH_TRAINING_EXECUTION_PLAN.md",
+      "docs/17_RESEARCH_EXPERIMENTS.md",
+      "reports/ihalla_vsm_research_2026-10-17.md",
+      "reports/research_execution_2026-10-16/execution_summary.json"
+    ],
+    "notes": "ChatGPT Dots exact service still unidentified; prior optional clarification remains pending."
+  }
+]

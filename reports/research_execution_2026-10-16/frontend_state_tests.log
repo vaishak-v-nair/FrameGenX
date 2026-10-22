@@ -1,0 +1,17 @@
+✔ finished training with no valid images stays experimental with its complete denominator (1.3965ms)
+✔ fake qualification and generic accuracy claims cannot enter the research view (1.9277ms)
+✔ missing and inconsistent results cannot become a success card (0.246ms)
+✔ empty, failed, interrupted and corrupt states are readable without invented metrics (2.2569ms)
+✔ duplicate identities or malformed payloads are rejected before rendering (0.3736ms)
+✔ a saved run with only rejected decisions cannot be shown as accepted (0.7853ms)
+✔ the accepted attempt is displayed even if another attempt has higher reward (0.1922ms)
+✔ missing decisions and images do not imply success (1.4669ms)
+✔ vision provider errors are unavailable in new and legacy artifacts (0.3133ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 152.1153

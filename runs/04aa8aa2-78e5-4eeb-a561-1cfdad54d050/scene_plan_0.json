@@ -1,0 +1,18 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "2b9f9f2d-315a-433b-8d84-6fef6073f2ad",
+      "class_name": "car",
+      "attributes": [
+        "sleek",
+        "red",
+        "sports"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": false
+    }
+  ]
+}

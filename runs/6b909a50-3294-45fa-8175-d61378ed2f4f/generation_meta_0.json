@@ -1,0 +1,32 @@
+{
+  "prompt": "Create a black-and-white still from a film noir of a man in a suit standing in the middle of a city with a neon sign glowing behind him.",
+  "width": 512,
+  "height": 512,
+  "steps": 4,
+  "cfg_scale": 0.0,
+  "seed": null,
+  "preview_source": "final_pipeline_decode",
+  "base_model": "stabilityai/sdxl-turbo",
+  "resolved_base_model": "stabilityai/sdxl-turbo",
+  "controlnet": null,
+  "control_image_mode": "none",
+  "oom_fallback": null,
+  "created_at": "2026-10-15T14:20:41.963214+00:00",
+  "lora_adapters": [
+    {
+      "name": "pixel-art",
+      "source": "nerijs/pixel-art-xl",
+      "weight": 1.0,
+      "enabled": false
+    }
+  ],
+  "lora_load_report": [
+    {
+      "name": "pixel-art",
+      "source": "nerijs/pixel-art-xl",
+      "weight": 1.0,
+      "loaded": false,
+      "skipped": "enabled: false"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema_version": "2.0",
+  "created_at": "2026-08-16T15:08:36.889398+00:00",
+  "prompt": "a lonely tree on a hill",
+  "parsed": {
+    "subject": "tree",
+    "objects": [
+      "hill"
+    ],
+    "colors": [],
+    "primary_subject": "tree",
+    "secondary_objects": [
+      "hill"
+    ]
+  },
+  "constraints": [
+    {
+      "type": "object_count",
+      "value": 1,
+      "target": "tree",
+      "priority": "critical"
+    },
+    {
+      "type": "spatial_relation",
+      "value": {
+        "subject": "tree",
+        "predicate": "on",
+        "object": "hill"
+      },
+      "target": "tree->hill",
+      "priority": "high"
+    }
+  ],
+  "rag_hits": [],
+  "rag_influence": {
+    "depth_required": false,
+    "lighting_complex": false
+  },
+  "execution_plan": {
+    "has_human": false,
+    "has_depth": true,
+    "risk_level": "low"
+  },
+  "signal_map": {
+    "object_count": {
+      "threshold": 1
+    },
+    "class_uniqueness": {
+      "threshold": 1
+    },
+    "depth_layers": {
+      "threshold": 2
+    },
+    "spatial_ratio": {
+      "threshold": 0.2
+    },
+    "embedding": {
+      "threshold": 1.0
+    }
+  },
+  "entities": [
+    {
+      "id": "d4b09150-3e2c-4be3-afe3-715c268536ce",
+      "class_name": "tree",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    }
+  ],
+  "spatial_relationships": [
+    {
+      "subject": "tree",
+      "predicate": "on",
+      "object": "hill"
+    }
+  ],
+  "negations": []
+}

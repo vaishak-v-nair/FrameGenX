@@ -1,0 +1,39 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "fab52413-8b22-4bc4-9196-4e779f64425f",
+      "class_name": "laptop",
+      "attributes": [
+        "silver"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 40,
+        "ymin": 117,
+        "xmax": 205,
+        "ymax": 394,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "93ffeee1-6396-4ca0-9215-e2b42f1fb310",
+      "class_name": "desk",
+      "attributes": [
+        "wooden"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 306,
+        "ymin": 117,
+        "xmax": 471,
+        "ymax": 394,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    }
+  ]
+}

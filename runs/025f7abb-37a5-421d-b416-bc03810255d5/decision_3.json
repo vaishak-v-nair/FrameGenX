@@ -1,0 +1,12 @@
+{
+  "accept": false,
+  "reward": 0.8216,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": false,
+  "prompt_edits": [
+    "only 1 flower, nothing else similar",
+    "flower inside pot"
+  ]
+}

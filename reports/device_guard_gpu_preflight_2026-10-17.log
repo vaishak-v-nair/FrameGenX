@@ -1,0 +1,3 @@
+W1017 12:48:21.452000 8360 venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Loaded quantized UNet; starting real 512px backward probe
+{'status': 'passed', 'method': 'qlora', 'model': 'stabilityai/stable-diffusion-xl-base-1.0', 'resolution': 512, 'deterministic': True, 'trainable_parameters': 5806080, 'nf4_linear_modules': 743, 'loss': 1.0037384033203125, 'changed_adapter_tensors': 1120, 'peak_allocated_gb': 2.279672832, 'peak_reserved_gb': 2.459959296, 'dtype': 'torch.bfloat16', 'elapsed_seconds': 24.566202299998622}

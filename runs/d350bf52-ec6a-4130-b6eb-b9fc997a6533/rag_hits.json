@@ -1,0 +1,23 @@
+[
+  {
+    "id": "coco_412894",
+    "caption": "Dozens of people walking around a metro area",
+    "image": "http://images.cocodataset.org/val2017/000000412894.jpg",
+    "score": 0.009836065573770491,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_459634",
+    "caption": "People are riding on motorcycles on a scenic road.",
+    "image": "http://images.cocodataset.org/val2017/000000459634.jpg",
+    "score": 0.00967741935483871,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_151516",
+    "caption": "A beautiful bird with brown wings, glides over the water",
+    "image": "http://images.cocodataset.org/val2017/000000151516.jpg",
+    "score": 0.009523809523809523,
+    "retrieval_mode": "hybrid_rrf"
+  }
+]

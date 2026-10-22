@@ -1,0 +1,176 @@
+{
+  "arms": {
+    "baseline": [
+      {
+        "alpha_bar": 0.9993687272071838,
+        "clipped_x0_rmse": 0.015467428602278233,
+        "epsilon_mse": 0.566716730594635,
+        "identity_epsilon_mse": 1.8582329750061035,
+        "mean_learned_variance": 0.0005052046035416424,
+        "predicted_x0_outside_unit_range_fraction": 0.3932952880859375,
+        "timestep": 0,
+        "unclipped_x0_rmse": 0.018920328468084335
+      },
+      {
+        "alpha_bar": 0.9667166471481323,
+        "clipped_x0_rmse": 0.05702017992734909,
+        "epsilon_mse": 0.11050799489021301,
+        "identity_epsilon_mse": 1.5497158765792847,
+        "mean_learned_variance": 0.004838097374886274,
+        "predicted_x0_outside_unit_range_fraction": 0.3524220883846283,
+        "timestep": 10,
+        "unclipped_x0_rmse": 0.061682332307100296
+      },
+      {
+        "alpha_bar": 0.8356205224990845,
+        "clipped_x0_rmse": 0.10700894892215729,
+        "epsilon_mse": 0.06863146275281906,
+        "identity_epsilon_mse": 1.1126309633255005,
+        "mean_learned_variance": 0.012718342244625092,
+        "predicted_x0_outside_unit_range_fraction": 0.3628794252872467,
+        "timestep": 25,
+        "unclipped_x0_rmse": 0.11619323492050171
+      },
+      {
+        "alpha_bar": 0.47826457023620605,
+        "clipped_x0_rmse": 0.1922859251499176,
+        "epsilon_mse": 0.04159349575638771,
+        "identity_epsilon_mse": 0.5137706398963928,
+        "mean_learned_variance": 0.03076823800802231,
+        "predicted_x0_outside_unit_range_fraction": 0.36219534277915955,
+        "timestep": 50,
+        "unclipped_x0_rmse": 0.21301186084747314
+      },
+      {
+        "alpha_bar": 0.1334948092699051,
+        "clipped_x0_rmse": 0.38436755537986755,
+        "epsilon_mse": 0.03182327374815941,
+        "identity_epsilon_mse": 0.12660443782806396,
+        "mean_learned_variance": 0.07390183210372925,
+        "predicted_x0_outside_unit_range_fraction": 0.4001210629940033,
+        "timestep": 75,
+        "unclipped_x0_rmse": 0.45449158549308777
+      },
+      {
+        "alpha_bar": 2.4285407107527135e-07,
+        "clipped_x0_rmse": 1.3555500507354736,
+        "epsilon_mse": 0.0232792180031538,
+        "identity_epsilon_mse": 2.2168325131133315e-07,
+        "mean_learned_variance": 0.9987874031066895,
+        "predicted_x0_outside_unit_range_fraction": 0.997039794921875,
+        "timestep": 99,
+        "unclipped_x0_rmse": 309.6075134277344
+      }
+    ],
+    "candidate": [
+      {
+        "alpha_bar": 0.9993687272071838,
+        "clipped_x0_rmse": 0.015773655846714973,
+        "epsilon_mse": 0.5985787510871887,
+        "identity_epsilon_mse": 1.8582329750061035,
+        "mean_learned_variance": 0.0004958229837939143,
+        "predicted_x0_outside_unit_range_fraction": 0.39479827880859375,
+        "timestep": 0,
+        "unclipped_x0_rmse": 0.01944492757320404
+      },
+      {
+        "alpha_bar": 0.9667166471481323,
+        "clipped_x0_rmse": 0.05688059702515602,
+        "epsilon_mse": 0.11107271909713745,
+        "identity_epsilon_mse": 1.5497158765792847,
+        "mean_learned_variance": 0.004863340873271227,
+        "predicted_x0_outside_unit_range_fraction": 0.36228179931640625,
+        "timestep": 10,
+        "unclipped_x0_rmse": 0.06183973699808121
+      },
+      {
+        "alpha_bar": 0.8356205224990845,
+        "clipped_x0_rmse": 0.1066206619143486,
+        "epsilon_mse": 0.06890437752008438,
+        "identity_epsilon_mse": 1.1126309633255005,
+        "mean_learned_variance": 0.012758903205394745,
+        "predicted_x0_outside_unit_range_fraction": 0.36914315819740295,
+        "timestep": 25,
+        "unclipped_x0_rmse": 0.11642403155565262
+      },
+      {
+        "alpha_bar": 0.47826457023620605,
+        "clipped_x0_rmse": 0.18984514474868774,
+        "epsilon_mse": 0.04138657823204994,
+        "identity_epsilon_mse": 0.5137706398963928,
+        "mean_learned_variance": 0.030805950984358788,
+        "predicted_x0_outside_unit_range_fraction": 0.379486083984375,
+        "timestep": 50,
+        "unclipped_x0_rmse": 0.21248134970664978
+      },
+      {
+        "alpha_bar": 0.1334948092699051,
+        "clipped_x0_rmse": 0.3819881081581116,
+        "epsilon_mse": 0.031920310109853745,
+        "identity_epsilon_mse": 0.12660443782806396,
+        "mean_learned_variance": 0.07393024861812592,
+        "predicted_x0_outside_unit_range_fraction": 0.40684255957603455,
+        "timestep": 75,
+        "unclipped_x0_rmse": 0.4551839828491211
+      },
+      {
+        "alpha_bar": 2.4285407107527135e-07,
+        "clipped_x0_rmse": 1.3387657403945923,
+        "epsilon_mse": 0.02244991809129715,
+        "identity_epsilon_mse": 2.2168325131133315e-07,
+        "mean_learned_variance": 0.998792827129364,
+        "predicted_x0_outside_unit_range_fraction": 0.9969990849494934,
+        "timestep": 99,
+        "unclipped_x0_rmse": 304.0427551269531
+      }
+    ]
+  },
+  "cuda_initialized": false,
+  "gate_effect": "none",
+  "inputs": [
+    {
+      "file": "grid_008118.png",
+      "sha256": "d4afc8b7a10126414fcb36db79c5f0c4d8973fcd1c60a2de02a9adac8d760e3c"
+    },
+    {
+      "file": "grid_047982.png",
+      "sha256": "c547750d39b469f3fb371d3b4f74ded733e31e93425302d76ac1ab9bbd3146d9"
+    },
+    {
+      "file": "grid_050119.png",
+      "sha256": "2228a3fdef9f3bb78fac6013c89516cc67fa308c8e2338c58bf85be651f971fc"
+    },
+    {
+      "file": "grid_002925.png",
+      "sha256": "707111224e8d63f76eb76bffae28ceb9a44410e95f64eb3d1dd77c2cdcebc782"
+    },
+    {
+      "file": "grid_076970.png",
+      "sha256": "f2edb47d09d6f632661de1d18dbf0af8409bffe8ff79f6d83b7ac2b2086431f4"
+    },
+    {
+      "file": "grid_002269.png",
+      "sha256": "352c4125f81431e4a5347180ae65e8136e488ef55f4deae5b3b46721740ce893"
+    },
+    {
+      "file": "grid_031342.png",
+      "sha256": "8e5c5282d0a4a077dfde4d76f35cd8e3b4d80caebc0ba0333343c94b0f4ebf9f"
+    },
+    {
+      "file": "grid_018453.png",
+      "sha256": "629c60ea649b77fb276858d2d5012f62f4b72df941cf3a7e8792e5ea57b97272"
+    }
+  ],
+  "limits": [
+    "Eight grids, no population confidence interval or causal attribution",
+    "Identity epsilon is a terminal-noise diagnostic, not an image generator",
+    "This does not qualify hallucination reduction"
+  ],
+  "noise_seed": 271828,
+  "quality_status": "unverified",
+  "run_id": "51529996-23e9-436d-91ba-2107057739e8",
+  "schema": "framegenx-cards-exploratory-denoising-v1",
+  "selection": "first_eight_verified_validation_grids_in_frozen_manifest",
+  "study_type": "post_hoc_exploratory_validation_diagnostic",
+  "training_or_sampler_changes": "none"
+}

@@ -1,0 +1,125 @@
+{
+  "schema_version": "2.0",
+  "created_at": "2026-08-27T15:46:58.566358+00:00",
+  "prompt": "Imagine a fantasy video game scene in a mythical landscape with floating islands, cascading waterfalls, and ancient ruins covered in vines. Add an adventurer holding an ancient sword, standing on a jagged cliff as the sun sets.",
+  "parsed": {
+    "subject": "adventurer",
+    "objects": [
+      "fantasy video game scene",
+      "mythical landscape",
+      "floating islands",
+      "cascading waterfalls",
+      "ancient ruins",
+      "vines",
+      "adventurer",
+      "ancient sword",
+      "jagged cliff",
+      "sun",
+      "sunset"
+    ],
+    "colors": [],
+    "primary_subject": "adventurer",
+    "secondary_objects": [
+      "ancient sword",
+      "jagged cliff",
+      "floating islands",
+      "cascading waterfalls",
+      "ancient ruins",
+      "vines",
+      "sunset"
+    ],
+    "weighted_elements": [
+      {
+        "element": "floating islands",
+        "weight": 1.5
+      },
+      {
+        "element": "cascading waterfalls",
+        "weight": 1.5
+      },
+      {
+        "element": "ancient ruins",
+        "weight": 1.5
+      }
+    ]
+  },
+  "constraints": [
+    {
+      "type": "object_count",
+      "value": 1,
+      "target": "adventurer",
+      "priority": "critical"
+    }
+  ],
+  "rag_hits": [],
+  "rag_influence": {
+    "depth_required": false,
+    "lighting_complex": false
+  },
+  "execution_plan": {
+    "has_human": true,
+    "has_depth": true,
+    "risk_level": "medium"
+  },
+  "signal_map": {
+    "object_count": {
+      "threshold": 1
+    },
+    "class_uniqueness": {
+      "threshold": 1
+    },
+    "depth_layers": {
+      "threshold": 2
+    },
+    "spatial_ratio": {
+      "threshold": 0.2
+    },
+    "embedding": {
+      "threshold": 1.0
+    }
+  },
+  "entities": [
+    {
+      "id": "7802723f-000d-4fd7-8d84-f3130138d7a1",
+      "class_name": "adventurer",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "e89725a9-2b06-4fbc-9ee4-a808e9e17014",
+      "class_name": "sword",
+      "attributes": [
+        "ancient"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": false
+    }
+  ],
+  "spatial_relationships": [],
+  "negations": [],
+  "repair_policy": {
+    "mappings": [
+      {
+        "failure": "object_missing",
+        "action": "prominently featured"
+      },
+      {
+        "failure": "duplicate_object",
+        "action": ""
+      },
+      {
+        "failure": "text_missing",
+        "action": "with clearly legible text"
+      },
+      {
+        "failure": "low_alignment",
+        "action": "sharp focus, highly detailed"
+      }
+    ]
+  }
+}

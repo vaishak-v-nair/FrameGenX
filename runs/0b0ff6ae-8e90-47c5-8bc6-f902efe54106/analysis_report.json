@@ -1,0 +1,25 @@
+{
+  "accepted": false,
+  "failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "sunset",
+      "expected": 1,
+      "detected": 3
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "sunset": 3
+    },
+    "expected_counts": {
+      "sunset": 1
+    }
+  },
+  "root_causes": [
+    "Scene under-populated -> weak object planning",
+    "Prompt misalignment -> RAG or prompt issue",
+    "Objects clustered -> bad composition"
+  ],
+  "actions": []
+}

@@ -1,0 +1,47 @@
+{
+  "caption_hits": [
+    {
+      "id": "coco_452122",
+      "caption": "An airplane flying in the air during the day.",
+      "image": "http://images.cocodataset.org/val2017/000000452122.jpg",
+      "score": 0.009836065573770491,
+      "retrieval_mode": "hybrid_rrf"
+    },
+    {
+      "id": "coco_504074",
+      "caption": "Women that are sitting outside on a patio area and smoking cigarettes.",
+      "image": "http://images.cocodataset.org/val2017/000000504074.jpg",
+      "score": 0.00967741935483871,
+      "retrieval_mode": "hybrid_rrf"
+    },
+    {
+      "id": "coco_520009",
+      "caption": "There is traffic passing by a large building",
+      "image": "http://images.cocodataset.org/val2017/000000520009.jpg",
+      "score": 0.009523809523809523,
+      "retrieval_mode": "hybrid_rrf"
+    }
+  ],
+  "layout_blueprint": {
+    "entity_count": 1,
+    "name": "Single Subject Centered",
+    "description": "Dominant single foreground subject centered in frame",
+    "boxes": [
+      {
+        "anchor": "center",
+        "ymin": 0.15,
+        "xmin": 0.15,
+        "ymax": 0.85,
+        "xmax": 0.85,
+        "z_index": 1
+      }
+    ]
+  },
+  "style_preset": {
+    "preset_name": "photorealistic",
+    "descriptors": "photograph, 35mm lens, sharp focus, natural lighting, subsurface scattering, authentic textures",
+    "lighting": "soft directional daylight with realistic ambient bounce",
+    "camera": "eye-level 50mm f/2.8 lens, shallow depth of field",
+    "negative": "cartoon, illustration, 3d render, distorted, oversaturated, plastic"
+  }
+}

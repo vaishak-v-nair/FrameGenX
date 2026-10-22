@@ -1,0 +1,147 @@
+{
+  "schema_version": "2.0",
+  "created_at": "2026-08-15T14:13:27.643119+00:00",
+  "prompt": "Panoramic view of jagged alpine peaks at sunrise, wildflowers in bloom in the foreground, layers of mist filling the valleys below, warm golden light painting the summit, ultra-wide composition, photorealistic landscape photography, hyper-detailed, no people.",
+  "parsed": {
+    "subject": "jagged alpine peaks",
+    "objects": [
+      "wildflowers",
+      "mist",
+      "summit"
+    ],
+    "colors": [
+      "warm golden"
+    ],
+    "primary_subject": "jagged alpine peaks",
+    "secondary_objects": [
+      "wildflowers",
+      "mist"
+    ]
+  },
+  "constraints": [
+    {
+      "type": "object_count",
+      "value": 1,
+      "target": "people",
+      "priority": "critical"
+    },
+    {
+      "type": "spatial_relation",
+      "value": {
+        "subject": "wildflowers",
+        "predicate": "in",
+        "object": "foreground"
+      },
+      "target": "wildflowers->foreground",
+      "priority": "high"
+    },
+    {
+      "type": "spatial_relation",
+      "value": {
+        "subject": "mist",
+        "predicate": "below",
+        "object": "jagged alpine peaks"
+      },
+      "target": "mist->jagged alpine peaks",
+      "priority": "high"
+    },
+    {
+      "type": "spatial_relation",
+      "value": {
+        "subject": "summit",
+        "predicate": "above",
+        "object": "jagged alpine peaks"
+      },
+      "target": "summit->jagged alpine peaks",
+      "priority": "high"
+    }
+  ],
+  "rag_hits": [],
+  "rag_influence": {
+    "depth_required": false,
+    "lighting_complex": false
+  },
+  "execution_plan": {
+    "has_human": false,
+    "has_depth": true,
+    "risk_level": "medium"
+  },
+  "signal_map": {
+    "object_count": {
+      "threshold": 1
+    },
+    "class_uniqueness": {
+      "threshold": 1
+    },
+    "depth_layers": {
+      "threshold": 2
+    },
+    "spatial_ratio": {
+      "threshold": 0.2
+    },
+    "embedding": {
+      "threshold": 1.0
+    }
+  },
+  "entities": [
+    {
+      "id": "63b492a2-862e-41ef-aba3-93d90c45fcfe",
+      "class_name": "jagged alpine peaks",
+      "attributes": [
+        "alpine",
+        "jagged"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    },
+    {
+      "id": "5edf8bdc-5b24-453f-b66f-1689db09959c",
+      "class_name": "wildflowers",
+      "attributes": [
+        "wildflowers"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    },
+    {
+      "id": "f50e47fe-4525-4f56-8ee5-94628723ea26",
+      "class_name": "mist",
+      "attributes": [
+        "mist"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    },
+    {
+      "id": "0e927688-5b08-459b-a737-d4003f445edb",
+      "class_name": "summit",
+      "attributes": [
+        "warm golden"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    }
+  ],
+  "spatial_relationships": [
+    {
+      "subject": "wildflowers",
+      "predicate": "in",
+      "object": "foreground"
+    },
+    {
+      "subject": "mist",
+      "predicate": "below",
+      "object": "jagged alpine peaks"
+    },
+    {
+      "subject": "summit",
+      "predicate": "above",
+      "object": "jagged alpine peaks"
+    }
+  ],
+  "negations": []
+}

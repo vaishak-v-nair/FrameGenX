@@ -1,0 +1,15 @@
+{
+  "accept": false,
+  "reward": 0.5,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": false,
+  "prompt_edits": [
+    "only 1 person, nothing else similar",
+    "only 1 city, nothing else similar",
+    "person, prominent, clearly visible",
+    "plant, prominent, clearly visible",
+    "city, prominent, clearly visible"
+  ]
+}

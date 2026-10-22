@@ -1,0 +1,88 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "wall",
+      "expected": 1,
+      "detected": 2
+    },
+    {
+      "type": "spatial_violation",
+      "class_name": "cat->wall",
+      "expected": "above",
+      "detected": "subject center_y=271 >= object center_y=256"
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "cat": 2,
+      "wall": 2
+    },
+    "expected_counts": {
+      "cat": 2,
+      "wall": 1
+    }
+  },
+  "clip_cos": 0.303,
+  "clip_norm": 0.6119,
+  "vqa_score": 1.0,
+  "vqa_vacuous": false,
+  "reward": 0.8059,
+  "spatial_result": {
+    "passed": false,
+    "total": 1,
+    "verified": 0,
+    "failures": [
+      {
+        "subject": "cat",
+        "predicate": "above",
+        "object": "wall",
+        "reason": "subject center_y=271 >= object center_y=256"
+      }
+    ],
+    "results": [
+      {
+        "relationship": {
+          "subject": "cat",
+          "predicate": "above",
+          "object": "wall"
+        },
+        "passed": false,
+        "reason": "subject center_y=271 >= object center_y=256",
+        "subject_box": {
+          "xmin": 1.0147247314453125,
+          "ymin": 136.8171844482422,
+          "xmax": 235.16940307617188,
+          "ymax": 404.24346923828125,
+          "score": 0.8325166702270508
+        },
+        "object_box": {
+          "xmin": 0.036407470703125,
+          "ymin": 0.1364288330078125,
+          "xmax": 511.9886169433594,
+          "ymax": 512.0093994140625,
+          "score": 0.4669537842273712
+        }
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Are there cat in the image?",
+      "expected": "yes",
+      "class_name": "cat",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "existence",
+      "question": "Is there a wall in the image?",
+      "expected": "yes",
+      "class_name": "wall",
+      "answer": "yes",
+      "correct": true
+    }
+  ]
+}

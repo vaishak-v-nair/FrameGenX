@@ -1,0 +1,119 @@
+{
+  "schema_version": "2.0",
+  "created_at": "2026-08-26T06:36:52.894925+00:00",
+  "prompt": "three cups on a kitchen counter",
+  "parsed": {
+    "subject": "cups",
+    "objects": [
+      "cups",
+      "kitchen counter"
+    ],
+    "colors": [],
+    "primary_subject": "cups",
+    "secondary_objects": [
+      "kitchen counter"
+    ]
+  },
+  "constraints": [
+    {
+      "type": "object_count",
+      "value": 1,
+      "target": "cups",
+      "priority": "critical"
+    },
+    {
+      "type": "spatial_relation",
+      "value": {
+        "subject": "cup",
+        "predicate": "above",
+        "object": "kitchen counter"
+      },
+      "target": "cup->kitchen counter",
+      "priority": "high"
+    }
+  ],
+  "rag_hits": [],
+  "rag_influence": {
+    "depth_required": false,
+    "lighting_complex": false
+  },
+  "execution_plan": {
+    "has_human": false,
+    "has_depth": false,
+    "risk_level": "medium"
+  },
+  "signal_map": {
+    "object_count": {
+      "threshold": 1
+    },
+    "class_uniqueness": {
+      "threshold": 1
+    },
+    "depth_layers": {
+      "threshold": 2
+    },
+    "spatial_ratio": {
+      "threshold": 0.2
+    },
+    "embedding": {
+      "threshold": 1.0
+    }
+  },
+  "entities": [
+    {
+      "id": "be83ddb8-dbed-470d-9f50-dc7c40d8246f",
+      "class_name": "cup",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "42348162-bed5-466d-ac81-bceb68f435ea",
+      "class_name": "cup",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "ecd7fedc-ae09-42ba-b6e4-573f9dfb36ab",
+      "class_name": "cup",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": false
+    }
+  ],
+  "spatial_relationships": [
+    {
+      "subject": "cup",
+      "predicate": "above",
+      "object": "kitchen counter"
+    }
+  ],
+  "negations": [],
+  "repair_policy": {
+    "mappings": [
+      {
+        "failure": "object_missing",
+        "action": "prominently featured"
+      },
+      {
+        "failure": "duplicate_object",
+        "action": ""
+      },
+      {
+        "failure": "text_missing",
+        "action": "with clearly legible text"
+      },
+      {
+        "failure": "low_alignment",
+        "action": "sharp focus, highly detailed"
+      }
+    ]
+  }
+}

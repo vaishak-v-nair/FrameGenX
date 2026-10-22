@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\BrosKi\framegenx\src\datasets\ihalla.py", line 177, in <module>
+    main()
+    ~~~~^^
+  File "E:\BrosKi\framegenx\src\datasets\ihalla.py", line 172, in main
+    result = acquire(project_path(args.output), args.per_group)
+  File "E:\BrosKi\framegenx\src\datasets\ihalla.py", line 120, in acquire
+    path = download(url, output / f"metadata/folder_{domain}_{variant}.html", 2_000_000)
+  File "E:\BrosKi\framegenx\src\training\prepare.py", line 66, in download
+    partial.unlink()
+    ~~~~~~~~~~~~~~^^
+  File "E:\contents\miniconda3\Lib\pathlib\__init__.py", line 1042, in unlink
+    os.unlink(self)
+    ~~~~~~~~~^^^^^^
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'E:\\BrosKi\\framegenx\\data\\evaluation\\ihalla_v1_prefix\\metadata\\folder_history_weird.html.part'

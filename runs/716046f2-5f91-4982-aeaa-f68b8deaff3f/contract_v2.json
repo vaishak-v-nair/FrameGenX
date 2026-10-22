@@ -1,0 +1,89 @@
+{
+  "schema_version": "2.0",
+  "created_at": "2026-08-24T15:48:55.169709+00:00",
+  "prompt": "Panoramic view of jagged alpine peaks at sunrise, wildflowers in bloom in the foreground, layers of mist filling the valleys below, warm golden light painting the summit, ultra-wide composition, photorealistic landscape photography, hyper-detailed, no people",
+  "parsed": {
+    "subject": "jagged alpine peaks",
+    "objects": [
+      "panoramic view",
+      "jagged alpine peaks",
+      "sunrise",
+      "wildflowers",
+      "foreground",
+      "mist",
+      "valleys",
+      "golden light",
+      "summit",
+      "ultra-wide composition",
+      "photorealistic landscape photography",
+      "hyper-detailed"
+    ],
+    "colors": [
+      "golden"
+    ],
+    "primary_subject": "jagged alpine peaks",
+    "secondary_objects": [
+      "panoramic view",
+      "sunrise",
+      "wildflowers",
+      "foreground",
+      "mist",
+      "valleys",
+      "golden light",
+      "summit",
+      "ultra-wide composition",
+      "photorealistic landscape photography",
+      "hyper-detailed"
+    ]
+  },
+  "constraints": [
+    {
+      "type": "object_count",
+      "value": 1,
+      "target": "jagged alpine peaks",
+      "priority": "critical"
+    }
+  ],
+  "rag_hits": [],
+  "rag_influence": {
+    "depth_required": false,
+    "lighting_complex": false
+  },
+  "execution_plan": {
+    "has_human": false,
+    "has_depth": false,
+    "risk_level": "medium"
+  },
+  "signal_map": {
+    "object_count": {
+      "threshold": 1
+    },
+    "class_uniqueness": {
+      "threshold": 1
+    },
+    "depth_layers": {
+      "threshold": 2
+    },
+    "spatial_ratio": {
+      "threshold": 0.2
+    },
+    "embedding": {
+      "threshold": 1.0
+    }
+  },
+  "entities": [
+    {
+      "id": "a728fe65-0b07-496a-9c27-53dde66e3d9f",
+      "class_name": "wildflower",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": true
+    }
+  ],
+  "spatial_relationships": [],
+  "negations": [
+    "people"
+  ]
+}

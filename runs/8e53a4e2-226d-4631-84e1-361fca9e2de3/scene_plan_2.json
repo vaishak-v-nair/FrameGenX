@@ -1,0 +1,54 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "8b337caf-471e-48a1-8671-0fcd0ec62e28",
+      "class_name": "adventurer",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 5,
+        "ymin": 138,
+        "xmax": 123,
+        "ymax": 374,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "f534aae6-176a-4954-9905-e39eff4e118d",
+      "class_name": "sword",
+      "attributes": [
+        "ancient"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 224,
+        "ymin": 112,
+        "xmax": 347,
+        "ymax": 399,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "d2fd5971-0e61-481d-9054-c2422b6fda94",
+      "class_name": "cliff",
+      "attributes": [
+        "jagged"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 328,
+        "ymin": 138,
+        "xmax": 446,
+        "ymax": 374,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    }
+  ]
+}

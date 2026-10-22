@@ -11,9 +11,94 @@ paths:
   db_path: "runs/framegenx.db"
 
 models:
-  generator: "stabilityai/stable-diffusion-xl-base-1.0"
+  generator: "stabilityai/sdxl-turbo"
   controlnet: "diffusers/controlnet-canny-sdxl-1.0"
+  # Must match src/verification/qa.py (GroundingDINO-tiny, fp32 CPU-resident)
+  # and the local HF cache — "base" was never downloaded.
   qa_detector: "IDEA-Research/grounding-dino-tiny"
+  clip: "openai/clip-vit-base-patch32"
+  # VQA uses the vision router; model selection is provider/env controlled.
+  # It remains diagnostic and may be unavailable or incomplete.
+  vqa: "gemini-flash-latest"
+
+intent:
+  # Deterministic backstop (src/intent/extractor.py): atmospheric/terrain
+  # concepts can NOT be verified as countable objects by GroundingDINO.
+  # Treating "mist x1" as an entity made scenic prompts unwinnable and
+  # produced nonsense repairs ("exactly 1 mist, each clearly separated").
+  uncountable_stoplist:
+    [mist, fog, haze, light, sunlight, glow, shadow, sky, sunset, sunrise,
+     atmosphere, background, scenery, landscape, view, valley, summit,
+     depth, bokeh, gradient, texture, pattern, tone, mood, weather,
+     reflection, silhouette, panorama, horizon]
 
 pipeline:
   max_repair_loops: 3
+  stages: [intent, retrieval, plan, adapt, generate, verify, reflect, refine]
+
+refinement:
+  # Opt-in texture polish: reuses the generate pipe (~3 min saved per run).
+  # The derivative is not reverified; its metadata records that limitation.
+  enabled: false
+  strength: 0.20
+  steps: 6           # turbo cfg-0: 1 UNet pass/step (was SDXL-base cfg 7.5 = 40 passes, 243s)
+  guidance: 0.0      # turbo requires guidance 0
+  model: "stabilityai/sdxl-turbo"  # reused from the generate pipe — no second model load
+
+generation:
+  resolution: 512
+  steps: 4          # SDXL-Turbo: 1-4 steps
+  cfg_scale: 0.0    # SDXL-Turbo: guidance off
+  control_weight: 0.8
+  # MEASURED on this box (2026-08-24): "model" offload looks faster on
+  # paper but the RTX 3050 Laptop also drives the Windows display — only
+  # ~4.6-5.1GB of the 6GB VRAM is actually free, so the 4.9GB UNet spills
+  # into driver-managed system memory and thrashes (70s/step). Sequential
+  # streaming keeps VRAM tiny, never spills, and wins (49s/step, stable).
+  offload: "sequential"
+  # ControlNet conditioning fallback chain (eng review D11):
+  # "none"  = regional attention only (default: synthetic edges erased backgrounds)
+  # "canny" = cv2.Canny edge map of the layout mask (explicit experiment)
+  # "box"   = legacy filled white rectangles
+  control_image_mode: "none"
+  seed: null
+
+retrieval:
+  index_dir: "data/index"
+  top_k: 3
+  dense_weight: 0.6     # 0.6 dense (CLIP) + 0.4 sparse (BM25) via RRF
+  layout_blueprints: true
+  style_presets: true
+
+lora:
+  adapters:
+    # pixel-art-xl: small (~170MB), visually unmistakable — ideal A/B evidence.
+    # DISABLED by default: it pixelates every "photorealistic ..." prompt
+    # (style adapters must never fight the user's stated intent). Flip
+    # enabled: true for explicit style-transfer runs / ablations.
+    - name: pixel-art
+      source: nerijs/pixel-art-xl
+      weight: 1.0
+      enabled: false
+
+reflection:
+  # tau_sweep.py (2026-08-15) proved reward gating is net-harmful:
+  # Historical hard-check pass: 57% vs 38% at tau=0.730. This is not full CSR.
+  # The reward gate adds zero value and was actively degrading CSR.
+  # Set mode: "hard_only" to accept when no count/spatial failures exist.
+  # Set mode: "reward_gate" to re-enable τ-based acceptance.
+  mode: hard_only
+  tau: 0.730        # preserved for future reward gating experiments
+  tau_source: sweep
+
+verification:
+  plugins:
+    # Optional verifiers — BOTH are diagnostic SOFT signals by default: they
+    # land in verification_report.signals (UI + reflect evidence) and NEVER
+    # hard-reject a draft. Rationale: a vision LLM's phrasing or background
+    # signage must not burn repair loops (design: benchmarks-before-claims).
+    # Scene comprehension runs ONCE, on the FINAL attempt only (latency).
+    # florence2 is retired: the HF checkpoint is incompatible with
+    # transformers 5.x — the capability now rides the LLM vision router.
+    scene_comprehension: false
+    easyocr: false

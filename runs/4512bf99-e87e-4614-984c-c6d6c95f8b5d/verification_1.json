@@ -1,0 +1,68 @@
+{
+  "accepted": false,
+  "hard_failures": [],
+  "signals": {
+    "detected_counts": {
+      "cat": 2,
+      "wall": 1
+    },
+    "expected_counts": {
+      "cat": 2,
+      "wall": 1
+    }
+  },
+  "clip_cos": 0.2996,
+  "clip_norm": 0.5983,
+  "vqa_score": 0.5,
+  "vqa_vacuous": false,
+  "reward": 0.5492,
+  "spatial_result": {
+    "passed": true,
+    "total": 1,
+    "verified": 1,
+    "failures": [],
+    "results": [
+      {
+        "relationship": {
+          "subject": "cat",
+          "predicate": "on",
+          "object": "wall"
+        },
+        "passed": true,
+        "reason": "unknown predicate 'on': skipped",
+        "subject_box": {
+          "xmin": 280.315673828125,
+          "ymin": 70.42982482910156,
+          "xmax": 492.45428466796875,
+          "ymax": 394.73046875,
+          "score": 0.8171289563179016
+        },
+        "object_box": {
+          "xmin": 0.0280609130859375,
+          "ymin": 0.2709808349609375,
+          "xmax": 511.87017822265625,
+          "ymax": 366.94073486328125,
+          "score": 0.5864860415458679
+        }
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Are there cat in the image?",
+      "expected": "yes",
+      "class_name": "cat",
+      "answer": "no",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there a wall in the image?",
+      "expected": "yes",
+      "class_name": "wall",
+      "answer": "yes",
+      "correct": true
+    }
+  ]
+}

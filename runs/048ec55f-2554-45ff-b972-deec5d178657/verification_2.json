@@ -1,0 +1,96 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "flower",
+      "expected": 1,
+      "detected": 2
+    },
+    {
+      "type": "count_mismatch",
+      "class_name": "pot",
+      "expected": 1,
+      "detected": 0
+    },
+    {
+      "type": "spatial_violation",
+      "class_name": "flower->pot",
+      "expected": "inside",
+      "detected": "object 'pot' not detected"
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "flower": 2,
+      "pot": 0
+    },
+    "expected_counts": {
+      "flower": 1,
+      "pot": 1
+    }
+  },
+  "clip_cos": 0.3053,
+  "clip_norm": 0.6211,
+  "vqa_score": 0.5,
+  "vqa_vacuous": false,
+  "reward": 0.5605,
+  "spatial_result": {
+    "passed": false,
+    "total": 1,
+    "verified": 0,
+    "failures": [
+      {
+        "subject": "flower",
+        "predicate": "inside",
+        "object": "pot",
+        "reason": "object 'pot' not detected"
+      }
+    ],
+    "results": [
+      {
+        "relationship": {
+          "subject": "flower",
+          "predicate": "inside",
+          "object": "pot"
+        },
+        "passed": false,
+        "reason": "object 'pot' not detected"
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there a purple flower in the image?",
+      "expected": "yes",
+      "class_name": "flower",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "color",
+      "question": "What color is the flower?",
+      "expected": "purple",
+      "class_name": "flower",
+      "answer": "purple",
+      "correct": true
+    },
+    {
+      "type": "existence",
+      "question": "Is there a brown pot in the image?",
+      "expected": "yes",
+      "class_name": "pot",
+      "answer": "no",
+      "correct": false
+    },
+    {
+      "type": "color",
+      "question": "What color is the pot?",
+      "expected": "brown",
+      "class_name": "pot",
+      "answer": "n/a",
+      "correct": false
+    }
+  ]
+}

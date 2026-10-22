@@ -1,0 +1,13 @@
+{
+  "accept": false,
+  "reward": 0.8105,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": false,
+  "prompt_edits": [
+    "only 1 flower, nothing else similar",
+    "exactly 1 pot, each clearly separated, distinct objects, prominently featured",
+    "flower inside pot"
+  ]
+}

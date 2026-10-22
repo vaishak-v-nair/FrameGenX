@@ -1,0 +1,118 @@
+Evaluation directory: E:\BrosKi\framegenx\runs\training\76fada99-67db-4fbe-a508-c0ef96e6042f\evaluation_b37d64245406
+
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s]
+Loading weights: 100%|##########| 196/196 [00:00<00:00, 3004.45it/s]
+
+Loading weights:   0%|          | 0/517 [00:00<?, ?it/s]
+Loading weights:  63%|######3   | 327/517 [00:00<00:00, 3246.47it/s]
+Loading weights: 100%|##########| 517/517 [00:00<00:00, 3159.08it/s]
+W1014 21:24:41.129000 26384 venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+E:\BrosKi\framegenx\venv\Lib\site-packages\peft\tuners\tuners_utils.py:302: UserWarning: Already found a `peft_config` attribute in the model. This will lead to having multiple adapters in the model. Make sure to know what you are doing!
+  warnings.warn(
+Sampled apple_count_color_42_baseline; 67.2s
+Sampled apple_count_color_42_candidate; 87.6s
+Sampled apple_count_color_43_baseline; 101.3s
+Sampled apple_count_color_43_candidate; 121.8s
+Sampled vehicle_binding_42_baseline; 135.6s
+Sampled vehicle_binding_42_candidate; 156.1s
+Sampled vehicle_binding_43_baseline; 170.1s
+Sampled vehicle_binding_43_candidate; 191.0s
+Sampled animal_relation_42_baseline; 205.1s
+Sampled animal_relation_42_candidate; 225.9s
+Sampled animal_relation_43_baseline; 240.1s
+Sampled animal_relation_43_candidate; 262.1s
+Sampled bottle_negation_42_baseline; 278.7s
+Sampled bottle_negation_42_candidate; 299.3s
+Sampled bottle_negation_43_baseline; 314.5s
+Sampled bottle_negation_43_candidate; 333.9s
+Decoded apple_count_color_42_baseline.png
+Decoded apple_count_color_42_candidate.png
+Decoded apple_count_color_43_baseline.png
+Decoded apple_count_color_43_candidate.png
+Decoded vehicle_binding_42_baseline.png
+Decoded vehicle_binding_42_candidate.png
+Decoded vehicle_binding_43_baseline.png
+Decoded vehicle_binding_43_candidate.png
+Decoded animal_relation_42_baseline.png
+Decoded animal_relation_42_candidate.png
+Decoded animal_relation_43_baseline.png
+Decoded animal_relation_43_candidate.png
+Decoded bottle_negation_42_baseline.png
+Decoded bottle_negation_42_candidate.png
+Decoded bottle_negation_43_baseline.png
+Decoded bottle_negation_43_candidate.png
+{
+  "status": "generated_pending_independent_review",
+  "metric_scope": "paired_NF4_generation_pilot_only",
+  "full_contract_CSR": null,
+  "quality_status": "unverified",
+  "promotion_status": "unqualified",
+  "adapter": {
+    "quality_status": "unverified",
+    "experimental": true,
+    "training_run_id": "76fada99-67db-4fbe-a508-c0ef96e6042f",
+    "adapter_sha256": "aaaeb9b68609b11ffc032c1a57c765b983b339af22c7e396c24bfd72b289953b",
+    "base_model": "stabilityai/stable-diffusion-xl-base-1.0"
+  },
+  "protocol_sha256": "b37d6424540644851d353bc6178ee45bd4858fd6a08d82de98f6f1e8580c161b",
+  "protocol": {
+    "schema": "framegenx-paired-pilot-v1",
+    "steps": 25,
+    "guidance_scale": 7.0,
+    "seeds": [
+      42,
+      43
+    ],
+    "cases": [
+      {
+        "id": "apple_count_color",
+        "prompt": "Exactly three red apples arranged in a row on a plain white table, with each apple clearly separated.",
+        "requirements": [
+          "Exactly three apples are visible.",
+          "Every apple is red.",
+          "The apples form a clearly separated row.",
+          "A white table is visible."
+        ]
+      },
+      {
+        "id": "vehicle_binding",
+        "prompt": "One red car to the left of one blue bus on a plain gray road.",
+        "requirements": [
+          "Exactly one car is visible.",
+          "Exactly one bus is visible.",
+          "The car is red.",
+          "The bus is blue.",
+          "The car is left of the bus.",
+          "A gray road is visible."
+        ]
+      },
+      {
+        "id": "animal_relation",
+        "prompt": "Exactly one cat on the left and exactly one dog on the right, clearly separated.",
+        "requirements": [
+          "Exactly one cat is visible.",
+          "Exactly one dog is visible.",
+          "The cat is left of the dog.",
+          "The animals are clearly separated."
+        ]
+      },
+      {
+        "id": "bottle_negation",
+        "prompt": "Exactly two green bottles on a white table. No red bottle.",
+        "requirements": [
+          "Exactly two bottles are visible.",
+          "Both bottles are green.",
+          "A white table is visible.",
+          "No red bottle is visible."
+        ]
+      }
+    ]
+  },
+  "evaluator_code_sha256": "a06e507ff3ad90b9e5e867400c85643745e9f01a3b97881b700636b4a712be75",
+  "model_snapshot": "462165984030d82259a11f4367a4eed129e94a7b",
+  "model_sha256": "83e012a805b84c7ca28e5646747c90a243c65c8ba4f070e2d7ddc9d74661e139",
+  "exported_diffusers_adapter_loaded": true,
+  "peak_reserved_gb": 2.313158656,
+  "peak_allocated_gb": 2.053379072,
+  "elapsed_seconds": 346.9566049999994
+}

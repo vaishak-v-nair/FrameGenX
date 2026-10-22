@@ -1,0 +1,76 @@
+{
+  "accepted": false,
+  "hard_failures": [],
+  "signals": {
+    "detected_counts": {
+      "person": 1,
+      "city": 1
+    },
+    "expected_counts": {
+      "person": 1,
+      "city": 1
+    }
+  },
+  "clip_cos": 0.3521,
+  "clip_norm": 0.8084,
+  "vqa_score": 0.0,
+  "vqa_vacuous": false,
+  "reward": 0.4042,
+  "spatial_result": {
+    "passed": true,
+    "total": 1,
+    "verified": 1,
+    "failures": [],
+    "results": [
+      {
+        "relationship": {
+          "subject": "person",
+          "predicate": "toward",
+          "object": "city"
+        },
+        "passed": true,
+        "reason": "unknown predicate 'toward': skipped",
+        "subject_box": {
+          "xmin": 67.36468505859375,
+          "ymin": 165.59375,
+          "xmax": 142.3008270263672,
+          "ymax": 327.24951171875,
+          "score": 0.8667745590209961
+        },
+        "object_box": {
+          "xmin": 270.68829345703125,
+          "ymin": 237.7957305908203,
+          "xmax": 282.09857177734375,
+          "ymax": 271.81024169921875,
+          "score": 0.42096683382987976
+        }
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there a spacesuit person in the image?",
+      "expected": "yes",
+      "class_name": "person",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there a glowing plant in the image?",
+      "expected": "yes",
+      "class_name": "plant",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there a city in the image?",
+      "expected": "yes",
+      "class_name": "city",
+      "answer": "error",
+      "correct": false
+    }
+  ]
+}

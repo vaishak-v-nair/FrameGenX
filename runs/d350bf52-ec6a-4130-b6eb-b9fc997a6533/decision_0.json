@@ -1,0 +1,15 @@
+{
+  "accept": false,
+  "reward": 0.3534,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": false,
+  "prompt_edits": [
+    "exactly 1 adventurer, each clearly separated, distinct objects, prominently featured",
+    "exactly 1 sword, each clearly separated, distinct objects, prominently featured",
+    "Adventurer holding sword",
+    "adventurer, prominent, clearly visible",
+    "sword, prominent, clearly visible"
+  ]
+}

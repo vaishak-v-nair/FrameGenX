@@ -1,0 +1,81 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "cat",
+      "expected": 2,
+      "detected": 3
+    },
+    {
+      "type": "count_mismatch",
+      "class_name": "wall",
+      "expected": 1,
+      "detected": 2
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "cat": 3,
+      "wall": 2
+    },
+    "expected_counts": {
+      "cat": 2,
+      "wall": 1
+    }
+  },
+  "clip_cos": 0.321,
+  "clip_norm": 0.6838,
+  "vqa_score": 1.0,
+  "vqa_vacuous": false,
+  "reward": 0.8419,
+  "spatial_result": {
+    "passed": true,
+    "total": 1,
+    "verified": 1,
+    "failures": [],
+    "results": [
+      {
+        "relationship": {
+          "subject": "cat",
+          "predicate": "on",
+          "object": "wall"
+        },
+        "passed": true,
+        "reason": "unknown predicate 'on': skipped",
+        "subject_box": {
+          "xmin": 27.691619873046875,
+          "ymin": 80.03163146972656,
+          "xmax": 309.22125244140625,
+          "ymax": 388.97406005859375,
+          "score": 0.3122193515300751
+        },
+        "object_box": {
+          "xmin": 0.01934814453125,
+          "ymin": 0.2106781005859375,
+          "xmax": 511.99896240234375,
+          "ymax": 385.1600341796875,
+          "score": 0.5349699854850769
+        }
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Are there cat in the image?",
+      "expected": "yes",
+      "class_name": "cat",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "existence",
+      "question": "Is there a wall in the image?",
+      "expected": "yes",
+      "class_name": "wall",
+      "answer": "yes",
+      "correct": true
+    }
+  ]
+}

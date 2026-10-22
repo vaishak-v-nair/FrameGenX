@@ -1,0 +1,43 @@
+{
+  "created_at": "2026-10-17T05:19:20.866843+00:00",
+  "notebook_cell_sources_sha256": "63c9e2da3a497fa4f37d79d265fd7da2f1e5354a71cf9469ae6c81a572c701c2",
+  "orchestration": {
+    "scripts/create_research_notebook.py": "36ed871828f97cba1a609d094d44e4f6c0d75f6c5b076511e986b4602aee3567",
+    "scripts/research_test_guard.py": "4a66096ed247d633dadfca5f3e75a437fca3726dc9766bcbfeb6a18ecab91448",
+    "scripts/run_research_notebook.py": "4b91137f406f6bd2176cae581605a358fe4935a2e1635e010f5dfa15ec10f737",
+    "scripts/verify_research_run.py": "ccae9888308c872c996b1f24556bab6a409e113ccc1d03f1e162cc1a0db65d32"
+  },
+  "packages": {
+    "Pillow": "12.3.0",
+    "SQLAlchemy": "2.1.4",
+    "alembic": "1.20.0",
+    "ipykernel": "7.3.0",
+    "mlflow-skinny": "3.17.1",
+    "nbclient": "0.11.0",
+    "nbformat": "5.11.1",
+    "numpy": "2.5.1",
+    "psutil": "7.2.2",
+    "safetensors": "0.8.0",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "threadpoolctl": "3.6.0",
+    "torch": "2.13.0+cu130"
+  },
+  "protocol_sha256": "480f1cf5c723a94f31662650f21cbdd868fd2905caf4b1ae51973269e8ede133",
+  "python": "3.14.6",
+  "quality_status": "unverified",
+  "scope": "Final CPU feasibility protocol after integrity/recovery fixes; no numerical objective, seeds, data, budget or evaluation thresholds changed",
+  "source": {
+    "src/research/__init__.py": "b63066f757a6638cac9b16c4394fc3fd3972a7cb89e41b9b8380fae7995aa72e",
+    "src/research/api.py": "1a28983670bb1e8d92db9b7247a8b1b3adba14e7af3dfc9891106e056f45890a",
+    "src/research/artifacts.py": "12e1e86ca9f3a234dcfd9129a0cded3aae04da1509197968b9a8991157df57c2",
+    "src/research/cards.py": "47d5aacd8c96d9117891810fa03a4ba17959f0475df6a69bc0da4475bb4cf109",
+    "src/research/config.py": "15fe23c1fd8a971f8816d8ed2a0bacf611961c87ac3bff750d6cab7e63d96364",
+    "src/research/diffusion.py": "2e29a37167c0c609a936a2150f96f1c013a9b52a8c7b25884661227156318adf",
+    "src/research/experiment.py": "e5c95d5bc95125d6b6ec3b2493292ae00dd4144a69b9bfc28e31a320840dcc72",
+    "src/research/ihalla.py": "0e1ec57c700f3b4d9703208774fe5bd76fc2ed421cb8700c83b116003640af5b",
+    "src/research/reports.py": "0ac64cbf334cffa6e07390b6d7900efe8949663dadb2bedd36aa6dc0a7a79088",
+    "src/training/tracking.py": "5ff96adb2e978e436fcd69b4700efc45059f2cc536dab7e6314cb29c3322c565"
+  },
+  "training_and_broad_tests_run_separately": true
+}

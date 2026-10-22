@@ -1,0 +1,17 @@
+{
+  "accepted": false,
+  "hard_failures": [],
+  "signals": {},
+  "clip_cos": 0.2962,
+  "clip_norm": 0.5849,
+  "vqa_score": 1.0,
+  "vqa_vacuous": true,
+  "reward": 0.7924,
+  "spatial_result": {
+    "passed": true,
+    "total": 0,
+    "verified": 0,
+    "failures": []
+  },
+  "vqa_details": []
+}

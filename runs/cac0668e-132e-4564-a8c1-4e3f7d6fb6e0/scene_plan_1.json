@@ -1,0 +1,67 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "1d23f7e2-fc01-472b-a3db-6e02d521fbe9",
+      "class_name": "banana",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 40,
+        "ymin": 55,
+        "xmax": 205,
+        "ymax": 220,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "1e24e3e4-6a12-4c02-aadd-5c8f94b0afec",
+      "class_name": "banana",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 306,
+        "ymin": 55,
+        "xmax": 471,
+        "ymax": 220,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "84594c44-e7ca-456e-b77e-f4e436bc5cef",
+      "class_name": "banana",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 40,
+        "ymin": 291,
+        "xmax": 205,
+        "ymax": 456,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "a5c46740-74e2-433a-9815-c8a30967065a",
+      "class_name": "bowl",
+      "attributes": [
+        "wooden"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 306,
+        "ymin": 291,
+        "xmax": 471,
+        "ymax": 456,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    }
+  ]
+}

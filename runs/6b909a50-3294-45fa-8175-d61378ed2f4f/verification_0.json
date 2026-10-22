@@ -1,0 +1,177 @@
+{
+  "accepted": true,
+  "hard_failures": [],
+  "signals": {
+    "detected_counts": {
+      "man": 1,
+      "suit": 1,
+      "neon sign": 1
+    },
+    "raw_detected_counts": {
+      "man": 1,
+      "suit": 1,
+      "neon sign": 1
+    },
+    "expected_counts": {
+      "man": 1,
+      "suit": 1,
+      "neon sign": 1
+    }
+  },
+  "clip_cos": 0.3684,
+  "clip_norm": 0.8736,
+  "vqa_score": null,
+  "vqa_vacuous": false,
+  "vqa_status": "unavailable",
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there a standing man in the image?",
+      "expected": "yes",
+      "class_name": "man",
+      "answer": "unavailable",
+      "correct": null
+    },
+    {
+      "type": "existence",
+      "question": "Is there a suit in the image?",
+      "expected": "yes",
+      "class_name": "suit",
+      "answer": "unavailable",
+      "correct": null
+    },
+    {
+      "type": "existence",
+      "question": "Is there a glowing neon sign in the image?",
+      "expected": "yes",
+      "class_name": "neon sign",
+      "answer": "unavailable",
+      "correct": null
+    }
+  ],
+  "reward": null,
+  "spatial_result": {
+    "passed": true,
+    "total": 1,
+    "verified": 1,
+    "failures": [],
+    "results": [
+      {
+        "relationship": {
+          "subject": "neon sign",
+          "predicate": "behind",
+          "object": "man"
+        },
+        "passed": true,
+        "reason": "subject_area=21390 vs object_area=171202",
+        "subject_box": {
+          "xmin": 17.32232666015625,
+          "ymin": 33.67158508300781,
+          "xmax": 199.9061737060547,
+          "ymax": 150.82159423828125,
+          "score": 0.72580486536026
+        },
+        "object_box": {
+          "xmin": 139.00259399414062,
+          "ymin": 51.522369384765625,
+          "xmax": 511.7438659667969,
+          "ymax": 510.8285827636719,
+          "score": 0.5130271315574646
+        }
+      }
+    ]
+  },
+  "contract_evidence": {
+    "status": "unverified",
+    "scope": "extracted_contract_only",
+    "counts": {
+      "total": 6,
+      "passed": 3,
+      "failed": 0,
+      "unverified": 3
+    },
+    "requirements": [
+      {
+        "kind": "object_count",
+        "target": "man",
+        "expected": 1,
+        "status": "passed",
+        "method": "grounding_dino",
+        "observation": {
+          "detected": 1
+        }
+      },
+      {
+        "kind": "object_count",
+        "target": "suit",
+        "expected": 1,
+        "status": "passed",
+        "method": "grounding_dino",
+        "observation": {
+          "detected": 1
+        }
+      },
+      {
+        "kind": "object_count",
+        "target": "neon sign",
+        "expected": 1,
+        "status": "passed",
+        "method": "grounding_dino",
+        "observation": {
+          "detected": 1
+        }
+      },
+      {
+        "kind": "attribute",
+        "target": "man",
+        "expected": "standing",
+        "status": "unverified",
+        "reason": "attribute binding has no calibrated hard verifier"
+      },
+      {
+        "kind": "attribute",
+        "target": "neon sign",
+        "expected": "glowing",
+        "status": "unverified",
+        "reason": "attribute binding has no calibrated hard verifier"
+      },
+      {
+        "kind": "spatial_relation",
+        "target": "neon sign->man",
+        "expected": "behind",
+        "status": "unverified",
+        "reason": "subject_area=21390 vs object_area=171202"
+      }
+    ]
+  },
+  "detected_boxes": {
+    "man": [
+      {
+        "xmin": 139.00259399414062,
+        "ymin": 51.522369384765625,
+        "xmax": 511.7438659667969,
+        "ymax": 510.8285827636719,
+        "score": 0.5130271315574646
+      }
+    ],
+    "suit": [
+      {
+        "xmin": 139.1318817138672,
+        "ymin": 258.1461486816406,
+        "xmax": 511.78558349609375,
+        "ymax": 511.7335510253906,
+        "score": 0.6771438121795654
+      }
+    ],
+    "neon sign": [
+      {
+        "xmin": 17.32232666015625,
+        "ymin": 33.67158508300781,
+        "xmax": 199.9061737060547,
+        "ymax": 150.82159423828125,
+        "score": 0.72580486536026
+      }
+    ]
+  },
+  "count_method": "grounding_dino"
+}

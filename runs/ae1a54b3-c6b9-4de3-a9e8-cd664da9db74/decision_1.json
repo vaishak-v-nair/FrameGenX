@@ -1,0 +1,9 @@
+{
+  "accept": true,
+  "reward": 0.7642,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": true,
+  "prompt_edits": []
+}

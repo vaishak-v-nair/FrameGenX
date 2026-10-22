@@ -1,0 +1,23 @@
+[
+  {
+    "id": "coco_111086",
+    "caption": "Two rows of cars parked next to a boat.",
+    "image": "http://images.cocodataset.org/val2017/000000111086.jpg",
+    "score": 0.015831265508684862,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_354829",
+    "caption": "A car is parked on the side of the street in the rain.",
+    "image": "http://images.cocodataset.org/val2017/000000354829.jpg",
+    "score": 0.015625,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_86220",
+    "caption": "A car and a public transit vehicle on a road.",
+    "image": "http://images.cocodataset.org/val2017/000000086220.jpg",
+    "score": 0.009836065573770491,
+    "retrieval_mode": "hybrid_rrf"
+  }
+]

@@ -1,0 +1,36 @@
+Generating image for prompt: 'Exactly two green bottles on a white table. No red bottle.'
+
+--- Pipeline run [interactive]: 'Exactly two green bottles on a white table. No red bottle.' (id 21cb7dfb-d9fb-4981-b956-aee644768372) ---
+[plan] attempt 0, edits=[]
+[adapt] no adapters configured � no-op
+[generate] attempt 0: 'Exactly two green bottles on a white table. No red bottle....'
+
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s]
+Loading weights: 100%|##########| 196/196 [00:00<00:00, 2019.16it/s]
+E:\BrosKi\framegenx\venv\Lib\site-packages\torch\nn\modules\module.py:1369: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:40.)
+  return t.to(
+
+Loading weights:   0%|          | 0/517 [00:00<?, ?it/s]
+Loading weights:  40%|###9      | 205/517 [00:00<00:00, 2042.94it/s]
+Loading weights:  79%|#######9  | 410/517 [00:00<00:00, 1843.14it/s]
+Loading weights: 100%|##########| 517/517 [00:00<00:00, 1888.02it/s]
+W1015 13:21:21.488000 21904 venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+[verify] attempt 0
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/978 [00:00<?, ?it/s]
+Loading weights:  44%|####4     | 434/978 [00:00<00:00, 4330.64it/s]
+Loading weights:  91%|######### | 887/978 [00:00<00:00, 4447.04it/s]
+Loading weights: 100%|##########| 978/978 [00:00<00:00, 4487.66it/s]
+[transformers] You are using a model of type `sam2_video` to instantiate a model of type `sam2`. This may be expected if you are loading a checkpoint that shares a subset of the architecture (e.g., loading a `sam2_video` checkpoint into `Sam2Model`), but is otherwise not supported and can yield errors. Please verify that the checkpoint is compatible with the model you are instantiating.
+
+Loading weights:   0%|          | 0/309 [00:00<?, ?it/s]
+Loading weights: 100%|##########| 309/309 [00:00<00:00, 7893.20it/s]
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights: 100%|##########| 398/398 [00:00<00:00, 16712.88it/s]
+[verify] hard=0 clip_norm=0.622 vqa=None R=unavailable
+[reflect] R=unavailable mode=hard_only hard_ok=True -> ACCEPT edits=0
+[OK] accepted on attempt 0
+Run logged (143.5s) -> E:\BrosKi\framegenx\runs\framegenx.db
+Operational checks passed; remaining contract requirements need review. Run saved to: E:\BrosKi\framegenx\runs\21cb7dfb-d9fb-4981-b956-aee644768372

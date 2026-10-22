@@ -1,0 +1,23 @@
+[
+  {
+    "id": "coco_570782",
+    "caption": "Three computers without screens sit on a desk.",
+    "image": "http://images.cocodataset.org/val2017/000000570782.jpg",
+    "score": 0.016086065573770493,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_26564",
+    "caption": "An office desk with a row of books and a desktop computer and laptop computer on the desk.",
+    "image": "http://images.cocodataset.org/val2017/000000026564.jpg",
+    "score": 0.01602662570404506,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_169076",
+    "caption": "A television is on a tv stand next to a bureau.",
+    "image": "http://images.cocodataset.org/val2017/000000169076.jpg",
+    "score": 0.009523809523809523,
+    "retrieval_mode": "hybrid_rrf"
+  }
+]

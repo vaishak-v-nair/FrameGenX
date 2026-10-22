@@ -1,0 +1,14 @@
+{
+  "accept": false,
+  "reward": 0.5506,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": false,
+  "prompt_edits": [
+    "only 3 banana, nothing else similar",
+    "only 1 bowl, nothing else similar",
+    "banana inside bowl",
+    "bowl, prominent, clearly visible"
+  ]
+}

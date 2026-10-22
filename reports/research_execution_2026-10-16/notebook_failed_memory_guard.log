@@ -1,0 +1,103 @@
+E:\BrosKi\framegenx\venv\Lib\site-packages\zmq\_future.py:718: RuntimeWarning: Proactor event loop does not implement add_reader family of methods required for zmq. Registering an additional selector thread for add_reader support via tornado. Use `asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())` to avoid this warning.
+  self._get_loop()
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+Traceback (most recent call last):
+  File "E:\BrosKi\framegenx\scripts\run_research_notebook.py", line 19, in <module>
+    resources={"metadata": {"path": str(ROOT)}}).execute()
+                                                 ~~~~~~~^^
+  File "E:\BrosKi\framegenx\venv\Lib\site-packages\jupyter_core\utils\__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "E:\contents\miniconda3\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "E:\BrosKi\framegenx\venv\Lib\site-packages\nbclient\client.py", line 709, in async_execute
+    await self.async_execute_cell(
+        cell, index, execution_count=self.code_cells_executed + 1
+    )
+  File "E:\BrosKi\framegenx\venv\Lib\site-packages\nbclient\client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "E:\BrosKi\framegenx\venv\Lib\site-packages\nbclient\client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+from src.research.experiment import run_experiment
+report_path = run_experiment('configs/research_cards.json', reuse_completed=True)
+report = json.loads(report_path.read_text(encoding='utf-8'))
+print({'run_id': report['id'], 'execution_status': report['execution_status'],
+       'quality_status': report['quality_status'], 'report': str(report_path.relative_to(checkout))})
+------------------
+
+----- stderr -----
+E:\BrosKi\framegenx\venv\Lib\site-packages\tqdm\auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+  from .autonotebook import tqdm as notebook_tqdm
+----- stderr -----
+2026/10/16 21:28:18 INFO mlflow.agent.hint: Load the `instrumenting-with-mlflow-tracing` skill at E:\BrosKi\framegenx\venv\Lib\site-packages\mlflow\assistant\skills\instrumenting-with-mlflow-tracing\SKILL.md before writing any tracing code; it ships with this MLflow install. Set MLFLOW_DISABLE_AGENT_HINT=1 to silence this.
+----- stderr -----
+2026/10/16 21:28:20 INFO mlflow.store.db.utils: Creating initial MLflow database tables...
+----- stderr -----
+2026/10/16 21:28:20 INFO mlflow.store.db.utils: Updating database tables
+----- stdout -----
+baseline: 1/500 loss=1.44017
+----- stdout -----
+baseline: 50/500 loss=0.29037
+----- stdout -----
+baseline: 100/500 loss=0.10087
+----- stdout -----
+baseline: 150/500 loss=0.24427
+----- stdout -----
+baseline: 200/500 loss=4.75826
+----- stdout -----
+baseline: 250/500 loss=0.07133
+----- stdout -----
+baseline: 300/500 loss=0.07414
+----- stdout -----
+baseline: 350/500 loss=0.12690
+----- stdout -----
+baseline: 400/500 loss=0.19214
+----- stdout -----
+baseline: 450/500 loss=0.10043
+----- stdout -----
+baseline: 500/500 loss=0.06391
+----- stdout -----
+candidate: 1/500 loss=1.44250
+----- stdout -----
+candidate: 50/500 loss=0.29058
+----- stdout -----
+candidate: 100/500 loss=0.10489
+----- stdout -----
+candidate: 150/500 loss=0.24622
+----- stdout -----
+candidate: 200/500 loss=4.75976
+------------------
+
+---------------------------------------------------------------------------
+MemoryError                               Traceback (most recent call last)
+Cell In[5], line 2
+      1 from src.research.experiment import run_experiment
+----> 2 report_path = run_experiment('configs/research_cards.json', reuse_completed=True)
+      3 report = json.loads(report_path.read_text(encoding='utf-8'))
+      4 print({'run_id': report['id'], 'execution_status': report['execution_status'],
+      5        'quality_status': report['quality_status'], 'report': str(report_path.relative_to(checkout))})
+
+File E:\BrosKi\framegenx\src\research\experiment.py:308, in run_experiment(config_file, reuse_completed)
+    306     journal["stage"] = "train_"+arm
+    307     atomic_json(run_root / "progress.json", journal)
+--> 308     trained[arm], arms[arm] = train_arm(config, manifest["records"], run_root, arm, rho, budget)
+    309 if arms["baseline"]["initial_sha256"] != arms["candidate"]["initial_sha256"]:
+    310     raise ValueError("Paired model initializations differ")
+
+File E:\BrosKi\framegenx\src\research\experiment.py:165, in train_arm(config, records, root, arm, rho, budget)
+    163 model.train()
+    164 for step in range(config.steps):
+--> 165     budget.check()
+    166     arm_budget.check()
+    167     index = torch.randint(len(data), (config.batch_size,), generator=order)
+
+File E:\BrosKi\framegenx\src\research\experiment.py:74, in Budget.check(self)
+     72 self.peak_system_used = max(self.peak_system_used, memory.used)
+     73 if rss > 8_000_000_000 or memory.available < 750_000_000:
+---> 74     raise MemoryError("CPU research memory budget exceeded")
+
+MemoryError: CPU research memory budget exceeded
+

@@ -1,0 +1,19 @@
+{
+  "arms": {
+    "baseline": {
+      "all_tensors_exactly_equal": true,
+      "identical_pngs": 32,
+      "sample_pngs": 32,
+      "tensors": 26
+    },
+    "candidate": {
+      "all_tensors_exactly_equal": true,
+      "identical_pngs": 32,
+      "sample_pngs": 32,
+      "tensors": 26
+    }
+  },
+  "final_run": "51529996-23e9-436d-91ba-2107057739e8",
+  "old_run": "d523c2eb-5f80-4a1d-ac5b-11bdefa80adb",
+  "scope": "same-seed repeat after non-numerical integrity/lifecycle amendments; not independent training-seed replication"
+}

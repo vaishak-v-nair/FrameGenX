@@ -1,0 +1,48 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[verify] attempt 0
+
+Loading weights:   0%|          | 0/978 [00:00<?, ?it/s]
+Loading weights:  28%|##8       | 278/978 [00:00<00:00, 2775.91it/s]
+Loading weights:  57%|#####6    | 556/978 [00:00<00:00, 2765.33it/s]
+Loading weights:  85%|########5 | 833/978 [00:00<00:00, 2639.47it/s]
+Loading weights: 100%|##########| 978/978 [00:00<00:00, 2582.97it/s]
+E:\BrosKi\framegenx\venv\Lib\site-packages\torch\nn\modules\module.py:1369: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:40.)
+  return t.to(
+[transformers] You are using a model of type `sam2_video` to instantiate a model of type `sam2`. This may be expected if you are loading a checkpoint that shares a subset of the architecture (e.g., loading a `sam2_video` checkpoint into `Sam2Model`), but is otherwise not supported and can yield errors. Please verify that the checkpoint is compatible with the model you are instantiating.
+
+Loading weights:   0%|          | 0/309 [00:00<?, ?it/s]
+Loading weights:  92%|#########2| 285/309 [00:00<00:00, 2847.50it/s]
+Loading weights: 100%|##########| 309/309 [00:00<00:00, 2885.27it/s]
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights: 100%|##########| 398/398 [00:00<00:00, 5902.90it/s]
+[verify] hard=2 clip_norm=0.4326 vqa=None R=unavailable spatial=1/1
+[reflect] R=unavailable mode=hard_only hard_ok=False -> RETRY edits=2
+{
+  "scope": "real local verifier and reflection replay on an existing failed image; generation not rerun",
+  "run_id": "83113d43-559a-4fd5-9dd1-bbe3b6e1cb83",
+  "source_image_sha256": "8008d6c63806b6aba000e7d0cabffafe307d8be7e4603ead5d797a464b48ead7",
+  "replayed_image_sha256": "8008d6c63806b6aba000e7d0cabffafe307d8be7e4603ead5d797a464b48ead7",
+  "accepted": false,
+  "detected_counts": {
+    "car": 5,
+    "bus": 1
+  },
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "car",
+      "expected": 1,
+      "detected": 5
+    },
+    {
+      "type": "attribute_unverified",
+      "class_name": "car",
+      "expected": [
+        "red"
+      ],
+      "detected": "instance count differs; color binding cannot establish the contract"
+    }
+  ],
+  "full_contract_CSR": null
+}

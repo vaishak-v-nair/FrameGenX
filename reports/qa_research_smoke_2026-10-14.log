@@ -1,0 +1,62 @@
+
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]
+Loading weights: 100%|##########| 103/103 [00:00<00:00, 3209.23it/s]
+E:\BrosKi\framegenx\venv\Lib\site-packages\torch\nn\modules\module.py:1369: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:40.)
+  return t.to(
+[memory] Logged failure for prompt: 'FrameGenX synthetic QA memory 4461f5db-2...' -> edits: ['synthetic correction for local QA']
+[plan] attempt 0, edits=[]
+
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]
+Loading pipeline components...:  14%|#4        | 1/7 [00:00<00:02,  2.59it/s]
+Loading pipeline components...:  29%|##8       | 2/7 [00:00<00:01,  4.16it/s]
+Loading pipeline components...:  43%|####2     | 3/7 [00:01<00:01,  2.12it/s]
+
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s][A
+Loading weights: 100%|##########| 196/196 [00:00<00:00, 5039.44it/s]
+
+Loading pipeline components...:  57%|#####7    | 4/7 [00:01<00:01,  2.79it/s]
+
+Loading weights:   0%|          | 0/517 [00:00<?, ?it/s][A
+
+Loading weights:  73%|#######2  | 375/517 [00:00<00:00, 3748.60it/s][A
+Loading weights: 100%|##########| 517/517 [00:00<00:00, 3653.24it/s]
+
+Loading pipeline components...:  71%|#######1  | 5/7 [00:01<00:00,  2.70it/s]
+Loading pipeline components...:  86%|########5 | 6/7 [00:01<00:00,  3.47it/s]
+Loading pipeline components...: 100%|##########| 7/7 [00:02<00:00,  4.17it/s]
+Loading pipeline components...: 100%|##########| 7/7 [00:02<00:00,  3.31it/s]
+E:\BrosKi\framegenx\venv\Lib\site-packages\diffusers\pipelines\pipeline_utils.py:2273: FutureWarning: `enable_vae_slicing` is deprecated and will be removed in version 0.40.0. Calling `enable_vae_slicing()` on a `StableDiffusionXLPipeline` is deprecated and this method will be removed in a future version. Please use `pipe.vae.enable_slicing()`.
+  deprecate(
+E:\BrosKi\framegenx\venv\Lib\site-packages\diffusers\pipelines\pipeline_utils.py:2300: FutureWarning: `enable_vae_tiling` is deprecated and will be removed in version 0.40.0. Calling `enable_vae_tiling()` on a `StableDiffusionXLPipeline` is deprecated and this method will be removed in a future version. Please use `pipe.vae.enable_tiling()`.
+  deprecate(
+
+  0%|          | 0/4 [00:00<?, ?it/s]
+ 25%|##5       | 1/4 [00:10<00:30, 10.14s/it]
+ 50%|#####     | 2/4 [00:15<00:14,  7.43s/it]
+ 75%|#######5  | 3/4 [00:17<00:04,  4.99s/it]
+100%|##########| 4/4 [00:20<00:00,  3.97s/it]
+100%|##########| 4/4 [00:20<00:00,  5.04s/it]
+E:\BrosKi\framegenx\venv\Lib\site-packages\diffusers\pipelines\stable_diffusion_xl\pipeline_stable_diffusion_xl.py:748: FutureWarning: `upcast_vae` is deprecated and will be removed in version 1.0.0. `upcast_vae` is deprecated. Please use `pipe.vae.to(torch.float32)`. For more details, please refer to: https://github.com/huggingface/diffusers/pull/12619#issue-3606633695.
+  deprecate(
+There are modules in AutoencoderKL that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+There are modules in AutoencoderKL that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]
+Loading weights: 100%|##########| 103/103 [00:00<00:00, 3331.71it/s]
+{
+  "run_id": "4461f5db-2cf8-44cd-8c90-5ccfbc4c7947",
+  "source_run": "624ef7cb-2f4d-4ae8-8895-2c8e2f8201ce",
+  "scope": "offline_generation_preview_and_synthetic_memory_only",
+  "status": "passed",
+  "checks": {
+    "memory_write": true,
+    "contract_preserved": true,
+    "preview_matches_draft": true,
+    "preview_nonblank": true,
+    "memory_reopen_roundtrip": true
+  },
+  "generation_seconds": 32.19,
+  "process_peak_allocated_vram_gb": 2.777,
+  "process_peak_reserved_vram_gb": 2.915,
+  "total_seconds": 41.05
+}

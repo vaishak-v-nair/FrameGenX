@@ -1,0 +1,33 @@
+{
+  "accepted": false,
+  "failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "person",
+      "expected": 1,
+      "detected": 0
+    },
+    {
+      "type": "spatial_violation",
+      "class_name": "person->city",
+      "expected": "toward",
+      "detected": "subject 'person' not detected"
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "person": 0,
+      "city": 1
+    },
+    "expected_counts": {
+      "person": 1,
+      "city": 1
+    }
+  },
+  "root_causes": [
+    "Scene under-populated -> weak object planning",
+    "Prompt misalignment -> RAG or prompt issue",
+    "Objects clustered -> bad composition"
+  ],
+  "actions": []
+}

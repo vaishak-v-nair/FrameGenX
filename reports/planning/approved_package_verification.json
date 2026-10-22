@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-10-17T11:24:53.2302043+05:30",
+  "scope": "Planning package verification only; no application test or quality qualification",
+  "status": "PASSED_PLANNING_ARTIFACT_CHECKS",
+  "plan": "docs/plans/STACK_EVOLUTION_PLAN.md",
+  "plan_sha256": "54D5C55CFB0746C5B463F1F06BE7376BDB2914F1764181558AFE75CC505C479E",
+  "decisions": {
+    "mechanical": 63,
+    "challenges": 2,
+    "total": 74,
+    "taste": 9
+  },
+  "tasks": {
+    "phases": [
+      {
+        "phase": "ceo-review",
+        "count": 13
+      },
+      {
+        "phase": "design-review",
+        "count": 4
+      },
+      {
+        "phase": "devex-review",
+        "count": 5
+      },
+      {
+        "phase": "eng-review",
+        "count": 8
+      }
+    ],
+    "total": 30
+  },
+  "checks": {
+    "terminal_review_heading": true,
+    "terminal_unresolved_status": true,
+    "audit_contiguous_74": true,
+    "audit_classification": true,
+    "ceo_eleven_sections": true,
+    "design_seven_passes": true,
+    "dx_eight_passes": true,
+    "engineering_four_passes": true,
+    "test_map_32_groups": true,
+    "test_requirements_32_rows": true,
+    "failure_registry_32_rows": true,
+    "qa_artifact_exists": true,
+    "all_review_records_exist": true,
+    "aggregate_30_four_phases": true,
+    "aggregate_current_run_only": true,
+    "conditional_todos_six": true,
+    "submission_lookup_correct": true,
+    "http_all_calls_authenticated": true,
+    "explicit_v1_contract_required": true,
+    "approval_has_receipt": true,
+    "execution_tasks_separate_states": true,
+    "original_proposal_retained": true
+  },
+  "failed": [],
+  "qa_artifact": "C:\\Users\\vaish\\.gstack\\projects\\vaishak-v-nair-FrameGenX\\vaish-main-eng-review-test-plan-20261015-214500.md",
+  "verification_attempts": [
+    "Initial inline validator had CRLF and PowerShell pipeline-coercion errors; application was not executed.",
+    "This fail-fast script corrects those validator errors and reruns all planning-artifact checks."
+  ],
+  "limitations": [
+    "This command checks planning artifacts only; implementation evidence is recorded separately",
+    "This command does not test the application, clean install, CI, browser, accessibility or GPU workload",
+    "No calibrated hallucination reduction verified",
+    "Review instances are same-family Codex; CLI document-only",
+    "User A approved the staged roadmap; approval does not clear runtime gates"
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "banana",
+      "expected": 3,
+      "detected": 5
+    },
+    {
+      "type": "spatial_violation",
+      "class_name": "banana->bowl",
+      "expected": "inside",
+      "detected": "containment=0.17 (min=0.70), size_ok=True"
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "banana": 5,
+      "bowl": 1
+    },
+    "expected_counts": {
+      "banana": 3,
+      "bowl": 1
+    }
+  },
+  "clip_cos": 0.3233,
+  "clip_norm": 0.6932,
+  "vqa_score": 1.0,
+  "vqa_vacuous": false,
+  "reward": 0.8466,
+  "spatial_result": {
+    "passed": false,
+    "total": 1,
+    "verified": 0,
+    "failures": [
+      {
+        "subject": "banana",
+        "predicate": "inside",
+        "object": "bowl",
+        "reason": "containment=0.17 (min=0.70), size_ok=True"
+      }
+    ],
+    "results": [
+      {
+        "relationship": {
+          "subject": "banana",
+          "predicate": "inside",
+          "object": "bowl"
+        },
+        "passed": false,
+        "reason": "containment=0.17 (min=0.70), size_ok=True",
+        "subject_box": {
+          "xmin": 0.55499267578125,
+          "ymin": 462.3771667480469,
+          "xmax": 511.46710205078125,
+          "ymax": 511.5479431152344,
+          "score": 0.4798682630062103
+        },
+        "object_box": {
+          "xmin": 39.08485412597656,
+          "ymin": 43.42500305175781,
+          "xmax": 463.0352783203125,
+          "ymax": 472.664794921875,
+          "score": 0.7173481583595276
+        }
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Are there banana in the image?",
+      "expected": "yes",
+      "class_name": "banana",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "existence",
+      "question": "Is there a wooden bowl in the image?",
+      "expected": "yes",
+      "class_name": "bowl",
+      "answer": "yes",
+      "correct": true
+    }
+  ]
+}

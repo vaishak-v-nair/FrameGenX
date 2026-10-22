@@ -1,0 +1,17 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "f1a7f368-68a2-4838-b501-693ed9da93b0",
+      "class_name": "spacesuit",
+      "attributes": [
+        "latest",
+        "2026"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": false
+    }
+  ]
+}

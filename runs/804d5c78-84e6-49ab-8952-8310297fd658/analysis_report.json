@@ -1,0 +1,61 @@
+{
+  "accepted": false,
+  "failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "jagged alpine peaks",
+      "expected": 1,
+      "detected": 0
+    },
+    {
+      "type": "count_mismatch",
+      "class_name": "mist",
+      "expected": 1,
+      "detected": 0
+    },
+    {
+      "type": "count_mismatch",
+      "class_name": "summit",
+      "expected": 1,
+      "detected": 0
+    },
+    {
+      "type": "spatial_violation",
+      "class_name": "wildflowers->foreground",
+      "expected": "in",
+      "detected": "object 'foreground' not detected"
+    },
+    {
+      "type": "spatial_violation",
+      "class_name": "mist->jagged alpine peaks",
+      "expected": "below",
+      "detected": "subject 'mist' not detected"
+    },
+    {
+      "type": "spatial_violation",
+      "class_name": "summit->jagged alpine peaks",
+      "expected": "above",
+      "detected": "subject 'summit' not detected"
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "jagged alpine peaks": 0,
+      "wildflowers": 1,
+      "mist": 0,
+      "summit": 0
+    },
+    "expected_counts": {
+      "jagged alpine peaks": 1,
+      "wildflowers": 1,
+      "mist": 1,
+      "summit": 1
+    }
+  },
+  "root_causes": [
+    "Scene under-populated -> weak object planning",
+    "Prompt misalignment -> RAG or prompt issue",
+    "Objects clustered -> bad composition"
+  ],
+  "actions": []
+}

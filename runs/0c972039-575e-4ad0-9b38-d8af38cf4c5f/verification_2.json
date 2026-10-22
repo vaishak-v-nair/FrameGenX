@@ -1,0 +1,159 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "peak",
+      "expected": 1,
+      "detected": 0
+    },
+    {
+      "type": "count_mismatch",
+      "class_name": "mist",
+      "expected": 1,
+      "detected": 0
+    },
+    {
+      "type": "count_mismatch",
+      "class_name": "valley",
+      "expected": 1,
+      "detected": 0
+    },
+    {
+      "type": "count_mismatch",
+      "class_name": "light",
+      "expected": 1,
+      "detected": 0
+    },
+    {
+      "type": "count_mismatch",
+      "class_name": "summit",
+      "expected": 1,
+      "detected": 0
+    },
+    {
+      "type": "spatial_violation",
+      "class_name": "mist->peaks",
+      "expected": "below",
+      "detected": "subject 'mist' not detected"
+    },
+    {
+      "type": "spatial_violation",
+      "class_name": "light->summit",
+      "expected": "above",
+      "detected": "subject 'light' not detected"
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "peak": 0,
+      "wildflower": 1,
+      "mist": 0,
+      "valley": 0,
+      "light": 0,
+      "summit": 0
+    },
+    "expected_counts": {
+      "peak": 1,
+      "wildflower": 1,
+      "mist": 1,
+      "valley": 1,
+      "light": 1,
+      "summit": 1
+    }
+  },
+  "clip_cos": 0.2803,
+  "clip_norm": 0.5211,
+  "vqa_score": 0.8333,
+  "vqa_vacuous": false,
+  "reward": 0.6772,
+  "spatial_result": {
+    "passed": false,
+    "total": 2,
+    "verified": 0,
+    "failures": [
+      {
+        "subject": "mist",
+        "predicate": "below",
+        "object": "peaks",
+        "reason": "subject 'mist' not detected"
+      },
+      {
+        "subject": "light",
+        "predicate": "above",
+        "object": "summit",
+        "reason": "subject 'light' not detected"
+      }
+    ],
+    "results": [
+      {
+        "relationship": {
+          "subject": "mist",
+          "predicate": "below",
+          "object": "peaks"
+        },
+        "passed": false,
+        "reason": "subject 'mist' not detected"
+      },
+      {
+        "relationship": {
+          "subject": "light",
+          "predicate": "above",
+          "object": "summit"
+        },
+        "passed": false,
+        "reason": "subject 'light' not detected"
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there an alpine jagged peak in the image?",
+      "expected": "yes",
+      "class_name": "peak",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "existence",
+      "question": "Is there a blooming wildflower in the image?",
+      "expected": "yes",
+      "class_name": "wildflower",
+      "answer": "no",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there a mist in the image?",
+      "expected": "yes",
+      "class_name": "mist",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "existence",
+      "question": "Is there a valley in the image?",
+      "expected": "yes",
+      "class_name": "valley",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "existence",
+      "question": "Is there a golden warm light in the image?",
+      "expected": "yes",
+      "class_name": "light",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "existence",
+      "question": "Is there a summit in the image?",
+      "expected": "yes",
+      "class_name": "summit",
+      "answer": "yes",
+      "correct": true
+    }
+  ]
+}

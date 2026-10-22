@@ -1,0 +1,67 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "a090d00b-ba12-4bf9-a857-802d00299944",
+      "class_name": "apple",
+      "attributes": [
+        "red"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 0,
+        "ymin": 45,
+        "xmax": 185,
+        "ymax": 230,
+        "z_index": 1
+      },
+      "z_index": 1
+    },
+    {
+      "id": "b18085bb-5e8e-4c53-9267-3a6b0747a9a4",
+      "class_name": "apple",
+      "attributes": [
+        "red"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 326,
+        "ymin": 45,
+        "xmax": 511,
+        "ymax": 230,
+        "z_index": 1
+      },
+      "z_index": 1
+    },
+    {
+      "id": "d7ba140c-82fd-46db-a229-92cb3a91c7df",
+      "class_name": "apple",
+      "attributes": [
+        "red"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 0,
+        "ymin": 281,
+        "xmax": 185,
+        "ymax": 466,
+        "z_index": 1
+      },
+      "z_index": 1
+    },
+    {
+      "id": "9a6c2da3-608b-48bc-a8bb-6cf3d35cd612",
+      "class_name": "table",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 326,
+        "ymin": 281,
+        "xmax": 511,
+        "ymax": 466,
+        "z_index": 1
+      },
+      "z_index": 1
+    }
+  ]
+}

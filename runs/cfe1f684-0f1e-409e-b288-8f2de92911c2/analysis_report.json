@@ -1,0 +1,27 @@
+{
+  "accepted": false,
+  "failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "apple",
+      "expected": 3,
+      "detected": 4
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "apple": 4,
+      "table": 1
+    },
+    "expected_counts": {
+      "apple": 3,
+      "table": 1
+    }
+  },
+  "root_causes": [
+    "Scene under-populated -> weak object planning",
+    "Prompt misalignment -> RAG or prompt issue",
+    "Objects clustered -> bad composition"
+  ],
+  "actions": []
+}

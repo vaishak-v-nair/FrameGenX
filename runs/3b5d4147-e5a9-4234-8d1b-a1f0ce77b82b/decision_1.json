@@ -1,0 +1,18 @@
+{
+  "accept": false,
+  "reward": 0.2339,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": false,
+  "prompt_edits": [
+    "single apple",
+    "one prominent bottle",
+    "sharp focus, highly detailed",
+    "apple, prominent, clearly visible",
+    "(red colored apple)",
+    "table, prominent, clearly visible",
+    "bottle, prominent, clearly visible",
+    "(green colored bottle)"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "b1ab0bea-be84-4bfa-918f-45f87ce52426",
+      "class_name": "man",
+      "attributes": [
+        "standing"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 45,
+        "ymin": 148,
+        "xmax": 143,
+        "ymax": 364,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "21b8aa36-dba0-41f6-a757-0bdc0b200d63",
+      "class_name": "suit",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 204,
+        "ymin": 122,
+        "xmax": 307,
+        "ymax": 389,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "b8c57fd0-a148-4e3e-9ecc-d206f1dcfca5",
+      "class_name": "neon sign",
+      "attributes": [
+        "glowing"
+      ],
+      "relative_position": null,
+      "bounding_box": {
+        "xmin": 368,
+        "ymin": 148,
+        "xmax": 466,
+        "ymax": 364,
+        "z_index": 1
+      },
+      "z_index": 1,
+      "uncounted": false
+    }
+  ]
+}

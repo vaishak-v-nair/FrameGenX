@@ -1,0 +1,101 @@
+{
+  "schema_version": "2.0",
+  "created_at": "2026-08-16T10:44:29.840702+00:00",
+  "prompt": "a green apple on a red table",
+  "parsed": {
+    "subject": "apple",
+    "objects": [
+      "apple",
+      "table"
+    ],
+    "colors": [
+      "green",
+      "red"
+    ],
+    "primary_subject": "apple",
+    "secondary_objects": [
+      "table"
+    ]
+  },
+  "constraints": [
+    {
+      "type": "object_count",
+      "value": 1,
+      "target": "apple",
+      "priority": "critical"
+    },
+    {
+      "type": "object_count",
+      "value": 1,
+      "target": "table",
+      "priority": "critical"
+    },
+    {
+      "type": "spatial_relation",
+      "value": {
+        "subject": "apple",
+        "predicate": "on",
+        "object": "table"
+      },
+      "target": "apple->table",
+      "priority": "high"
+    }
+  ],
+  "rag_hits": [],
+  "rag_influence": {
+    "depth_required": false,
+    "lighting_complex": false
+  },
+  "execution_plan": {
+    "has_human": false,
+    "has_depth": false,
+    "risk_level": "low"
+  },
+  "signal_map": {
+    "object_count": {
+      "threshold": 2
+    },
+    "class_uniqueness": {
+      "threshold": 1
+    },
+    "depth_layers": {
+      "threshold": 2
+    },
+    "spatial_ratio": {
+      "threshold": 0.2
+    },
+    "embedding": {
+      "threshold": 1.0
+    }
+  },
+  "entities": [
+    {
+      "id": "e2742a51-77b5-42ed-9979-2ad924104cdb",
+      "class_name": "apple",
+      "attributes": [
+        "green"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    },
+    {
+      "id": "1c11c16f-024d-4d65-b722-bd7a44a765cc",
+      "class_name": "table",
+      "attributes": [
+        "red"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    }
+  ],
+  "spatial_relationships": [
+    {
+      "subject": "apple",
+      "predicate": "on",
+      "object": "table"
+    }
+  ],
+  "negations": []
+}

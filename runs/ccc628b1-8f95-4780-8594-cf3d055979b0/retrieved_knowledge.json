@@ -1,0 +1,79 @@
+{
+  "caption_hits": [
+    {
+      "id": "coco_297396",
+      "caption": "Small pieces of cake have been arranged on a plate",
+      "image": "http://images.cocodataset.org/val2017/000000297396.jpg",
+      "score": 0.016129032258064516,
+      "retrieval_mode": "hybrid_rrf"
+    },
+    {
+      "id": "coco_211825",
+      "caption": "A man blowing out candles on a cake.",
+      "image": "http://images.cocodataset.org/val2017/000000211825.jpg",
+      "score": 0.01608118657298985,
+      "retrieval_mode": "hybrid_rrf"
+    },
+    {
+      "id": "coco_504711",
+      "caption": "A fork rests on a plate next to a piece of cake.",
+      "image": "http://images.cocodataset.org/val2017/000000504711.jpg",
+      "score": 0.01544011544011544,
+      "retrieval_mode": "hybrid_rrf"
+    }
+  ],
+  "layout_blueprint": {
+    "entity_count": 5,
+    "name": "Five Object Dynamic Array",
+    "description": "Center focal entity surrounded by 4 satellite objects",
+    "boxes": [
+      {
+        "anchor": "center",
+        "ymin": 0.3,
+        "xmin": 0.3,
+        "ymax": 0.7,
+        "xmax": 0.7,
+        "z_index": 2
+      },
+      {
+        "anchor": "top_left",
+        "ymin": 0.06,
+        "xmin": 0.06,
+        "ymax": 0.38,
+        "xmax": 0.38,
+        "z_index": 1
+      },
+      {
+        "anchor": "top_right",
+        "ymin": 0.06,
+        "xmin": 0.62,
+        "ymax": 0.38,
+        "xmax": 0.94,
+        "z_index": 1
+      },
+      {
+        "anchor": "bottom_left",
+        "ymin": 0.62,
+        "xmin": 0.06,
+        "ymax": 0.94,
+        "xmax": 0.38,
+        "z_index": 1
+      },
+      {
+        "anchor": "bottom_right",
+        "ymin": 0.62,
+        "xmin": 0.62,
+        "ymax": 0.94,
+        "xmax": 0.94,
+        "z_index": 1
+      }
+    ]
+  },
+  "style_preset": {
+    "preset_name": "photorealistic",
+    "descriptors": "photograph, 35mm lens, sharp focus, natural lighting, subsurface scattering, authentic textures",
+    "lighting": "soft directional daylight with realistic ambient bounce",
+    "camera": "eye-level 50mm f/2.8 lens, shallow depth of field",
+    "negative": "cartoon, illustration, 3d render, distorted, oversaturated, plastic"
+  }
+}

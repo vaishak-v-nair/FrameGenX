@@ -1,0 +1,23 @@
+[
+  {
+    "id": "coco_229747",
+    "caption": "A photo of an outside with various things in the scene.",
+    "image": "http://images.cocodataset.org/val2017/000000229747.jpg",
+    "score": 0.009836065573770491,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_507081",
+    "caption": "A kitchen with its light's off, with light coming from an open door.",
+    "image": "http://images.cocodataset.org/val2017/000000507081.jpg",
+    "score": 0.00967741935483871,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_529966",
+    "caption": "Two glass bowls of oranges add up to more than enough.",
+    "image": "http://images.cocodataset.org/val2017/000000529966.jpg",
+    "score": 0.009523809523809523,
+    "retrieval_mode": "hybrid_rrf"
+  }
+]

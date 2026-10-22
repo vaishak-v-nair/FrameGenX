@@ -1,0 +1,140 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "cliff",
+      "expected": 1,
+      "detected": 2
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "adventurer": 1,
+      "sword": 1,
+      "cliff": 2
+    },
+    "expected_counts": {
+      "adventurer": 1,
+      "sword": 1,
+      "cliff": 1
+    }
+  },
+  "clip_cos": 0.2939,
+  "clip_norm": 0.5755,
+  "vqa_score": 0.0,
+  "vqa_vacuous": false,
+  "reward": 0.2878,
+  "spatial_result": {
+    "passed": true,
+    "total": 2,
+    "verified": 2,
+    "failures": [],
+    "results": [
+      {
+        "relationship": {
+          "subject": "adventurer",
+          "predicate": "holding",
+          "object": "sword"
+        },
+        "passed": true,
+        "reason": "unknown predicate 'holding': skipped",
+        "subject_box": {
+          "xmin": 432.3317565917969,
+          "ymin": 157.30645751953125,
+          "xmax": 511.6769714355469,
+          "ymax": 339.7413024902344,
+          "score": 0.7939117550849915
+        },
+        "object_box": {
+          "xmin": 422.3132019042969,
+          "ymin": 255.60601806640625,
+          "xmax": 457.3309631347656,
+          "ymax": 342.13128662109375,
+          "score": 0.47938430309295654
+        }
+      },
+      {
+        "relationship": {
+          "subject": "adventurer",
+          "predicate": "on",
+          "object": "cliff"
+        },
+        "passed": true,
+        "reason": "unknown predicate 'on': skipped",
+        "subject_box": {
+          "xmin": 432.3317565917969,
+          "ymin": 157.30645751953125,
+          "xmax": 511.6769714355469,
+          "ymax": 339.7413024902344,
+          "score": 0.7939117550849915
+        },
+        "object_box": {
+          "xmin": 0.33563232421875,
+          "ymin": 53.31547546386719,
+          "xmax": 284.864013671875,
+          "ymax": 452.64849853515625,
+          "score": 0.3681776225566864
+        }
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there a floating floating island in the image?",
+      "expected": "yes",
+      "class_name": "floating island",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there a cascading waterfall in the image?",
+      "expected": "yes",
+      "class_name": "waterfall",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there an ancient ruin in the image?",
+      "expected": "yes",
+      "class_name": "ruin",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there a vine in the image?",
+      "expected": "yes",
+      "class_name": "vine",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there an adventurer in the image?",
+      "expected": "yes",
+      "class_name": "adventurer",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there an ancient sword in the image?",
+      "expected": "yes",
+      "class_name": "sword",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there a jagged cliff in the image?",
+      "expected": "yes",
+      "class_name": "cliff",
+      "answer": "error",
+      "correct": false
+    }
+  ]
+}

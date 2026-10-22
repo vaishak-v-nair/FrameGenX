@@ -1,0 +1,20 @@
+{
+  "accept": false,
+  "reward": 0.2905,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": false,
+  "prompt_edits": [
+    "Add prominent object",
+    "Adventurer holding sword",
+    "Adventurer on cliff",
+    "floating island, prominent, clearly visible",
+    "waterfall, prominent, clearly visible",
+    "ruin, prominent, clearly visible",
+    "vine, prominent, clearly visible",
+    "adventurer, prominent, clearly visible",
+    "sword, prominent, clearly visible",
+    "cliff, prominent, clearly visible"
+  ]
+}

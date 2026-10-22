@@ -1,0 +1,83 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "apple",
+      "expected": 3,
+      "detected": 4
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "apple": 4,
+      "table": 1
+    },
+    "expected_counts": {
+      "apple": 3,
+      "table": 1
+    }
+  },
+  "clip_cos": 0.3014,
+  "clip_norm": 0.6055,
+  "vqa_score": 0.6667,
+  "vqa_vacuous": false,
+  "reward": 0.6361,
+  "spatial_result": {
+    "passed": true,
+    "total": 1,
+    "verified": 1,
+    "failures": [],
+    "results": [
+      {
+        "relationship": {
+          "subject": "apple",
+          "predicate": "on",
+          "object": "table"
+        },
+        "passed": true,
+        "reason": "unknown predicate 'on': skipped",
+        "subject_box": {
+          "xmin": 35.82761764526367,
+          "ymin": 266.2204284667969,
+          "xmax": 158.55604553222656,
+          "ymax": 394.6542663574219,
+          "score": 0.8345152139663696
+        },
+        "object_box": {
+          "xmin": -0.017608642578125,
+          "ymin": -0.092803955078125,
+          "xmax": 511.9823303222656,
+          "ymax": 511.9070129394531,
+          "score": 0.41126102209091187
+        }
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Are there red apple in the image?",
+      "expected": "yes",
+      "class_name": "apple",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "color",
+      "question": "What color is the apple?",
+      "expected": "red",
+      "class_name": "apple",
+      "answer": "red",
+      "correct": true
+    },
+    {
+      "type": "existence",
+      "question": "Is there a table in the image?",
+      "expected": "yes",
+      "class_name": "table",
+      "answer": "no",
+      "correct": false
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "caption_hits": [
+    {
+      "id": "coco_487583",
+      "caption": "A white toilet and cup in a room.",
+      "image": "http://images.cocodataset.org/val2017/000000487583.jpg",
+      "score": 0.01578814627994956,
+      "retrieval_mode": "hybrid_rrf"
+    },
+    {
+      "id": "coco_7574",
+      "caption": "A kitchen with a very messy counter space.",
+      "image": "http://images.cocodataset.org/val2017/000000007574.jpg",
+      "score": 0.015584415584415583,
+      "retrieval_mode": "hybrid_rrf"
+    },
+    {
+      "id": "coco_527750",
+      "caption": "There is a man standing next to the kitchen counter.",
+      "image": "http://images.cocodataset.org/val2017/000000527750.jpg",
+      "score": 0.009836065573770491,
+      "retrieval_mode": "hybrid_rrf"
+    }
+  ],
+  "layout_blueprint": {
+    "entity_count": 4,
+    "name": "2x2 Quad Grid",
+    "description": "Four balanced quadrants for high-density multi-object scenes",
+    "boxes": [
+      {
+        "anchor": "top_left",
+        "ymin": 0.08,
+        "xmin": 0.08,
+        "ymax": 0.46,
+        "xmax": 0.46,
+        "z_index": 1
+      },
+      {
+        "anchor": "top_right",
+        "ymin": 0.08,
+        "xmin": 0.54,
+        "ymax": 0.46,
+        "xmax": 0.92,
+        "z_index": 1
+      },
+      {
+        "anchor": "bottom_left",
+        "ymin": 0.54,
+        "xmin": 0.08,
+        "ymax": 0.92,
+        "xmax": 0.46,
+        "z_index": 1
+      },
+      {
+        "anchor": "bottom_right",
+        "ymin": 0.54,
+        "xmin": 0.54,
+        "ymax": 0.92,
+        "xmax": 0.92,
+        "z_index": 1
+      }
+    ]
+  },
+  "style_preset": {
+    "preset_name": "photorealistic",
+    "descriptors": "photograph, 35mm lens, sharp focus, natural lighting, subsurface scattering, authentic textures",
+    "lighting": "soft directional daylight with realistic ambient bounce",
+    "camera": "eye-level 50mm f/2.8 lens, shallow depth of field",
+    "negative": "cartoon, illustration, 3d render, distorted, oversaturated, plastic"
+  }
+}

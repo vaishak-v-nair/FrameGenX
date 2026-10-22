@@ -1,0 +1,33 @@
+{
+  "accepted": false,
+  "hard_failures": [],
+  "signals": {
+    "detected_counts": {
+      "astronaut": 3
+    },
+    "expected_counts": {
+      "astronaut": 3
+    }
+  },
+  "clip_cos": 0.3516,
+  "clip_norm": 0.8065,
+  "vqa_score": 0.0,
+  "vqa_vacuous": false,
+  "reward": 0.4032,
+  "spatial_result": {
+    "passed": true,
+    "total": 0,
+    "verified": 0,
+    "failures": []
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Are there astronaut in the image?",
+      "expected": "yes",
+      "class_name": "astronaut",
+      "answer": "error",
+      "correct": false
+    }
+  ]
+}

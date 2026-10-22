@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.0",
+  "prompt": "One red car to the left of one blue bus on a plain gray road.",
+  "entities": [
+    {"id": "car", "class_name": "car", "attributes": ["red"]},
+    {"id": "bus", "class_name": "bus", "attributes": ["blue"]},
+    {"id": "road", "class_name": "road", "attributes": ["gray"], "uncounted": true}
+  ],
+  "spatial_relationships": [{"subject": "car", "object": "bus", "predicate": "left_of"}]
+}

@@ -1,0 +1,392 @@
+Updating 15ebd85c..47d639ab
+Created autostash: 18f0d703
+Fast-forward
+ CHANGELOG.md                                      |  21 +++
+ VERSION                                           |   2 +-
+ agents-digest/gstack-AGENTS.md                    |   2 +-
+ autoplan/DRIVER.md                                |   9 +-
+ autoplan/DRIVER.md.tmpl                           |   9 +-
+ bin/gstack-autoplan                               |   9 +-
+ bin/gstack-capy-session                           |  57 +++++++-
+ bin/gstack-doctor-components.sh                   |   2 +
+ bin/gstack-gbrain-sync.ts                         |   2 +-
+ bin/gstack-harness-pid.sh                         |  26 ++++
+ bin/gstack-lease                                  |  96 +++++++++++++
+ bin/gstack-skill-start                            |  25 ++--
+ bin/gstack-upgrade                                |  29 +++-
+ capy/skill/gstack/SKILL.md                        |   2 +-
+ capy/support.env                                  |  10 +-
+ docs/capy-install.md                              |  36 ++++-
+ docs/designs/FIX_WAVE_2026_10_12.md               | 166 ++++++++++++++++++++++
+ docs/troubleshooting.md                           |  34 +++++
+ docs/unattended.md                                |  22 ++-
+ lib/autoplan-admission.ts                         |  13 ++
+ lib/autoplan-export.ts                            |   2 +-
+ lib/autoplan-gate.ts                              |  14 +-
+ lib/autoplan-prompts.ts                           |   2 +-
+ lib/autoplan-run.ts                               |  16 ++-
+ lib/gate-list.ts                                  |  30 +++-
+ lib/headless-artifacts.ts                         |   3 +-
+ lib/owner-brief.ts                                |   2 +-
+ lib/restamp.ts                                    |   4 +-
+ lib/result-codes.ts                               |  10 ++
+ package.json                                      |   2 +-
+ review/SKILL.md                                   |   9 +-
+ scripts/harness-version.json                      |   2 +-
+ scripts/resolvers/qa.ts                           |   9 +-
+ ship/sections/review-army.md                      |   9 +-
+ test-setup.ts                                     |   5 +
+ test/auto-decide-fixture.test.ts                  |   2 +-
+ test/autoplan-answer-invalidation.test.ts         |  26 ++--
+ test/autoplan-capy-e2e.test.ts                    |  18 +--
+ test/autoplan-gate-judgment.test.ts               |  18 ++-
+ test/autoplan-preconfigured-onboarding-ar.test.ts |   2 +-
+ test/autoplan-residuals.test.ts                   | 148 +++++++++++++++++++
+ test/autoplan-revise.test.ts                      |   2 +-
+ test/capy-skill-wrapper.test.ts                   |  89 +++++++++++-
+ test/ceo-finding-fixture.test.ts                  |   2 +-
+ test/gstack-lease.test.ts                         | 154 ++++++++++++++++++++
+ test/gstack-skill-start.test.ts                   |  16 ++-
+ test/gstack-upgrade-bin.test.ts                   |  72 +++++++++-
+ test/helpers/capy-host.ts                         |   1 +
+ test/helpers/hermetic-env.ts                      |   2 +-
+ 49 files changed, 1111 insertions(+), 132 deletions(-)
+ create mode 100644 bin/gstack-harness-pid.sh
+ create mode 100755 bin/gstack-lease
+ create mode 100644 docs/designs/FIX_WAVE_2026_10_12.md
+ create mode 100644 test/autoplan-residuals.test.ts
+ create mode 100644 test/gstack-lease.test.ts
+Applied autostash.
+Codex skill profile: gpt
+Source: C:\Users\vaish\.codex\config.toml
+Building browse binary...
+bun install v1.4.2 (744846f84)
+
+Checked 239 installs across 297 packages (no changes) [2.80s]
+$ bash scripts/build.sh
+$ mkdir -p extension/lib && cp node_modules/xterm/lib/xterm.js extension/lib/xterm.js && cp node_modules/xterm/css/xterm.css extension/lib/xterm.css && cp node_modules/xterm-addon-fit/lib/xterm-addon-fit.js extension/lib/xterm-addon-fit.js
+Rendering skills for: claude (recorded in /c/Users/vaish/.claude/skills/gstack/.gstack-installed-hosts; GSTACK_RENDER_HOSTS=all renders every host)
+$ bun run scripts/gen-skill-docs.ts --host claude
+GENERATED: SKILL.md
+GENERATED: autoplan/SKILL.md
+GENERATED: benchmark/SKILL.md
+GENERATED: benchmark-models/SKILL.md
+GENERATED: browse/SKILL.md
+GENERATED: canary/SKILL.md
+GENERATED: careful/SKILL.md
+GENERATED: codex/SKILL.md
+GENERATED: context-restore/SKILL.md
+GENERATED: context-save/SKILL.md
+GENERATED: cso/SKILL.md
+GENERATED: design-consultation/SKILL.md
+GENERATED: design-html/SKILL.md
+GENERATED: design-review/SKILL.md
+GENERATED: design-shotgun/SKILL.md
+GENERATED: deslop-shared-libs/SKILL.md
+GENERATED: devex-review/SKILL.md
+GENERATED: diagram/SKILL.md
+GENERATED: document-generate/SKILL.md
+GENERATED: document-release/SKILL.md
+GENERATED: eval-plan/SKILL.md
+GENERATED: freeze/SKILL.md
+GENERATED: gstack-upgrade/SKILL.md
+GENERATED: guard/SKILL.md
+GENERATED: health/SKILL.md
+GENERATED: investigate/SKILL.md
+GENERATED: ios-clean/SKILL.md
+GENERATED: ios-design-review/SKILL.md
+GENERATED: ios-fix/SKILL.md
+GENERATED: ios-qa/SKILL.md
+GENERATED: ios-sync/SKILL.md
+GENERATED: land-and-deploy/SKILL.md
+GENERATED: landing-report/SKILL.md
+GENERATED: learn/SKILL.md
+GENERATED: make-pdf/SKILL.md
+GENERATED: office-hours/SKILL.md
+GENERATED: open-gstack-browser/SKILL.md
+GENERATED: pair-agent/SKILL.md
+GENERATED: plan-ceo-review/SKILL.md
+GENERATED: plan-design-review/SKILL.md
+GENERATED: plan-devex-review/SKILL.md
+GENERATED: plan-eng-review/SKILL.md
+GENERATED: plan-tune/SKILL.md
+GENERATED: qa/SKILL.md
+GENERATED: qa/templates/functional-report-template.md
+GENERATED: qa-only/SKILL.md
+GENERATED: retro/SKILL.md
+GENERATED: review/SKILL.md
+GENERATED: scrape/SKILL.md
+GENERATED: setup-browser-cookies/SKILL.md
+GENERATED: setup-deploy/SKILL.md
+GENERATED: setup-gbrain/SKILL.md
+GENERATED: ship/SKILL.md
+GENERATED: skillify/SKILL.md
+GENERATED: spec/SKILL.md
+GENERATED: sync-gbrain/SKILL.md
+GENERATED: test-audit/SKILL.md
+GENERATED: unfreeze/SKILL.md
+GENERATED: autoplan/sections/ceo-phase.md
+GENERATED: autoplan/sections/design-phase.md
+GENERATED: autoplan/sections/dx-phase.md
+GENERATED: autoplan/sections/eng-phase.md
+GENERATED: autoplan/sections/phase-close.md
+GENERATED: autoplan/sections/tasks-aggregator.md
+GENERATED: autoplan/sections/unattended.md
+GENERATED: browse/sections/command-list.md
+GENERATED: codex/sections/challenge-mode.md
+GENERATED: codex/sections/consult-mode.md
+GENERATED: codex/sections/review-mode.md
+GENERATED: cso/sections/audit-phases.md
+GENERATED: design-consultation/sections/proposal-and-preview.md
+GENERATED: design-html/sections/detector-install-offer.md
+GENERATED: design-html/sections/doctrine.md
+GENERATED: design-html/sections/pretext-patterns.md
+GENERATED: design-shotgun/sections/doctrine.md
+GENERATED: document-release/sections/audit-scope.md
+GENERATED: document-release/sections/release-body.md
+GENERATED: investigate/sections/backlog.md
+GENERATED: investigate/sections/eval-bisect.md
+GENERATED: investigate/sections/flake.md
+GENERATED: investigate/sections/polluter.md
+GENERATED: investigate/sections/race.md
+GENERATED: land-and-deploy/sections/first-run-validation.md
+GENERATED: land-and-deploy/sections/merge-and-deploy.md
+GENERATED: land-and-deploy/sections/readiness-gate.md
+GENERATED: office-hours/sections/design-and-handoff.md
+GENERATED: office-hours/sections/phase-2a-startup-diagnostic.md
+GENERATED: office-hours/sections/phase-2b-builder-brainstorm.md
+GENERATED: plan-ceo-review/sections/checklist.md
+GENERATED: plan-ceo-review/sections/review-sections.md
+GENERATED: plan-design-review/sections/checklist.md
+GENERATED: plan-design-review/sections/review-sections.md
+GENERATED: plan-devex-review/sections/checklist.md
+GENERATED: plan-devex-review/sections/review-sections.md
+GENERATED: plan-eng-review/sections/checklist.md
+GENERATED: plan-eng-review/sections/review-sections.md
+GENERATED: qa-only/sections/exploratory.md
+GENERATED: qa-only/sections/reporting.md
+GENERATED: qa/sections/browser-setup.md
+GENERATED: qa/sections/browser-verify.md
+GENERATED: qa/sections/exploratory.md
+GENERATED: qa/sections/qa-patterns.md
+GENERATED: qa/sections/scope.md
+GENERATED: qa/sections/system-functional.md
+GENERATED: qa/sections/test-bootstrap.md
+GENERATED: retro/sections/report-format.md
+GENERATED: review/sections/adversarial.md
+GENERATED: review/sections/plan-completion.md
+GENERATED: review/sections/review-army.md
+GENERATED: review/sections/shared-code-reuse.md
+GENERATED: setup-gbrain/sections/brain-init.md
+GENERATED: setup-gbrain/sections/claude-md-persist.md
+GENERATED: setup-gbrain/sections/engine-remediation.md
+GENERATED: setup-gbrain/sections/transcript-gate.md
+GENERATED: ship/sections/adversarial.md
+GENERATED: ship/sections/apple-release.md
+GENERATED: ship/sections/changelog.md
+GENERATED: ship/sections/documentation.md
+GENERATED: ship/sections/greptile-early.md
+GENERATED: ship/sections/greptile.md
+GENERATED: ship/sections/handoff.md
+GENERATED: ship/sections/measure.md
+GENERATED: ship/sections/plan-completion.md
+GENERATED: ship/sections/pr-body.md
+GENERATED: ship/sections/review-army.md
+GENERATED: ship/sections/shared-code-reuse.md
+GENERATED: ship/sections/test-coverage.md
+GENERATED: ship/sections/tests.md
+GENERATED: spec/sections/gate-and-file.md
+GENERATED: review/design-checklist.md
+GENERATED: lib/dom-dump.js
+GENERATED: autoplan/DRIVER.md
+
+Token Budget (claude host)
+════════════════════════════════════════════════════════════
+  design-review                   1969 lines  ~ 34206 tokens
+  plan-eng-review/sections/review-sections.md  1546 lines  ~ 24340 tokens
+  office-hours                    1363 lines  ~ 23694 tokens
+  plan-ceo-review                 1286 lines  ~ 20156 tokens
+  plan-design-review              1240 lines  ~ 21177 tokens
+  ship                            1234 lines  ~ 20142 tokens
+  review                          1214 lines  ~ 20150 tokens
+  plan-ceo-review/sections/review-sections.md  1208 lines  ~ 20385 tokens
+  retro                           1207 lines  ~ 17941 tokens
+  devex-review                    1118 lines  ~ 19184 tokens
+  setup-gbrain                    1087 lines  ~ 14992 tokens
+  plan-devex-review               1083 lines  ~ 16757 tokens
+  plan-devex-review/sections/review-sections.md  1038 lines  ~ 15485 tokens
+  land-and-deploy                 1037 lines  ~ 18150 tokens
+  plan-tune                       1001 lines  ~ 14053 tokens
+  autoplan                         994 lines  ~ 16303 tokens
+  sync-gbrain                      947 lines  ~ 14733 tokens
+  design-shotgun                   914 lines  ~ 14267 tokens
+  spec                             905 lines  ~ 14181 tokens
+  codex                            901 lines  ~ 14952 tokens
+  design-html                      878 lines  ~ 13863 tokens
+  design-consultation              830 lines  ~ 15500 tokens
+  document-generate                829 lines  ~ 11220 tokens
+  skillify                         799 lines  ~ 11076 tokens
+  qa                               793 lines  ~ 12850 tokens
+  investigate                      759 lines  ~ 12781 tokens
+  pair-agent                       738 lines  ~ 10615 tokens
+  ship/sections/review-army.md     730 lines  ~ 12370 tokens
+  plan-design-review/sections/review-sections.md   728 lines  ~ 12660 tokens
+  health                           721 lines  ~ 10971 tokens
+  plan-eng-review                  713 lines  ~ 12923 tokens
+  canary                           708 lines  ~ 12821 tokens
+  office-hours/sections/design-and-handoff.md   707 lines  ~ 10410 tokens
+  ios-qa                           657 lines  ~ 11080 tokens
+  context-save                     642 lines  ~  9903 tokens
+  document-release/sections/release-body.md   641 lines  ~  9097 tokens
+  context-restore                  623 lines  ~ 10430 tokens
+  setup-deploy                     616 lines  ~ 10976 tokens
+  qa-only                          604 lines  ~ 10992 tokens
+  design-consultation/sections/proposal-and-preview.md   596 lines  ~ 10552 tokens
+  document-release                 568 lines  ~  9726 tokens
+  learn                            530 lines  ~  8282 tokens
+  eval-plan                        512 lines  ~  9338 tokens
+  test-audit                       511 lines  ~  9853 tokens
+  landing-report                   496 lines  ~  8296 tokens
+  ship/sections/test-coverage.md   479 lines  ~  8955 tokens
+  browse                           478 lines  ~  8542 tokens
+  spec/sections/gate-and-file.md   473 lines  ~  7526 tokens
+  benchmark                        465 lines  ~  7452 tokens
+  ship/sections/tests.md           454 lines  ~  6763 tokens
+  ios-design-review                443 lines  ~  8063 tokens
+  scrape                           440 lines  ~  7007 tokens
+  ios-clean                        437 lines  ~  7874 tokens
+  ios-fix                          434 lines  ~  7766 tokens
+  ios-sync                         429 lines  ~  7890 tokens
+  open-gstack-browser              422 lines  ~  4744 tokens
+  gstack-upgrade                   417 lines  ~  5576 tokens
+  make-pdf                         417 lines  ~  5085 tokens
+  ship/sections/plan-completion.md   388 lines  ~  6486 tokens
+  ship/sections/adversarial.md     363 lines  ~  6609 tokens
+  land-and-deploy/sections/readiness-gate.md   309 lines  ~  3988 tokens
+  diagram                          306 lines  ~  4126 tokens
+  review/sections/adversarial.md   297 lines  ~  5804 tokens
+  benchmark-models                 293 lines  ~  4027 tokens
+  setup-gbrain/sections/brain-init.md   270 lines  ~  2929 tokens
+  codex/sections/review-mode.md    266 lines  ~  4106 tokens
+  review/sections/review-army.md   264 lines  ~  4147 tokens
+  ship/sections/pr-body.md         259 lines  ~  3954 tokens
+  land-and-deploy/sections/merge-and-deploy.md   251 lines  ~  4091 tokens
+  SKILL.md                         244 lines  ~  4067 tokens
+  setup-browser-cookies            238 lines  ~  3460 tokens
+  review/sections/plan-completion.md   233 lines  ~  4247 tokens
+  qa/sections/qa-patterns.md       227 lines  ~  2847 tokens
+  codex/sections/consult-mode.md   222 lines  ~  3260 tokens
+  deslop-shared-libs               215 lines  ~  3298 tokens
+  autoplan/sections/ceo-phase.md   196 lines  ~  3147 tokens
+  land-and-deploy/sections/first-run-validation.md   189 lines  ~  2476 tokens
+  browse/sections/command-list.md   177 lines  ~  4296 tokens
+  cso                              171 lines  ~  4506 tokens
+  autoplan/sections/eng-phase.md   165 lines  ~  2572 tokens
+  office-hours/sections/phase-2a-startup-diagnostic.md   164 lines  ~  3398 tokens
+  autoplan/sections/dx-phase.md    156 lines  ~  2491 tokens
+  codex/sections/challenge-mode.md   151 lines  ~  2498 tokens
+  design-html/sections/pretext-patterns.md   146 lines  ~  1216 tokens
+  autoplan/sections/design-phase.md   129 lines  ~  2120 tokens
+  retro/sections/report-format.md   128 lines  ~  1433 tokens
+  ship/sections/documentation.md   119 lines  ~  2116 tokens
+  cso/sections/audit-phases.md     117 lines  ~  3875 tokens
+  qa/sections/browser-setup.md     115 lines  ~  2718 tokens
+  careful                          113 lines  ~  1267 tokens
+  qa-only/sections/exploratory.md   108 lines  ~  2115 tokens
+  setup-gbrain/sections/transcript-gate.md   106 lines  ~  1327 tokens
+  freeze                           102 lines  ~  1138 tokens
+  ship/sections/apple-release.md    99 lines  ~  4475 tokens
+  ship/sections/greptile.md         96 lines  ~  1508 tokens
+  guard                             93 lines  ~  1032 tokens
+  qa/sections/exploratory.md        93 lines  ~  1925 tokens
+  design-html/sections/doctrine.md    87 lines  ~  1177 tokens
+  design-shotgun/sections/doctrine.md    87 lines  ~  1177 tokens
+  qa/sections/test-bootstrap.md     87 lines  ~  1817 tokens
+  qa-only/sections/reporting.md     79 lines  ~  1220 tokens
+  autoplan/sections/tasks-aggregator.md    72 lines  ~  1028 tokens
+  setup-gbrain/sections/engine-remediation.md    72 lines  ~   971 tokens
+  autoplan/sections/phase-close.md    71 lines  ~  1279 tokens
+  ship/sections/measure.md          67 lines  ~  1110 tokens
+  qa/sections/system-functional.md    62 lines  ~   954 tokens
+  ship/sections/greptile-early.md    58 lines  ~   863 tokens
+  document-release/sections/audit-scope.md    52 lines  ~   841 tokens
+  investigate/sections/flake.md     51 lines  ~   840 tokens
+  ship/sections/changelog.md        48 lines  ~   514 tokens
+  unfreeze                          44 lines  ~   436 tokens
+  office-hours/sections/phase-2b-builder-brainstorm.md    44 lines  ~   855 tokens
+  design-html/sections/detector-install-offer.md    41 lines  ~   911 tokens
+  setup-gbrain/sections/claude-md-persist.md    41 lines  ~   371 tokens
+  plan-ceo-review/sections/checklist.md    38 lines  ~   490 tokens
+  plan-eng-review/sections/checklist.md    35 lines  ~   418 tokens
+  review/sections/shared-code-reuse.md    35 lines  ~   585 tokens
+  ship/sections/shared-code-reuse.md    35 lines  ~   585 tokens
+  investigate/sections/polluter.md    34 lines  ~   499 tokens
+  plan-devex-review/sections/checklist.md    34 lines  ~   406 tokens
+  investigate/sections/backlog.md    32 lines  ~   455 tokens
+  investigate/sections/race.md      28 lines  ~   378 tokens
+  plan-design-review/sections/checklist.md    28 lines  ~   314 tokens
+  investigate/sections/eval-bisect.md    26 lines  ~   369 tokens
+  qa/sections/scope.md              24 lines  ~   397 tokens
+  ship/sections/handoff.md          23 lines  ~   343 tokens
+  qa/sections/browser-verify.md     20 lines  ~   288 tokens
+  autoplan/sections/unattended.md    12 lines  ~   159 tokens
+────────────────────────────────────────────────────────────
+  TOTAL                          55054 lines  ~894221 tokens
+
+GENERATED: gstack/llms.txt
+GENERATED: agents-digest/gstack-AGENTS.md
+[gen-agents-digest] agents-digest/gstack-AGENTS.md: 1767 bytes (budget 2048)
+GENERATED: bin/gstack-doctor-components.sh
+  [70ms]  bundle  15 modules
+ [487ms] compile  browse/dist/browse.exe
+   [7ms]  bundle  1 modules
+ [665ms] compile  browse/dist/find-browse.exe
+  [44ms]  bundle  31 modules
+ [665ms] compile  design/dist/design.exe
+[2.414s]  bundle  344 modules
+ [726ms] compile  make-pdf/dist/pdf.exe
+  [73ms]  bundle  2 modules
+ [712ms] compile  bin/gstack-global-discover.exe
+ [339ms]  bundle  28 modules
+ [750ms] compile  C:/Users/vaish/.claude/skills/gstack/bin/.gstack-cso-stage.sBKLBT/gstack-cso-core.exe
+launcher-windows.c
+publish-lock.c
+rm: cannot remove '/c/Users/vaish/.claude/skills/gstack/bin/.gstack-cso-stage.sBKLBT/gstack-cso-publish-lock.exe': Permission denied
+Building Node-compatible server bundle...
+Bundled 81 modules in 23ms
+
+  server-node.mjs  0.63 MB  (entry point)
+
+Node server bundle ready: C:/Users/vaish/.claude/skills/gstack/browse/dist/server-node.mjs
+Qualified CSO images were not preloaded: Contained target execution requires a Linux or macOS host with amd64/arm64 Linux Docker images. Static audits remain available.
+  linked skills: autoplan benchmark-models benchmark browse canary careful codex context-restore context-save cso design-consultation design-html design-review design-shotgun deslop-shared-libs devex-review diagram document-generate document-release eval-plan freeze gstack-upgrade guard health investigate ios-clean ios-design-review ios-fix ios-qa ios-sync land-and-deploy landing-report learn make-pdf office-hours open-gstack-browser pair-agent plan-ceo-review plan-design-review plan-devex-review plan-eng-review plan-tune qa-only qa retro review scrape setup-browser-cookies setup-deploy setup-gbrain ship skillify spec sync-gbrain test-audit unfreeze
+  note: Windows install uses file copies (no Developer Mode required). Re-run ./setup after every 'git pull' to refresh skill files.
+  linked root skill alias: gstack
+gstack ready (claude).
+  browse: /c/Users/vaish/.claude/skills/gstack/browse/dist/browse.exe
+  browser: gstack browser (fallback). Install Aside for the primary path: aside.com (macOS 15+)
+  healed hook registrations: removed 0, repointed 1 (backup: settings.json.bak.<ts>; note: later registrations in this run move the rollback pointer — restore the heal's own .bak file directly if needed)
+gbrain not detected — brain-aware blocks suppressed in planning-skill SKILL.md files (zero token overhead).
+  To enable: install gbrain via /setup-gbrain, then re-run ./setup or 'gstack-config gbrain-refresh'.
+
+Plan-tune cathedral hooks not installed (non-interactive setup).
+Install with: ./setup --plan-tune-hooks
+  (or set GSTACK_PLAN_TUNE_HOOKS=yes, or run the commands below)
+  /c/Users/vaish/.claude/skills/gstack/bin/gstack-settings-hook add-event --event PostToolUse \
+    --matcher '(AskUserQuestion|mcp__.*__AskUserQuestion)' \
+    --command bash /c/Users/vaish/.claude/skills/gstack/hosts/claude/hooks/question-log-hook --source plan-tune-cathedral --timeout 5
+  /c/Users/vaish/.claude/skills/gstack/bin/gstack-settings-hook add-event --event PreToolUse \
+    --matcher '(AskUserQuestion|mcp__.*__AskUserQuestion)' \
+    --command bash /c/Users/vaish/.claude/skills/gstack/hosts/claude/hooks/question-preference-hook --source plan-tune-cathedral --timeout 5
+  re-pointed Stop hook to bash /c/Users/vaish/.claude/skills/gstack/hosts/claude/hooks/timeline-stop-hook (previous registration held a stale path)
+
+Tip: gstack can block pushes containing credentials (per-repo git hook).
+     Enable once: gstack-config set redact_prepush_hook true — /ship
+     installs the hook automatically in every repo you ship from.
+
+Install summary:
+  HOST      TIER             SCOPE    RESULT     VERSION                     DESTINATION  (source)
+  claude    full             global   updated    1.91.100.0 -> 1.91.101.0    ~/.claude/skills  (source: ~/.claude/skills/gstack)
+
+Moved 1 customized SKILL.md file(s) to /c/Users/vaish/.gstack/backups/skills/20261015T195448 before installing gstack's: review
+  Those were gstack-generated files you had edited; restore anything you meant to keep under a different skill name.

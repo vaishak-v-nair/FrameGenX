@@ -1,0 +1,101 @@
+Evaluation directory: E:\BrosKi\framegenx\runs\training\76fada99-67db-4fbe-a508-c0ef96e6042f\evaluation_b37d64245406
+
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s]
+Loading weights: 100%|##########| 196/196 [00:00<00:00, 3110.77it/s]
+
+Loading weights:   0%|          | 0/517 [00:00<?, ?it/s]
+Loading weights:  57%|#####7    | 295/517 [00:00<00:00, 2878.42it/s]
+Loading weights: 100%|##########| 517/517 [00:00<00:00, 2756.78it/s]
+W1014 21:13:43.158000 21760 venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Traceback (most recent call last):
+  File "E:\BrosKi\framegenx\scripts\evaluate_adapter.py", line 126, in main
+    unet.load_lora_adapter(str(checkpoint), prefix="unet", weight_name="adapter.safetensors",
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                          adapter_name="evaluated", local_files_only=True)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BrosKi\framegenx\venv\Lib\site-packages\diffusers\loaders\peft.py", line 250, in load_lora_adapter
+    lora_config = _create_lora_config(
+        state_dict,
+    ...<4 lines>...
+        adapter_name=adapter_name,
+    )
+  File "E:\BrosKi\framegenx\venv\Lib\site-packages\diffusers\utils\peft_utils.py", line 364, in _create_lora_config
+    _maybe_raise_error_for_ambiguous_keys(lora_config_kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "E:\BrosKi\framegenx\venv\Lib\site-packages\diffusers\utils\peft_utils.py", line 382, in _maybe_raise_error_for_ambiguous_keys
+    rank_pattern = config["rank_pattern"].copy()
+                   ~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'rank_pattern'
+{
+  "status": "failed",
+  "metric_scope": "paired_NF4_generation_pilot_only",
+  "full_contract_CSR": null,
+  "quality_status": "unverified",
+  "promotion_status": "unqualified",
+  "adapter": {
+    "quality_status": "unverified",
+    "experimental": true,
+    "training_run_id": "76fada99-67db-4fbe-a508-c0ef96e6042f",
+    "adapter_sha256": "e5d3bdc876d2e1d61498bc6a1393da7c3d1f50917d30d56bccc1d9c6092a7f63",
+    "base_model": "stabilityai/stable-diffusion-xl-base-1.0"
+  },
+  "protocol_sha256": "b37d6424540644851d353bc6178ee45bd4858fd6a08d82de98f6f1e8580c161b",
+  "protocol": {
+    "schema": "framegenx-paired-pilot-v1",
+    "steps": 25,
+    "guidance_scale": 7.0,
+    "seeds": [
+      42,
+      43
+    ],
+    "cases": [
+      {
+        "id": "apple_count_color",
+        "prompt": "Exactly three red apples arranged in a row on a plain white table, with each apple clearly separated.",
+        "requirements": [
+          "Exactly three apples are visible.",
+          "Every apple is red.",
+          "The apples form a clearly separated row.",
+          "A white table is visible."
+        ]
+      },
+      {
+        "id": "vehicle_binding",
+        "prompt": "One red car to the left of one blue bus on a plain gray road.",
+        "requirements": [
+          "Exactly one car is visible.",
+          "Exactly one bus is visible.",
+          "The car is red.",
+          "The bus is blue.",
+          "The car is left of the bus.",
+          "A gray road is visible."
+        ]
+      },
+      {
+        "id": "animal_relation",
+        "prompt": "Exactly one cat on the left and exactly one dog on the right, clearly separated.",
+        "requirements": [
+          "Exactly one cat is visible.",
+          "Exactly one dog is visible.",
+          "The cat is left of the dog.",
+          "The animals are clearly separated."
+        ]
+      },
+      {
+        "id": "bottle_negation",
+        "prompt": "Exactly two green bottles on a white table. No red bottle.",
+        "requirements": [
+          "Exactly two bottles are visible.",
+          "Both bottles are green.",
+          "A white table is visible.",
+          "No red bottle is visible."
+        ]
+      }
+    ]
+  },
+  "evaluator_code_sha256": "a06e507ff3ad90b9e5e867400c85643745e9f01a3b97881b700636b4a712be75",
+  "model_snapshot": "462165984030d82259a11f4367a4eed129e94a7b",
+  "model_sha256": "83e012a805b84c7ca28e5646747c90a243c65c8ba4f070e2d7ddc9d74661e139",
+  "error": "KeyError: 'rank_pattern'",
+  "elapsed_seconds": 54.35378010000022
+}

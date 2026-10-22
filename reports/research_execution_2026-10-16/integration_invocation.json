@@ -1,0 +1,7 @@
+{
+  "scope": "Actual mounted FastAPI application and built assets in a CPU-only verification process",
+  "cuda_visible_devices": "-1",
+  "nvml_based_availability_check": true,
+  "provider_calls": "denied; high ephemeral loopback allowed for Windows event loops",
+  "generation_requests": false
+}

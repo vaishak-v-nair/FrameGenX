@@ -1,0 +1,23 @@
+{
+  "accepted": true,
+  "failures": [],
+  "signals": {
+    "detected_counts": {
+      "man": 1,
+      "suit": 1,
+      "neon sign": 1
+    },
+    "raw_detected_counts": {
+      "man": 1,
+      "suit": 1,
+      "neon sign": 1
+    },
+    "expected_counts": {
+      "man": 1,
+      "suit": 1,
+      "neon sign": 1
+    }
+  },
+  "root_causes": [],
+  "actions": []
+}

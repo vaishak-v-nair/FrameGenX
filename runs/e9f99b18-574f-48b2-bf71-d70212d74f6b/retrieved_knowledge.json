@@ -1,0 +1,47 @@
+{
+  "caption_hits": [
+    {
+      "id": "coco_106881",
+      "caption": "A bird sitting perched on a tree branch.",
+      "image": "http://images.cocodataset.org/val2017/000000106881.jpg",
+      "score": 0.016234796404019036,
+      "retrieval_mode": "hybrid_rrf"
+    },
+    {
+      "id": "coco_479099",
+      "caption": "A tree standing in the middle of a grass circle.",
+      "image": "http://images.cocodataset.org/val2017/000000479099.jpg",
+      "score": 0.016086065573770493,
+      "retrieval_mode": "hybrid_rrf"
+    },
+    {
+      "id": "coco_485895",
+      "caption": "The giraffe is standing in the shade of the tree.",
+      "image": "http://images.cocodataset.org/val2017/000000485895.jpg",
+      "score": 0.015677655677655677,
+      "retrieval_mode": "hybrid_rrf"
+    }
+  ],
+  "layout_blueprint": {
+    "entity_count": 1,
+    "name": "Single Subject Centered",
+    "description": "Dominant single foreground subject centered in frame",
+    "boxes": [
+      {
+        "anchor": "center",
+        "ymin": 0.15,
+        "xmin": 0.15,
+        "ymax": 0.85,
+        "xmax": 0.85,
+        "z_index": 1
+      }
+    ]
+  },
+  "style_preset": {
+    "preset_name": "photorealistic",
+    "descriptors": "photograph, 35mm lens, sharp focus, natural lighting, subsurface scattering, authentic textures",
+    "lighting": "soft directional daylight with realistic ambient bounce",
+    "camera": "eye-level 50mm f/2.8 lens, shallow depth of field",
+    "negative": "cartoon, illustration, 3d render, distorted, oversaturated, plastic"
+  }
+}

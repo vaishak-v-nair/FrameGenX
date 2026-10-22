@@ -1,0 +1,23 @@
+[
+  {
+    "id": "coco_136772",
+    "caption": "a small bowl of fruit on a table",
+    "image": "http://images.cocodataset.org/val2017/000000136772.jpg",
+    "score": 0.016086065573770493,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_125850",
+    "caption": "A cat laying in a green bowl on a wooden table.",
+    "image": "http://images.cocodataset.org/val2017/000000125850.jpg",
+    "score": 0.015826612903225807,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_2149",
+    "caption": "A large white bowl of many green apples.",
+    "image": "http://images.cocodataset.org/val2017/000000002149.jpg",
+    "score": 0.00967741935483871,
+    "retrieval_mode": "hybrid_rrf"
+  }
+]

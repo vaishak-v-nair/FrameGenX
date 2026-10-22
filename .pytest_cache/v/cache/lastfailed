@@ -1,0 +1,5 @@
+{
+  "tests/test_stage_graph.py::test_hybrid_abstains_when_dense_confirms_nothing": true,
+  "tests/pressure_test.py::test_compel_integration": true,
+  "test_pipeline.py": true
+}

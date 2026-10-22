@@ -1,0 +1,297 @@
+{
+  "generated_at": "2026-10-17T05:52:31.695316+00:00",
+  "scope": "Executed CPU research and read-only full-stack evidence integration; broader stack roadmap remains staged",
+  "status": "execution_complete_quality_gate_not_met",
+  "run_id": "51529996-23e9-436d-91ba-2107057739e8",
+  "quality_status": "unverified",
+  "full_contract_CSR": null,
+  "reduction_claim": false,
+  "dataset": {
+    "license": "CC-BY-4.0",
+    "manifest_sha256": "2920812e402c8f723ab8a6803a5d3f35c14b0c2ddf797e8d51b3defa7afab264",
+    "name": "VSM Cards",
+    "records": 4096,
+    "revision": "4ee0878f6dc96b4a258e344cffb3182024d5a6e1",
+    "split_counts": {
+      "test": 588,
+      "train": 2908,
+      "validation": 600
+    }
+  },
+  "classical_test": {
+    "balanced_accuracy": 1.0,
+    "by_corruption": {
+      "color_change": {
+        "correct": 588,
+        "n": 588
+      },
+      "missing_tile": {
+        "correct": 588,
+        "n": 588
+      },
+      "noise": {
+        "correct": 588,
+        "n": 588
+      },
+      "pixel_shuffle": {
+        "correct": 588,
+        "n": 588
+      },
+      "source_valid": {
+        "correct": 588,
+        "n": 588
+      }
+    },
+    "confusion_matrix_true_rows_predicted_columns": [
+      [
+        2352,
+        0
+      ],
+      [
+        0,
+        588
+      ]
+    ],
+    "n": 2940,
+    "roc_auc": 1.0
+  },
+  "evaluation": {
+    "arms": {
+      "baseline": {
+        "counts": {
+          "error": 0,
+          "invalid": 32,
+          "unknown": 0,
+          "valid": 0
+        },
+        "n": 32,
+        "nearest_train_16px_rmse_mean": 0.35397040843963623,
+        "unique_image_hashes": 32,
+        "valid_rate": 0.0,
+        "valid_rate_wilson_95": [
+          0,
+          0.10717919825506533
+        ]
+      },
+      "candidate": {
+        "counts": {
+          "error": 0,
+          "invalid": 32,
+          "unknown": 0,
+          "valid": 0
+        },
+        "n": 32,
+        "nearest_train_16px_rmse_mean": 0.3396751917898655,
+        "unique_image_hashes": 32,
+        "valid_rate": 0.0,
+        "valid_rate_wilson_95": [
+          0,
+          0.10717919825506533
+        ]
+      }
+    },
+    "bootstrap_limit": "Empirical interval conditional on one fitted pair; identical outcomes can give [0,0] without establishing population equality",
+    "conclusion": "feasibility_only_no_qualified_reduction_claim",
+    "full_contract_CSR": null,
+    "paired_seed_bootstrap_95": [
+      0.0,
+      0.0
+    ],
+    "paired_valid_rate_delta": 0.0,
+    "quality_status": "unverified",
+    "reduction_claim": false,
+    "scope": "color_aware_cards_template_validity_only",
+    "training_seed_replication": 1
+  },
+  "resources": {
+    "cuda_initialized_by_experiment": false,
+    "device": "cpu",
+    "elapsed_seconds": 1058.5054092999999,
+    "limits": {
+      "minimum_available_bytes": 750000000,
+      "process_tree_rss_bytes": 8000000000,
+      "wall_seconds": 5400
+    },
+    "measurement": "sampled CPU RSS/system used; not committed memory or GPU peak",
+    "observed_minimum_available_bytes": 3123470336,
+    "observed_peak_process_tree_rss_bytes": 1330577408,
+    "observed_peak_system_used_bytes": 13745676288
+  },
+  "training": {
+    "baseline": {
+      "steps": 500,
+      "rho": 0.0,
+      "initial_sha256": "afc637cc6051ad18e6fb1f2bdd8b645bd23ce31273f5f5d40932daf08b8bb1c4",
+      "checkpoint_sha256": "cdb93447717e1689a07f26c8e128c79e288524d12f9c955d64fdf5c2649040ce",
+      "mlflow_run_id": "5854acfa48974c608389b12f1d747175"
+    },
+    "candidate": {
+      "steps": 500,
+      "rho": 0.1,
+      "initial_sha256": "afc637cc6051ad18e6fb1f2bdd8b645bd23ce31273f5f5d40932daf08b8bb1c4",
+      "checkpoint_sha256": "c61a6a9ea4b8b9f3ea430f4ba1fa5ea21bdf8c66ab1e7194e8cf81afcc523067",
+      "mlflow_run_id": "540a2255863343b29ada1d3f11f9411d"
+    }
+  },
+  "verification": {
+    "cpu_regression": {
+      "passed": 334,
+      "failed": 0,
+      "warnings": 20,
+      "excluded": "tests/pressure_test.py"
+    },
+    "frontend_state_tests": {
+      "passed": 9,
+      "failed": 0
+    },
+    "frontend_build": "passed",
+    "frontend_lint": "passed",
+    "installed_dependency_check": {
+      "packages": 283,
+      "result": "compatible_in_existing_environment"
+    },
+    "python_AST_parse": {
+      "files": 18,
+      "result": "passed",
+      "ruff": "not installed; no Python lint claim"
+    },
+    "notebook_training": {
+      "execution_status": "completed",
+      "executed_code_cells": 7,
+      "error_outputs": 0,
+      "frozen_cell_sources_match": true,
+      "notebook_sha256": "bc8edeed6533817c68b4f2d3a7cc0db8cab44a66c7f174819dad379d382a8b39",
+      "metadata": {
+        "execution_status": "completed",
+        "finished_at": "2026-10-17T05:38:21.327278+00:00",
+        "quality_status": "unverified",
+        "started_at": "2026-10-17T05:19:22.481067+00:00"
+      }
+    },
+    "notebook_reexecution": {
+      "execution_status": "completed",
+      "reused_run_id": "51529996-23e9-436d-91ba-2107057739e8",
+      "executed_code_cells": 7,
+      "error_outputs": 0,
+      "frozen_cell_sources_match": true,
+      "new_experiment_created": false,
+      "model_retrained": false,
+      "notebook_sha256": "8ff5627706df13f8553d5385e7f8fdf6cf0cae96f18d07f20a8faace28c09f6e"
+    },
+    "integration": {
+      "actual_mlflow_statuses": {
+        "540a2255863343b29ada1d3f11f9411d": "FINISHED",
+        "5854acfa48974c608389b12f1d747175": "FINISHED",
+        "96421fd0383d4976bbb26925260a685a": "FINISHED"
+      },
+      "built_frontend": "HTML/entrypoint served; actual API payload accepted by frontend parser",
+      "checked_artifacts": 86,
+      "checkpoint_output_shapes": {
+        "baseline": [
+          6,
+          32,
+          3,
+          3
+        ],
+        "candidate": [
+          6,
+          32,
+          3,
+          3
+        ]
+      },
+      "cuda_initialized": false,
+      "external_calls": 0,
+      "frontend_parser": "frontend_contract_verified",
+      "limits": [
+        "No rendered browser, accessibility, GPU generation, hosted or human calibration proof",
+        "Image quality remains unverified"
+      ],
+      "mounted_api": "read, limits and mutation rejection passed",
+      "run_id": "51529996-23e9-436d-91ba-2107057739e8",
+      "status": "passed_local_artifact_and_mounted_api_checks"
+    },
+    "same_seed_repetition": {
+      "arms": {
+        "baseline": {
+          "all_tensors_exactly_equal": true,
+          "identical_pngs": 32,
+          "sample_pngs": 32,
+          "tensors": 26
+        },
+        "candidate": {
+          "all_tensors_exactly_equal": true,
+          "identical_pngs": 32,
+          "sample_pngs": 32,
+          "tensors": 26
+        }
+      },
+      "final_run": "51529996-23e9-436d-91ba-2107057739e8",
+      "old_run": "d523c2eb-5f80-4a1d-ac5b-11bdefa80adb",
+      "scope": "same-seed repeat after non-numerical integrity/lifecycle amendments; not independent training-seed replication"
+    }
+  },
+  "exploratory_diagnostic": {
+    "scope": "post hoc, first eight validation grids, no training/sampler/gate changes",
+    "baseline_terminal": {
+      "alpha_bar": 2.4285407107527135e-07,
+      "clipped_x0_rmse": 1.3555500507354736,
+      "epsilon_mse": 0.0232792180031538,
+      "identity_epsilon_mse": 2.2168325131133315e-07,
+      "mean_learned_variance": 0.9987874031066895,
+      "predicted_x0_outside_unit_range_fraction": 0.997039794921875,
+      "timestep": 99,
+      "unclipped_x0_rmse": 309.6075134277344
+    },
+    "candidate_terminal": {
+      "alpha_bar": 2.4285407107527135e-07,
+      "clipped_x0_rmse": 1.3387657403945923,
+      "epsilon_mse": 0.02244991809129715,
+      "identity_epsilon_mse": 2.2168325131133315e-07,
+      "mean_learned_variance": 0.998792827129364,
+      "predicted_x0_outside_unit_range_fraction": 0.9969990849494934,
+      "timestep": 99,
+      "unclipped_x0_rmse": 304.0427551269531
+    }
+  },
+  "remaining": [
+    "I-HallA image assets, permitted VQA, reviewed disjoint training partition and data rights",
+    "Compatible qualified SDXL variance head/sampler/export; Cards checkpoint inactive",
+    "Rendered browser/a11y testing rejected by earlier automatic approval review",
+    "GPU, clean-install/container/hosted, remote CI and human calibration gates",
+    "Exact ChatGPT Dots service identification",
+    "Existing tracked/staged artifacts and remaining broader 30-task roadmap"
+  ],
+  "git": {
+    "generated_at": "2026-10-17T10:27:29.3480196+05:30",
+    "tracked_changed_count": 2064,
+    "changed_run_artifacts": 1863,
+    "changed_python_bytecode": 56,
+    "index_policy": "No index cleanup, unstaging, removal, reset, commit or push performed",
+    "new_ignores": [
+      "runs/research_data/",
+      "runs/research_cards/",
+      "runs/research_jupyter/",
+      "runs/mlflow_research.db*",
+      "venv/",
+      ".venv/",
+      "node_modules/",
+      "frontend/dist/",
+      "__pycache__/",
+      "*.py[cod]",
+      ".pytest_cache/",
+      ".pytest_tmp*/",
+      ".ruff_cache/",
+      ".ipynb_checkpoints/"
+    ],
+    "limitation": "Ignore patterns prevent new generated additions; already tracked/staged artifacts still count toward the IDE Git change limit",
+    "final_snapshot": {
+      "generated_at": "2026-10-17T05:56:11.028639+00:00",
+      "tracked_changed_count": 2065,
+      "changed_run_artifacts": 1863,
+      "changed_python_bytecode": 56,
+      "visible_untracked_count": 1009,
+      "ide_warning_resolution": "not visually verified"
+    }
+  }
+}

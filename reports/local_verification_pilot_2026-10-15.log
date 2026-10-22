@@ -1,0 +1,42 @@
+Local verification report: E:\BrosKi\framegenx\runs\constraint_control\e172e12bdea1c6fc\local_verification_31521384b16b.json
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/978 [00:00<?, ?it/s]
+Loading weights:  25%|##5       | 248/978 [00:00<00:00, 2456.44it/s]
+Loading weights:  51%|#####     | 494/978 [00:00<00:00, 2298.85it/s]
+Loading weights:  77%|#######6  | 750/978 [00:00<00:00, 2412.97it/s]
+Loading weights: 100%|##########| 978/978 [00:00<00:00, 2343.69it/s]
+[transformers] You are using a model of type `sam2_video` to instantiate a model of type `sam2`. This may be expected if you are loading a checkpoint that shares a subset of the architecture (e.g., loading a `sam2_video` checkpoint into `Sam2Model`), but is otherwise not supported and can yield errors. Please verify that the checkpoint is compatible with the model you are instantiating.
+
+Loading weights:   0%|          | 0/309 [00:00<?, ?it/s]
+Loading weights:  90%|######### | 279/309 [00:00<00:00, 2774.81it/s]
+Loading weights: 100%|##########| 309/309 [00:00<00:00, 2898.68it/s]
+Verified apple_count_color_43_baseline.png: observed_diagnostics; counts={'apple': 7}
+Verified apple_count_color_43_candidate.png: observed_diagnostics; counts={'apple': 1}
+Verified vehicle_binding_43_baseline.png: observed_diagnostics; counts={'car': 0, 'bus': 1}
+Verified vehicle_binding_43_candidate.png: observed_diagnostics; counts={'car': 0, 'bus': 1}
+{
+  "arms": {
+    "baseline": {
+      "images": 2,
+      "observed_images": 2,
+      "unknown_images": 0,
+      "count_check_passes": 0,
+      "count_and_geometry_passes": 0,
+      "chromatic_binding_applicable_images": 2,
+      "chromatic_binding_supported_images": 0
+    },
+    "candidate": {
+      "images": 2,
+      "observed_images": 2,
+      "unknown_images": 0,
+      "count_check_passes": 0,
+      "count_and_geometry_passes": 0,
+      "chromatic_binding_applicable_images": 2,
+      "chromatic_binding_supported_images": 0
+    }
+  },
+  "full_contract_CSR": null,
+  "scope": "uncalibrated_local_verifier_diagnostics_only",
+  "promotion_status": "unqualified"
+}

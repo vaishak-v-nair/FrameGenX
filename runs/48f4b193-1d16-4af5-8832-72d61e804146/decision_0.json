@@ -1,0 +1,13 @@
+{
+  "accept": false,
+  "reward": 0.116,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": false,
+  "prompt_edits": [
+    "only 1 sunset, nothing else similar",
+    "A beautiful dessert waiting to be shared by two people, An airplane flying in the air during the day., sunset",
+    "sunset, prominent, clearly visible"
+  ]
+}

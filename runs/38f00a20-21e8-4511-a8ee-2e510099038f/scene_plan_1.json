@@ -1,0 +1,15 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "e0e846f0-b120-4174-9173-a93e1ed2786a",
+      "class_name": "wildflower",
+      "attributes": [
+        "blooming"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    }
+  ]
+}

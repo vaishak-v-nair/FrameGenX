@@ -1,0 +1,18 @@
+{
+  "accept": false,
+  "reward": 0.6772,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": false,
+  "prompt_edits": [
+    "exactly 1 peak, each clearly separated, distinct objects",
+    "exactly 1 mist, each clearly separated, distinct objects",
+    "exactly 1 valley, each clearly separated, distinct objects",
+    "exactly 1 light, each clearly separated, distinct objects",
+    "exactly 1 summit, each clearly separated, distinct objects",
+    "mist below peaks",
+    "Light above summit",
+    "wildflower, prominent, clearly visible"
+  ]
+}

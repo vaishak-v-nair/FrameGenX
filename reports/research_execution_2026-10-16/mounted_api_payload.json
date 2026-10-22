@@ -1,0 +1,103 @@
+{
+  "experiments": [
+    {
+      "classical_ml": {
+        "balanced_accuracy": 1.0,
+        "roc_auc": 1.0,
+        "scope": "synthetic_corruption_diagnostic",
+        "test_n": 2940
+      },
+      "dataset": "VSM Cards",
+      "deep_learning": {
+        "baseline": {
+          "counts": {
+            "error": 0,
+            "invalid": 32,
+            "unknown": 0,
+            "valid": 0
+          },
+          "n": 32,
+          "rho": 0.0,
+          "steps": 500,
+          "valid_rate": 0.0
+        },
+        "candidate": {
+          "counts": {
+            "error": 0,
+            "invalid": 32,
+            "unknown": 0,
+            "valid": 0
+          },
+          "n": 32,
+          "rho": 0.1,
+          "steps": 500,
+          "valid_rate": 0.0
+        }
+      },
+      "execution_status": "completed",
+      "full_contract_CSR": null,
+      "id": "51529996-23e9-436d-91ba-2107057739e8",
+      "ihalla_status": "held_out_evaluation_unavailable",
+      "quality_status": "unverified",
+      "records": 4096,
+      "reduction_claim": false,
+      "report_integrity": "checksum_checked_not_semantic_qualification",
+      "sdxl_activation": "blocked",
+      "study_scope": "cards_cpu_feasibility_only"
+    },
+    {
+      "classical_ml": {
+        "balanced_accuracy": 1.0,
+        "roc_auc": 1.0,
+        "scope": "synthetic_corruption_diagnostic",
+        "test_n": 2940
+      },
+      "dataset": "VSM Cards",
+      "deep_learning": {
+        "baseline": {
+          "counts": {
+            "error": 0,
+            "invalid": 32,
+            "unknown": 0,
+            "valid": 0
+          },
+          "n": 32,
+          "rho": 0.0,
+          "steps": 500,
+          "valid_rate": 0.0
+        },
+        "candidate": {
+          "counts": {
+            "error": 0,
+            "invalid": 32,
+            "unknown": 0,
+            "valid": 0
+          },
+          "n": 32,
+          "rho": 0.1,
+          "steps": 500,
+          "valid_rate": 0.0
+        }
+      },
+      "execution_status": "completed",
+      "full_contract_CSR": null,
+      "id": "d523c2eb-5f80-4a1d-ac5b-11bdefa80adb",
+      "ihalla_status": "held_out_evaluation_unavailable",
+      "quality_status": "unverified",
+      "records": 4096,
+      "reduction_claim": false,
+      "report_integrity": "checksum_checked_not_semantic_qualification",
+      "sdxl_activation": "blocked",
+      "study_scope": "cards_cpu_feasibility_only"
+    },
+    {
+      "dataset": "VSM Cards",
+      "execution_status": "failed",
+      "id": "fc58ed37-0b74-45d3-9c90-35a9c9736eb4",
+      "quality_status": "unverified",
+      "study_scope": "cards_cpu_feasibility_only"
+    }
+  ],
+  "scan_truncated": false,
+  "schema": "framegenx-research-list-v1"
+}

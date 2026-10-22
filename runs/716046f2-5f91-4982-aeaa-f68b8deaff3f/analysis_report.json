@@ -1,0 +1,11 @@
+{
+  "accepted": true,
+  "failures": [],
+  "signals": {},
+  "root_causes": [
+    "Scene under-populated -> weak object planning",
+    "Prompt misalignment -> RAG or prompt issue",
+    "Objects clustered -> bad composition"
+  ],
+  "actions": []
+}

@@ -1,0 +1,16 @@
+{
+  "accept": false,
+  "reward": 0.3164,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": false,
+  "prompt_edits": [
+    "single adventurer",
+    "Adventurer on cliff",
+    "Adventurer holding sword",
+    "adventurer, prominent, clearly visible",
+    "sword, prominent, clearly visible",
+    "cliff, prominent, clearly visible"
+  ]
+}

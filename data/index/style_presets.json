@@ -1,0 +1,38 @@
+{
+  "photorealistic": {
+    "descriptors": "photograph, 35mm lens, sharp focus, natural lighting, subsurface scattering, authentic textures",
+    "lighting": "soft directional daylight with realistic ambient bounce",
+    "camera": "eye-level 50mm f/2.8 lens, shallow depth of field",
+    "negative": "cartoon, illustration, 3d render, distorted, oversaturated, plastic"
+  },
+  "cinematic": {
+    "descriptors": "anamorphic widescreen, cinematic lighting, rim lighting, atmospheric volumetric haze, 8k resolution",
+    "lighting": "dramatic chiaroscuro lighting with warm key and cool fill",
+    "camera": "panavision 70mm lens, cinematic color grading, teal and orange",
+    "negative": "flat lighting, amateur snapshot, oversaturated, watermark"
+  },
+  "studio_product": {
+    "descriptors": "commercial studio photography, clean neutral backdrop, commercial lighting, crisp highlights",
+    "lighting": "three-point softbox studio lighting, diffused shadows",
+    "camera": "macro 85mm lens, crisp product focus, f/8 aperture",
+    "negative": "blurry, dark, noisy, cluttered background, distorted geometry"
+  },
+  "pixel_art": {
+    "descriptors": "pixel art, 16-bit retro game aesthetic, sharp pixel contours, vibrant restricted color palette",
+    "lighting": "dithered shading, clean pixel highlights",
+    "camera": "orthographic retro perspective",
+    "negative": "photorealistic, smooth gradient, 3d render, blurry, high poly"
+  },
+  "isometric_3d": {
+    "descriptors": "isometric 3D render, blender 3D, octane render, clean ambient occlusion, clay/matte material",
+    "lighting": "soft global illumination, smooth soft shadows",
+    "camera": "orthographic isometric camera angle at 30 degrees",
+    "negative": "perspective distortion, 2D flat, messy, low resolution"
+  },
+  "cyberpunk_neon": {
+    "descriptors": "cyberpunk aesthetic, vibrant neon reflections, rain-slicked surfaces, high contrast glowing lights",
+    "lighting": "vivid cyan and magenta neon rim lights against deep shadows",
+    "camera": "low-angle dynamic street photography",
+    "negative": "sunlight, pastel colors, monochrome, washed out"
+  }
+}

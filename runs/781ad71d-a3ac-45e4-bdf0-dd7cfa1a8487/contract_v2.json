@@ -1,0 +1,85 @@
+{
+  "schema_version": "2.0",
+  "created_at": "2026-08-15T14:30:22.583464+00:00",
+  "prompt": "A futuristic cyberpunk city skyline at night with neon lights reflecting in a river, highly detailed, photorealistic.",
+  "parsed": {
+    "subject": "city skyline",
+    "objects": [
+      "neon lights",
+      "river"
+    ],
+    "colors": [
+      "neon"
+    ],
+    "primary_subject": "city skyline",
+    "secondary_objects": [
+      "neon lights",
+      "river"
+    ]
+  },
+  "constraints": [
+    {
+      "type": "object_count",
+      "value": 1,
+      "target": "city skyline",
+      "priority": "critical"
+    }
+  ],
+  "rag_hits": [],
+  "rag_influence": {
+    "depth_required": false,
+    "lighting_complex": false
+  },
+  "execution_plan": {
+    "has_human": false,
+    "has_depth": true,
+    "risk_level": "medium"
+  },
+  "signal_map": {
+    "object_count": {
+      "threshold": 1
+    },
+    "class_uniqueness": {
+      "threshold": 1
+    },
+    "depth_layers": {
+      "threshold": 2
+    },
+    "spatial_ratio": {
+      "threshold": 0.2
+    },
+    "embedding": {
+      "threshold": 1.0
+    }
+  },
+  "entities": [
+    {
+      "id": "892cd61a-3439-40d9-9462-095456bed8d4",
+      "class_name": "city skyline",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    },
+    {
+      "id": "1349ef2b-c415-497b-a8f2-e016093e951b",
+      "class_name": "neon lights",
+      "attributes": [
+        "neon"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    },
+    {
+      "id": "6ab837be-34d3-4045-bdb7-0ca7978b26bc",
+      "class_name": "river",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    }
+  ],
+  "spatial_relationships": [],
+  "negations": []
+}

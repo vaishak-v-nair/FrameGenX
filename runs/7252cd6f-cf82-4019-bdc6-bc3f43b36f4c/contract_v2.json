@@ -1,0 +1,130 @@
+{
+  "schema_version": "2.0",
+  "created_at": "2026-08-26T05:31:31.626365+00:00",
+  "prompt": "three bananas in a wooden bowl",
+  "parsed": {
+    "subject": "bananas",
+    "objects": [
+      "bananas",
+      "bowl"
+    ],
+    "colors": [],
+    "primary_subject": "bananas",
+    "secondary_objects": [
+      "bowl"
+    ]
+  },
+  "constraints": [
+    {
+      "type": "object_count",
+      "value": 1,
+      "target": "bananas",
+      "priority": "critical"
+    },
+    {
+      "type": "spatial_relation",
+      "value": {
+        "subject": "banana",
+        "predicate": "inside",
+        "object": "bowl"
+      },
+      "target": "banana->bowl",
+      "priority": "high"
+    }
+  ],
+  "rag_hits": [],
+  "rag_influence": {
+    "depth_required": false,
+    "lighting_complex": false
+  },
+  "execution_plan": {
+    "has_human": false,
+    "has_depth": false,
+    "risk_level": "medium"
+  },
+  "signal_map": {
+    "object_count": {
+      "threshold": 1
+    },
+    "class_uniqueness": {
+      "threshold": 1
+    },
+    "depth_layers": {
+      "threshold": 2
+    },
+    "spatial_ratio": {
+      "threshold": 0.2
+    },
+    "embedding": {
+      "threshold": 1.0
+    }
+  },
+  "entities": [
+    {
+      "id": "b4faed65-24c9-4e89-aa5a-5642b169c4e6",
+      "class_name": "banana",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "48ea4902-99b0-4375-a881-01ebe2b060b5",
+      "class_name": "banana",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "86605a61-b692-4acd-8182-ef7f0baa5a47",
+      "class_name": "banana",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": false
+    },
+    {
+      "id": "066c102d-dbbe-4c28-927d-23e7adc89138",
+      "class_name": "bowl",
+      "attributes": [
+        "wooden"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": false
+    }
+  ],
+  "spatial_relationships": [
+    {
+      "subject": "banana",
+      "predicate": "inside",
+      "object": "bowl"
+    }
+  ],
+  "negations": [],
+  "repair_policy": {
+    "mappings": [
+      {
+        "failure": "object_missing",
+        "action": "prominently featured"
+      },
+      {
+        "failure": "duplicate_object",
+        "action": ""
+      },
+      {
+        "failure": "text_missing",
+        "action": "with clearly legible text"
+      },
+      {
+        "failure": "low_alignment",
+        "action": "sharp focus, highly detailed"
+      }
+    ]
+  }
+}

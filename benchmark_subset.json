@@ -1,0 +1,152 @@
+[
+  {
+    "id": "oc_cats",
+    "category": "object_count",
+    "prompt": "two cats sitting on a wall"
+  },
+  {
+    "id": "oc_apples",
+    "category": "object_count",
+    "prompt": "three red apples on a table"
+  },
+  {
+    "id": "oc_birds",
+    "category": "object_count",
+    "prompt": "four birds flying in the sky"
+  },
+  {
+    "id": "oc_books",
+    "category": "object_count",
+    "prompt": "five books stacked on a desk"
+  },
+  {
+    "id": "oc_cars",
+    "category": "object_count",
+    "prompt": "two cars parked in a driveway"
+  },
+  {
+    "id": "oc_dogs",
+    "category": "object_count",
+    "prompt": "two dogs playing in a park"
+  },
+  {
+    "id": "oc_bananas",
+    "category": "object_count",
+    "prompt": "three bananas in a wooden bowl"
+  },
+  {
+    "id": "oc_candles",
+    "category": "object_count",
+    "prompt": "four candles on a birthday cake"
+  },
+  {
+    "id": "oc_horses",
+    "category": "object_count",
+    "prompt": "two horses standing in a field"
+  },
+  {
+    "id": "oc_cups",
+    "category": "object_count",
+    "prompt": "three cups on a kitchen counter"
+  },
+  {
+    "id": "oc_balloons",
+    "category": "object_count",
+    "prompt": "five balloons floating above a fence"
+  },
+  {
+    "id": "oc_boats",
+    "category": "object_count",
+    "prompt": "two boats on a calm lake"
+  },
+  {
+    "id": "oc_chairs",
+    "category": "object_count",
+    "prompt": "three chairs around a round table"
+  },
+  {
+    "id": "oc_donuts",
+    "category": "object_count",
+    "prompt": "four donuts on a white plate"
+  },
+  {
+    "id": "oc_elephants",
+    "category": "object_count",
+    "prompt": "two elephants walking on a dirt road"
+  },
+  {
+    "id": "oc_bottles",
+    "category": "object_count",
+    "prompt": "three bottles on a shelf"
+  },
+  {
+    "id": "oc_sunflowers",
+    "category": "object_count",
+    "prompt": "four sunflowers in a glass vase"
+  },
+  {
+    "id": "oc_laptops",
+    "category": "object_count",
+    "prompt": "two laptops on an office desk"
+  },
+  {
+    "id": "oc_pumpkins",
+    "category": "object_count",
+    "prompt": "three pumpkins on a porch"
+  },
+  {
+    "id": "oc_oranges",
+    "category": "object_count",
+    "prompt": "five oranges in a basket"
+  },
+  {
+    "id": "cc_car_bike",
+    "category": "color_constraints",
+    "prompt": "a red car parked next to a blue bicycle"
+  },
+  {
+    "id": "cc_jacket",
+    "category": "color_constraints",
+    "prompt": "a person wearing a yellow jacket and green pants"
+  },
+  {
+    "id": "cc_cat_sofa",
+    "category": "color_constraints",
+    "prompt": "a white cat sitting on a black sofa"
+  },
+  {
+    "id": "cc_flower",
+    "category": "color_constraints",
+    "prompt": "a purple flower in a brown pot"
+  },
+  {
+    "id": "cc_laptop",
+    "category": "color_constraints",
+    "prompt": "a silver laptop on a wooden desk"
+  },
+  {
+    "id": "cc_apple",
+    "category": "color_constraints",
+    "prompt": "a green apple on a white plate"
+  },
+  {
+    "id": "cc_umbrella",
+    "category": "color_constraints",
+    "prompt": "an orange umbrella leaning against a gray wall"
+  },
+  {
+    "id": "cc_dog",
+    "category": "color_constraints",
+    "prompt": "a black dog wearing a red collar"
+  },
+  {
+    "id": "cc_mug",
+    "category": "color_constraints",
+    "prompt": "a blue mug next to a silver spoon"
+  },
+  {
+    "id": "cc_teapot",
+    "category": "color_constraints",
+    "prompt": "a pink teapot on a wooden table"
+  }
+]

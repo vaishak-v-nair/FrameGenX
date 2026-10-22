@@ -1,0 +1,27 @@
+{
+  "resolution": 512,
+  "entities": [
+    {
+      "id": "fb98b7a1-c208-4005-97de-f13f6998ab2b",
+      "class_name": "plant",
+      "attributes": [
+        "glowing"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": true
+    },
+    {
+      "id": "5a815f3c-182b-4546-b5d9-8770561866ef",
+      "class_name": "person",
+      "attributes": [
+        "spacesuit"
+      ],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1,
+      "uncounted": false
+    }
+  ]
+}

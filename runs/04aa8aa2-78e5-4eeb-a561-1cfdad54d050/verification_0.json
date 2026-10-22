@@ -1,0 +1,48 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "car",
+      "expected": 1,
+      "detected": 3
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "car": 3
+    },
+    "expected_counts": {
+      "car": 1
+    }
+  },
+  "clip_cos": 0.3828,
+  "clip_norm": 0.9313,
+  "vqa_score": 0.0,
+  "vqa_vacuous": false,
+  "reward": 0.4657,
+  "spatial_result": {
+    "passed": true,
+    "total": 0,
+    "verified": 0,
+    "failures": []
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there a red sleek sports car in the image?",
+      "expected": "yes",
+      "class_name": "car",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "color",
+      "question": "What color is the car?",
+      "expected": "red",
+      "class_name": "car",
+      "answer": "error",
+      "correct": false
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "accepted": false,
+  "failures": [
+    {
+      "type": "spatial_violation",
+      "class_name": "person->surface",
+      "expected": "on",
+      "detected": "object 'surface' not detected"
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "person": 1
+    },
+    "raw_detected_counts": {
+      "person": 1
+    },
+    "expected_counts": {
+      "person": 1
+    }
+  },
+  "root_causes": [],
+  "actions": [
+    "Review person->surface: expected on; object 'surface' not detected."
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "spatial_violation",
+      "class_name": "cat->wall",
+      "expected": "above",
+      "detected": "subject center_y=285 >= object center_y=256"
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "cat": 2,
+      "wall": 1
+    },
+    "expected_counts": {
+      "cat": 2,
+      "wall": 1
+    }
+  },
+  "clip_cos": 0.2737,
+  "clip_norm": 0.4948,
+  "vqa_score": 1.0,
+  "vqa_vacuous": false,
+  "reward": 0.7474,
+  "spatial_result": {
+    "passed": false,
+    "total": 1,
+    "verified": 0,
+    "failures": [
+      {
+        "subject": "cat",
+        "predicate": "above",
+        "object": "wall",
+        "reason": "subject center_y=285 >= object center_y=256"
+      }
+    ],
+    "results": [
+      {
+        "relationship": {
+          "subject": "cat",
+          "predicate": "above",
+          "object": "wall"
+        },
+        "passed": false,
+        "reason": "subject center_y=285 >= object center_y=256",
+        "subject_box": {
+          "xmin": 364.073486328125,
+          "ymin": 189.5095672607422,
+          "xmax": 436.7603759765625,
+          "ymax": 380.52093505859375,
+          "score": 0.845245361328125
+        },
+        "object_box": {
+          "xmin": 0.019134521484375,
+          "ymin": 0.07891845703125,
+          "xmax": 511.9997863769531,
+          "ymax": 512.0748901367188,
+          "score": 0.7036919593811035
+        }
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Are there cat in the image?",
+      "expected": "yes",
+      "class_name": "cat",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "existence",
+      "question": "Is there a wall in the image?",
+      "expected": "yes",
+      "class_name": "wall",
+      "answer": "yes",
+      "correct": true
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "accepted": false,
+  "failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "mist",
+      "expected": 1,
+      "detected": 0
+    },
+    {
+      "type": "count_mismatch",
+      "class_name": "valley",
+      "expected": 1,
+      "detected": 0
+    },
+    {
+      "type": "count_mismatch",
+      "class_name": "light",
+      "expected": 1,
+      "detected": 0
+    },
+    {
+      "type": "count_mismatch",
+      "class_name": "summit",
+      "expected": 1,
+      "detected": 0
+    },
+    {
+      "type": "spatial_violation",
+      "class_name": "mist->peaks",
+      "expected": "below",
+      "detected": "subject 'mist' not detected"
+    },
+    {
+      "type": "spatial_violation",
+      "class_name": "light->summit",
+      "expected": "above",
+      "detected": "subject 'light' not detected"
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "peak": 1,
+      "wildflower": 1,
+      "mist": 0,
+      "valley": 0,
+      "light": 0,
+      "summit": 0
+    },
+    "expected_counts": {
+      "peak": 1,
+      "wildflower": 1,
+      "mist": 1,
+      "valley": 1,
+      "light": 1,
+      "summit": 1
+    }
+  },
+  "root_causes": [
+    "Scene under-populated -> weak object planning",
+    "Prompt misalignment -> RAG or prompt issue",
+    "Objects clustered -> bad composition"
+  ],
+  "actions": []
+}

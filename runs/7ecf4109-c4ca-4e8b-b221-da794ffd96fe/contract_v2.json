@@ -1,0 +1,93 @@
+{
+  "schema_version": "2.0",
+  "created_at": "2026-08-16T14:31:11.244846+00:00",
+  "prompt": "two cats sitting on a wall",
+  "parsed": {
+    "subject": "cats",
+    "objects": [
+      "wall"
+    ],
+    "colors": [],
+    "primary_subject": "cats",
+    "secondary_objects": []
+  },
+  "constraints": [
+    {
+      "type": "object_count",
+      "value": 2,
+      "target": "cat",
+      "priority": "critical"
+    },
+    {
+      "type": "spatial_relation",
+      "value": {
+        "subject": "cats",
+        "predicate": "on",
+        "object": "wall"
+      },
+      "target": "cats->wall",
+      "priority": "high"
+    }
+  ],
+  "rag_hits": [],
+  "rag_influence": {
+    "depth_required": false,
+    "lighting_complex": false
+  },
+  "execution_plan": {
+    "has_human": false,
+    "has_depth": false,
+    "risk_level": "low"
+  },
+  "signal_map": {
+    "object_count": {
+      "threshold": 2
+    },
+    "class_uniqueness": {
+      "threshold": 2
+    },
+    "depth_layers": {
+      "threshold": 2
+    },
+    "spatial_ratio": {
+      "threshold": 0.2
+    },
+    "embedding": {
+      "threshold": 1.0
+    }
+  },
+  "entities": [
+    {
+      "id": "6f69d129-69db-44bd-9eb4-a2627b145e15",
+      "class_name": "cat",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    },
+    {
+      "id": "5ea4eeba-f07c-4e72-8c99-d360e8bfb6d3",
+      "class_name": "cat",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    },
+    {
+      "id": "4834d204-eff7-4cd6-b060-828f9b2badc2",
+      "class_name": "wall",
+      "attributes": [],
+      "relative_position": null,
+      "bounding_box": null,
+      "z_index": 1
+    }
+  ],
+  "spatial_relationships": [
+    {
+      "subject": "cats",
+      "predicate": "on",
+      "object": "wall"
+    }
+  ],
+  "negations": []
+}

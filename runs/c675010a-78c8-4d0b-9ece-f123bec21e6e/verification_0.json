@@ -1,0 +1,51 @@
+{
+  "accepted": false,
+  "hard_failures": [],
+  "signals": {
+    "detected_counts": {
+      "person": 1,
+      "city": 1
+    },
+    "expected_counts": {
+      "person": 1,
+      "city": 1
+    }
+  },
+  "clip_cos": 0.3664,
+  "clip_norm": 0.8654,
+  "vqa_score": 0.0,
+  "vqa_vacuous": false,
+  "reward": 0.4327,
+  "spatial_result": {
+    "passed": true,
+    "total": 0,
+    "verified": 0,
+    "failures": []
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there a spacesuit person in the image?",
+      "expected": "yes",
+      "class_name": "person",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there a glowing plant in the image?",
+      "expected": "yes",
+      "class_name": "plant",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there a distant city in the image?",
+      "expected": "yes",
+      "class_name": "city",
+      "answer": "error",
+      "correct": false
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "accept": false,
+  "reward": 0.8142,
+  "mode": "hard_only",
+  "tau": null,
+  "tau_source": "sweep",
+  "hard_ok": false,
+  "prompt_edits": [
+    "only 4 candle, nothing else similar",
+    "only 1 cake, nothing else similar"
+  ]
+}

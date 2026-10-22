@@ -1,0 +1,20 @@
+{
+  "accepted": true,
+  "failures": [],
+  "signals": {
+    "detected_counts": {
+      "cup": 3,
+      "counter": 1
+    },
+    "expected_counts": {
+      "cup": 3,
+      "counter": 1
+    }
+  },
+  "root_causes": [
+    "Scene under-populated -> weak object planning",
+    "Prompt misalignment -> RAG or prompt issue",
+    "Objects clustered -> bad composition"
+  ],
+  "actions": []
+}

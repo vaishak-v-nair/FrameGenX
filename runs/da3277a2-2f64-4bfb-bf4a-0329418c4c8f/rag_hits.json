@@ -1,0 +1,23 @@
+[
+  {
+    "id": "coco_136772",
+    "caption": "a small bowl of fruit on a table",
+    "image": "http://images.cocodataset.org/val2017/000000136772.jpg",
+    "score": 0.015806214827501833,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_3661",
+    "caption": "A bunch of bananas sitting on top of a wooden table.",
+    "image": "http://images.cocodataset.org/val2017/000000003661.jpg",
+    "score": 0.01548076923076923,
+    "retrieval_mode": "hybrid_rrf"
+  },
+  {
+    "id": "coco_186980",
+    "caption": "A wooden table with two chairs next to a sink.",
+    "image": "http://images.cocodataset.org/val2017/000000186980.jpg",
+    "score": 0.014849498327759197,
+    "retrieval_mode": "hybrid_rrf"
+  }
+]

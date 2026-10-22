@@ -1,0 +1,94 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "banana",
+      "expected": 3,
+      "detected": 4
+    },
+    {
+      "type": "count_mismatch",
+      "class_name": "bowl",
+      "expected": 1,
+      "detected": 4
+    },
+    {
+      "type": "spatial_violation",
+      "class_name": "banana->bowl",
+      "expected": "inside",
+      "detected": "containment=0.00 (min=0.70), size_ok=True"
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "banana": 4,
+      "bowl": 4
+    },
+    "expected_counts": {
+      "banana": 3,
+      "bowl": 1
+    }
+  },
+  "clip_cos": 0.2802,
+  "clip_norm": 0.5206,
+  "vqa_score": 0.5,
+  "vqa_vacuous": false,
+  "reward": 0.5103,
+  "spatial_result": {
+    "passed": false,
+    "total": 1,
+    "verified": 0,
+    "failures": [
+      {
+        "subject": "banana",
+        "predicate": "inside",
+        "object": "bowl",
+        "reason": "containment=0.00 (min=0.70), size_ok=True"
+      }
+    ],
+    "results": [
+      {
+        "relationship": {
+          "subject": "banana",
+          "predicate": "inside",
+          "object": "bowl"
+        },
+        "passed": false,
+        "reason": "containment=0.00 (min=0.70), size_ok=True",
+        "subject_box": {
+          "xmin": 71.6663818359375,
+          "ymin": 64.40605926513672,
+          "xmax": 195.46319580078125,
+          "ymax": 214.86734008789062,
+          "score": 0.8205930590629578
+        },
+        "object_box": {
+          "xmin": 314.7640380859375,
+          "ymin": 49.1737060546875,
+          "xmax": 493.38262939453125,
+          "ymax": 227.24758911132812,
+          "score": 0.5033435821533203
+        }
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Are there banana in the image?",
+      "expected": "yes",
+      "class_name": "banana",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "existence",
+      "question": "Is there a wooden bowl in the image?",
+      "expected": "yes",
+      "class_name": "bowl",
+      "answer": "no",
+      "correct": false
+    }
+  ]
+}

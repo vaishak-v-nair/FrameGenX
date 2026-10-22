@@ -1,0 +1,63 @@
+{
+  "caption_hits": [
+    {
+      "id": "coco_456292",
+      "caption": "A cat climbing into a cat door on a wall.",
+      "image": "http://images.cocodataset.org/val2017/000000456292.jpg",
+      "score": 0.016393442622950817,
+      "retrieval_mode": "hybrid_rrf"
+    },
+    {
+      "id": "coco_163155",
+      "caption": "A cat crouched over sitting by a brick wall.",
+      "image": "http://images.cocodataset.org/val2017/000000163155.jpg",
+      "score": 0.016129032258064516,
+      "retrieval_mode": "hybrid_rrf"
+    },
+    {
+      "id": "coco_117374",
+      "caption": "Two cats sitting in the dirt under a tree.",
+      "image": "http://images.cocodataset.org/val2017/000000117374.jpg",
+      "score": 0.015345149253731344,
+      "retrieval_mode": "hybrid_rrf"
+    }
+  ],
+  "layout_blueprint": {
+    "entity_count": 3,
+    "name": "Horizontal Trio",
+    "description": "Three subjects aligned horizontally with even spacing",
+    "boxes": [
+      {
+        "anchor": "left",
+        "ymin": 0.25,
+        "xmin": 0.05,
+        "ymax": 0.75,
+        "xmax": 0.32,
+        "z_index": 1
+      },
+      {
+        "anchor": "center",
+        "ymin": 0.2,
+        "xmin": 0.36,
+        "ymax": 0.8,
+        "xmax": 0.64,
+        "z_index": 1
+      },
+      {
+        "anchor": "right",
+        "ymin": 0.25,
+        "xmin": 0.68,
+        "ymax": 0.75,
+        "xmax": 0.95,
+        "z_index": 1
+      }
+    ]
+  },
+  "style_preset": {
+    "preset_name": "photorealistic",
+    "descriptors": "photograph, 35mm lens, sharp focus, natural lighting, subsurface scattering, authentic textures",
+    "lighting": "soft directional daylight with realistic ambient bounce",
+    "camera": "eye-level 50mm f/2.8 lens, shallow depth of field",
+    "negative": "cartoon, illustration, 3d render, distorted, oversaturated, plastic"
+  }
+}

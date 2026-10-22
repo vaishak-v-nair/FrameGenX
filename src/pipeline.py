@@ -1,92 +1,51 @@
-import json
 from pathlib import Path
-from src.intent.extractor import IntentExtractor
-from src.scene.planner import ScenePlanner
-from src.generation.engine import GenerationEngine
-from src.verification.qa import QAVerifier
-from src.reporting.analyzer import Reporter
-from src.utils import free_memory
 
 from src.core.context import RunContext, load_config
 from src.core.db import RunTrackerDB
+from src.core.stage import Pipeline
+from src.reporting.analyzer import Reporter
+
 
 class FrameGenXPipeline:
-    def __init__(self, config_path: str = "config.yaml"):
+    """
+    Thin facade over the config-driven stage Pipeline.
+    Preserves the public contract used by src/api.py, src/cli.py and
+    benchmark.py: .config, .db, .run(prompt) -> RunContext.
+    """
+
+    def __init__(self, config_path: str = "config.yaml", config_overrides: dict = None):
         self.config = load_config(config_path)
-        self.db = RunTrackerDB(self.config.get("paths", {}).get("db_path", "runs/framegenx.db"))
-        
-        self.extractor = IntentExtractor()
-        self.planner = ScenePlanner(resolution=512)
-        self.generator = GenerationEngine(self.config)
-        self.qa = QAVerifier()
-        
-    def run(self, prompt: str) -> RunContext:
-        ctx = RunContext(prompt=prompt, config=self.config)
-        print(f"\n--- Running Pipeline for Prompt: '{prompt}' ---")
-        print(f"Run ID: {ctx.run_id}")
-        
-        # 1. Intent Extraction
-        print("[1/6] Extracting Intent...")
-        ctx.contract = self.extractor.extract(prompt)
-        ctx.save_artifact("contract_v2.json", ctx.contract)
-        if self.config.get("system", {}).get("aggressive_memory_management", True):
-            free_memory()
-            
-        max_loops = self.config.get("pipeline", {}).get("max_repair_loops", 3)
-        decision = {}
-        
-        for attempt in range(max_loops + 1):
-            is_repair = attempt > 0
-            if is_repair:
-                print(f"\n--- [REPAIR LOOP {attempt}/{max_loops}] Triggered ---")
-                ctx.repair_loops_executed += 1
-                
-            # 2. Scene Planning
-            print("[2/6] Planning Scene...")
-            # If in repair, we would dynamically alter the layout based on `decision["hard_failures"]`
-            # If in repair, we dynamically alter the layout based on `decision["hard_failures"]`
-            ctx.scene_plan, control_hints, gen_config, final_prompt, masks = self.planner.plan(ctx.contract, attempt)
-            ctx.save_artifact(f"scene_plan_{attempt}.json", ctx.scene_plan)
-            ctx.save_artifact(f"generation_config_{attempt}.json", gen_config)
-            ctx.save_artifact(f"final_prompt_{attempt}.txt", final_prompt, is_json=False)
-            
-            for mask_name, mask_img in masks.items():
-                ctx.save_artifact(f"{mask_name}_{attempt}.png", mask_img, is_json=False)
-                
-            # 3. Generation (Unified pass with ControlNet)
-            print("[3/6] Generating Final Image...")
-            output_path = ctx.run_dir / f"generated_{attempt}.png"
-            gen_meta = self.generator.generate(final_prompt, gen_config, control_hints, masks, output_path)
-            ctx.save_artifact(f"generation_meta_{attempt}.json", gen_meta)
-            if self.config.get("system", {}).get("aggressive_memory_management", True):
-                free_memory()
-                
-            # 4. QA Verification
-            print("[4/6] Verifying Quality...")
-            decision = self.qa.verify(output_path, ctx.contract)
-            ctx.verification_report = decision
-            ctx.save_artifact(f"decision_{attempt}.json", decision)
-            
-            if decision.get("accepted", False):
-                print(f"✅ QA Passed on attempt {attempt}!")
-                break
-            else:
-                print(f"❌ QA Failed: {decision.get('hard_failures')}")
-                if attempt == max_loops:
-                    print("Maximum repair loops exhausted. Giving up.")
-        
-        # 5. Analysis & Reporting
-        print("[5/6] Generating Report...")
-        reporter = Reporter(ctx.run_dir)
-        report = reporter.generate_report(ctx.contract, decision)
-        
-        ctx.is_successful = decision.get("accepted", False)
-        
-        # Finalize and Log
-        self.db.log_run(ctx)
-        
-        print(f"Run completed in {ctx.get_duration():.2f}s. Metadata saved to {self.db.db_path}")
+        if config_overrides:
+            self.config = _deep_merge(self.config, config_overrides)
+        PROJECT_ROOT = Path(__file__).resolve().parent.parent
+        db_path_str = self.config.get("paths", {}).get("db_path", "runs/framegenx.db")
+        self.db = RunTrackerDB(str(PROJECT_ROOT / db_path_str))
+        self.pipeline = Pipeline(self.config, db=self.db)
+        self.cache_key = self.pipeline.cache_key
+
+    def run(self, prompt: str, config_name: str = "interactive", progress_cb=None,
+            is_benchmark: bool = False, benchmark_seed: int = None,
+            benchmark_key: str = None, provided_contract: dict = None) -> RunContext:
+        ctx = self.pipeline.run(prompt, config_name=config_name, progress_cb=progress_cb,
+                                is_benchmark=is_benchmark, benchmark_seed=benchmark_seed,
+                                benchmark_key=benchmark_key, provided_contract=provided_contract)
+        try:
+            reporter = Reporter(ctx.run_dir)
+            reporter.generate_report(ctx.contract, ctx.verification_report or {})
+        except Exception as e:
+            print(f"[report] skipped: {e}")
         return ctx
+
+
+def _deep_merge(base: dict, override: dict) -> dict:
+    out = dict(base)
+    for k, v in override.items():
+        if isinstance(v, dict) and isinstance(out.get(k), dict):
+            out[k] = _deep_merge(out[k], v)
+        else:
+            out[k] = v
+    return out
+
 
 if __name__ == "__main__":
     pipeline = FrameGenXPipeline()

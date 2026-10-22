@@ -1,0 +1,37 @@
+# Explicit quality experiment; keep the default Turbo profile separately.
+paths:
+  output_dir: runs
+  db_path: runs/framegenx.db
+models:
+  generator: stabilityai/stable-diffusion-xl-base-1.0
+  clip: openai/clip-vit-base-patch32
+pipeline:
+  stages: [intent, plan, adapt, generate, verify, reflect]
+  max_repair_loops: 2
+generation:
+  resolution: 512
+  steps: 25
+  cfg_scale: 7.0
+  seed: 43
+  region_controller: fusion
+  bootstrap_steps: 12
+  regional_steps: 12
+  repair_seed_stride: 1
+  control_image_mode: none
+  offload: sequential
+lora:
+  adapters: []
+retrieval:
+  failure_memory_enabled: false
+verification:
+  local_instances: true
+  external_vqa: false
+  require_chromatic_evidence: true
+  plugins:
+    scene_comprehension: false
+    easyocr: false
+reflection:
+  mode: hard_only
+  deterministic_only: true
+refinement:
+  enabled: false

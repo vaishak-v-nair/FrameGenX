@@ -1,0 +1,154 @@
+{
+  "schema": "framegenx-assistant-image-inspection-v1",
+  "reviewer": "assistant",
+  "method": "native saved PNG inspection with view_image",
+  "scope": "unblinded qualitative inspection, not independently calibrated reference labels",
+  "full_contract_CSR": null,
+  "generation_result_sha256": "00829d01c42338faafe3f62e1071d70920c09b103da3cf86eab7197ae058da05",
+  "records": [
+    {
+      "case_id": "apple_count_color",
+      "seed": 42,
+      "arm": "baseline",
+      "file": "apple_count_color_42_baseline.png",
+      "image_sha256": "ba5a3aeb1309daa7a0aa189932978d792502013a40a312b2a384a81786f02e50",
+      "assistant_count_requirement_supported": true,
+      "observation": "Three physical red apples; three reflections below them. Detector counts reflections as additional apples."
+    },
+    {
+      "case_id": "apple_count_color",
+      "seed": 42,
+      "arm": "candidate",
+      "file": "apple_count_color_42_candidate.png",
+      "image_sha256": "092d62ccaaa82567b14abea4269aada11f3f5f4ef837e772267c1640feefcf31",
+      "assistant_count_requirement_supported": true,
+      "observation": "Three red apple forms in a row; object sizes differ and the scene has chair-like shapes and a distorted table."
+    },
+    {
+      "case_id": "apple_count_color",
+      "seed": 43,
+      "arm": "baseline",
+      "file": "apple_count_color_43_baseline.png",
+      "image_sha256": "3391927c690a96df381543ef8d351eb361cd2b6d813c85e3bffe38b2cadac4ec",
+      "assistant_count_requirement_supported": false,
+      "observation": "Four apples are visible, against the requested three."
+    },
+    {
+      "case_id": "apple_count_color",
+      "seed": 43,
+      "arm": "candidate",
+      "file": "apple_count_color_43_candidate.png",
+      "image_sha256": "3735783c8f0e1c58465d5573c42deb3b249dcbef8b6216074900930a3f646fa4",
+      "assistant_count_requirement_supported": null,
+      "observation": "Three main red apple forms plus an additional partial red form behind the left apple; count and whole-object boundaries remain ambiguous."
+    },
+    {
+      "case_id": "vehicle_binding",
+      "seed": 42,
+      "arm": "baseline",
+      "file": "vehicle_binding_42_baseline.png",
+      "image_sha256": "3308283b3a32ad44b1192420d6b41adac82434e21a5a7f50b095342097e68249",
+      "assistant_count_requirement_supported": false,
+      "observation": "Blue and red bus-like vehicles; no clear red car. A distant vehicle is also visible."
+    },
+    {
+      "case_id": "vehicle_binding",
+      "seed": 42,
+      "arm": "candidate",
+      "file": "vehicle_binding_42_candidate.png",
+      "image_sha256": "1b8abf052670bce35290c91ab7ce0115387852deb8fedfb647c2b7cb3b9fb406",
+      "assistant_count_requirement_supported": false,
+      "observation": "Two red cars, one above the other, and one blue bus. Color separation improved but the car count is wrong."
+    },
+    {
+      "case_id": "vehicle_binding",
+      "seed": 43,
+      "arm": "baseline",
+      "file": "vehicle_binding_43_baseline.png",
+      "image_sha256": "cc34abc7ffd9c08835d824f9d8a9fcd6e547656ea34efd99728c71501aac8cc6",
+      "assistant_count_requirement_supported": false,
+      "observation": "One red bus; neither the required red car nor the required blue bus is present."
+    },
+    {
+      "case_id": "vehicle_binding",
+      "seed": 43,
+      "arm": "candidate",
+      "file": "vehicle_binding_43_candidate.png",
+      "image_sha256": "8008d6c63806b6aba000e7d0cabffafe307d8be7e4603ead5d797a464b48ead7",
+      "assistant_count_requirement_supported": false,
+      "observation": "At least five red car forms and one blue bus; repeated car drawings violate the exact count."
+    },
+    {
+      "case_id": "animal_relation",
+      "seed": 42,
+      "arm": "baseline",
+      "file": "animal_relation_42_baseline.png",
+      "image_sha256": "c2e38859a3cb6c2ff734da3c2d6dba154f16f6c015b47b190d81306c54efc868",
+      "assistant_count_requirement_supported": false,
+      "observation": "One cream cat and no dog."
+    },
+    {
+      "case_id": "animal_relation",
+      "seed": 42,
+      "arm": "candidate",
+      "file": "animal_relation_42_candidate.png",
+      "image_sha256": "75e6f41e44ee5d728d93fdb0f829c93cc4a2941d98963eab1b2635499dfe152d",
+      "assistant_count_requirement_supported": true,
+      "observation": "One cat on the left and one dog on the right; frames and rendering styles differ."
+    },
+    {
+      "case_id": "animal_relation",
+      "seed": 43,
+      "arm": "baseline",
+      "file": "animal_relation_43_baseline.png",
+      "image_sha256": "fcd4d006999275fdc7fb0a3bd1614d503109eb90b736c61a6959388499e41298",
+      "assistant_count_requirement_supported": false,
+      "observation": "Four animal drawings in repeated frames; exact one-cat/one-dog composition is not satisfied."
+    },
+    {
+      "case_id": "animal_relation",
+      "seed": 43,
+      "arm": "candidate",
+      "file": "animal_relation_43_candidate.png",
+      "image_sha256": "3f99369d31b344f330f916cb7c737432d5644d4e07b12f2ee15d481417599189",
+      "assistant_count_requirement_supported": true,
+      "observation": "One cat on the left and one pug-like dog on the right. GroundingDINO instead assigns two cats and zero dogs; its diagnostic is not a reference label."
+    },
+    {
+      "case_id": "bottle_negation",
+      "seed": 42,
+      "arm": "baseline",
+      "file": "bottle_negation_42_baseline.png",
+      "image_sha256": "5e88aaafb6f822bfb026f3037d7afdd12adbddcd7f5caefafde4dfc9a2a8bba2",
+      "assistant_count_requirement_supported": true,
+      "observation": "Two green bottles on a light surface."
+    },
+    {
+      "case_id": "bottle_negation",
+      "seed": 42,
+      "arm": "candidate",
+      "file": "bottle_negation_42_candidate.png",
+      "image_sha256": "b9de71de0f3f82a7f5994f0bdc166b23b891fd8cd47be2237837977c07c85c59",
+      "assistant_count_requirement_supported": true,
+      "observation": "Two green bottle forms; additional vertical poles and geometric scene artifacts remain."
+    },
+    {
+      "case_id": "bottle_negation",
+      "seed": 43,
+      "arm": "baseline",
+      "file": "bottle_negation_43_baseline.png",
+      "image_sha256": "9bbe2ce603dda5cc3b237c177cf8f947c4e1610f4097735eb418f937e2681f7d",
+      "assistant_count_requirement_supported": false,
+      "observation": "Only one green bottle is visible."
+    },
+    {
+      "case_id": "bottle_negation",
+      "seed": 43,
+      "arm": "candidate",
+      "file": "bottle_negation_43_candidate.png",
+      "image_sha256": "81fcdcece7333b804a6b58180d91453be340e38945450416fc8868d01a5341a4",
+      "assistant_count_requirement_supported": true,
+      "observation": "Two green bottles are visible; the backdrop and support surface have strong geometric artifacts."
+    }
+  ]
+}

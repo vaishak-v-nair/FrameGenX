@@ -1,35 +1,50 @@
-# FrameGenX Dependencies
-# Targeted for local execution on memory-constrained GPUs (e.g., RTX 3050 6GB)
+# FrameGenX dependencies — matches the environment the code is tested against.
+# Target: memory-constrained GPUs (RTX 3050 Laptop 6GB), Windows, Python 3.13+.
+#
+# torch/torchvision come from the CUDA 13.0 index:
+#   pip install torch==2.13.0 torchvision==0.28.0 --index-url https://download.pytorch.org/whl/cu130
+# (CPU-only torch will NOT run the pipeline — verify with:
+#   python -c "import torch; print(torch.cuda.is_available())")
 
-torch==2.1.2+cu118
-torchvision==0.16.2+cu118
---extra-index-url https://download.pytorch.org/whl/cu118
+--extra-index-url https://download.pytorch.org/whl/cu130
+torch==2.13.0+cu130
+torchvision==0.28.0
 
-diffusers==0.27.2
-transformers==4.39.3
-accelerate==0.29.1
-safetensors==0.4.2
-xformers==0.0.23.post1
+# Generation + verification models
+diffusers==0.39.0
+transformers==5.13.0
+accelerate==1.14.0
+peft==0.19.1
+safetensors==0.8.0
 
-# Intent Extraction
-spacy==3.7.4
-sentence-transformers==2.6.1
+# Intent extraction (also run once: python -m spacy download en_core_web_sm)
+spacy==3.8.13
 
-# Verification & QA
-ultralytics==8.1.47
-pytesseract==0.3.10
-timm==0.9.16
+# API + web demo
+fastapi==0.139.0
+uvicorn==0.51.0
+python-dotenv==1.2.2
+
+# LLM fallback router (src/core/llm_router.py — OpenAI-compatible clients:
+# Groq / Google AI Studio / NVIDIA NIM via base_url override)
+openai==3.1.0
+
+# Advanced QA OCR & Scene Comprehension (src/verification/advanced_qa.py — lazy imported)
+easyocr==1.7.2
+einops==0.8.2
+timm==1.0.28
 
 # Utilities
-opencv-python==4.9.0.80
-pillow==10.3.0
-matplotlib==3.8.4
-numpy<2.0.0
+opencv-python==5.0.0.93
+pillow==12.3.0
+numpy==2.5.1
 
-# Optional but recommended for ControlNet fallback
-controlnet_aux==0.0.9
-
-# Testing & Config
-pytest==8.2.2
-PyYAML==6.0.1
-pydantic==2.7.0
+# Testing & config
+pytest==9.1.1
+PyYAML==6.0.3
+pydantic==2.13.4
+pymilvus==3.0.1
+fastembed==0.8.0
+sentence-transformers==5.6.0
+langgraph==1.2.11
+duckduckgo_search==8.1.1

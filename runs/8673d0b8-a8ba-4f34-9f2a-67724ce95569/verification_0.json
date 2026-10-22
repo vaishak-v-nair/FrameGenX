@@ -1,0 +1,84 @@
+{
+  "accepted": false,
+  "hard_failures": [],
+  "signals": {
+    "detected_counts": {
+      "cat": 1,
+      "sofa": 1
+    },
+    "expected_counts": {
+      "cat": 1,
+      "sofa": 1
+    }
+  },
+  "clip_cos": 0.3417,
+  "clip_norm": 0.7666,
+  "vqa_score": 0.75,
+  "vqa_vacuous": false,
+  "reward": 0.7583,
+  "spatial_result": {
+    "passed": true,
+    "total": 1,
+    "verified": 1,
+    "failures": [],
+    "results": [
+      {
+        "relationship": {
+          "subject": "cat",
+          "predicate": "on",
+          "object": "sofa"
+        },
+        "passed": true,
+        "reason": "unknown predicate 'on': skipped",
+        "subject_box": {
+          "xmin": 83.16551208496094,
+          "ymin": 102.3358154296875,
+          "xmax": 438.86126708984375,
+          "ymax": 478.18463134765625,
+          "score": 0.8224173188209534
+        },
+        "object_box": {
+          "xmin": 0.1808929443359375,
+          "ymin": 111.87709045410156,
+          "xmax": 511.63909912109375,
+          "ymax": 478.4656982421875,
+          "score": 0.829788863658905
+        }
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there a white cat in the image?",
+      "expected": "yes",
+      "class_name": "cat",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "color",
+      "question": "What color is the cat?",
+      "expected": "white",
+      "class_name": "cat",
+      "answer": "white",
+      "correct": true
+    },
+    {
+      "type": "existence",
+      "question": "Is there a black sofa in the image?",
+      "expected": "yes",
+      "class_name": "sofa",
+      "answer": "no",
+      "correct": false
+    },
+    {
+      "type": "color",
+      "question": "What color is the sofa?",
+      "expected": "black",
+      "class_name": "sofa",
+      "answer": "black",
+      "correct": true
+    }
+  ]
+}

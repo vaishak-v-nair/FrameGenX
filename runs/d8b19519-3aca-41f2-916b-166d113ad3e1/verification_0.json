@@ -1,0 +1,82 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "spatial_violation",
+      "class_name": "laptop->desk",
+      "expected": "above",
+      "detected": "subject center_y=256 >= object center_y=256"
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "laptop": 1,
+      "desk": 1
+    },
+    "expected_counts": {
+      "laptop": 1,
+      "desk": 1
+    }
+  },
+  "clip_cos": 0.2953,
+  "clip_norm": 0.5811,
+  "vqa_score": 1.0,
+  "vqa_vacuous": false,
+  "reward": 0.7905,
+  "spatial_result": {
+    "passed": false,
+    "total": 1,
+    "verified": 0,
+    "failures": [
+      {
+        "subject": "laptop",
+        "predicate": "above",
+        "object": "desk",
+        "reason": "subject center_y=256 >= object center_y=256"
+      }
+    ],
+    "results": [
+      {
+        "relationship": {
+          "subject": "laptop",
+          "predicate": "above",
+          "object": "desk"
+        },
+        "passed": false,
+        "reason": "subject center_y=256 >= object center_y=256",
+        "subject_box": {
+          "xmin": 59.448577880859375,
+          "ymin": 120.25424194335938,
+          "xmax": 411.6467590332031,
+          "ymax": 392.0422668457031,
+          "score": 0.8134123682975769
+        },
+        "object_box": {
+          "xmin": 0.209625244140625,
+          "ymin": 0.049835205078125,
+          "xmax": 511.9059143066406,
+          "ymax": 511.7050476074219,
+          "score": 0.6039219498634338
+        }
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there a silver laptop in the image?",
+      "expected": "yes",
+      "class_name": "laptop",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "existence",
+      "question": "Is there a wooden desk in the image?",
+      "expected": "yes",
+      "class_name": "desk",
+      "answer": "yes",
+      "correct": true
+    }
+  ]
+}

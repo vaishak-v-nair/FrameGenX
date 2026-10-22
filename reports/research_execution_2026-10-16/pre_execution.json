@@ -1,0 +1,35 @@
+{
+  "created_at": "2026-10-16T21:17:07.5823812+05:30",
+  "planning_before_coding": true,
+  "plan_sha256": "891E7B96AAAAF26057D8ADBC618ACDE495FF001169639A9233A912227DCF891E",
+  "protocol_sha256": "480F1CF5C723A94F31662650F21CBDD868FD2905CAF4B1AE51973269E8EDE133",
+  "source_baseline": [
+    {
+      "sha256": "F743C8EEAF201DA33BCD91B3349B780FD7D19DFEB258CD9CCF2A79667F65DC00",
+      "path": "src/api.py"
+    },
+    {
+      "sha256": "5A68FB0BF15B8E8F68CDAACE43AE2A1243B3718AA4A26A33D994E26D6161BDC8",
+      "path": "src/cli.py"
+    },
+    {
+      "sha256": "6AB1D14580F9938B7D5F3639487B6529E579EABD7B03D5D71B897A8C6F9C2DA5",
+      "path": "src/training/objective.py"
+    },
+    {
+      "sha256": "122C58565A7156ABED3E198643D336BAE36C78E323B7F45CB2EA14838123938C",
+      "path": "src/training/model.py"
+    },
+    {
+      "sha256": "A2FD63712DD8E761DC22A9582904FFCE580C5676B2882B0F10ECA07C73AFBC13",
+      "path": "frontend/src/App.jsx"
+    },
+    {
+      "sha256": "AE0D317DB50F099FD476712932D9FC6BE9C1F8B9809BD8D77D2E2C972873E6D0",
+      "path": "frontend/src/components/AblationDashboard.jsx"
+    }
+  ],
+  "engineering": "PASS specification only; reports/planning/RESEARCH_ENGINEERING_REVIEW.md",
+  "scope": "R02-R09 CPU research; R10 SDXL activation gated; original roadmap still staged",
+  "chatgpt_dots": "clarification requested; exact plugin unavailable in search"
+}

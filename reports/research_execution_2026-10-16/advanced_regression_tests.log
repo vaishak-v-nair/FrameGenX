@@ -1,0 +1,24 @@
+........................................................................ [ 22%]
+........................................................................ [ 45%]
+........................................................................ [ 67%]
+........................................................................ [ 90%]
+..............................                                           [100%]
+============================== warnings summary ===============================
+tests/test_region_fusion.py: 14 warnings
+  E:\BrosKi\framegenx\venv\Lib\site-packages\torch\jit\_script.py:359: DeprecationWarning: `torch.jit.script_method` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+tests/test_region_fusion.py::test_uncontrolled_fusion_matches_actual_diffusers_euler_cfg_and_zero_negative
+tests/test_region_fusion.py::test_uncontrolled_fusion_matches_actual_diffusers_euler_cfg_and_zero_negative
+tests/test_region_fusion.py::test_regional_fusion_advances_scheduler_once_per_timestep_and_is_seeded
+tests/test_region_fusion.py::test_regional_fusion_advances_scheduler_once_per_timestep_and_is_seeded
+tests/test_region_fusion.py::test_fusion_rejects_missing_region_conditioning_and_backgrounds
+  E:\BrosKi\framegenx\venv\Lib\site-packages\diffusers\schedulers\scheduling_euler_discrete.py:436: DeprecationWarning: __array__ implementation doesn't accept a copy keyword, so passing copy=False failed. __array__ must implement 'dtype' and 'copy' keyword arguments. To learn more, see the migration guide https://numpy.org/devdocs/numpy_2_0_migration_guide.html#adapting-to-changes-in-the-copy-keyword
+    sigmas = np.array(((1 - self.alphas_cumprod) / self.alphas_cumprod) ** 0.5)
+
+tests/test_training.py::test_local_mlflow_refuses_nonfinite_metrics_and_records_failure
+  E:\BrosKi\framegenx\venv\Lib\site-packages\mlflow\store\tracking\sqlalchemy_store.py:327: SADeprecationWarning: The ``noload`` loader strategy is deprecated and will be removed in a future release.  This option produces incorrect results by returning ``None`` for related items. (deprecated since: 2.1)
+    sqlalchemy.orm.configure_mappers()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+318 passed, 20 warnings in 72.27s (0:01:12)

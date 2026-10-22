@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FrameGenX constraint-control comparison</title><style>body{max-width:1100px;margin:32px auto;padding:0 20px;font:16px/1.5 system-ui;color:#17202b;background:#f4f6f8}h1{line-height:1.15}section{background:white;border:1px solid #cbd2d9;padding:20px;margin:28px 0;border-radius:8px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:24px}figure{margin:0;min-width:0}figcaption{font-weight:650;margin:10px 0}img{width:100%;height:auto}small{display:block;overflow-wrap:anywhere}pre{white-space:pre-wrap}@media(max-width:650px){.pair{grid-template-columns:1fr}}</style><main><h1>Constraint-control comparison</h1><p>Native saved images, unchanged pixels. Same SDXL NF4 backbone, Euler steps, CFG and paired seeds. Trained adapters disabled.</p><p>Labels describe local detector, segmentation, hue and box-geometry diagnostics. They are uncalibrated and do not establish full-contract CSR, visual quality, or trained-adapter improvement.</p><pre>{
+  &quot;baseline&quot;: {
+    &quot;total_images&quot;: 2,
+    &quot;observed_images&quot;: 2,
+    &quot;unknown_images&quot;: 0,
+    &quot;count_check_passes&quot;: 0,
+    &quot;count_and_geometry_passes&quot;: 0,
+    &quot;chromatic_applicable_images&quot;: 2,
+    &quot;chromatic_supported_images&quot;: 0,
+    &quot;joint_operational_check_passes&quot;: 0
+  },
+  &quot;candidate&quot;: {
+    &quot;total_images&quot;: 2,
+    &quot;observed_images&quot;: 2,
+    &quot;unknown_images&quot;: 0,
+    &quot;count_check_passes&quot;: 1,
+    &quot;count_and_geometry_passes&quot;: 1,
+    &quot;chromatic_applicable_images&quot;: 2,
+    &quot;chromatic_supported_images&quot;: 1,
+    &quot;joint_operational_check_passes&quot;: 1
+  }
+}</pre><section><h2>apple_count_color · seed 43</h2><p>Exactly three red apples arranged in a row on a plain white table, with each apple clearly separated.</p><ul><li>Exactly three apples are visible.</li><li>Every apple is red.</li><li>The apples form a clearly separated row.</li><li>A white table is visible.</li></ul><div class="pair"><figure><figcaption>baseline — operational checks failed</figcaption><a href="../runs/constraint_control/7bf7ecd0bd068780/apple_count_color_43_baseline.png"><img loading="lazy" src="../runs/constraint_control/7bf7ecd0bd068780/apple_count_color_43_baseline.png" alt="apple_count_color baseline, seed 43"></a><p>Counts: {&#x27;apple&#x27;: 4}; geometry: True; chromatic binding: False</p><small>SHA256 3391927c690a96df381543ef8d351eb361cd2b6d813c85e3bffe38b2cadac4ec</small></figure><figure><figcaption>candidate — operational checks failed</figcaption><a href="../runs/constraint_control/7bf7ecd0bd068780/apple_count_color_43_candidate.png"><img loading="lazy" src="../runs/constraint_control/7bf7ecd0bd068780/apple_count_color_43_candidate.png" alt="apple_count_color candidate, seed 43"></a><p>Counts: {&#x27;apple&#x27;: 4}; geometry: True; chromatic binding: False</p><small>SHA256 3735783c8f0e1c58465d5573c42deb3b249dcbef8b6216074900930a3f646fa4</small></figure></div></section><section><h2>bottle_negation · seed 43</h2><p>Exactly two green bottles on a white table. No red bottle.</p><ul><li>Exactly two bottles are visible.</li><li>Both bottles are green.</li><li>A white table is visible.</li><li>No red bottle is visible.</li></ul><div class="pair"><figure><figcaption>baseline — operational checks failed</figcaption><a href="../runs/constraint_control/7bf7ecd0bd068780/bottle_negation_43_baseline.png"><img loading="lazy" src="../runs/constraint_control/7bf7ecd0bd068780/bottle_negation_43_baseline.png" alt="bottle_negation baseline, seed 43"></a><p>Counts: {&#x27;bottle&#x27;: 1}; geometry: True; chromatic binding: False</p><small>SHA256 9bbe2ce603dda5cc3b237c177cf8f947c4e1610f4097735eb418f937e2681f7d</small></figure><figure><figcaption>candidate — operational checks passed</figcaption><a href="../runs/constraint_control/7bf7ecd0bd068780/bottle_negation_43_candidate.png"><img loading="lazy" src="../runs/constraint_control/7bf7ecd0bd068780/bottle_negation_43_candidate.png" alt="bottle_negation candidate, seed 43"></a><p>Counts: {&#x27;bottle&#x27;: 2}; geometry: True; chromatic binding: True</p><small>SHA256 81fcdcece7333b804a6b58180d91453be340e38945450416fc8868d01a5341a4</small></figure></div></section></main></html>

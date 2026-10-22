@@ -1,0 +1,75 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "book",
+      "expected": 5,
+      "detected": 2
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "book": 2,
+      "desk": 1
+    },
+    "expected_counts": {
+      "book": 5,
+      "desk": 1
+    }
+  },
+  "clip_cos": 0.2778,
+  "clip_norm": 0.5113,
+  "vqa_score": 0.5,
+  "vqa_vacuous": false,
+  "reward": 0.5056,
+  "spatial_result": {
+    "passed": true,
+    "total": 1,
+    "verified": 1,
+    "failures": [],
+    "results": [
+      {
+        "relationship": {
+          "subject": "book",
+          "predicate": "above",
+          "object": "desk"
+        },
+        "passed": true,
+        "reason": "subject center_y=391 < object center_y=453",
+        "subject_box": {
+          "xmin": 3.6059112548828125,
+          "ymin": 320.6367492675781,
+          "xmax": 506.614990234375,
+          "ymax": 460.9008483886719,
+          "score": 0.477434366941452
+        },
+        "object_box": {
+          "xmin": 0.100982666015625,
+          "ymin": 393.51593017578125,
+          "xmax": 512.1009521484375,
+          "ymax": 511.78997802734375,
+          "score": 0.7057536244392395
+        }
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Are there book in the image?",
+      "expected": "yes",
+      "class_name": "book",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "existence",
+      "question": "Is there a desk in the image?",
+      "expected": "yes",
+      "class_name": "desk",
+      "answer": "no",
+      "correct": false
+    }
+  ]
+}

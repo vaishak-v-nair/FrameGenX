@@ -1,0 +1,92 @@
+{
+  "conclusion": "Persistent visible failures in both arms; this pilot does not demonstrate hallucination reduction.",
+  "full_contract_CSR": null,
+  "generation_fingerprint": "74fc501e6a1f13599eee6adb69bafd4e2ae79e6d9b78a6ec06b9e75577cf9094",
+  "promotion_status": "unqualified",
+  "quality_status": "unverified",
+  "records": [
+    {
+      "baseline_file": "apple_count_color_42_baseline.png",
+      "baseline_image_sha256": "ba5a3aeb1309daa7a0aa189932978d792502013a40a312b2a384a81786f02e50",
+      "baseline_observation": "Three red apples in a row on a light reflective tabletop. Neighbors touch, so clear separation needs interpretation.",
+      "candidate_file": "apple_count_color_42_candidate.png",
+      "candidate_image_sha256": "0e78266bc15643251beb0ae6a7fa99d049839d290118d360ae30d40b52849f29",
+      "candidate_observation": "Three red apples in a row on a light reflective tabletop. Neighbors still touch; no established separation improvement.",
+      "case_id": "apple_count_color",
+      "seed": 42
+    },
+    {
+      "baseline_file": "apple_count_color_43_baseline.png",
+      "baseline_image_sha256": "3391927c690a96df381543ef8d351eb361cd2b6d813c85e3bffe38b2cadac4ec",
+      "baseline_observation": "Four apples are visible; the requested exact count of three is contradicted.",
+      "candidate_file": "apple_count_color_43_candidate.png",
+      "candidate_image_sha256": "90dcc0bf50499e8fc081dcd2e4954f8a45e594b2da17fd3d26f340473a8aa84e",
+      "candidate_observation": "Four apples remain visible; the exact-count defect persists.",
+      "case_id": "apple_count_color",
+      "seed": 43
+    },
+    {
+      "baseline_file": "vehicle_binding_42_baseline.png",
+      "baseline_image_sha256": "3308283b3a32ad44b1192420d6b41adac82434e21a5a7f50b095342097e68249",
+      "baseline_observation": "Large blue and red bus-like vehicles, plus a small distant vehicle. No clearly identifiable requested red car.",
+      "candidate_file": "vehicle_binding_42_candidate.png",
+      "candidate_image_sha256": "d8c78ce5f4c717d929c0bd4ae3eae184122544ffa579e6622a535379e70968aa",
+      "candidate_observation": "A blue bus-like vehicle is left of a red bus-like vehicle. The requested red car is still missing; class/color binding is not repaired.",
+      "case_id": "vehicle_binding",
+      "seed": 42
+    },
+    {
+      "baseline_file": "vehicle_binding_43_baseline.png",
+      "baseline_image_sha256": "cc34abc7ffd9c08835d824f9d8a9fcd6e547656ea34efd99728c71501aac8cc6",
+      "baseline_observation": "One stylized red bus; no separate red car or blue bus. Road appearance is predominantly blue.",
+      "candidate_file": "vehicle_binding_43_candidate.png",
+      "candidate_image_sha256": "4277e0a9b33d18cce24c28a505e4bc46e5771d439c97aeeceac5ac33236df07e",
+      "candidate_observation": "One stylized red bus; no separate red car or blue bus. The class/color binding failure remains.",
+      "case_id": "vehicle_binding",
+      "seed": 43
+    },
+    {
+      "baseline_file": "animal_relation_42_baseline.png",
+      "baseline_image_sha256": "c2e38859a3cb6c2ff734da3c2d6dba154f16f6c015b47b190d81306c54efc868",
+      "baseline_observation": "One cream-colored cat at a window. No dog is visible.",
+      "candidate_file": "animal_relation_42_candidate.png",
+      "candidate_image_sha256": "eca494385780bbd464223caa58bb4d0908b31345a675ecb91f8a3e24698e82d8",
+      "candidate_observation": "One cream-colored cat at a window. No dog is visible; the missing-object defect remains.",
+      "case_id": "animal_relation",
+      "seed": 42
+    },
+    {
+      "baseline_file": "animal_relation_43_baseline.png",
+      "baseline_image_sha256": "fcd4d006999275fdc7fb0a3bd1614d503109eb90b736c61a6959388499e41298",
+      "baseline_observation": "Four animal drawings in repeated framed compartments, contradicting the intended one-cat/one-dog composition.",
+      "candidate_file": "animal_relation_43_candidate.png",
+      "candidate_image_sha256": "302fc0164c9bff324139e820b16b7e661872a80f1d3f3dab60e3485ba90c6d85",
+      "candidate_observation": "Four animal drawings remain; several are dog-like. The intended exactly-one-of-each composition is not established.",
+      "case_id": "animal_relation",
+      "seed": 43
+    },
+    {
+      "baseline_file": "bottle_negation_42_baseline.png",
+      "baseline_image_sha256": "5e88aaafb6f822bfb026f3037d7afdd12adbddcd7f5caefafde4dfc9a2a8bba2",
+      "baseline_observation": "Two green bottles on a light tabletop. No red bottle is visible.",
+      "candidate_file": "bottle_negation_42_candidate.png",
+      "candidate_image_sha256": "b44c92df8bb8b67889cff11b4e10476b4327c7efa35b5eca8f7b578b55a2fe4e",
+      "candidate_observation": "Two green bottles on a light tabletop. No red bottle is visible; this already-supported case does not show a new repair.",
+      "case_id": "bottle_negation",
+      "seed": 42
+    },
+    {
+      "baseline_file": "bottle_negation_43_baseline.png",
+      "baseline_image_sha256": "9bbe2ce603dda5cc3b237c177cf8f947c4e1610f4097735eb418f937e2681f7d",
+      "baseline_observation": "One green bottle is visible; the requested count of two is contradicted.",
+      "candidate_file": "bottle_negation_43_candidate.png",
+      "candidate_image_sha256": "ec995bcb062f8a85f6f8455157ab4064f9e6e32505c28df21b18defe1e24ff8f",
+      "candidate_observation": "One green bottle remains visible; the count defect persists.",
+      "case_id": "bottle_negation",
+      "seed": 43
+    }
+  ],
+  "reviewed_images": 16,
+  "reviewed_pairs": 8,
+  "scope": "nonblind_uncalibrated_assistant_inspection_only_not_independent_human_validation"
+}

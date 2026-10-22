@@ -1,0 +1,89 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "person",
+      "expected": 1,
+      "detected": 2
+    },
+    {
+      "type": "count_mismatch",
+      "class_name": "city",
+      "expected": 1,
+      "detected": 2
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "person": 2,
+      "city": 2
+    },
+    "expected_counts": {
+      "person": 1,
+      "city": 1
+    }
+  },
+  "clip_cos": 0.4091,
+  "clip_norm": 1.0,
+  "vqa_score": 0.0,
+  "vqa_vacuous": false,
+  "reward": 0.5,
+  "spatial_result": {
+    "passed": true,
+    "total": 1,
+    "verified": 1,
+    "failures": [],
+    "results": [
+      {
+        "relationship": {
+          "subject": "person",
+          "predicate": "toward",
+          "object": "city"
+        },
+        "passed": true,
+        "reason": "unknown predicate 'toward': skipped",
+        "subject_box": {
+          "xmin": 327.1361389160156,
+          "ymin": 225.94964599609375,
+          "xmax": 396.0405578613281,
+          "ymax": 397.79364013671875,
+          "score": 0.8206464052200317
+        },
+        "object_box": {
+          "xmin": 20.718276977539062,
+          "ymin": 191.6357879638672,
+          "xmax": 508.4281005859375,
+          "ymax": 287.0767822265625,
+          "score": 0.5564141273498535
+        }
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there a spacesuit person in the image?",
+      "expected": "yes",
+      "class_name": "person",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there a glowing plant in the image?",
+      "expected": "yes",
+      "class_name": "plant",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there a city in the image?",
+      "expected": "yes",
+      "class_name": "city",
+      "answer": "error",
+      "correct": false
+    }
+  ]
+}

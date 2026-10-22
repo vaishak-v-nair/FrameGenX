@@ -1,0 +1,28 @@
+Regional evaluation directory: E:\BrosKi\framegenx\runs\constraint_control\1650c5c998968391
+
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s]
+Loading weights: 100%|##########| 196/196 [00:00<00:00, 2509.96it/s]
+
+Loading weights:   0%|          | 0/517 [00:00<?, ?it/s]
+Loading weights:  45%|####5     | 235/517 [00:00<00:00, 2341.96it/s]
+Loading weights:  91%|######### | 470/517 [00:00<00:00, 2128.34it/s]
+Loading weights: 100%|##########| 517/517 [00:00<00:00, 2120.69it/s]
+W1015 13:06:02.402000 8360 venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Uncontrolled Euler sampler exactly matches native Diffusers baseline
+Saved apple_count_color_42_baseline.png; 145.6s
+Saved apple_count_color_42_candidate.png; 210.7s
+Saved apple_count_color_43_baseline.png; 210.7s
+Saved apple_count_color_43_candidate.png; 280.0s
+Saved vehicle_binding_42_baseline.png; 280.1s
+Saved vehicle_binding_42_candidate.png; 347.8s
+Saved vehicle_binding_43_baseline.png; 347.8s
+Saved vehicle_binding_43_candidate.png; 412.0s
+Saved animal_relation_42_baseline.png; 412.0s
+Saved animal_relation_42_candidate.png; 479.1s
+Saved animal_relation_43_baseline.png; 479.1s
+Saved animal_relation_43_candidate.png; 555.6s
+Saved bottle_negation_42_baseline.png; 555.6s
+Saved bottle_negation_42_candidate.png; 622.2s
+Saved bottle_negation_43_baseline.png; 622.3s
+Saved bottle_negation_43_candidate.png; 696.4s
+{"status": "generated_pending_independent_review", "generation_fingerprint": "1650c5c9989683912f3e2083604e188d735a9d4053bd464820e4cb4da8efdaf5", "peak_reserved_gb": 2.581594112, "elapsed_seconds": 708.2598221999997}

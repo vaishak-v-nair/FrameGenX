@@ -1,0 +1,33 @@
+{
+  "actual_mlflow_statuses": {
+    "540a2255863343b29ada1d3f11f9411d": "FINISHED",
+    "5854acfa48974c608389b12f1d747175": "FINISHED",
+    "96421fd0383d4976bbb26925260a685a": "FINISHED"
+  },
+  "built_frontend": "HTML/entrypoint served; actual API payload accepted by frontend parser",
+  "checked_artifacts": 86,
+  "checkpoint_output_shapes": {
+    "baseline": [
+      6,
+      32,
+      3,
+      3
+    ],
+    "candidate": [
+      6,
+      32,
+      3,
+      3
+    ]
+  },
+  "cuda_initialized": false,
+  "external_calls": 0,
+  "frontend_parser": "frontend_contract_verified",
+  "limits": [
+    "No rendered browser, accessibility, GPU generation, hosted or human calibration proof",
+    "Image quality remains unverified"
+  ],
+  "mounted_api": "read, limits and mutation rejection passed",
+  "run_id": "51529996-23e9-436d-91ba-2107057739e8",
+  "status": "passed_local_artifact_and_mounted_api_checks"
+}

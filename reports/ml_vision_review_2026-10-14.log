@@ -1,0 +1,45 @@
+Reviewed blind image 1/16: unavailable_or_invalid
+Reviewed blind image 2/16: unavailable_or_invalid
+Reviewed blind image 3/16: unavailable_or_invalid
+Reviewed blind image 4/16: unavailable_or_invalid
+Reviewed blind image 5/16: unavailable_or_invalid
+Reviewed blind image 6/16: unavailable_or_invalid
+Reviewed blind image 7/16: unavailable_or_invalid
+Reviewed blind image 8/16: unavailable_or_invalid
+Reviewed blind image 9/16: unavailable_or_invalid
+Reviewed blind image 10/16: unavailable_or_invalid
+Reviewed blind image 11/16: unavailable_or_invalid
+Reviewed blind image 12/16: unavailable_or_invalid
+Reviewed blind image 13/16: unavailable_or_invalid
+Reviewed blind image 14/16: unavailable_or_invalid
+Reviewed blind image 15/16: unavailable_or_invalid
+Reviewed blind image 16/16: unavailable_or_invalid
+{
+  "arms": {
+    "baseline": {
+      "images": 8,
+      "requested_requirements": 36,
+      "supported": 0,
+      "contradicted": 0,
+      "unknown": 36,
+      "uncalibrated_all_yes_images": 0,
+      "uncalibrated_supported_requirement_rate": 0.0
+    },
+    "candidate": {
+      "images": 8,
+      "requested_requirements": 36,
+      "supported": 0,
+      "contradicted": 0,
+      "unknown": 36,
+      "uncalibrated_all_yes_images": 0,
+      "uncalibrated_supported_requirement_rate": 0.0
+    }
+  },
+  "paired_cases": 8,
+  "uncalibrated_candidate_only_passes": 0,
+  "uncalibrated_baseline_only_passes": 0,
+  "full_contract_CSR": null,
+  "quality_status": "unverified",
+  "promotion_status": "unqualified",
+  "scope": "uncalibrated_vision_diagnostics_not_independent_human_validation"
+}

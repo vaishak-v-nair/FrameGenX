@@ -1,0 +1,9 @@
+{
+  "model": "reused_generate_pipe",
+  "reused_generate_pipe": true,
+  "strength": 0.2,
+  "steps": 6,
+  "guidance_scale": 0.0,
+  "input_image": "generated_1.png",
+  "output_image": "refined_final.png"
+}

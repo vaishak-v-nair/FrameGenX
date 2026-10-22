@@ -1,0 +1,18 @@
+{
+  "count_under_generation": {
+    "trigger": "detected_count < expected_count",
+    "repair_strategy": "Increase spatial bounding box separation, enforce explicit per-item numbering in prompt ('item 1, item 2, item 3 each completely separate'), and increase ControlNet edge conditioning weight."
+  },
+  "count_over_generation": {
+    "trigger": "detected_count > expected_count",
+    "repair_strategy": "Inject negative prompt 'duplicate, clones, extra objects, cluttered background' and decrease density in bounding box mask."
+  },
+  "attribute_leakage": {
+    "trigger": "attribute_bleeding_detected",
+    "repair_strategy": "Isolate noun-adjective pairs into distinct regional tokens, insert explicit contrast descriptors ('a red apple strictly next to a green bottle, no color mixing')."
+  },
+  "spatial_inversion": {
+    "trigger": "spatial_relation_inverted",
+    "repair_strategy": "Reinforce asymmetric directional cues ('on the extreme far left side', 'placed on the upper horizontal surface')."
+  }
+}

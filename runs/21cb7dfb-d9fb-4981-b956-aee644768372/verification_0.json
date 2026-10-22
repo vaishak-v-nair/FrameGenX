@@ -1,0 +1,241 @@
+{
+  "accepted": true,
+  "hard_failures": [],
+  "signals": {
+    "detected_counts": {
+      "bottle": 2
+    },
+    "raw_detected_counts": {
+      "bottle": 2
+    },
+    "expected_counts": {
+      "bottle": 2
+    },
+    "box_deduplicated_counts": {
+      "bottle": 2
+    },
+    "local_instances": {
+      "scope": "local_uncalibrated_masked_color_diagnostics_not_full_CSR",
+      "model": "facebook/sam2.1-hiera-tiny",
+      "revision": "de431c4043854a71d8101e17995dfe596bf101a5",
+      "weights_sha256": "48c14467e5cf9e51870511feb72c89688e82dd74523142c0538b663e193ac2a7",
+      "instances": [
+        {
+          "class_name": "bottle",
+          "detection_index": 0,
+          "box": [
+            45.015968322753906,
+            119.0843505859375,
+            194.41653442382812,
+            436.17803955078125
+          ],
+          "detector_score": 0.8044611811637878,
+          "observed_color": "green",
+          "status": "observed_diagnostic",
+          "mask_quality": 0.9753604531288147,
+          "mask_pixels": 32500,
+          "interior_pixels": 31448,
+          "method": "SAM2_mask_then_HSV_hue_diagnostic",
+          "chromatic_coverage": 0.7070083948104808,
+          "hue_fractions": {
+            "red": 0.0017540703427183593,
+            "orange": 0.0013492848790141224,
+            "yellow": 0.0002698569758028245,
+            "green": 0.9965818116398308,
+            "blue": 0.0,
+            "purple": 0.0,
+            "pink": 4.4976162633804086e-05
+          },
+          "mask_file": "00_bottle.png",
+          "mask_sha256": "8bf8d52207ab35ebe40c9a7027dd2270b4f06de4d110de156911a6d50f8b0203",
+          "kept_for_instance_count": true
+        },
+        {
+          "class_name": "bottle",
+          "detection_index": 1,
+          "box": [
+            335.1398010253906,
+            106.26649475097656,
+            428.7317810058594,
+            451.9998779296875
+          ],
+          "detector_score": 0.734971821308136,
+          "observed_color": "green",
+          "status": "observed_diagnostic",
+          "mask_quality": 0.973645031452179,
+          "mask_pixels": 25181,
+          "interior_pixels": 24258,
+          "method": "SAM2_mask_then_HSV_hue_diagnostic",
+          "chromatic_coverage": 0.534462857613983,
+          "hue_fractions": {
+            "red": 0.0,
+            "orange": 0.0,
+            "yellow": 0.0,
+            "green": 1.0,
+            "blue": 0.0,
+            "purple": 0.0,
+            "pink": 0.0
+          },
+          "mask_file": "01_bottle.png",
+          "mask_sha256": "0a1ca26d678037f755109a5a6b201590a5e17700e28e479909bf62c0b024b1a9",
+          "kept_for_instance_count": true
+        }
+      ],
+      "classes": {
+        "bottle": {
+          "expected_colors": [
+            "green",
+            "green"
+          ],
+          "detected_instances": 2,
+          "status": "supported_diagnostic",
+          "scope": "uncalibrated_instance_color_diagnostic",
+          "observed_colors": [
+            "green",
+            "green"
+          ]
+        },
+        "table": {
+          "expected_colors": [
+            "white"
+          ],
+          "detected_instances": 0,
+          "status": "unknown",
+          "scope": "uncalibrated_instance_color_diagnostic",
+          "reason": "achromatic/unsupported color requires calibration"
+        }
+      },
+      "full_contract_CSR": null,
+      "refined_boxes": {
+        "bottle": [
+          {
+            "xmin": 45.015968322753906,
+            "ymin": 119.0843505859375,
+            "xmax": 194.41653442382812,
+            "ymax": 436.17803955078125,
+            "score": 0.8044611811637878
+          },
+          {
+            "xmin": 335.1398010253906,
+            "ymin": 106.26649475097656,
+            "xmax": 428.7317810058594,
+            "ymax": 451.9998779296875,
+            "score": 0.734971821308136
+          }
+        ]
+      },
+      "ambiguous_instances": [],
+      "mask_count_status": "observed_diagnostic"
+    }
+  },
+  "clip_cos": 0.3055,
+  "clip_norm": 0.622,
+  "vqa_score": null,
+  "vqa_vacuous": false,
+  "vqa_status": "disabled",
+  "vqa_details": [],
+  "reward": null,
+  "spatial_result": {
+    "passed": true,
+    "total": 0,
+    "verified": 0,
+    "failures": []
+  },
+  "contract_evidence": {
+    "status": "unverified",
+    "scope": "extracted_contract_only",
+    "counts": {
+      "total": 5,
+      "passed": 1,
+      "failed": 0,
+      "unverified": 4
+    },
+    "requirements": [
+      {
+        "kind": "object_count",
+        "target": "bottle",
+        "expected": 2,
+        "status": "passed",
+        "method": "grounding_dino_with_SAM2_duplicate_mask_suppression",
+        "observation": {
+          "detected": 2
+        }
+      },
+      {
+        "kind": "object_presence",
+        "target": "table",
+        "expected": true,
+        "status": "unverified",
+        "reason": "vision QA is diagnostic, not a calibrated presence gate"
+      },
+      {
+        "kind": "attribute",
+        "target": "bottle",
+        "expected": "green",
+        "status": "unverified",
+        "method": "segmented_chromatic_measurement",
+        "reason": "attribute binding has no calibrated hard verifier",
+        "observation": {
+          "local_instances": {
+            "expected_colors": [
+              "green",
+              "green"
+            ],
+            "detected_instances": 2,
+            "status": "supported_diagnostic",
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "observed_colors": [
+              "green",
+              "green"
+            ]
+          }
+        }
+      },
+      {
+        "kind": "attribute",
+        "target": "table",
+        "expected": "white",
+        "status": "unverified",
+        "method": "segmented_chromatic_measurement",
+        "reason": "attribute binding has no calibrated hard verifier",
+        "observation": {
+          "local_instances": {
+            "expected_colors": [
+              "white"
+            ],
+            "detected_instances": 0,
+            "status": "unknown",
+            "scope": "uncalibrated_instance_color_diagnostic",
+            "reason": "achromatic/unsupported color requires calibration"
+          }
+        }
+      },
+      {
+        "kind": "negation",
+        "target": "{'class_name': 'bottle', 'attribute': 'red'}",
+        "expected": "absent",
+        "status": "unverified",
+        "reason": "absence has no calibrated verifier"
+      }
+    ]
+  },
+  "detected_boxes": {
+    "bottle": [
+      {
+        "xmin": 45.015968322753906,
+        "ymin": 119.0843505859375,
+        "xmax": 194.41653442382812,
+        "ymax": 436.17803955078125,
+        "score": 0.8044611811637878
+      },
+      {
+        "xmin": 335.1398010253906,
+        "ymin": 106.26649475097656,
+        "xmax": 428.7317810058594,
+        "ymax": 451.9998779296875,
+        "score": 0.734971821308136
+      }
+    ]
+  },
+  "count_method": "grounding_dino_with_SAM2_duplicate_mask_suppression"
+}

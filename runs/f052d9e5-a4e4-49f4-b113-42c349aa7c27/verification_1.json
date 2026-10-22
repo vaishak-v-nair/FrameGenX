@@ -1,0 +1,137 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "adventurer",
+      "expected": 1,
+      "detected": 0
+    },
+    {
+      "type": "spatial_violation",
+      "class_name": "adventurer->sword",
+      "expected": "holding",
+      "detected": "subject 'adventurer' not detected"
+    },
+    {
+      "type": "spatial_violation",
+      "class_name": "adventurer->cliff",
+      "expected": "on",
+      "detected": "subject 'adventurer' not detected"
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "adventurer": 0,
+      "sword": 1,
+      "cliff": 1
+    },
+    "expected_counts": {
+      "adventurer": 1,
+      "sword": 1,
+      "cliff": 1
+    }
+  },
+  "clip_cos": 0.2953,
+  "clip_norm": 0.5811,
+  "vqa_score": 0.0,
+  "vqa_vacuous": false,
+  "reward": 0.2905,
+  "spatial_result": {
+    "passed": false,
+    "total": 2,
+    "verified": 0,
+    "failures": [
+      {
+        "subject": "adventurer",
+        "predicate": "holding",
+        "object": "sword",
+        "reason": "subject 'adventurer' not detected"
+      },
+      {
+        "subject": "adventurer",
+        "predicate": "on",
+        "object": "cliff",
+        "reason": "subject 'adventurer' not detected"
+      }
+    ],
+    "results": [
+      {
+        "relationship": {
+          "subject": "adventurer",
+          "predicate": "holding",
+          "object": "sword"
+        },
+        "passed": false,
+        "reason": "subject 'adventurer' not detected"
+      },
+      {
+        "relationship": {
+          "subject": "adventurer",
+          "predicate": "on",
+          "object": "cliff"
+        },
+        "passed": false,
+        "reason": "subject 'adventurer' not detected"
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there a floating floating island in the image?",
+      "expected": "yes",
+      "class_name": "floating island",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there a cascading waterfall in the image?",
+      "expected": "yes",
+      "class_name": "waterfall",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there an ancient ruin in the image?",
+      "expected": "yes",
+      "class_name": "ruin",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there a vine in the image?",
+      "expected": "yes",
+      "class_name": "vine",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there an adventurer in the image?",
+      "expected": "yes",
+      "class_name": "adventurer",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there an ancient sword in the image?",
+      "expected": "yes",
+      "class_name": "sword",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there a jagged cliff in the image?",
+      "expected": "yes",
+      "class_name": "cliff",
+      "answer": "error",
+      "correct": false
+    }
+  ]
+}

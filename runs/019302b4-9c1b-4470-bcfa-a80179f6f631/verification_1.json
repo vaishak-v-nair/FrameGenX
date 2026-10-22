@@ -1,0 +1,89 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "apple",
+      "expected": 3,
+      "detected": 2
+    },
+    {
+      "type": "count_mismatch",
+      "class_name": "table",
+      "expected": 1,
+      "detected": 2
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "apple": 2,
+      "table": 2
+    },
+    "expected_counts": {
+      "apple": 3,
+      "table": 1
+    }
+  },
+  "clip_cos": 0.2893,
+  "clip_norm": 0.5572,
+  "vqa_score": 1.0,
+  "vqa_vacuous": false,
+  "reward": 0.7786,
+  "spatial_result": {
+    "passed": true,
+    "total": 1,
+    "verified": 1,
+    "failures": [],
+    "results": [
+      {
+        "relationship": {
+          "subject": "apples",
+          "predicate": "on",
+          "object": "table"
+        },
+        "passed": true,
+        "reason": "unknown predicate 'on': skipped",
+        "subject_box": {
+          "xmin": 53.60023498535156,
+          "ymin": 281.4533386230469,
+          "xmax": 162.5313262939453,
+          "ymax": 401.7904357910156,
+          "score": 0.8461242914199829
+        },
+        "object_box": {
+          "xmin": -0.0283203125,
+          "ymin": 130.1741485595703,
+          "xmax": 511.9716796875,
+          "ymax": 511.52239990234375,
+          "score": 0.44127729535102844
+        }
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Are there red apple in the image?",
+      "expected": "yes",
+      "class_name": "apple",
+      "answer": "yes",
+      "correct": true
+    },
+    {
+      "type": "color",
+      "question": "What color is the apple?",
+      "expected": "red",
+      "class_name": "apple",
+      "answer": "red",
+      "correct": true
+    },
+    {
+      "type": "existence",
+      "question": "Is there a table in the image?",
+      "expected": "yes",
+      "class_name": "table",
+      "answer": "yes",
+      "correct": true
+    }
+  ]
+}

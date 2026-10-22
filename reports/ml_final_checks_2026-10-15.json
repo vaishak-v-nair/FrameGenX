@@ -1,0 +1,18 @@
+{
+  "completed_evaluation_resume_exit_code": 0,
+  "full_contract_CSR": null,
+  "gallery_sha256": "b4614b8e6115906c5a1b556610c3c14ed62d4beb959f1d424937d7949821fdf8",
+  "generation_images": 16,
+  "generation_status": "generated_pending_independent_review",
+  "missing_document_links": [],
+  "promotion_status": "unqualified",
+  "python_compilation": "passed",
+  "quality_status": "unverified",
+  "regression": {
+    "log_sha256": "1570e673f11df9353422948a405cf9d941a2c94dc04034013f35ead3dc764401",
+    "passed": 234,
+    "warnings": 15
+  },
+  "report_sha256": "3d3bccec44090e1961bca12c0287b8f1098979cc23c3f52cf993496b697a2071",
+  "scope": "local_regression_and_artifact_delivery_checks_not_full_product_certification"
+}

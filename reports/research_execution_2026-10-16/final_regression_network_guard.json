@@ -1,0 +1,5 @@
+{
+  "scope": "external network and local service ports denied; ephemeral loopback allowed",
+  "denied_attempts": 0,
+  "pytest_exitstatus": 0
+}

@@ -1,0 +1,101 @@
+{
+  "accepted": false,
+  "hard_failures": [
+    {
+      "type": "count_mismatch",
+      "class_name": "apple",
+      "expected": 1,
+      "detected": 2
+    }
+  ],
+  "signals": {
+    "detected_counts": {
+      "apple": 2,
+      "table": 1,
+      "bottle": 1
+    },
+    "expected_counts": {
+      "apple": 1,
+      "table": 1,
+      "bottle": 1
+    }
+  },
+  "clip_cos": 0.2655,
+  "clip_norm": 0.462,
+  "vqa_score": 0.0,
+  "vqa_vacuous": false,
+  "reward": 0.231,
+  "spatial_result": {
+    "passed": true,
+    "total": 1,
+    "verified": 1,
+    "failures": [],
+    "results": [
+      {
+        "relationship": {
+          "subject": "apple",
+          "predicate": "above",
+          "object": "table"
+        },
+        "passed": true,
+        "reason": "subject center_y=362 < object center_y=421",
+        "subject_box": {
+          "xmin": 0.5369377136230469,
+          "ymin": 310.49725341796875,
+          "xmax": 95.90583801269531,
+          "ymax": 414.21856689453125,
+          "score": 0.7087638974189758
+        },
+        "object_box": {
+          "xmin": 0.408660888671875,
+          "ymin": 331.07708740234375,
+          "xmax": 511.6029968261719,
+          "ymax": 511.18212890625,
+          "score": 0.7317684888839722
+        }
+      }
+    ]
+  },
+  "vqa_details": [
+    {
+      "type": "existence",
+      "question": "Is there a red apple in the image?",
+      "expected": "yes",
+      "class_name": "apple",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "color",
+      "question": "What color is the apple?",
+      "expected": "red",
+      "class_name": "apple",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there a wooden table in the image?",
+      "expected": "yes",
+      "class_name": "table",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "existence",
+      "question": "Is there a green bottle in the image?",
+      "expected": "yes",
+      "class_name": "bottle",
+      "answer": "error",
+      "correct": false
+    },
+    {
+      "type": "color",
+      "question": "What color is the bottle?",
+      "expected": "green",
+      "class_name": "bottle",
+      "answer": "error",
+      "correct": false
+    }
+  ]
+}
